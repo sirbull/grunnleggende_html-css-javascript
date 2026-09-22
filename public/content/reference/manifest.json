@@ -1,0 +1,15 @@
+{
+  "categories": {
+    "all": "Alle",
+    "html": "HTML",
+    "css": "CSS",
+    "javascript": "JavaScript",
+    "dom": "DOM / Web API",
+    "accessibility": "Tilgjengelighet"
+  },
+  "files": [
+    "content/reference/core.json",
+    "content/reference/html-css.json",
+    "content/reference/javascript-accessibility.json"
+  ]
+}

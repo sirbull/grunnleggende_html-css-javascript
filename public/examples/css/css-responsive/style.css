@@ -1,0 +1,6 @@
+:root { --accent: #174f42; }
+.layout { display: grid; gap: 1rem; }
+button { background: var(--accent); color: white; padding: 1rem; }
+button:focus-visible { outline: 3px solid #b34524; outline-offset: 4px; }
+button:hover { background: #0d392e; }
+@media (min-width: 600px) { .layout { grid-template-columns: 2fr 1fr; } }

@@ -32,7 +32,7 @@ export function createReading(article, onChange) {
   }
   article.addEventListener('keydown', e => {
     if (e.ctrlKey || e.metaKey || e.altKey || e.shiftKey || !['ArrowDown', 'ArrowUp'].includes(e.key)) return;
-    if (e.target.closest('button,a,input,textarea,select,[contenteditable],dialog,[role=slider]')) return;
+    if (e.target.closest('button,a,input,textarea,select,pre,[contenteditable],dialog,[role=slider]')) return;
     e.preventDefault(); go(active + (e.key === 'ArrowDown' ? 1 : -1));
   }, options);
   article.addEventListener('focusin', e => {

@@ -1,0 +1,4 @@
+:root { --bg: #fffefa; --text: #202c29; }
+body { background: var(--bg); color: var(--text); }
+body.dark { --bg: #172b26; --text: #f0f5ec; }
+button { padding: .7rem; background: var(--bg); color: var(--text); border: 2px solid currentColor; }

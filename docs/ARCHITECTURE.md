@@ -15,7 +15,9 @@ Avhengigheter: markdown-it for velprøvd Markdown med rå HTML av, DOMPurify for
 `public/content/*/*/*.md`: artikkeltekst med stegdirektiver.
 `public/content/reference/`: felles oppføringer for både fagord og Cheat sheet.
 `public/examples/`: HTML/CSS/JS-kilder delt av demo og editor.
-`tests/`: unit/content/E2E/axe. `docs/`: forfatter- og driftsveiledning.
+`tests/`: unit/content/E2E/axe. `docs/`: `ARCHITECTURE.md`, `CONTENT_AUTHORING.md`, `ACCESSIBILITY.md`, `DEPLOYMENT.md`, `CREATE_NEW_COURSE.md`, `REFERENCE_ANALYSIS.md` og `STATUS.md`.
+
+Kursets identitet er data, ikke kode. `manifest.title` settes inn i alle sidetitler gjennom `configureSite`/`setPageTitle` i `core/dom.js`, og referansemanifestets `categories` fyller filtrene gjennom `configureCategories` i `core/reference.js`. Ingen modul i `src/` nevner kursnavnet eller fagkategoriene. Det som gjenstår av fagbinding i motoren er at kodeverkstedet arbeider med HTML, CSS og JavaScript, som følger av at forhåndsvisningen er en nettleser-iframe.
 
 ## Dataflyt
 
@@ -26,13 +28,16 @@ Referansemanifestet peker til JSON-filer med komplette oppføringer. Søk indeks
 ## Risiko og tiltak
 
 - Markdown: rå HTML er av, resultat sanitiseres, direktiver valideres, fagord behandles bare i tekstnoder utenfor kode/lenker.
-- Preview: sandbox allow-scripts, aldri allow-same-origin; CSP sperrer ekstern nettverkstilgang. postMessage sjekker source og økt-ID. Vilkårlig uendelig JavaScript kan fortsatt belaste nettleseren; stopp fjerner rammen. Dette er et lokalt øvingsverktøy, ikke en tjeneste for ukjent fiendtlig kode.
+- Preview: sandbox allow-scripts og allow-forms, aldri allow-same-origin. allow-forms er nødvendig for native skjemavalidering og submit-hendelser; CSP form-action 'none' sperrer faktiske skjemainnsendinger. CSP sperrer eksterne fetch-, bilde-, stil- og scriptressurser. postMessage sjekker source og økt-ID. Vilkårlig uendelig JavaScript kan fortsatt belaste nettleseren; stopp fjerner rammen hvis hovedsiden fortsatt svarer. Dette er et lokalt øvingsverktøy, ikke en tjeneste for ukjent fiendtlig kode.
 - localStorage/fetch i opaque iframe: virkelige origin-API-er er sperret. Eksempler demonstrerer lokal lagring med eksplisitt merket minnelager; fetch bruker lokal data-URL. Produksjonsbruk forklares i leksjonen.
 - Tale: systemstemmene varierer, norsk prioriteres; feil og manglende API forklares. Setningsbasert pause/gjenopptaking og generasjonsteller.
 - Fokus: native modal, gjenoppretting til åpner, overskrift ved ruteskift; piltaster kun i leseområdet. Tab forlater CodeMirror.
 - Blur: av som standard; subtil nedtoning med unntak for hover, markering, focus-within og forced colors.
 - Hosting: egne tester server dist på /kurs/web/ uten SPA fallback; aldri file://.
-- Tilgjengelighet: axe og tastaturtester suppleres med dokumenterte manuelle kontroller. Automatiske tester gir ikke grunnlag for påstand om full WCAG-samsvar.
+- Tilgjengelighet: axe og tastaturtester suppleres med dokumenterte manuelle kontroller. Automatiske tester gir ikke grunnlag for påstand om full WCAG-samsvar. Se `docs/ACCESSIBILITY.md`.
+- Forced colors: kodeblokker setter `Canvas`/`CanvasText` eksplisitt. Uten det arver `-webkit-text-fill-color` forfatterfargen, og kodeteksten blir nesten usynlig i høykontrast.
+- Modale dialoger: nettleserens egen felle slipper fokus innom `body` mellom siste og første element. `setupDialog` legger derfor på eksplisitt Tab-ombrytning.
+- Landemerker i forhåndsvisnings-iframen dupliserer sidens egne. Beholdt bevisst; eksempelsidene skal være komplette HTML-dokumenter. Testene måler WCAG-taggene, ikke `best-practice`.
 
 ## Originaldokumentasjon
 

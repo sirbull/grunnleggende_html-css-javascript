@@ -1,0 +1,1778 @@
+[
+  {
+    "id": "js-let",
+    "title": "let",
+    "sortTitle": "let",
+    "category": "javascript",
+    "type": "JavaScript-syntaks",
+    "displayCode": "let",
+    "syntax": "let antall = 1;\nantall += 1;\nvis(antall);",
+    "short": "En variabel som kan tilordnes en ny verdi.",
+    "explanation": "Bruk let for tilstand som endrer seg, for eksempel en teller. Den har blokkscope.",
+    "when": "Bruk let for tilstand som endrer seg, for eksempel en teller.",
+    "mistakes": "Variabelen kan ikke brukes før den er initialisert.",
+    "aliases": [
+      "variabel endre verdi let vs const",
+      "let"
+    ],
+    "keywords": [
+      "variabel",
+      "endre",
+      "verdi",
+      "let",
+      "vs",
+      "const"
+    ],
+    "related": [
+      "js-function",
+      "js-const"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": "label { display: block; margin-top: 1rem; }",
+      "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nlet antall = 1;\nantall += 1;\nvis(antall);"
+    },
+    "lesson": "#/javascript/basic/js-types"
+  },
+  {
+    "id": "js-string",
+    "title": "Strings (tekst)",
+    "sortTitle": "Strings (tekst)",
+    "category": "javascript",
+    "type": "JavaScript-syntaks",
+    "displayCode": "Strings (tekst)",
+    "syntax": "const navn = \"Ada\";\nvis(navn.toUpperCase());",
+    "short": "En verdi som inneholder tekst.",
+    "explanation": "Bruk anførselstegn eller backticks rundt tekst. Strenger har metoder som trim og includes.",
+    "when": "Bruk anførselstegn eller backticks rundt tekst.",
+    "mistakes": "Et tall i anførselstegn er en string, ikke et number.",
+    "aliases": [
+      "string streng tekst datatyper",
+      "Strings (tekst)"
+    ],
+    "keywords": [
+      "string",
+      "streng",
+      "tekst",
+      "datatyper"
+    ],
+    "related": [
+      "js-function",
+      "js-const"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": "label { display: block; margin-top: 1rem; }",
+      "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst navn = \"Ada\";\nvis(navn.toUpperCase());"
+    },
+    "lesson": "#/javascript/basic/js-types"
+  },
+  {
+    "id": "js-number",
+    "title": "Numbers (tall)",
+    "sortTitle": "Numbers (tall)",
+    "category": "javascript",
+    "type": "JavaScript-syntaks",
+    "displayCode": "Numbers (tall)",
+    "syntax": "const pris = Number(\"35\");\nvis(pris * 2);",
+    "short": "Tallverdier brukt i beregninger.",
+    "explanation": "Bruk Number for å konvertere tekst fra et felt til tall. Kontroller om resultatet er NaN.",
+    "when": "Bruk Number for å konvertere tekst fra et felt til tall.",
+    "mistakes": "JavaScript-tall kan ha avrundingsfeil for desimaltall.",
+    "aliases": [
+      "number tall regne datatyper",
+      "Numbers (tall)"
+    ],
+    "keywords": [
+      "number",
+      "tall",
+      "regne",
+      "datatyper"
+    ],
+    "related": [
+      "js-function",
+      "js-const"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": "label { display: block; margin-top: 1rem; }",
+      "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst pris = Number(\"35\");\nvis(pris * 2);"
+    },
+    "lesson": "#/javascript/basic/js-types"
+  },
+  {
+    "id": "js-boolean",
+    "title": "Booleans",
+    "sortTitle": "Booleans",
+    "category": "javascript",
+    "type": "JavaScript-syntaks",
+    "displayCode": "Booleans",
+    "syntax": "const ferdig = 3 > 2;\nvis(ferdig);",
+    "short": "True eller false.",
+    "explanation": "Bruk boolske verdier til valg, tilstander og sammenligninger.",
+    "when": "Bruk boolske verdier til valg, tilstander og sammenligninger..",
+    "mistakes": "Teksten \"false\" er ikke den boolske verdien false; en ikke-tom streng regnes som sann i en betingelse.",
+    "aliases": [
+      "boolean boolsk sann usann true false",
+      "Booleans"
+    ],
+    "keywords": [
+      "boolean",
+      "boolsk",
+      "sann",
+      "usann",
+      "true",
+      "false"
+    ],
+    "related": [
+      "js-function",
+      "js-const"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": "label { display: block; margin-top: 1rem; }",
+      "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst ferdig = 3 > 2;\nvis(ferdig);"
+    },
+    "lesson": "#/javascript/basic/js-types"
+  },
+  {
+    "id": "js-null",
+    "title": "null",
+    "sortTitle": "null",
+    "category": "javascript",
+    "type": "JavaScript-syntaks",
+    "displayCode": "null",
+    "syntax": "const mangler = document.querySelector(\".finnes-ikke\");\nvis(mangler === null);",
+    "short": "En verdi for bevisst fravær.",
+    "explanation": "Bruk null når en verdi med vilje ikke er satt eller ikke finnes. querySelector returnerer null når ingen elementer treffes.",
+    "when": "Bruk null når en verdi med vilje ikke er satt eller ikke finnes.",
+    "mistakes": "Sjekk før du bruker egenskaper på et mulig null-resultat.",
+    "aliases": [
+      "null tom ingen verdi",
+      "null"
+    ],
+    "keywords": [
+      "null",
+      "tom",
+      "ingen",
+      "verdi"
+    ],
+    "related": [
+      "js-function",
+      "js-const"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": "label { display: block; margin-top: 1rem; }",
+      "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst mangler = document.querySelector(\".finnes-ikke\");\nvis(mangler === null);"
+    },
+    "lesson": "#/javascript/basic/js-types"
+  },
+  {
+    "id": "js-undefined",
+    "title": "undefined",
+    "sortTitle": "undefined",
+    "category": "javascript",
+    "type": "JavaScript-syntaks",
+    "displayCode": "undefined",
+    "syntax": "let svar;\nvis(String(svar));",
+    "short": "En verdi som ofte betyr at noe ikke er satt.",
+    "explanation": "Du får undefined fra en deklarert variabel uten startverdi eller en funksjon uten eksplisitt return.",
+    "when": "Du får undefined fra en deklarert variabel uten startverdi eller en funksjon uten eksplisitt return..",
+    "mistakes": "Et helt udeklarert variabelnavn kan gi ReferenceError i stedet.",
+    "aliases": [
+      "undefined udefinert mangler",
+      "undefined"
+    ],
+    "keywords": [
+      "undefined",
+      "udefinert",
+      "mangler"
+    ],
+    "related": [
+      "js-function",
+      "js-const"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": "label { display: block; margin-top: 1rem; }",
+      "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nlet svar;\nvis(String(svar));"
+    },
+    "lesson": "#/javascript/basic/js-types"
+  },
+  {
+    "id": "js-arrays",
+    "title": "Arrays",
+    "sortTitle": "Arrays",
+    "category": "javascript",
+    "type": "JavaScript-syntaks",
+    "displayCode": "Arrays",
+    "syntax": "const fag = [\"HTML\", \"CSS\", \"JavaScript\"];\nvis(fag[0] + \", antall: \" + fag.length);",
+    "short": "En ordnet samling med indeks fra null.",
+    "explanation": "Bruk arrays til lister med filmer, oppgaver eller tall. Length oppgir antallet elementer.",
+    "when": "Bruk arrays til lister med filmer, oppgaver eller tall.",
+    "mistakes": "Siste indeks er length minus 1, ikke length.",
+    "aliases": [
+      "array liste samling indeks",
+      "Arrays"
+    ],
+    "keywords": [
+      "array",
+      "liste",
+      "samling",
+      "indeks"
+    ],
+    "related": [
+      "js-function",
+      "js-const"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": "label { display: block; margin-top: 1rem; }",
+      "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst fag = [\"HTML\", \"CSS\", \"JavaScript\"];\nvis(fag[0] + \", antall: \" + fag.length);"
+    },
+    "lesson": "#/javascript/basic/js-types"
+  },
+  {
+    "id": "js-objects",
+    "title": "Objekter",
+    "sortTitle": "Objekter",
+    "category": "javascript",
+    "type": "JavaScript-syntaks",
+    "displayCode": "Objekter",
+    "syntax": "const film = { tittel: \"Skogsturen\", aar: 2025 };\nvis(film.tittel);",
+    "short": "Samler navngitte egenskaper og verdier.",
+    "explanation": "Bruk objekter for en enhet med flere egenskaper, for eksempel en film med tittel og år.",
+    "when": "Bruk objekter for en enhet med flere egenskaper, for eksempel en film med tittel og år..",
+    "mistakes": "Egenskapsnavn som ikke finnes gir vanligvis undefined.",
+    "aliases": [
+      "object objekt egenskap data",
+      "Objekter"
+    ],
+    "keywords": [
+      "object",
+      "objekt",
+      "egenskap",
+      "data"
+    ],
+    "related": [
+      "js-function",
+      "js-const"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": "label { display: block; margin-top: 1rem; }",
+      "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst film = { tittel: \"Skogsturen\", aar: 2025 };\nvis(film.tittel);"
+    },
+    "lesson": "#/javascript/basic/js-types"
+  },
+  {
+    "id": "js-operators",
+    "title": "Operatorer",
+    "sortTitle": "Operatorer",
+    "category": "javascript",
+    "type": "JavaScript-syntaks",
+    "displayCode": "Operatorer",
+    "syntax": "const pris = 30;\nvis((pris * 3) <= 100);",
+    "short": "Symboler for beregning, tilordning og sammenligning.",
+    "explanation": "Bruk parenteser for tydelig regnerekkefølge og === for likhet uten typekonvertering.",
+    "when": "Bruk parenteser for tydelig regnerekkefølge og === for likhet uten typekonvertering..",
+    "mistakes": "Ikke forveksle = med ===. Pluss kan også sette sammen tekst.",
+    "aliases": [
+      "operator pluss minus gange sammenligning",
+      "Operatorer"
+    ],
+    "keywords": [
+      "operator",
+      "pluss",
+      "minus",
+      "gange",
+      "sammenligning"
+    ],
+    "related": [
+      "js-function",
+      "js-const"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": "label { display: block; margin-top: 1rem; }",
+      "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst pris = 30;\nvis((pris * 3) <= 100);"
+    },
+    "lesson": "#/javascript/basic/js-types"
+  },
+  {
+    "id": "js-if",
+    "title": "if / else",
+    "sortTitle": "if / else",
+    "category": "javascript",
+    "type": "JavaScript-syntaks",
+    "displayCode": "if / else",
+    "syntax": "const alder = 18;\nif (alder >= 18) { vis(\"Voksenbillett\"); }\nelse { vis(\"Ungdomsbillett\"); }",
+    "short": "Velger en kodeblokk ut fra en betingelse.",
+    "explanation": "Bruk if når en regel avgjør hva programmet skal gjøre. Else dekker den motsatte grenen.",
+    "when": "Bruk if når en regel avgjør hva programmet skal gjøre.",
+    "mistakes": "Test verdier akkurat på grensen, ikke bare langt over og under.",
+    "aliases": [
+      "if else hvis ellers betingelse",
+      "if / else"
+    ],
+    "keywords": [
+      "if",
+      "else",
+      "hvis",
+      "ellers",
+      "betingelse"
+    ],
+    "related": [
+      "js-function",
+      "js-const"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": "label { display: block; margin-top: 1rem; }",
+      "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst alder = 18;\nif (alder >= 18) { vis(\"Voksenbillett\"); }\nelse { vis(\"Ungdomsbillett\"); }"
+    },
+    "lesson": "#/javascript/basic/js-types"
+  },
+  {
+    "id": "js-switch",
+    "title": "switch",
+    "sortTitle": "switch",
+    "category": "javascript",
+    "type": "JavaScript-syntaks",
+    "displayCode": "switch",
+    "syntax": "const fag = \"css\";\nswitch (fag) {\n  case \"html\": vis(\"Struktur\"); break;\n  case \"css\": vis(\"Utseende\"); break;\n  default: vis(\"Et annet fag\");\n}",
+    "short": "Velger mellom flere navngitte alternativer.",
+    "explanation": "Bruk switch når én verdi skal sammenlignes med flere case-verdier. Default håndterer andre verdier.",
+    "when": "Bruk switch når én verdi skal sammenlignes med flere case-verdier.",
+    "mistakes": "Uten break fortsetter kjøringen vanligvis inn i neste case.",
+    "aliases": [
+      "switch case valg alternativer",
+      "switch"
+    ],
+    "keywords": [
+      "switch",
+      "case",
+      "valg",
+      "alternativer"
+    ],
+    "related": [
+      "js-function",
+      "js-const"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": "label { display: block; margin-top: 1rem; }",
+      "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst fag = \"css\";\nswitch (fag) {\n  case \"html\": vis(\"Struktur\"); break;\n  case \"css\": vis(\"Utseende\"); break;\n  default: vis(\"Et annet fag\");\n}"
+    },
+    "lesson": "#/javascript/basic/js-types"
+  },
+  {
+    "id": "js-for",
+    "title": "for",
+    "sortTitle": "for",
+    "category": "javascript",
+    "type": "JavaScript-syntaks",
+    "displayCode": "for",
+    "syntax": "const tall = [];\nfor (let i = 1; i <= 3; i++) { tall.push(i); }\nvis(tall.join(\", \"));",
+    "short": "En løkke med start, betingelse og oppdatering.",
+    "explanation": "Bruk for når du vil styre en teller og antall runder.",
+    "when": "Bruk for når du vil styre en teller og antall runder..",
+    "mistakes": "Kontroller at betingelsen etter hvert blir usann.",
+    "aliases": [
+      "for løkke loop teller",
+      "for"
+    ],
+    "keywords": [
+      "for",
+      "løkke",
+      "loop",
+      "teller"
+    ],
+    "related": [
+      "js-function",
+      "js-const"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": "label { display: block; margin-top: 1rem; }",
+      "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst tall = [];\nfor (let i = 1; i <= 3; i++) { tall.push(i); }\nvis(tall.join(\", \"));"
+    },
+    "lesson": "#/javascript/basic/js-types"
+  },
+  {
+    "id": "js-for-of",
+    "title": "for...of",
+    "sortTitle": "for...of",
+    "category": "javascript",
+    "type": "JavaScript-syntaks",
+    "displayCode": "for...of",
+    "syntax": "const fag = [\"HTML\", \"CSS\"];\nfor (const navn of fag) { console.log(navn); }\nvis(fag.join(\" og \"));",
+    "short": "Besøker verdiene i en itererbar samling.",
+    "explanation": "Bruk for...of for arrays når du trenger hver verdi.",
+    "when": "Bruk for...of for arrays når du trenger hver verdi..",
+    "mistakes": "For...in besøker egenskapsnøkler og er ikke den samme løkken.",
+    "aliases": [
+      "for of løkke array verdier",
+      "for...of"
+    ],
+    "keywords": [
+      "for",
+      "of",
+      "løkke",
+      "array",
+      "verdier"
+    ],
+    "related": [
+      "js-function",
+      "js-const"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": "label { display: block; margin-top: 1rem; }",
+      "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst fag = [\"HTML\", \"CSS\"];\nfor (const navn of fag) { console.log(navn); }\nvis(fag.join(\" og \"));"
+    },
+    "lesson": "#/javascript/basic/js-types"
+  },
+  {
+    "id": "js-while",
+    "title": "while",
+    "sortTitle": "while",
+    "category": "javascript",
+    "type": "JavaScript-syntaks",
+    "displayCode": "while",
+    "syntax": "let antall = 0;\nwhile (antall < 3) { antall++; }\nvis(antall);",
+    "short": "Gjentar mens en betingelse er sann.",
+    "explanation": "Bruk while når antall runder bestemmes av en tilstand. Endre tilstanden i løkken.",
+    "when": "Bruk while når antall runder bestemmes av en tilstand.",
+    "mistakes": "En betingelse som aldri blir usann kan låse fanen.",
+    "aliases": [
+      "while mens løkke loop",
+      "while"
+    ],
+    "keywords": [
+      "while",
+      "mens",
+      "løkke",
+      "loop"
+    ],
+    "related": [
+      "js-function",
+      "js-const"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": "label { display: block; margin-top: 1rem; }",
+      "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nlet antall = 0;\nwhile (antall < 3) { antall++; }\nvis(antall);"
+    },
+    "lesson": "#/javascript/basic/js-types"
+  },
+  {
+    "id": "js-arrow",
+    "title": "Pilfunksjoner",
+    "sortTitle": "Pilfunksjoner",
+    "category": "javascript",
+    "type": "JavaScript-syntaks",
+    "displayCode": "Pilfunksjoner",
+    "syntax": "const dobbel = tall => tall * 2;\nvis(dobbel(4));",
+    "short": "En kort funksjonsform med =>.",
+    "explanation": "Bruk pilfunksjoner til små callbacks og beregninger. De arver this fra sitt ytre scope.",
+    "when": "Bruk pilfunksjoner til små callbacks og beregninger.",
+    "mistakes": "Med krøllparenteser må du skrive return selv når en verdi skal returneres.",
+    "aliases": [
+      "arrow function pilfunksjon function declaration",
+      "Pilfunksjoner"
+    ],
+    "keywords": [
+      "arrow",
+      "function",
+      "pilfunksjon",
+      "function",
+      "declaration"
+    ],
+    "related": [
+      "js-function",
+      "js-const"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": "label { display: block; margin-top: 1rem; }",
+      "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst dobbel = tall => tall * 2;\nvis(dobbel(4));"
+    },
+    "lesson": "#/javascript/basic/js-types"
+  },
+  {
+    "id": "js-parameters",
+    "title": "Parametere",
+    "sortTitle": "Parametere",
+    "category": "javascript",
+    "type": "JavaScript-syntaks",
+    "displayCode": "Parametere",
+    "syntax": "function hilsen(navn) { return `Hei, ${navn}!`; }\nvis(hilsen(\"Ada\"));",
+    "short": "Navn på verdier en funksjon tar imot.",
+    "explanation": "Bruk beskrivende parameternavn. Verdiene som sendes ved kallet kalles argumenter.",
+    "when": "Bruk beskrivende parameternavn.",
+    "mistakes": "Parameterrekkefølgen betyr noe ved vanlige posisjonelle argumenter.",
+    "aliases": [
+      "parameter argument funksjon input",
+      "Parametere"
+    ],
+    "keywords": [
+      "parameter",
+      "argument",
+      "funksjon",
+      "input"
+    ],
+    "related": [
+      "js-function",
+      "js-const"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": "label { display: block; margin-top: 1rem; }",
+      "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nfunction hilsen(navn) { return `Hei, ${navn}!`; }\nvis(hilsen(\"Ada\"));"
+    },
+    "lesson": "#/javascript/basic/js-types"
+  },
+  {
+    "id": "js-return",
+    "title": "return",
+    "sortTitle": "return",
+    "category": "javascript",
+    "type": "JavaScript-syntaks",
+    "displayCode": "return",
+    "syntax": "function total(pris, antall) { return pris * antall; }\nvis(total(25, 4));",
+    "short": "Avslutter en funksjon og gir eventuelt tilbake en verdi.",
+    "explanation": "Bruk return når den som kaller funksjonen trenger resultatet.",
+    "when": "Bruk return når den som kaller funksjonen trenger resultatet..",
+    "mistakes": "Kode etter return i samme gren blir ikke kjørt.",
+    "aliases": [
+      "return returverdi resultat",
+      "return"
+    ],
+    "keywords": [
+      "return",
+      "returverdi",
+      "resultat"
+    ],
+    "related": [
+      "js-function",
+      "js-const"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": "label { display: block; margin-top: 1rem; }",
+      "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nfunction total(pris, antall) { return pris * antall; }\nvis(total(25, 4));"
+    },
+    "lesson": "#/javascript/basic/js-types"
+  },
+  {
+    "id": "js-scope",
+    "title": "Scope",
+    "sortTitle": "Scope",
+    "category": "javascript",
+    "type": "JavaScript-syntaks",
+    "displayCode": "Scope",
+    "syntax": "const navn = \"Ada\";\nfunction hils() { const melding = `Hei, ${navn}`; return melding; }\nvis(hils());",
+    "short": "Området der et variabelnavn er tilgjengelig.",
+    "explanation": "Let og const er begrenset av blokken de deklareres i. En indre funksjon kan lese fra ytre scope.",
+    "when": "Let og const er begrenset av blokken de deklareres i.",
+    "mistakes": "Ikke forvent at et navn laget inne i en funksjon kan brukes utenfor.",
+    "aliases": [
+      "scope rekkevidde variabel closure",
+      "Scope"
+    ],
+    "keywords": [
+      "scope",
+      "rekkevidde",
+      "variabel",
+      "closure"
+    ],
+    "related": [
+      "js-function",
+      "js-const"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": "label { display: block; margin-top: 1rem; }",
+      "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst navn = \"Ada\";\nfunction hils() { const melding = `Hei, ${navn}`; return melding; }\nvis(hils());"
+    },
+    "lesson": "#/javascript/basic/js-types"
+  },
+  {
+    "id": "js-templates",
+    "title": "Template literals",
+    "sortTitle": "Template literals",
+    "category": "javascript",
+    "type": "JavaScript-syntaks",
+    "displayCode": "Template literals",
+    "syntax": "const navn = \"Ada\";\nvis(`Hei, ${navn}!`);",
+    "short": "Tekst med backticks og uttrykk i ${...}.",
+    "explanation": "Bruk template literals når du setter inn verdier i en tekst eller trenger flere linjer.",
+    "when": "Bruk template literals når du setter inn verdier i en tekst eller trenger flere linjer..",
+    "mistakes": "Vanlige anførselstegn tolker ikke ${...}.",
+    "aliases": [
+      "template literal backtick tekst variabel",
+      "Template literals"
+    ],
+    "keywords": [
+      "template",
+      "literal",
+      "backtick",
+      "tekst",
+      "variabel"
+    ],
+    "related": [
+      "js-function",
+      "js-const"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": "label { display: block; margin-top: 1rem; }",
+      "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst navn = \"Ada\";\nvis(`Hei, ${navn}!`);"
+    },
+    "lesson": "#/javascript/basic/js-types"
+  },
+  {
+    "id": "js-console",
+    "title": "console.log()",
+    "sortTitle": "console.log()",
+    "category": "javascript",
+    "type": "JavaScript-syntaks",
+    "displayCode": "console.log()",
+    "syntax": "console.log(\"Regnestykket:\", 3 * 4);\nvis(\"Se konsollen under resultatet.\");",
+    "short": "Skriver verdier til utviklerkonsollen.",
+    "explanation": "Bruk logg for å undersøke hva koden gjør. Verkstedet viser en enkel konsoll under resultatet.",
+    "when": "Bruk logg for å undersøke hva koden gjør.",
+    "mistakes": "Ikke logg passord eller følsomme data i produksjon.",
+    "aliases": [
+      "console log konsoll feilsøking debug",
+      "console.log()"
+    ],
+    "keywords": [
+      "console",
+      "log",
+      "konsoll",
+      "feilsøking",
+      "debug"
+    ],
+    "related": [
+      "js-function",
+      "js-const"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": "label { display: block; margin-top: 1rem; }",
+      "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconsole.log(\"Regnestykket:\", 3 * 4);\nvis(\"Se konsollen under resultatet.\");"
+    },
+    "lesson": "#/javascript/basic/js-types"
+  },
+  {
+    "id": "js-json-parse",
+    "title": "JSON.parse()",
+    "sortTitle": "JSON.parse()",
+    "category": "javascript",
+    "type": "JavaScript-syntaks",
+    "displayCode": "JSON.parse()",
+    "syntax": "const film = JSON.parse('{\"tittel\":\"Skogsturen\"}');\nvis(film.tittel);",
+    "short": "Gjør JSON-tekst til en JavaScript-verdi.",
+    "explanation": "Bruk parse når du leser strukturert tekst fra en fil eller localStorage. Håndter ugyldig tekst med try/catch.",
+    "when": "Bruk parse når du leser strukturert tekst fra en fil eller localStorage.",
+    "mistakes": "JSON krever doble anførselstegn rundt egenskapsnavn.",
+    "aliases": [
+      "JSON parse lese tekst data",
+      "JSON.parse()"
+    ],
+    "keywords": [
+      "JSON",
+      "parse",
+      "lese",
+      "tekst",
+      "data"
+    ],
+    "related": [
+      "js-function",
+      "js-const"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": "label { display: block; margin-top: 1rem; }",
+      "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst film = JSON.parse('{\"tittel\":\"Skogsturen\"}');\nvis(film.tittel);"
+    },
+    "lesson": "#/javascript/advanced/js-storage"
+  },
+  {
+    "id": "js-json-stringify",
+    "title": "JSON.stringify()",
+    "sortTitle": "JSON.stringify()",
+    "category": "javascript",
+    "type": "JavaScript-syntaks",
+    "displayCode": "JSON.stringify()",
+    "syntax": "const film = { tittel: \"Skogsturen\" };\nvis(JSON.stringify(film));",
+    "short": "Gjør en JavaScript-verdi til JSON-tekst.",
+    "explanation": "Bruk stringify før du lagrer et objekt i localStorage eller sender det som JSON.",
+    "when": "Bruk stringify før du lagrer et objekt i localStorage eller sender det som JSON..",
+    "mistakes": "Funksjoner og undefined bevares ikke som vanlige JSON-verdier. Sirkulære referanser gir feil.",
+    "aliases": [
+      "JSON stringify objekt til tekst",
+      "JSON.stringify()"
+    ],
+    "keywords": [
+      "JSON",
+      "stringify",
+      "objekt",
+      "til",
+      "tekst"
+    ],
+    "related": [
+      "js-function",
+      "js-const"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": "label { display: block; margin-top: 1rem; }",
+      "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst film = { tittel: \"Skogsturen\" };\nvis(JSON.stringify(film));"
+    },
+    "lesson": "#/javascript/advanced/js-storage"
+  },
+  {
+    "id": "js-promise",
+    "title": "Promise",
+    "sortTitle": "Promise",
+    "category": "javascript",
+    "type": "JavaScript-syntaks",
+    "displayCode": "Promise",
+    "syntax": "Promise.resolve(\"Data er klare\").then(tekst => vis(tekst));",
+    "short": "Et mulig framtidig resultat av asynkron kode.",
+    "explanation": "Bruk then/catch eller await for å håndtere resultat eller feil. En Promise kan være ventende, oppfylt eller avvist.",
+    "when": "Bruk then/catch eller await for å håndtere resultat eller feil.",
+    "mistakes": "En Promise er ikke selve resultatverdien før den er håndtert.",
+    "aliases": [
+      "promise løfte asynkron then",
+      "Promise"
+    ],
+    "keywords": [
+      "promise",
+      "løfte",
+      "asynkron",
+      "then"
+    ],
+    "related": [
+      "js-function",
+      "js-const"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": "label { display: block; margin-top: 1rem; }",
+      "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nPromise.resolve(\"Data er klare\").then(tekst => vis(tekst));"
+    },
+    "lesson": "#/javascript/advanced/js-async"
+  },
+  {
+    "id": "js-async",
+    "title": "async",
+    "sortTitle": "async",
+    "category": "javascript",
+    "type": "JavaScript-syntaks",
+    "displayCode": "async",
+    "syntax": "async function hentHilsen() { return \"Hei!\"; }\nvis(await hentHilsen());",
+    "short": "Markerer en funksjon som alltid returnerer en Promise.",
+    "explanation": "Bruk async når funksjonen skal kunne bruke await. En return-verdi blir den oppfylte verdien til Promise.",
+    "when": "Bruk async når funksjonen skal kunne bruke await.",
+    "mistakes": "Async betyr ikke at all kode inni automatisk kjører parallelt.",
+    "aliases": [
+      "async asynkron funksjon",
+      "async"
+    ],
+    "keywords": [
+      "async",
+      "asynkron",
+      "funksjon"
+    ],
+    "related": [
+      "js-function",
+      "js-const"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": "label { display: block; margin-top: 1rem; }",
+      "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nasync function hentHilsen() { return \"Hei!\"; }\nvis(await hentHilsen());"
+    },
+    "lesson": "#/javascript/advanced/js-async"
+  },
+  {
+    "id": "js-await",
+    "title": "await",
+    "sortTitle": "await",
+    "category": "javascript",
+    "type": "JavaScript-syntaks",
+    "displayCode": "await",
+    "syntax": "const svar = await Promise.resolve(\"Ferdig\");\nvis(svar);",
+    "short": "Venter på resultatet av en verdi eller Promise i asynkron kode.",
+    "explanation": "Bruk await inne i en async-funksjon eller på toppnivå i en modul. Resten av nettleseren kan fortsatt arbeide mens et ekte asynkront resultat ventes på.",
+    "when": "Bruk await inne i en async-funksjon eller på toppnivå i en modul.",
+    "mistakes": "Await er ikke gyldig på toppnivå i et vanlig klassisk script.",
+    "aliases": [
+      "await vente asynkron",
+      "await"
+    ],
+    "keywords": [
+      "await",
+      "vente",
+      "asynkron"
+    ],
+    "related": [
+      "js-function",
+      "js-const"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": "label { display: block; margin-top: 1rem; }",
+      "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst svar = await Promise.resolve(\"Ferdig\");\nvis(svar);"
+    },
+    "lesson": "#/javascript/advanced/js-async"
+  },
+  {
+    "id": "js-try",
+    "title": "try / catch",
+    "sortTitle": "try / catch",
+    "category": "javascript",
+    "type": "JavaScript-syntaks",
+    "displayCode": "try / catch",
+    "syntax": "try {\n  JSON.parse(\"ugyldig JSON\");\n} catch (error) {\n  vis(\"Kunne ikke lese dataene.\");\n}",
+    "short": "Fanger feil fra kode som kjøres i try-blokken.",
+    "explanation": "Bruk catch til en forståelig feilmelding eller reserveverdi. Await inne i try kan også fange avviste Promises.",
+    "when": "Bruk catch til en forståelig feilmelding eller reserveverdi.",
+    "mistakes": "En asynkron feil fra en senere callback fanges ikke automatisk av et ytre try som allerede er ferdig.",
+    "aliases": [
+      "try catch feil håndtering exception",
+      "try / catch"
+    ],
+    "keywords": [
+      "try",
+      "catch",
+      "feil",
+      "håndtering",
+      "exception"
+    ],
+    "related": [
+      "js-function",
+      "js-const"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": "label { display: block; margin-top: 1rem; }",
+      "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\ntry {\n  JSON.parse(\"ugyldig JSON\");\n} catch (error) {\n  vis(\"Kunne ikke lese dataene.\");\n}"
+    },
+    "lesson": "#/javascript/advanced/js-async"
+  },
+  {
+    "id": "js-map",
+    "title": "map()",
+    "sortTitle": "map()",
+    "category": "javascript",
+    "type": "JavaScript-syntaks",
+    "displayCode": "map()",
+    "syntax": "const priser = [10, 20, 30];\nvis(priser.map(pris => pris * 2).join(\", \"));",
+    "short": "Lager et nytt array ved å omforme hver verdi.",
+    "explanation": "Bruk map når du vil produsere like mange nye verdier som du startet med.",
+    "when": "Bruk map når du vil produsere like mange nye verdier som du startet med..",
+    "mistakes": "Bruk forEach eller en løkke hvis målet bare er sideeffekter og du ikke trenger det nye arrayet.",
+    "aliases": [
+      "map array omforme",
+      "map()"
+    ],
+    "keywords": [
+      "map",
+      "array",
+      "omforme"
+    ],
+    "related": [
+      "js-function",
+      "js-const"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": "label { display: block; margin-top: 1rem; }",
+      "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst priser = [10, 20, 30];\nvis(priser.map(pris => pris * 2).join(\", \"));"
+    },
+    "lesson": "#/javascript/basic/js-types"
+  },
+  {
+    "id": "js-filter",
+    "title": "filter()",
+    "sortTitle": "filter()",
+    "category": "javascript",
+    "type": "JavaScript-syntaks",
+    "displayCode": "filter()",
+    "syntax": "const priser = [10, 20, 30];\nvis(priser.filter(pris => pris <= 20).join(\", \"));",
+    "short": "Lager et nytt array med verdier som passer en betingelse.",
+    "explanation": "Bruk filter for søk, utvalg eller for å fjerne et element fra en datamodell.",
+    "when": "Bruk filter for søk, utvalg eller for å fjerne et element fra en datamodell..",
+    "mistakes": "Filter endrer ikke originalarrayet. Bruk returverdien.",
+    "aliases": [
+      "filter filtrere array søk",
+      "filter()"
+    ],
+    "keywords": [
+      "filter",
+      "filtrere",
+      "array",
+      "søk"
+    ],
+    "related": [
+      "js-function",
+      "js-const"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": "label { display: block; margin-top: 1rem; }",
+      "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst priser = [10, 20, 30];\nvis(priser.filter(pris => pris <= 20).join(\", \"));"
+    },
+    "lesson": "#/javascript/basic/js-types"
+  },
+  {
+    "id": "js-import-export",
+    "title": "import og export",
+    "sortTitle": "import og export",
+    "category": "javascript",
+    "type": "JavaScript-syntaks",
+    "displayCode": "import og export",
+    "syntax": "export function dobbel(tall) { return tall * 2; }\n// I en annen fil: import { dobbel } from \"./regning.js\";\nvis(dobbel(4));",
+    "short": "Deler kode mellom ES-moduler.",
+    "explanation": "Bruk export i filen som eier funksjonen, og import i filen som trenger den. Relative filstier begynner med ./ eller ../.",
+    "when": "Bruk export i filen som eier funksjonen, og import i filen som trenger den.",
+    "mistakes": "Moduler lastes med type=\"module\". Eksterne filer er sperret i dette verkstedet.",
+    "aliases": [
+      "import export moduler filer",
+      "import og export"
+    ],
+    "keywords": [
+      "import",
+      "export",
+      "moduler",
+      "filer"
+    ],
+    "related": [
+      "js-function",
+      "js-const"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": "label { display: block; margin-top: 1rem; }",
+      "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nexport function dobbel(tall) { return tall * 2; }\n// I en annen fil: import { dobbel } from \"./regning.js\";\nvis(dobbel(4));"
+    },
+    "lesson": "#/javascript/basic/js-types"
+  },
+  {
+    "id": "dom-query-all",
+    "title": "querySelectorAll()",
+    "sortTitle": "querySelectorAll()",
+    "category": "dom",
+    "type": "DOM / Web API",
+    "displayCode": "querySelectorAll()",
+    "syntax": "const punkter = document.querySelectorAll(\"li\");\npunkter.forEach(punkt => punkt.classList.add(\"featured\"));\ndocument.querySelector(\"#resultat\").textContent = `${punkter.length} treff`;",
+    "short": "Finner alle elementer som passer en CSS-selektor.",
+    "explanation": "Bruk forEach eller for...of på den returnerte NodeList-en. Listen er statisk og oppdateres ikke automatisk når DOM endres.",
+    "when": "Bruk forEach eller for...of på den returnerte NodeList-en.",
+    "mistakes": "QuerySelector gir ett element eller null; querySelectorAll gir en samling, også når den er tom.",
+    "aliases": [
+      "querySelectorAll query selector alle elementer",
+      "querySelectorAll()"
+    ],
+    "keywords": [
+      "querySelectorAll",
+      "query",
+      "selector",
+      "alle",
+      "elementer"
+    ],
+    "related": [
+      "dom",
+      "dom-queryselector",
+      "dom-event"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": ".featured { border: 2px solid #174f42; padding: .5rem; } label { display: block; margin-top: 1rem; }",
+      "js": "const punkter = document.querySelectorAll(\"li\");\npunkter.forEach(punkt => punkt.classList.add(\"featured\"));\ndocument.querySelector(\"#resultat\").textContent = `${punkter.length} treff`;"
+    },
+    "lesson": "#/javascript/intermediate/js-dom-list"
+  },
+  {
+    "id": "dom-by-id",
+    "title": "getElementById()",
+    "sortTitle": "getElementById()",
+    "category": "dom",
+    "type": "DOM / Web API",
+    "displayCode": "getElementById()",
+    "syntax": "const resultat = document.getElementById(\"resultat\");\nresultat.textContent = \"Funnet med id\";",
+    "short": "Finner ett element med en bestemt id.",
+    "explanation": "Bruk metoden på document med selve id-verdien. Den returnerer null hvis id-en ikke finnes.",
+    "when": "Bruk metoden på document med selve id-verdien.",
+    "mistakes": "Ikke ta med # foran id-en i denne metoden.",
+    "aliases": [
+      "getElementById finn id",
+      "getElementById()"
+    ],
+    "keywords": [
+      "getElementById",
+      "finn",
+      "id"
+    ],
+    "related": [
+      "dom",
+      "dom-queryselector",
+      "dom-event"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": ".featured { border: 2px solid #174f42; padding: .5rem; } label { display: block; margin-top: 1rem; }",
+      "js": "const resultat = document.getElementById(\"resultat\");\nresultat.textContent = \"Funnet med id\";"
+    },
+    "lesson": "#/javascript/intermediate/js-dom-list"
+  },
+  {
+    "id": "dom-innerhtml",
+    "title": "innerHTML",
+    "sortTitle": "innerHTML",
+    "category": "dom",
+    "type": "DOM / Web API",
+    "displayCode": "innerHTML",
+    "syntax": "document.querySelector(\"#resultat\").innerHTML = \"<strong>Fast, betrodd eksempeltekst</strong>\";",
+    "short": "Leser eller setter innhold som HTML.",
+    "explanation": "Bruk bare innerHTML med innhold du kontrollerer eller som er riktig sanitisert. TextContent er et bedre valg for ren tekst fra brukeren.",
+    "when": "Bruk bare innerHTML med innhold du kontrollerer eller som er riktig sanitisert.",
+    "mistakes": "Ubetrodd HTML kan gi XSS. Ikke sett inn inputverdier direkte med innerHTML.",
+    "aliases": [
+      "innerHTML textContent html tekst sikkerhet",
+      "innerHTML"
+    ],
+    "keywords": [
+      "innerHTML",
+      "textContent",
+      "html",
+      "tekst",
+      "sikkerhet"
+    ],
+    "related": [
+      "dom",
+      "dom-queryselector",
+      "dom-event"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": ".featured { border: 2px solid #174f42; padding: .5rem; } label { display: block; margin-top: 1rem; }",
+      "js": "document.querySelector(\"#resultat\").innerHTML = \"<strong>Fast, betrodd eksempeltekst</strong>\";"
+    },
+    "lesson": "#/javascript/intermediate/js-dom-list"
+  },
+  {
+    "id": "dom-style",
+    "title": "style",
+    "sortTitle": "style",
+    "category": "dom",
+    "type": "DOM / Web API",
+    "displayCode": "style",
+    "syntax": "document.querySelector(\"#resultat\").style.backgroundColor = \"#e9f0e9\";",
+    "short": "Gir tilgang til elementets inline-stiler.",
+    "explanation": "Bruk camelCase for CSS-egenskaper i JavaScript, for eksempel backgroundColor. ClassList er ofte ryddigere for flere stilendringer.",
+    "when": "Bruk camelCase for CSS-egenskaper i JavaScript, for eksempel backgroundColor.",
+    "mistakes": "Style viser ikke automatisk den beregnede stilen fra alle stilark.",
+    "aliases": [
+      "style endre stil javascript farge",
+      "style"
+    ],
+    "keywords": [
+      "style",
+      "endre",
+      "stil",
+      "javascript",
+      "farge"
+    ],
+    "related": [
+      "dom",
+      "dom-queryselector",
+      "dom-event"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": ".featured { border: 2px solid #174f42; padding: .5rem; } label { display: block; margin-top: 1rem; }",
+      "js": "document.querySelector(\"#resultat\").style.backgroundColor = \"#e9f0e9\";"
+    },
+    "lesson": "#/javascript/intermediate/js-dom-list"
+  },
+  {
+    "id": "dom-create",
+    "title": "createElement()",
+    "sortTitle": "createElement()",
+    "category": "dom",
+    "type": "DOM / Web API",
+    "displayCode": "createElement()",
+    "syntax": "const punkt = document.createElement(\"li\");\npunkt.textContent = \"JavaScript\";\ndocument.querySelector(\"ul\").append(punkt);",
+    "short": "Oppretter et nytt element som ennå ikke ligger i dokumentet.",
+    "explanation": "Bruk createElement, fyll textContent og legg elementet inn med append.",
+    "when": "Bruk createElement, fyll textContent og legg elementet inn med append..",
+    "mistakes": "Opprettelse alene gjør ikke elementet synlig.",
+    "aliases": [
+      "createElement lage element",
+      "createElement()"
+    ],
+    "keywords": [
+      "createElement",
+      "lage",
+      "element"
+    ],
+    "related": [
+      "dom",
+      "dom-queryselector",
+      "dom-event"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": ".featured { border: 2px solid #174f42; padding: .5rem; } label { display: block; margin-top: 1rem; }",
+      "js": "const punkt = document.createElement(\"li\");\npunkt.textContent = \"JavaScript\";\ndocument.querySelector(\"ul\").append(punkt);"
+    },
+    "lesson": "#/javascript/intermediate/js-dom-list"
+  },
+  {
+    "id": "dom-append",
+    "title": "append()",
+    "sortTitle": "append()",
+    "category": "dom",
+    "type": "DOM / Web API",
+    "displayCode": "append()",
+    "syntax": "document.querySelector(\"#resultat\").append(\" En ekstra tekst.\");",
+    "short": "Legger noder eller tekst sist inni et element.",
+    "explanation": "Bruk append når du bygger innhold fra data. En eksisterende node flyttes hvis den allerede finnes et annet sted.",
+    "when": "Bruk append når du bygger innhold fra data.",
+    "mistakes": "Append kopierer ikke en eksisterende node.",
+    "aliases": [
+      "append legg til dom",
+      "append()"
+    ],
+    "keywords": [
+      "append",
+      "legg",
+      "til",
+      "dom"
+    ],
+    "related": [
+      "dom",
+      "dom-queryselector",
+      "dom-event"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": ".featured { border: 2px solid #174f42; padding: .5rem; } label { display: block; margin-top: 1rem; }",
+      "js": "document.querySelector(\"#resultat\").append(\" En ekstra tekst.\");"
+    },
+    "lesson": "#/javascript/intermediate/js-dom-list"
+  },
+  {
+    "id": "dom-remove",
+    "title": "remove()",
+    "sortTitle": "remove()",
+    "category": "dom",
+    "type": "DOM / Web API",
+    "displayCode": "remove()",
+    "syntax": "document.querySelector(\"button\").addEventListener(\"click\", () => { document.querySelector(\"li\")?.remove(); });",
+    "short": "Fjerner elementet fra dokumentet.",
+    "explanation": "Bruk remove når et element ikke lenger skal finnes i visningen. Sørg for logisk fokus hvis den fokuserte kontrollen fjernes.",
+    "when": "Bruk remove når et element ikke lenger skal finnes i visningen.",
+    "mistakes": "En variabel kan fortsatt peke til den fjernede noden.",
+    "aliases": [
+      "remove fjern element",
+      "remove()"
+    ],
+    "keywords": [
+      "remove",
+      "fjern",
+      "element"
+    ],
+    "related": [
+      "dom",
+      "dom-queryselector",
+      "dom-event"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": ".featured { border: 2px solid #174f42; padding: .5rem; } label { display: block; margin-top: 1rem; }",
+      "js": "document.querySelector(\"button\").addEventListener(\"click\", () => { document.querySelector(\"li\")?.remove(); });"
+    },
+    "lesson": "#/javascript/intermediate/js-dom-list"
+  },
+  {
+    "id": "dom-click",
+    "title": "click",
+    "sortTitle": "click",
+    "category": "dom",
+    "type": "DOM / Web API",
+    "displayCode": "click",
+    "syntax": "document.querySelector(\"button\").addEventListener(\"click\", () => { document.querySelector(\"#resultat\").textContent = \"Aktivert\"; });",
+    "short": "En hendelse når en kontroll aktiveres.",
+    "explanation": "Lytt på click med en ekte button for støtte for mus og tastatur.",
+    "when": "Lytt på click med en ekte button for støtte for mus og tastatur..",
+    "mistakes": "Ikke legg nødvendig funksjonalitet bare i mousedown; tastatur aktiverer click.",
+    "aliases": [
+      "click klikk knapp",
+      "click"
+    ],
+    "keywords": [
+      "click",
+      "klikk",
+      "knapp"
+    ],
+    "related": [
+      "dom",
+      "dom-queryselector",
+      "dom-event"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": ".featured { border: 2px solid #174f42; padding: .5rem; } label { display: block; margin-top: 1rem; }",
+      "js": "document.querySelector(\"button\").addEventListener(\"click\", () => { document.querySelector(\"#resultat\").textContent = \"Aktivert\"; });"
+    },
+    "lesson": "#/javascript/intermediate/js-dom-list"
+  },
+  {
+    "id": "dom-input",
+    "title": "input-hendelsen",
+    "sortTitle": "input-hendelsen",
+    "category": "dom",
+    "type": "DOM / Web API",
+    "displayCode": "input-hendelsen",
+    "syntax": "document.querySelector(\"input\").addEventListener(\"input\", event => { document.querySelector(\"#resultat\").textContent = event.target.value; });",
+    "short": "Varsler når brukeren endrer verdien i en kontroll.",
+    "explanation": "Bruk input for umiddelbar tilbakemelding mens brukeren skriver.",
+    "when": "Bruk input for umiddelbar tilbakemelding mens brukeren skriver..",
+    "mistakes": "Programmatisk tilordning til value sender ikke automatisk en input-hendelse.",
+    "aliases": [
+      "input skrive verdi event",
+      "input-hendelsen"
+    ],
+    "keywords": [
+      "input",
+      "skrive",
+      "verdi",
+      "event"
+    ],
+    "related": [
+      "dom",
+      "dom-queryselector",
+      "dom-event"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": ".featured { border: 2px solid #174f42; padding: .5rem; } label { display: block; margin-top: 1rem; }",
+      "js": "document.querySelector(\"input\").addEventListener(\"input\", event => { document.querySelector(\"#resultat\").textContent = event.target.value; });"
+    },
+    "lesson": "#/javascript/intermediate/js-dom-list"
+  },
+  {
+    "id": "dom-change",
+    "title": "change",
+    "sortTitle": "change",
+    "category": "dom",
+    "type": "DOM / Web API",
+    "displayCode": "change",
+    "syntax": "document.querySelector(\"input\").addEventListener(\"change\", event => { document.querySelector(\"#resultat\").textContent = \"Bekreftet: \" + event.target.value; });",
+    "short": "Varsler når en verdi bekreftes eller et valg endres.",
+    "explanation": "Bruk change på select og checkbox eller når tekstendringer skal behandles ved bekreftelse.",
+    "when": "Bruk change på select og checkbox eller når tekstendringer skal behandles ved bekreftelse..",
+    "mistakes": "På tekstfelt kommer change vanligvis senere enn input, ofte når feltet mister fokus.",
+    "aliases": [
+      "change endring felt",
+      "change"
+    ],
+    "keywords": [
+      "change",
+      "endring",
+      "felt"
+    ],
+    "related": [
+      "dom",
+      "dom-queryselector",
+      "dom-event"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": ".featured { border: 2px solid #174f42; padding: .5rem; } label { display: block; margin-top: 1rem; }",
+      "js": "document.querySelector(\"input\").addEventListener(\"change\", event => { document.querySelector(\"#resultat\").textContent = \"Bekreftet: \" + event.target.value; });"
+    },
+    "lesson": "#/javascript/intermediate/js-dom-list"
+  },
+  {
+    "id": "dom-submit",
+    "title": "submit",
+    "sortTitle": "submit",
+    "category": "dom",
+    "type": "DOM / Web API",
+    "displayCode": "submit",
+    "syntax": "document.querySelector(\"form\").addEventListener(\"submit\", event => { event.preventDefault(); document.querySelector(\"#resultat\").textContent = \"Behandlet lokalt\"; });",
+    "short": "Hendelsen for innsending av et skjema.",
+    "explanation": "Lytt på form-elementet, ikke bare knappen. Da dekker du også Enter i et felt.",
+    "when": "Lytt på form-elementet, ikke bare knappen.",
+    "mistakes": "Ugyldig native skjemavalidering kan hindre submit-hendelsen.",
+    "aliases": [
+      "submit sende skjema",
+      "submit"
+    ],
+    "keywords": [
+      "submit",
+      "sende",
+      "skjema"
+    ],
+    "related": [
+      "dom",
+      "dom-queryselector",
+      "dom-event"
+    ],
+    "files": {
+      "html": "<h1>Skjemademo</h1><form><label for=\"navn\">Navn</label><input id=\"navn\" name=\"navn\" value=\"Ada\"><button>Send</button></form><p id=\"resultat\" role=\"status\"></p>",
+      "css": ".featured { border: 2px solid #174f42; padding: .5rem; } label { display: block; margin-top: 1rem; }",
+      "js": "document.querySelector(\"form\").addEventListener(\"submit\", event => { event.preventDefault(); document.querySelector(\"#resultat\").textContent = \"Behandlet lokalt\"; });"
+    },
+    "lesson": "#/javascript/intermediate/js-dom-list"
+  },
+  {
+    "id": "dom-prevent",
+    "title": "preventDefault()",
+    "sortTitle": "preventDefault()",
+    "category": "dom",
+    "type": "DOM / Web API",
+    "displayCode": "preventDefault()",
+    "syntax": "document.querySelector(\"form\").addEventListener(\"submit\", event => { event.preventDefault(); document.querySelector(\"#resultat\").textContent = \"Ingen navigasjon ved innsending.\"; });",
+    "short": "Hindrer standardhandlingen for en hendelse som kan avbrytes.",
+    "explanation": "Bruk preventDefault i submit når JavaScript skal behandle skjemaet lokalt.",
+    "when": "Bruk preventDefault i submit når JavaScript skal behandle skjemaet lokalt..",
+    "mistakes": "Den stopper ikke automatisk event-bubbling; det er en annen mekanisme.",
+    "aliases": [
+      "preventDefault standardhandling avbryt",
+      "preventDefault()"
+    ],
+    "keywords": [
+      "preventDefault",
+      "standardhandling",
+      "avbryt"
+    ],
+    "related": [
+      "dom",
+      "dom-queryselector",
+      "dom-event"
+    ],
+    "files": {
+      "html": "<h1>Skjemademo</h1><form><label for=\"navn\">Navn</label><input id=\"navn\" name=\"navn\" value=\"Ada\"><button>Send</button></form><p id=\"resultat\" role=\"status\"></p>",
+      "css": ".featured { border: 2px solid #174f42; padding: .5rem; } label { display: block; margin-top: 1rem; }",
+      "js": "document.querySelector(\"form\").addEventListener(\"submit\", event => { event.preventDefault(); document.querySelector(\"#resultat\").textContent = \"Ingen navigasjon ved innsending.\"; });"
+    },
+    "lesson": "#/javascript/intermediate/js-dom-list"
+  },
+  {
+    "id": "dom-dataset",
+    "title": "dataset",
+    "sortTitle": "dataset",
+    "category": "dom",
+    "type": "DOM / Web API",
+    "displayCode": "dataset",
+    "syntax": "const knapp = document.querySelector(\"button\");\nknapp.dataset.filmId = \"42\";\ndocument.querySelector(\"#resultat\").textContent = knapp.dataset.filmId;",
+    "short": "Tilgang til data-*-attributter som tekstverdier.",
+    "explanation": "Les data-film-id som element.dataset.filmId. Konverter eksplisitt når du trenger tall.",
+    "when": "Les data-film-id som element.dataset.filmId.",
+    "mistakes": "Dataset-verdier er strenger selv om attributtet ser ut som et tall.",
+    "aliases": [
+      "dataset data attributt",
+      "dataset"
+    ],
+    "keywords": [
+      "dataset",
+      "data",
+      "attributt"
+    ],
+    "related": [
+      "dom",
+      "dom-queryselector",
+      "dom-event"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": ".featured { border: 2px solid #174f42; padding: .5rem; } label { display: block; margin-top: 1rem; }",
+      "js": "const knapp = document.querySelector(\"button\");\nknapp.dataset.filmId = \"42\";\ndocument.querySelector(\"#resultat\").textContent = knapp.dataset.filmId;"
+    },
+    "lesson": "#/javascript/intermediate/js-dom-list"
+  },
+  {
+    "id": "dom-focus",
+    "title": "focus()",
+    "sortTitle": "focus()",
+    "category": "dom",
+    "type": "DOM / Web API",
+    "displayCode": "focus()",
+    "syntax": "document.querySelector(\"button\").addEventListener(\"click\", () => document.querySelector(\"input\").focus());",
+    "short": "Flytter tastaturfokus til et element.",
+    "explanation": "Bruk focus etter lukking av dialog eller fjerning av fokusert innhold når brukeren ellers mister plasseringen.",
+    "when": "Bruk focus etter lukking av dialog eller fjerning av fokusert innhold når brukeren ellers mister plasseringen..",
+    "mistakes": "Ikke flytt fokus på hver liten oppdatering eller tastetrykk.",
+    "aliases": [
+      "focus fokus tastatur flytte",
+      "focus()"
+    ],
+    "keywords": [
+      "focus",
+      "fokus",
+      "tastatur",
+      "flytte"
+    ],
+    "related": [
+      "dom",
+      "dom-queryselector",
+      "dom-event"
+    ],
+    "files": {
+      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "css": ".featured { border: 2px solid #174f42; padding: .5rem; } label { display: block; margin-top: 1rem; }",
+      "js": "document.querySelector(\"button\").addEventListener(\"click\", () => document.querySelector(\"input\").focus());"
+    },
+    "lesson": "#/javascript/intermediate/js-dom-list"
+  },
+  {
+    "id": "dom-formdata",
+    "title": "FormData",
+    "sortTitle": "FormData",
+    "category": "dom",
+    "type": "DOM / Web API",
+    "displayCode": "FormData",
+    "syntax": "document.querySelector(\"form\").addEventListener(\"submit\", event => { event.preventDefault(); const data = new FormData(event.currentTarget); document.querySelector(\"#resultat\").textContent = data.get(\"navn\"); });",
+    "short": "Leser navngitte verdier fra et skjema.",
+    "explanation": "Lag new FormData(form) og bruk get med feltets name. Verdier kan være tekst eller filer.",
+    "when": "Lag new FormData(form) og bruk get med feltets name.",
+    "mistakes": "Et input uten name blir ikke med. Deaktiverte felt utelates også.",
+    "aliases": [
+      "FormData skjema name verdi",
+      "FormData"
+    ],
+    "keywords": [
+      "FormData",
+      "skjema",
+      "name",
+      "verdi"
+    ],
+    "related": [
+      "dom",
+      "dom-queryselector",
+      "dom-event"
+    ],
+    "files": {
+      "html": "<h1>Skjemademo</h1><form><label for=\"navn\">Navn</label><input id=\"navn\" name=\"navn\" value=\"Ada\"><button>Send</button></form><p id=\"resultat\" role=\"status\"></p>",
+      "css": ".featured { border: 2px solid #174f42; padding: .5rem; } label { display: block; margin-top: 1rem; }",
+      "js": "document.querySelector(\"form\").addEventListener(\"submit\", event => { event.preventDefault(); const data = new FormData(event.currentTarget); document.querySelector(\"#resultat\").textContent = data.get(\"navn\"); });"
+    },
+    "lesson": "#/javascript/intermediate/js-dom-list"
+  },
+  {
+    "id": "a11y-aria-label",
+    "title": "aria-label",
+    "sortTitle": "aria-label",
+    "category": "accessibility",
+    "type": "Tilgjengelighet",
+    "displayCode": "aria-label",
+    "syntax": "<button aria-label=\"Lukk\">×</button>",
+    "short": "Et tilgjengelig navn når synlig tekst ikke gir et egnet navn.",
+    "explanation": "Bruk først synlig tekst eller label. Aria-label kan være nyttig for en knapp med bare et symbol.",
+    "when": "Bruk først synlig tekst eller label.",
+    "mistakes": "Navnet bør inneholde eventuell synlig etikett, slik at talestyring fungerer.",
+    "aliases": [
+      "tilgjengelig navn skjermleser label",
+      "aria-label"
+    ],
+    "keywords": [
+      "tilgjengelig",
+      "navn",
+      "skjermleser",
+      "label"
+    ],
+    "related": [
+      "html-label",
+      "html-button",
+      "html-dialog"
+    ],
+    "files": {
+      "html": "<button aria-label=\"Lukk\">×</button>",
+      "css": "",
+      "js": ""
+    },
+    "lesson": "#/html/advanced/html-names"
+  },
+  {
+    "id": "a11y-aria-describedby",
+    "title": "aria-describedby",
+    "sortTitle": "aria-describedby",
+    "category": "accessibility",
+    "type": "Tilgjengelighet",
+    "displayCode": "aria-describedby",
+    "syntax": "<label for=\"kode\">Kode</label><input id=\"kode\" aria-describedby=\"hjelp\"><p id=\"hjelp\">Skriv fire siffer.</p>",
+    "short": "Knytter en kontroll til en ekstra beskrivelse.",
+    "explanation": "Bruk id-en til en hjelpetekst for å gi mer informasjon enn det korte navnet.",
+    "when": "Bruk id-en til en hjelpetekst for å gi mer informasjon enn det korte navnet..",
+    "mistakes": "Id-en må finnes. Attributtet gir en beskrivelse, ikke en erstatning for label.",
+    "aliases": [
+      "hjelpetekst beskrivelse aria",
+      "aria-describedby"
+    ],
+    "keywords": [
+      "hjelpetekst",
+      "beskrivelse",
+      "aria"
+    ],
+    "related": [
+      "html-label",
+      "html-button",
+      "html-dialog"
+    ],
+    "files": {
+      "html": "<label for=\"kode\">Kode</label><input id=\"kode\" aria-describedby=\"hjelp\"><p id=\"hjelp\">Skriv fire siffer.</p>",
+      "css": "",
+      "js": ""
+    },
+    "lesson": "#/html/advanced/html-names"
+  },
+  {
+    "id": "a11y-aria-expanded",
+    "title": "aria-expanded",
+    "sortTitle": "aria-expanded",
+    "category": "accessibility",
+    "type": "Tilgjengelighet",
+    "displayCode": "aria-expanded",
+    "syntax": "<button aria-expanded=\"false\" aria-controls=\"detaljer\">Vis detaljer</button><p id=\"detaljer\" hidden>Her er detaljene.</p>",
+    "short": "Forteller om et styrt område er utvidet.",
+    "explanation": "Bruk true eller false på knappen og oppdater verdien sammen med den synlige tilstanden.",
+    "when": "Bruk true eller false på knappen og oppdater verdien sammen med den synlige tilstanden..",
+    "mistakes": "Attributtet åpner ikke innhold på egen hånd. JavaScript må utføre handlingen.",
+    "aliases": [
+      "åpen lukket utvidet aria",
+      "aria-expanded"
+    ],
+    "keywords": [
+      "åpen",
+      "lukket",
+      "utvidet",
+      "aria"
+    ],
+    "related": [
+      "html-label",
+      "html-button",
+      "html-dialog"
+    ],
+    "files": {
+      "html": "<button aria-expanded=\"false\" aria-controls=\"detaljer\">Vis detaljer</button><p id=\"detaljer\" hidden>Her er detaljene.</p>",
+      "css": "",
+      "js": "document.querySelector(\"button\").onclick = event => { const p = document.querySelector(\"p\"); p.hidden = !p.hidden; event.currentTarget.setAttribute(\"aria-expanded\", String(!p.hidden)); };"
+    },
+    "lesson": "#/html/advanced/html-names"
+  },
+  {
+    "id": "a11y-aria-live",
+    "title": "aria-live og status",
+    "sortTitle": "aria-live og status",
+    "category": "accessibility",
+    "type": "Tilgjengelighet",
+    "displayCode": "aria-live og status",
+    "syntax": "<button>Lagre</button><p role=\"status\" id=\"melding\"></p>",
+    "short": "Lar viktige tekstendringer annonseres av hjelpemidler.",
+    "explanation": "Bruk role=\"status\" for en høflig statusmelding som kan leses når skjermleseren er klar.",
+    "when": "Bruk role=\"status\" for en høflig statusmelding som kan leses når skjermleseren er klar..",
+    "mistakes": "Ikke annonser hver kodeendring eller hvert tegn i et søk unødvendig.",
+    "aliases": [
+      "status aria live dynamisk melding",
+      "aria-live og status"
+    ],
+    "keywords": [
+      "status",
+      "aria",
+      "live",
+      "dynamisk",
+      "melding"
+    ],
+    "related": [
+      "html-label",
+      "html-button",
+      "html-dialog"
+    ],
+    "files": {
+      "html": "<button>Lagre</button><p role=\"status\" id=\"melding\"></p>",
+      "css": "",
+      "js": "document.querySelector(\"button\").onclick = () => document.querySelector(\"#melding\").textContent = \"Endringen er lagret i dette eksempelet.\";"
+    },
+    "lesson": "#/html/advanced/html-names"
+  },
+  {
+    "id": "a11y-keyboard",
+    "title": "Tastaturnavigasjon",
+    "sortTitle": "Tastaturnavigasjon",
+    "category": "accessibility",
+    "type": "Tilgjengelighet",
+    "displayCode": "Tastaturnavigasjon",
+    "syntax": "<a href=\"#innhold\">Hopp til innhold</a><main id=\"innhold\" tabindex=\"-1\"><h1>Hovedinnhold</h1><button>En handling</button></main>",
+    "short": "Bruk av nettsiden uten mus.",
+    "explanation": "Bruk native knapper, lenker og felt som kan nås med Tab. Sørg for synlig fokus og en logisk rekkefølge.",
+    "when": "Bruk native knapper, lenker og felt som kan nås med Tab.",
+    "mistakes": "Ikke bruk positiv tabindex for å reparere en ulogisk DOM-rekkefølge.",
+    "aliases": [
+      "tastatur keyboard tab fokus",
+      "Tastaturnavigasjon"
+    ],
+    "keywords": [
+      "tastatur",
+      "keyboard",
+      "tab",
+      "fokus"
+    ],
+    "related": [
+      "html-label",
+      "html-button",
+      "html-dialog"
+    ],
+    "files": {
+      "html": "<a href=\"#innhold\">Hopp til innhold</a><main id=\"innhold\" tabindex=\"-1\"><h1>Hovedinnhold</h1><button>En handling</button></main>",
+      "css": "",
+      "js": ""
+    },
+    "lesson": "#/html/advanced/html-names"
+  },
+  {
+    "id": "a11y-contrast",
+    "title": "Kontrast",
+    "sortTitle": "Kontrast",
+    "category": "accessibility",
+    "type": "Tilgjengelighet",
+    "displayCode": "Kontrast",
+    "syntax": ".melding { color: #174f42; background: #e9f0e9; padding: 1rem; }",
+    "short": "Forskjellen i lyshet mellom tekst og bakgrunn.",
+    "explanation": "WCAG AA krever normalt minst 4,5:1 for vanlig tekst og 3:1 for stor tekst. Kontroller fargepar med et kontrastverktøy.",
+    "when": "WCAG AA krever normalt minst 4,5:1 for vanlig tekst og 3:1 for stor tekst.",
+    "mistakes": "Farge alene skal ikke være eneste signal om feil eller tilstand.",
+    "aliases": [
+      "kontrast farge wcag lesbarhet",
+      "Kontrast"
+    ],
+    "keywords": [
+      "kontrast",
+      "farge",
+      "wcag",
+      "lesbarhet"
+    ],
+    "related": [
+      "html-label",
+      "html-button",
+      "html-dialog"
+    ],
+    "files": {
+      "html": "<p class=\"melding\">Lagret: Oppgaven er tatt vare på.</p>",
+      "css": ".melding { color: #174f42; background: #e9f0e9; padding: 1rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/advanced/html-names"
+  },
+  {
+    "id": "a11y-reduced-motion",
+    "title": "Redusert bevegelse",
+    "sortTitle": "Redusert bevegelse",
+    "category": "accessibility",
+    "type": "Tilgjengelighet",
+    "displayCode": "Redusert bevegelse",
+    "syntax": "button { transition: transform 200ms; } button:hover { transform: translateY(-2px); } @media (prefers-reduced-motion: reduce) { button { transition: none; } button:hover { transform: none; } }",
+    "short": "Respekt for brukerens ønske om mindre animasjon.",
+    "explanation": "Bruk prefers-reduced-motion: reduce for å fjerne eller forenkle bevegelse. Innholdet må fortsatt være forståelig.",
+    "when": "Bruk prefers-reduced-motion: reduce for å fjerne eller forenkle bevegelse.",
+    "mistakes": "Ikke gjør en animasjon nødvendig for å forstå resultatet.",
+    "aliases": [
+      "prefers-reduced-motion animasjon bevegelse",
+      "Redusert bevegelse"
+    ],
+    "keywords": [
+      "prefers-reduced-motion",
+      "animasjon",
+      "bevegelse"
+    ],
+    "related": [
+      "html-label",
+      "html-button",
+      "html-dialog"
+    ],
+    "files": {
+      "html": "<button>En rolig knapp</button>",
+      "css": "button { transition: transform 200ms; } button:hover { transform: translateY(-2px); } @media (prefers-reduced-motion: reduce) { button { transition: none; } button:hover { transform: none; } }",
+      "js": ""
+    },
+    "lesson": "#/html/advanced/html-names"
+  },
+  {
+    "id": "a11y-semantic",
+    "title": "Semantisk HTML",
+    "sortTitle": "Semantisk HTML",
+    "category": "accessibility",
+    "type": "Tilgjengelighet",
+    "displayCode": "Semantisk HTML",
+    "syntax": "<main><h1>En tydelig side</h1><section><h2>Tips</h2><p>Bruk elementet som passer innholdet.</p></section></main>",
+    "short": "Elementer som beskriver innholdets betydning.",
+    "explanation": "Bruk main, nav, overskrifter og knapper til rollene de er laget for. Det gir hjelpemidler et bedre utgangspunkt.",
+    "when": "Bruk main, nav, overskrifter og knapper til rollene de er laget for.",
+    "mistakes": "ARIA reparerer ikke automatisk feil elementvalg og manglende tastaturoppførsel.",
+    "aliases": [
+      "semantikk universell utforming struktur",
+      "Semantisk HTML"
+    ],
+    "keywords": [
+      "semantikk",
+      "universell",
+      "utforming",
+      "struktur"
+    ],
+    "related": [
+      "html-label",
+      "html-button",
+      "html-dialog"
+    ],
+    "files": {
+      "html": "<main><h1>En tydelig side</h1><section><h2>Tips</h2><p>Bruk elementet som passer innholdet.</p></section></main>",
+      "css": "",
+      "js": ""
+    },
+    "lesson": "#/html/advanced/html-names"
+  },
+  {
+    "id": "a11y-focus-order",
+    "title": "Fokusrekkefølge",
+    "sortTitle": "Fokusrekkefølge",
+    "category": "accessibility",
+    "type": "Tilgjengelighet",
+    "displayCode": "Fokusrekkefølge",
+    "syntax": "<label for=\"navn\">Navn</label><input id=\"navn\"><button>Lagre</button><a href=\"#tips\">Les tips</a><p id=\"tips\">Et tips.</p>",
+    "short": "Rekkefølgen tastaturbrukeren møter kontroller i.",
+    "explanation": "La DOM-rekkefølgen følge leserekkefølgen. Returner fokus til åpneren når en dialog lukkes.",
+    "when": "La DOM-rekkefølgen følge leserekkefølgen.",
+    "mistakes": "Visuell omplassering med CSS endrer ikke nødvendigvis fokusrekkefølgen.",
+    "aliases": [
+      "focus order fokus rekkefølge tab",
+      "Fokusrekkefølge"
+    ],
+    "keywords": [
+      "focus",
+      "order",
+      "fokus",
+      "rekkefølge",
+      "tab"
+    ],
+    "related": [
+      "html-label",
+      "html-button",
+      "html-dialog"
+    ],
+    "files": {
+      "html": "<label for=\"navn\">Navn</label><input id=\"navn\"><button>Lagre</button><a href=\"#tips\">Les tips</a><p id=\"tips\">Et tips.</p>",
+      "css": "",
+      "js": ""
+    },
+    "lesson": "#/html/advanced/html-names"
+  }
+]

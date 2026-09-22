@@ -1,0 +1,811 @@
+[
+  {
+    "id": "html-element",
+    "title": "HTML-element",
+    "category": "html",
+    "type": "element",
+    "syntax": "<h2>En overskrift</h2>",
+    "short": "Et element gir en del av innholdet en bestemt betydning.",
+    "explanation": "En åpningstagg, innholdet og en avslutningstagg utgjør vanligvis et element. `<img>` har ingen avslutningstagg.",
+    "when": "Når du skal beskrive hva innholdet er.",
+    "mistakes": "Ikke bland taggen med hele elementet. Taggen er selve markøren, for eksempel <h2>.",
+    "keywords": [
+      "element",
+      "tag",
+      "tagg",
+      "byggestein"
+    ],
+    "aliases": [
+      "element tag tagg byggestein"
+    ],
+    "sortTitle": "HTML-element",
+    "displayCode": "<h2>En overskrift</h2>",
+    "english": "",
+    "related": [
+      "html-h2"
+    ],
+    "files": {
+      "html": "<h2>En overskrift</h2>",
+      "css": ".featured { background: #e9f0e9; border: 2px solid #174f42; padding: 1rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-h2",
+    "title": "h2: underoverskrift",
+    "category": "html",
+    "type": "tagg",
+    "syntax": "<h2>Filmer jeg liker</h2>",
+    "short": "h2 markerer en overskrift under sidens hovedoverskrift.",
+    "explanation": "`h1` til `h6` danner et hierarki. Velg nivå etter strukturen, og bruk CSS for størrelsen. CSS-selektoren `h2` treffer elementet; `.h2` treffer en klasse med navnet h2.",
+    "when": "Når du deler en side inn i hoveddeler under h1.",
+    "mistakes": "Ikke velg h2 bare fordi skriftstørrelsen ser riktig ut.",
+    "keywords": [
+      "h2",
+      "<h2>",
+      "overskrift",
+      "underoverskrift",
+      "heading"
+    ],
+    "aliases": [
+      "h2 <h2> overskrift underoverskrift heading"
+    ],
+    "sortTitle": "h2: underoverskrift",
+    "displayCode": "<h2>Filmer jeg liker</h2>",
+    "english": "",
+    "related": [
+      "css-type-selector"
+    ],
+    "files": {
+      "html": "<h2>Filmer jeg liker</h2>",
+      "css": ".featured { background: #e9f0e9; border: 2px solid #174f42; padding: 1rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-class",
+    "title": "class-attributtet",
+    "category": "html",
+    "type": "attributt",
+    "syntax": "<div class=\"card featured\">Viktig kort</div>",
+    "short": "class gir elementet ett eller flere navn som CSS og JavaScript kan bruke.",
+    "explanation": "Flere elementer kan dele en klasse. Ett element kan ha flere klasser, atskilt med mellomrom. CSS `.card` velger alle med `class=\"card\"`; `.card.featured` krever begge navn på samme element.",
+    "when": "Når flere elementer skal dele stil eller en bestemt tilstand.",
+    "mistakes": "Ikke skriv punktum i HTML-attributtet: class=\"card\", ikke class=\".card\".",
+    "keywords": [
+      "class",
+      "css",
+      "class",
+      "klasse",
+      "html",
+      "klasser",
+      "style",
+      "class"
+    ],
+    "aliases": [
+      "class css class klasse html klasser style class"
+    ],
+    "sortTitle": "class-attributtet",
+    "displayCode": "<div class=\"card featured\">Viktig kort</div>",
+    "english": "",
+    "related": [
+      "css-class-selector"
+    ],
+    "files": {
+      "html": "<div class=\"card featured\">Viktig kort</div>",
+      "css": ".featured { background: #e9f0e9; border: 2px solid #174f42; padding: 1rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "css-type-selector",
+    "title": "Elementselektor: h2",
+    "category": "css",
+    "type": "selektor",
+    "syntax": "h2 { color: #174f42; }",
+    "short": "En elementselektor velger alle elementer med et bestemt taggnavn.",
+    "explanation": "`h2` treffer `<h2>`, også når elementet ikke har en class. `.h2` treffer alle elementer med `class=\"h2\"`, også et avsnitt.",
+    "when": "Når en regel skal gjelde alle elementer av en bestemt type.",
+    "mistakes": "h2 og .h2 betyr forskjellige ting. Et punktum endrer hva du velger.",
+    "keywords": [
+      "h2",
+      "<h2>",
+      "element",
+      "selector",
+      "type",
+      "selector"
+    ],
+    "aliases": [
+      "h2 <h2> element selector type selector"
+    ],
+    "sortTitle": "Elementselektor: h2",
+    "displayCode": "h2",
+    "english": "",
+    "related": [
+      "css-class-selector"
+    ],
+    "files": {
+      "html": "<section class=\"card-grid\">\n  <article class=\"card\"><h2>Kort 1</h2></article>\n  <article class=\"card featured\"><h2>Kort 2</h2></article>\n  <div><article class=\"card\"><h2>Kort 3</h2></article></div>\n</section>",
+      "css": "h2 { color: #174f42; }",
+      "js": ""
+    },
+    "lesson": "#/css/intermediate/css-nested"
+  },
+  {
+    "id": "css-class-selector",
+    "title": "Class selector: .h2",
+    "category": "css",
+    "type": "selektor",
+    "syntax": ".h2 { color: #174f42; }",
+    "short": "Punktum velger en klasse. .h2 betyr et element med class=\"h2\".",
+    "explanation": "Eksempel: `<p class=\"h2\">Et avsnitt</p>` treffes av `.h2`, men ikke av `h2`. Klassen endrer ikke elementets semantikk. Bruk gjerne et beskrivende navn som `.section-title`.",
+    "when": "Når du vil style flere utvalgte elementer uten å endre alle av samme type.",
+    "mistakes": "Ikke forvent at .h2 treffer alle h2-elementer. Klassen må finnes i HTML.",
+    "keywords": [
+      "",
+      ".h2",
+      ".class",
+      "class",
+      "klasse",
+      "css",
+      "class",
+      "punktum",
+      "class",
+      "style",
+      "class"
+    ],
+    "aliases": [
+      " .h2 .class class klasse css class punktum class style class",
+      ".h2",
+      "class",
+      "klasse",
+      "css class",
+      "style class"
+    ],
+    "sortTitle": "Class selector: .h2",
+    "displayCode": ".h2",
+    "english": "",
+    "related": [
+      "html-class"
+    ],
+    "files": {
+      "html": "<h2>En h2 uten klasse</h2><p class=\"h2\">Et avsnitt med klassen h2</p>",
+      "css": ".h2 { color: #174f42; }",
+      "js": ""
+    },
+    "lesson": "#/css/intermediate/css-nested"
+  },
+  {
+    "id": "css-id-selector",
+    "title": "ID-selektor",
+    "category": "css",
+    "type": "selektor",
+    "syntax": "#menu { border: 2px solid #174f42; }",
+    "short": "Et nummertegn velger elementet med en bestemt id.",
+    "explanation": "`#menu` treffer `id=\"menu\"`. En id skal være unik i dokumentet. En class kan brukes mange steder. ID-selektorer har høyere spesifisitet enn klasseselektorer.",
+    "when": "Når du skal peke ut et unikt element. Klasser passer vanligvis bedre til gjenbrukbar styling.",
+    "mistakes": "Ikke gi flere elementer samme id. Ikke skriv # i HTML-attributtet.",
+    "keywords": [
+      "#id",
+      "id",
+      "identifikator",
+      "class",
+      "vs",
+      "id",
+      "unik"
+    ],
+    "aliases": [
+      "#id id identifikator class vs id unik"
+    ],
+    "sortTitle": "ID-selektor",
+    "displayCode": "#menu { border: 2px solid #174f42; }",
+    "english": "",
+    "related": [
+      "css-class-selector"
+    ],
+    "files": {
+      "html": "<nav id=\"menu\">Meny</nav>",
+      "css": "#menu { border: 2px solid #174f42; }",
+      "js": ""
+    },
+    "lesson": "#/css/intermediate/css-nested"
+  },
+  {
+    "id": "css-descendant",
+    "title": "Etterkommer: .a .b",
+    "category": "css",
+    "type": "selektor",
+    "syntax": ".card-grid .card { padding: 1rem; border: 2px solid #174f42; }",
+    "short": "Et mellomrom velger elementer som ligger et sted inni et annet element.",
+    "explanation": "`.card-grid .card` finner alle kort inne i gruppen, også på flere nivåer. `.card-grid > .card` finner bare direkte barn. `.card.featured` uten mellomrom krever begge klassene på samme element.",
+    "when": "Når du vil style kortene i én bestemt gruppe.",
+    "mistakes": "Et mellomrom betyr en relasjon mellom elementer, ikke to klasser på samme element.",
+    "keywords": [
+      "class",
+      "inni",
+      "class",
+      "kort",
+      "inni",
+      "gruppe",
+      "ett",
+      "kort",
+      "i",
+      "gruppe",
+      "descendant",
+      "selector",
+      "nested",
+      "selector",
+      "style",
+      "ett",
+      "kort",
+      "i",
+      "en",
+      "gruppe"
+    ],
+    "aliases": [
+      "class inni class kort inni gruppe ett kort i gruppe descendant selector nested selector style ett kort i en gruppe",
+      "class inni class",
+      "kort inni gruppe",
+      "ett kort i gruppe",
+      "style ett kort i en gruppe",
+      "descendant selector",
+      "class inni class",
+      "kort inni gruppe",
+      "ett kort i gruppe",
+      "style ett kort i en gruppe",
+      "descendant selector"
+    ],
+    "sortTitle": "Etterkommer: .a .b",
+    "displayCode": ".card-grid .card { padding: 1rem; border: 2px solid #174f42; }",
+    "english": "",
+    "related": [
+      "css-child"
+    ],
+    "files": {
+      "html": "<section class=\"card-grid\">\n  <article class=\"card\"><h2>Kort 1</h2></article>\n  <article class=\"card featured\"><h2>Kort 2</h2></article>\n  <div><article class=\"card\"><h2>Kort 3</h2></article></div>\n</section>",
+      "css": ".card-grid .card { padding: 1rem; border: 2px solid #174f42; }",
+      "js": ""
+    },
+    "lesson": "#/css/intermediate/css-nested"
+  },
+  {
+    "id": "css-child",
+    "title": "Direkte barn: .a > .b",
+    "category": "css",
+    "type": "selektor",
+    "syntax": ".card-grid > .card { border: 3px solid #174f42; }",
+    "short": "Større enn-tegnet velger bare direkte barn av et element.",
+    "explanation": "Kort 1 og kort 2 er direkte barn av gruppen. Kort 3 i eksempelet ligger inni en ekstra div og treffes bare av etterkommerselektoren med mellomrom.",
+    "when": "Når du vil begrense en regel til ett nivå i HTML-strukturen.",
+    "mistakes": "Ikke forveksle > med et mellomrom. Endret nesting kan endre hvilke elementer som treffes.",
+    "keywords": [
+      "child",
+      "selector",
+      "direkte",
+      "barn",
+      "class",
+      "inni",
+      "class",
+      "kort",
+      "inni",
+      "gruppe"
+    ],
+    "aliases": [
+      "child selector direkte barn class inni class kort inni gruppe",
+      "child selector",
+      "child selector"
+    ],
+    "sortTitle": "Direkte barn: .a > .b",
+    "displayCode": ".card-grid > .card { border: 3px solid #174f42; }",
+    "english": "",
+    "related": [
+      "css-descendant"
+    ],
+    "files": {
+      "html": "<section class=\"card-grid\">\n  <article class=\"card\"><h2>Kort 1</h2></article>\n  <article class=\"card featured\"><h2>Kort 2</h2></article>\n  <div><article class=\"card\"><h2>Kort 3</h2></article></div>\n</section>",
+      "css": ".card-grid > .card { border: 3px solid #174f42; }",
+      "js": ""
+    },
+    "lesson": "#/css/intermediate/css-nested"
+  },
+  {
+    "id": "css-combined",
+    "title": "Flere klasser: .a.b",
+    "category": "css",
+    "type": "selektor",
+    "syntax": ".card-grid .card.featured { border: 3px solid #b34524; }",
+    "short": "To klasser uten mellomrom krever at samme element har begge.",
+    "explanation": "`<article class=\"card featured\">` treffes av `.card.featured`. `.card .featured` leter etter et annet element med featured inni et card-element. En egen klasse er mer robust enn plassering når et kort skal være fremhevet.",
+    "when": "Når ett kort i en gruppe trenger en særskilt stil.",
+    "mistakes": "Ikke legg inn mellomrom mellom .card og .featured når de skal sitte på samme element.",
+    "keywords": [
+      "ett",
+      "kort",
+      "i",
+      "gruppe",
+      "style",
+      "ett",
+      "kort",
+      "i",
+      "en",
+      "gruppe",
+      ".card.featured",
+      ".a.b",
+      "class",
+      "inni",
+      "class",
+      "ekstra",
+      "klasse"
+    ],
+    "aliases": [
+      "ett kort i gruppe style ett kort i en gruppe .card.featured .a.b class inni class ekstra klasse"
+    ],
+    "sortTitle": "Flere klasser: .a.b",
+    "displayCode": ".card-grid .card.featured { border: 3px solid #b34524; }",
+    "english": "",
+    "related": [
+      "css-descendant"
+    ],
+    "files": {
+      "html": "<section class=\"card-grid\">\n  <article class=\"card\"><h2>Kort 1</h2></article>\n  <article class=\"card featured\"><h2>Kort 2</h2></article>\n  <div><article class=\"card\"><h2>Kort 3</h2></article></div>\n</section>",
+      "css": ".card-grid .card.featured { border: 3px solid #b34524; }",
+      "js": ""
+    },
+    "lesson": "#/css/intermediate/css-nested"
+  },
+  {
+    "id": "css-hover",
+    "title": ":hover",
+    "category": "css",
+    "type": "pseudoklasse",
+    "syntax": "button:hover { background: #dce9d5; }",
+    "short": "Velger et element mens en peker holdes over det.",
+    "explanation": "Suppler hover med `:focus-visible` slik at tastaturbrukere ser hvor de er. Berøringsskjermer har ikke alltid en stabil hover-tilstand.",
+    "when": "Når en knapp eller lenke skal gi tilbakemelding til en musbruker.",
+    "mistakes": "Ikke legg viktig innhold bare bak hover.",
+    "keywords": [
+      "hover",
+      "mus",
+      "over",
+      "pseudoklasse"
+    ],
+    "aliases": [
+      "hover mus over pseudoklasse"
+    ],
+    "sortTitle": "hover",
+    "displayCode": "button:hover { background: #dce9d5; }",
+    "english": "",
+    "related": [
+      "css-class-selector"
+    ],
+    "files": {
+      "html": "<button>Hold pekeren her</button>",
+      "css": "button:hover { background: #dce9d5; }",
+      "js": ""
+    },
+    "lesson": "#/css/intermediate/css-nested"
+  },
+  {
+    "id": "css-box-model",
+    "title": "Boksmodellen",
+    "category": "css",
+    "type": "konsept",
+    "syntax": ".card { margin: 16px; border: 3px solid; padding: 24px; }",
+    "short": "Hvert element har innhold, padding, border og margin.",
+    "explanation": "Padding er luft innenfor kanten. Margin er avstand utenfor. Med `box-sizing: border-box` inngår padding og border i oppgitt width.",
+    "when": "Når du vil forstå hvor stor en boks er og hvor avstanden kommer fra.",
+    "mistakes": "Margin farges ikke av boksens bakgrunn. Vertikale margins kan slå seg sammen i normal blokkflyt.",
+    "keywords": [
+      "box",
+      "model",
+      "margin",
+      "padding",
+      "forskjell",
+      "luft",
+      "avstand"
+    ],
+    "aliases": [
+      "box model margin padding forskjell luft avstand"
+    ],
+    "sortTitle": "Boksmodellen",
+    "displayCode": ".card { margin: 16px; border: 3px solid; padding: 24px; }",
+    "english": "",
+    "related": [
+      "css-flexbox"
+    ],
+    "files": {
+      "html": "<section class=\"card-grid\">\n  <article class=\"card\"><h2>Kort 1</h2></article>\n  <article class=\"card featured\"><h2>Kort 2</h2></article>\n  <div><article class=\"card\"><h2>Kort 3</h2></article></div>\n</section>",
+      "css": ".card { margin: 16px; border: 3px solid; padding: 24px; }",
+      "js": ""
+    },
+    "lesson": "#/css/basic/css-spacing"
+  },
+  {
+    "id": "css-flexbox",
+    "title": "Flexbox",
+    "category": "css",
+    "type": "layout",
+    "syntax": ".card-grid { display: flex; gap: 12px; flex-wrap: wrap; }",
+    "short": "Flexbox fordeler elementer langs en hovedakse.",
+    "explanation": "Bruk `justify-content` langs hovedaksen og `align-items` på tvers. `flex-direction` bestemmer retningen. Grid styrer både rader og kolonner.",
+    "when": "Til en verktøylinje, meny eller en rad med kort.",
+    "mistakes": "justify-content betyr ikke alltid vannrett: retningen følger flex-direction.",
+    "keywords": [
+      "flex",
+      "display:",
+      "flex",
+      "fleksibel",
+      "layout",
+      "flexbox",
+      "vs",
+      "grid"
+    ],
+    "aliases": [
+      "flex display: flex fleksibel layout flexbox vs grid"
+    ],
+    "sortTitle": "Flexbox",
+    "displayCode": ".card-grid { display: flex; gap: 12px; flex-wrap: wrap; }",
+    "english": "",
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<section class=\"card-grid\">\n  <article class=\"card\"><h2>Kort 1</h2></article>\n  <article class=\"card featured\"><h2>Kort 2</h2></article>\n  <div><article class=\"card\"><h2>Kort 3</h2></article></div>\n</section>",
+      "css": ".card-grid { display: flex; gap: 12px; flex-wrap: wrap; }",
+      "js": ""
+    },
+    "lesson": "#/css/intermediate/css-flex"
+  },
+  {
+    "id": "js-const",
+    "title": "const",
+    "category": "javascript",
+    "type": "syntaks",
+    "syntax": "const navn = \"Ada\";\ndocument.querySelector(\"#resultat\").textContent = navn;",
+    "short": "const oppretter en variabel som ikke kan få en ny tilordning.",
+    "explanation": "Bruk `let` når verdien må tilordnes på nytt. Et array eller objekt lagret i const kan fortsatt få endret innhold.",
+    "when": "Når du vil gi en verdi et navn som skal beholdes.",
+    "mistakes": "const betyr ikke at et objekt er frosset. Du må oppgi en startverdi.",
+    "keywords": [
+      "const",
+      "konstant",
+      "variabel",
+      "let",
+      "vs",
+      "const"
+    ],
+    "aliases": [
+      "const konstant variabel let vs const"
+    ],
+    "sortTitle": "const",
+    "displayCode": "const navn = \"Ada\";",
+    "english": "",
+    "related": [
+      "js-function"
+    ],
+    "files": {
+      "html": "<h1>Min filmside</h1>\n<p id=\"resultat\">Klar til å prøve.</p>\n<button type=\"button\">Trykk her</button>",
+      "css": ".featured { background: #e9f0e9; border: 2px solid #174f42; padding: 1rem; }",
+      "js": "const navn = \"Ada\";\ndocument.querySelector(\"#resultat\").textContent = navn;"
+    },
+    "lesson": "#/javascript/basic/js-dom-text"
+  },
+  {
+    "id": "js-function",
+    "title": "Funksjoner",
+    "category": "javascript",
+    "type": "syntaks",
+    "syntax": "function dobbel(tall) {\n  return tall * 2;\n}\ndocument.querySelector(\"#resultat\").textContent = dobbel(4);",
+    "short": "En funksjon samler kode som kan kjøres når du kaller den.",
+    "explanation": "`tall` er en parameter. `dobbel(4)` sender inn argumentet 4. `return` gir tilbake resultatet og avslutter kallet. En deklarasjon kan kalles før den står i kildekoden; en const med pilfunksjon må først initialiseres.",
+    "when": "Når den samme beregningen eller handlingen skal kunne gjenbrukes.",
+    "mistakes": "Å skrive funksjonsnavnet uten parenteser kjører den ikke. Det er nyttig når du gir funksjonen til en event-lytter.",
+    "keywords": [
+      "function",
+      "funksjon",
+      "parameter",
+      "return",
+      "function",
+      "declaration",
+      "arrow",
+      "function"
+    ],
+    "aliases": [
+      "function funksjon parameter return function declaration arrow function"
+    ],
+    "sortTitle": "Funksjoner",
+    "displayCode": "function dobbel(tall) {",
+    "english": "",
+    "related": [
+      "dom-event"
+    ],
+    "files": {
+      "html": "<h1>Min filmside</h1>\n<p id=\"resultat\">Klar til å prøve.</p>\n<button type=\"button\">Trykk her</button>",
+      "css": ".featured { background: #e9f0e9; border: 2px solid #174f42; padding: 1rem; }",
+      "js": "function dobbel(tall) {\n  return tall * 2;\n}\ndocument.querySelector(\"#resultat\").textContent = dobbel(4);"
+    },
+    "lesson": "#/javascript/basic/js-dom-text"
+  },
+  {
+    "id": "dom-queryselector",
+    "title": "querySelector()",
+    "category": "dom",
+    "type": "metode",
+    "syntax": "const knapp = document.querySelector(\"button\");\nknapp.textContent = \"Jeg er funnet\";",
+    "short": "Finner det første elementet som passer en CSS-selektor.",
+    "explanation": "Metoden returnerer et element eller `null`. `querySelectorAll()` gir en NodeList med alle treff. Bruk gyldig CSS som `\".card\"`, `\"#menu\"` eller `\"h2\"`.",
+    "when": "Når JavaScript skal lese eller endre et element på siden.",
+    "mistakes": "Kontroller at elementet finnes og at koden kjøres etter at HTML er lest.",
+    "keywords": [
+      "querySelector",
+      "query",
+      "selector",
+      "finn",
+      "element",
+      "søk",
+      "dom",
+      "querySelectorAll"
+    ],
+    "aliases": [
+      "querySelector query selector finn element søk dom querySelectorAll",
+      "query selector",
+      "query selector"
+    ],
+    "sortTitle": "querySelector()",
+    "displayCode": "const knapp = document.querySelector(\"button\");",
+    "english": "",
+    "related": [
+      "dom-textcontent"
+    ],
+    "files": {
+      "html": "<h1>Min filmside</h1>\n<p id=\"resultat\">Klar til å prøve.</p>\n<button type=\"button\">Trykk her</button>",
+      "css": ".featured { background: #e9f0e9; border: 2px solid #174f42; padding: 1rem; }",
+      "js": "const knapp = document.querySelector(\"button\");\nknapp.textContent = \"Jeg er funnet\";"
+    },
+    "lesson": "#/javascript/basic/js-dom-text"
+  },
+  {
+    "id": "dom-listener",
+    "title": "addEventListener()",
+    "category": "dom",
+    "type": "metode",
+    "syntax": "document.querySelector(\"button\").addEventListener(\"click\", () => {\n  document.querySelector(\"#resultat\").textContent = \"Du trykket!\";\n});",
+    "short": "Registrerer en funksjon som kjører når en hendelse skjer.",
+    "explanation": "Første argument er navnet på hendelsen, for eksempel `click`. Det andre er funksjonen som skal kalles senere.",
+    "when": "Når et klikk, inndata eller en skjemainnsending skal utløse en handling.",
+    "mistakes": "Ikke skriv handler() hvis du mener å gi handler som funksjon. Da blir koden kjørt med en gang.",
+    "keywords": [
+      "addEventListener",
+      "event",
+      "listener",
+      "lytter",
+      "knapp",
+      "klikk"
+    ],
+    "aliases": [
+      "addEventListener event listener lytter knapp klikk"
+    ],
+    "sortTitle": "addEventListener()",
+    "displayCode": "document.querySelector(\"button\").addEventListener(\"click\", () => {",
+    "english": "",
+    "related": [
+      "dom-event"
+    ],
+    "files": {
+      "html": "<h1>Min filmside</h1>\n<p id=\"resultat\">Klar til å prøve.</p>\n<button type=\"button\">Trykk her</button>",
+      "css": ".featured { background: #e9f0e9; border: 2px solid #174f42; padding: 1rem; }",
+      "js": "document.querySelector(\"button\").addEventListener(\"click\", () => {\n  document.querySelector(\"#resultat\").textContent = \"Du trykket!\";\n});"
+    },
+    "lesson": "#/javascript/basic/js-dom-text"
+  },
+  {
+    "id": "dom-classlist",
+    "title": "classList",
+    "category": "dom",
+    "type": "egenskap",
+    "syntax": "document.querySelector(\"button\").addEventListener(\"click\", () => {\n  document.querySelector(\"#resultat\").classList.toggle(\"featured\");\n});",
+    "short": "Gir metoder for å legge til, fjerne og veksle CSS-klasser.",
+    "explanation": "`add()` legger til, `remove()` fjerner og `toggle()` veksler. `contains()` sjekker om en klasse finnes.",
+    "when": "Når en handling skal endre utseende gjennom en CSS-klasse.",
+    "mistakes": "Klassen heter \"featured\" her, uten punktum. Punktum brukes i CSS-selektorer.",
+    "keywords": [
+      "classList",
+      "klasse",
+      "endre",
+      "stil",
+      "toggle"
+    ],
+    "aliases": [
+      "classList klasse endre stil toggle"
+    ],
+    "sortTitle": "classList",
+    "displayCode": "document.querySelector(\"button\").addEventListener(\"click\", () => {",
+    "english": "",
+    "related": [
+      "html-class"
+    ],
+    "files": {
+      "html": "<h1>Min filmside</h1>\n<p id=\"resultat\">Klar til å prøve.</p>\n<button type=\"button\">Trykk her</button>",
+      "css": ".featured { background: #e9f0e9; border: 2px solid #174f42; padding: 1rem; }",
+      "js": "document.querySelector(\"button\").addEventListener(\"click\", () => {\n  document.querySelector(\"#resultat\").classList.toggle(\"featured\");\n});"
+    },
+    "lesson": "#/javascript/basic/js-dom-text"
+  },
+  {
+    "id": "dom",
+    "title": "DOM",
+    "category": "dom",
+    "type": "konsept",
+    "syntax": "document.querySelector(\"h1\").textContent = \"Min nye overskrift\";",
+    "short": "DOM er nettleserens struktur av dokumentet som JavaScript kan lese og endre.",
+    "explanation": "Document Object Model representerer dokumentet som noder i et tre. Et element kan ha foreldre, barn og søsken. Endring av DOM oppdaterer visningen, men skriver ikke om HTML-filen på disken.",
+    "when": "Når JavaScript skal samhandle med siden.",
+    "mistakes": "HTML-kilde og levende DOM kan være forskjellige etter at JavaScript har kjørt.",
+    "keywords": [
+      "dom",
+      "document",
+      "object",
+      "model",
+      "dokument",
+      "tre",
+      "struktur"
+    ],
+    "aliases": [
+      "dom document object model dokument tre struktur"
+    ],
+    "sortTitle": "DOM",
+    "displayCode": "document.querySelector(\"h1\").textContent = \"Min nye overskrift\";",
+    "english": "Document Object Model",
+    "related": [
+      "dom-queryselector"
+    ],
+    "files": {
+      "html": "<h1>Min filmside</h1>\n<p id=\"resultat\">Klar til å prøve.</p>\n<button type=\"button\">Trykk her</button>",
+      "css": ".featured { background: #e9f0e9; border: 2px solid #174f42; padding: 1rem; }",
+      "js": "document.querySelector(\"h1\").textContent = \"Min nye overskrift\";"
+    },
+    "lesson": "#/javascript/basic/js-dom-text"
+  },
+  {
+    "id": "dom-event",
+    "title": "Hendelser (events)",
+    "category": "dom",
+    "type": "konsept",
+    "syntax": "document.querySelector(\"button\").addEventListener(\"click\", event => {\n  document.querySelector(\"#resultat\").textContent = event.type;\n});",
+    "short": "En hendelse er et signal om at noe har skjedd i nettleseren.",
+    "explanation": "Klikk, skriving og innsending av skjema er hendelser. Handleren får et event-objekt med informasjon, blant annet type og target.",
+    "when": "Når programmet skal reagere på brukerens handling.",
+    "mistakes": "event.target kan være et barn av elementet som lytteren sitter på. event.currentTarget er elementet med lytteren.",
+    "keywords": [
+      "event",
+      "hendelse",
+      "click",
+      "input",
+      "change",
+      "submit"
+    ],
+    "aliases": [
+      "event hendelse click input change submit"
+    ],
+    "sortTitle": "Hendelser (events)",
+    "displayCode": "document.querySelector(\"button\").addEventListener(\"click\", event => {",
+    "english": "",
+    "related": [
+      "dom-listener"
+    ],
+    "files": {
+      "html": "<h1>Min filmside</h1>\n<p id=\"resultat\">Klar til å prøve.</p>\n<button type=\"button\">Trykk her</button>",
+      "css": ".featured { background: #e9f0e9; border: 2px solid #174f42; padding: 1rem; }",
+      "js": "document.querySelector(\"button\").addEventListener(\"click\", event => {\n  document.querySelector(\"#resultat\").textContent = event.type;\n});"
+    },
+    "lesson": "#/javascript/basic/js-dom-text"
+  },
+  {
+    "id": "dom-storage",
+    "title": "localStorage",
+    "category": "dom",
+    "type": "Web API",
+    "syntax": "localStorage.setItem(\"tema\", \"mørkt\");\ndocument.querySelector(\"#resultat\").textContent = localStorage.getItem(\"tema\");",
+    "short": "Lagrer tekstverdier i nettleseren mellom besøk på samme nettsted.",
+    "explanation": "Bruk JSON.stringify/parse for strukturerte data, og try/catch fordi lagring kan være sperret eller full. I dette isolerte verkstedet brukes et midlertidig minnelager; eksempelet overlever derfor ikke ny kjøring. På en vanlig side bruker samme kode nettleserens varige lagring.",
+    "when": "Til små lokale innstillinger uten konto.",
+    "mistakes": "Ikke lagre passord eller hemmeligheter. Ikke forvent at verdier deles mellom nettsteder.",
+    "keywords": [
+      "localStorage",
+      "lokal",
+      "lagring",
+      "husk",
+      "innstilling"
+    ],
+    "aliases": [
+      "localStorage lokal lagring husk innstilling"
+    ],
+    "sortTitle": "localStorage",
+    "displayCode": "localStorage.setItem(\"tema\", \"mørkt\");",
+    "english": "",
+    "related": [
+      "js-const"
+    ],
+    "files": {
+      "html": "<h1>Min filmside</h1>\n<p id=\"resultat\">Klar til å prøve.</p>\n<button type=\"button\">Trykk her</button>",
+      "css": ".featured { background: #e9f0e9; border: 2px solid #174f42; padding: 1rem; }",
+      "js": "localStorage.setItem(\"tema\", \"mørkt\");\ndocument.querySelector(\"#resultat\").textContent = localStorage.getItem(\"tema\");"
+    },
+    "lesson": "#/javascript/advanced/js-storage"
+  },
+  {
+    "id": "dom-fetch",
+    "title": "fetch()",
+    "category": "dom",
+    "type": "Web API",
+    "syntax": "const response = await fetch(\"data:application/json,%7B%22navn%22%3A%22Ada%22%7D\");\nif (!response.ok) throw new Error(\"Kunne ikke hente data\");\nconst data = await response.json();\ndocument.querySelector(\"#resultat\").textContent = data.navn;",
+    "short": "Henter en ressurs og gir et Promise med et Response-objekt.",
+    "explanation": "`await` venter på resultatet i en async-funksjon eller modul. Deretter leser `response.json()` innholdet. Vi bruker en innebygd data-URL i verkstedet fordi eksterne nettverkskall er sperret. På egen nettside kan du hente en lokal JSON-fil.",
+    "when": "Når siden trenger data fra en fil eller et API.",
+    "mistakes": "HTTP 404 avviser ikke automatisk Promise. Sjekk response.ok og håndter feil.",
+    "keywords": [
+      "fetch",
+      "hente",
+      "json",
+      "data",
+      "api",
+      "asynkron",
+      "await",
+      "promise"
+    ],
+    "aliases": [
+      "fetch hente json data api asynkron await promise"
+    ],
+    "sortTitle": "fetch()",
+    "displayCode": "const response = await fetch(\"data:application/json,%7B%22navn%22%3A%22Ada%22%7D\");",
+    "english": "",
+    "related": [
+      "js-function"
+    ],
+    "files": {
+      "html": "<h1>Min filmside</h1>\n<p id=\"resultat\">Klar til å prøve.</p>\n<button type=\"button\">Trykk her</button>",
+      "css": ".featured { background: #e9f0e9; border: 2px solid #174f42; padding: 1rem; }",
+      "js": "const response = await fetch(\"data:application/json,%7B%22navn%22%3A%22Ada%22%7D\");\nif (!response.ok) throw new Error(\"Kunne ikke hente data\");\nconst data = await response.json();\ndocument.querySelector(\"#resultat\").textContent = data.navn;"
+    },
+    "lesson": "#/javascript/advanced/js-async"
+  },
+  {
+    "id": "dom-textcontent",
+    "title": "textContent",
+    "category": "dom",
+    "type": "egenskap",
+    "syntax": "document.querySelector(\"#resultat\").textContent = \"Hei, Ada!\";",
+    "short": "Leser eller setter tekstinnholdet til en node.",
+    "explanation": "Teksten tolkes ikke som HTML. `innerHTML` parser derimot HTML og kan være farlig med innhold du ikke kontrollerer. Bruk textContent for brukerens tekst.",
+    "when": "Når du skal endre en overskrift, melding eller verdi på siden.",
+    "mistakes": "Tilordningen erstatter også barn som allerede ligger i elementet.",
+    "keywords": [
+      "textContent",
+      "endre",
+      "tekst",
+      "javascript",
+      "innerHTML",
+      "tekstinnhold"
+    ],
+    "aliases": [
+      "textContent endre tekst javascript innerHTML tekstinnhold",
+      "endre tekst javascript",
+      "endre tekst javascript"
+    ],
+    "sortTitle": "textContent",
+    "displayCode": "document.querySelector(\"#resultat\").textContent = \"Hei, Ada!\";",
+    "english": "",
+    "related": [
+      "dom-queryselector"
+    ],
+    "files": {
+      "html": "<h1>Min filmside</h1>\n<p id=\"resultat\">Klar til å prøve.</p>\n<button type=\"button\">Trykk her</button>",
+      "css": ".featured { background: #e9f0e9; border: 2px solid #174f42; padding: 1rem; }",
+      "js": "document.querySelector(\"#resultat\").textContent = \"Hei, Ada!\";"
+    },
+    "lesson": "#/javascript/basic/js-dom-text"
+  }
+]

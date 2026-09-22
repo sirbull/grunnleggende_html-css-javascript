@@ -1,0 +1,4168 @@
+[
+  {
+    "id": "html-html",
+    "title": "<html>",
+    "sortTitle": "html>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<html lang=\"nb\"><head><title>Min side</title></head><body><h1>Min side</h1></body></html>",
+    "syntax": "<html lang=\"nb\"><head><title>Min side</title></head><body><h1>Min side</h1></body></html>",
+    "short": "Roten til HTML-dokumentet.",
+    "explanation": "Bruk html rundt head og body i et komplett dokument. lang angir hovedspråket.",
+    "when": "Bruk html rundt head og body i et komplett dokument.",
+    "mistakes": "Ikke plasser synlig innhold utenfor body.",
+    "aliases": [
+      "html",
+      "html html",
+      "Roten til HTML-dokumentet."
+    ],
+    "keywords": [
+      "html",
+      "html html",
+      "Roten til HTML-dokumentet."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<html lang=\"nb\"><head><title>Min side</title></head><body><h1>Min side</h1></body></html>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-head",
+    "title": "<head>",
+    "sortTitle": "head>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<!doctype html><html lang=\"nb\"><head><meta charset=\"UTF-8\"><title>Metadata</title></head><body><h1>Metadata ligger i head</h1></body></html>",
+    "syntax": "<!doctype html><html lang=\"nb\"><head><meta charset=\"UTF-8\"><title>Metadata</title></head><body><h1>Metadata ligger i head</h1></body></html>",
+    "short": "Samler metadata om siden.",
+    "explanation": "Bruk head til tegnsett, sidetittel og lenke til stilark. Innholdet er vanligvis ikke synlig som del av siden.",
+    "when": "Bruk head til tegnsett, sidetittel og lenke til stilark.",
+    "mistakes": "Ikke legg avsnitt og hovedoverskrifter i head.",
+    "aliases": [
+      "head",
+      "html head",
+      "Samler metadata om siden."
+    ],
+    "keywords": [
+      "head",
+      "html head",
+      "Samler metadata om siden."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<!doctype html><html lang=\"nb\"><head><meta charset=\"UTF-8\"><title>Metadata</title></head><body><h1>Metadata ligger i head</h1></body></html>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-title",
+    "title": "<title>",
+    "sortTitle": "title>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<title>Turguide ved fjorden</title><h1>Turguide ved fjorden</h1>",
+    "syntax": "<title>Turguide ved fjorden</title><h1>Turguide ved fjorden</h1>",
+    "short": "Setter dokumentets tittel i nettleserfanen.",
+    "explanation": "Bruk en kort og beskrivende tittel for hver side. Den er forskjellig fra h1 i det synlige innholdet.",
+    "when": "Bruk en kort og beskrivende tittel for hver side.",
+    "mistakes": "Ikke forvent at title vises som en overskrift i resultatvinduet.",
+    "aliases": [
+      "title",
+      "html title",
+      "Setter dokumentets tittel i nettleserfanen."
+    ],
+    "keywords": [
+      "title",
+      "html title",
+      "Setter dokumentets tittel i nettleserfanen."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<title>Turguide ved fjorden</title><h1>Turguide ved fjorden</h1>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-meta",
+    "title": "<meta>",
+    "sortTitle": "meta>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<meta charset=\"UTF-8\">",
+    "syntax": "<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<p>Æ, ø og å vises riktig.</p>",
+    "short": "Beskriver metadata som tegnsett og visningsområde.",
+    "explanation": "Bruk charset=\"UTF-8\" for tegnsett og name=\"viewport\" for mobilvisning. Meta er et tomt element uten avslutningstagg.",
+    "when": "Bruk charset=\"UTF-8\" for tegnsett og name=\"viewport\" for mobilvisning.",
+    "mistakes": "Ikke bruk flere motstridende tegnsettangivelser.",
+    "aliases": [
+      "meta",
+      "html meta",
+      "Beskriver metadata som tegnsett og visningsområde."
+    ],
+    "keywords": [
+      "meta",
+      "html meta",
+      "Beskriver metadata som tegnsett og visningsområde."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<p>Æ, ø og å vises riktig.</p>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-link",
+    "title": "<link>",
+    "sortTitle": "link>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<link rel=\"stylesheet\" href=\"style.css\">",
+    "syntax": "<link rel=\"stylesheet\" href=\"style.css\">\n<p>Stilarket kobles i head på en vanlig nettside.</p>",
+    "short": "Kobler dokumentet til en ekstern ressurs.",
+    "explanation": "Bruk rel=\"stylesheet\" og href for å laste en CSS-fil på en vanlig side. I verkstedet leveres CSS fra CSS-fanen, og eksterne filer er sperret.",
+    "when": "Bruk rel=\"stylesheet\" og href for å laste en CSS-fil på en vanlig side.",
+    "mistakes": "Link lager ikke en klikkbar lenke i teksten; bruk a til det.",
+    "aliases": [
+      "link",
+      "html link",
+      "Kobler dokumentet til en ekstern ressurs."
+    ],
+    "keywords": [
+      "link",
+      "html link",
+      "Kobler dokumentet til en ekstern ressurs."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<link rel=\"stylesheet\" href=\"style.css\">\n<p>Stilarket kobles i head på en vanlig nettside.</p>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-body",
+    "title": "<body>",
+    "sortTitle": "body>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<body><h1>Velkommen</h1><p>Dette er sideinnholdet.</p></body>",
+    "syntax": "<body><h1>Velkommen</h1><p>Dette er sideinnholdet.</p></body>",
+    "short": "Inneholder hoveddelen av det synlige dokumentet.",
+    "explanation": "Bruk body til sidens overskrifter, tekst, skjemaer og navigasjon. Et komplett HTML-dokument har én body.",
+    "when": "Bruk body til sidens overskrifter, tekst, skjemaer og navigasjon.",
+    "mistakes": "Ikke lag en ny body for hver seksjon.",
+    "aliases": [
+      "body",
+      "html body",
+      "Inneholder hoveddelen av det synlige dokumentet."
+    ],
+    "keywords": [
+      "body",
+      "html body",
+      "Inneholder hoveddelen av det synlige dokumentet."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<body><h1>Velkommen</h1><p>Dette er sideinnholdet.</p></body>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-header",
+    "title": "<header>",
+    "sortTitle": "header>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<header><h1>Nabolagsavisa</h1><p>Nyheter fra nærmiljøet</p></header>",
+    "syntax": "<header><h1>Nabolagsavisa</h1><p>Nyheter fra nærmiljøet</p></header>",
+    "short": "Innledning til en side eller en del.",
+    "explanation": "Bruk header rundt tittel, logo og eventuell innledende navigasjon. En article kan også ha sin egen header.",
+    "when": "Bruk header rundt tittel, logo og eventuell innledende navigasjon.",
+    "mistakes": "Header er ikke det samme som head med metadata.",
+    "aliases": [
+      "header",
+      "html header",
+      "Innledning til en side eller en del."
+    ],
+    "keywords": [
+      "header",
+      "html header",
+      "Innledning til en side eller en del."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<header><h1>Nabolagsavisa</h1><p>Nyheter fra nærmiljøet</p></header>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-nav",
+    "title": "<nav>",
+    "sortTitle": "nav>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<nav aria-label=\"Innhold\"><a href=\"#tips\">Tips</a></nav><h2 id=\"tips\">Mine tips</h2>",
+    "syntax": "<nav aria-label=\"Innhold\"><a href=\"#tips\">Tips</a></nav><h2 id=\"tips\">Mine tips</h2>",
+    "short": "Samler viktige navigasjonslenker.",
+    "explanation": "Bruk nav til hovedmeny eller innholdsfortegnelse. Flere nav-områder kan skilles med tilgjengelige navn.",
+    "when": "Bruk nav til hovedmeny eller innholdsfortegnelse.",
+    "mistakes": "Ikke pakk hver enkelt vanlig tekstlenke inn i nav.",
+    "aliases": [
+      "nav",
+      "html nav",
+      "Samler viktige navigasjonslenker."
+    ],
+    "keywords": [
+      "nav",
+      "html nav",
+      "Samler viktige navigasjonslenker."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<nav aria-label=\"Innhold\"><a href=\"#tips\">Tips</a></nav><h2 id=\"tips\">Mine tips</h2>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-main",
+    "title": "<main>",
+    "sortTitle": "main>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<main><h1>Ukens anbefaling</h1><p>Ta en tur ut.</p></main>",
+    "syntax": "<main><h1>Ukens anbefaling</h1><p>Ta en tur ut.</p></main>",
+    "short": "Markerer sidens primære innhold.",
+    "explanation": "Bruk én synlig main rundt innholdet som er særegent for siden. Navigasjon som gjentas kan ligge utenfor.",
+    "when": "Bruk én synlig main rundt innholdet som er særegent for siden.",
+    "mistakes": "Ikke ha flere synlige main-elementer på samme side.",
+    "aliases": [
+      "main",
+      "html main",
+      "Markerer sidens primære innhold."
+    ],
+    "keywords": [
+      "main",
+      "html main",
+      "Markerer sidens primære innhold."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<main><h1>Ukens anbefaling</h1><p>Ta en tur ut.</p></main>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-section",
+    "title": "<section>",
+    "sortTitle": "section>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<section><h2>Utstyr</h2><p>Ta med vann.</p></section>",
+    "syntax": "<section><h2>Utstyr</h2><p>Ta med vann.</p></section>",
+    "short": "Samler en tematisk del av dokumentet.",
+    "explanation": "Bruk section når innholdet danner en meningsfull del som vanligvis har en overskrift. Bruk div til rene layoutbeholdere.",
+    "when": "Bruk section når innholdet danner en meningsfull del som vanligvis har en overskrift.",
+    "mistakes": "Ikke bruk section bare fordi du trenger en CSS-boks.",
+    "aliases": [
+      "section",
+      "html section",
+      "Samler en tematisk del av dokumentet."
+    ],
+    "keywords": [
+      "section",
+      "html section",
+      "Samler en tematisk del av dokumentet."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<section><h2>Utstyr</h2><p>Ta med vann.</p></section>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-article",
+    "title": "<article>",
+    "sortTitle": "article>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<article><h2>Ny kafé åpner</h2><p>Brukerne\b inviterer til lunsj.</p></article>",
+    "syntax": "<article><h2>Ny kafé åpner</h2><p>Brukerne\b inviterer til lunsj.</p></article>",
+    "short": "Markerer selvstendig innhold.",
+    "explanation": "Bruk article til en nyhet, et innlegg eller et kort som gir mening alene. Hvert article bør ha en tydelig tittel.",
+    "when": "Bruk article til en nyhet, et innlegg eller et kort som gir mening alene.",
+    "mistakes": "Article betyr ikke enhver tekstblokk.",
+    "aliases": [
+      "article",
+      "html article",
+      "Markerer selvstendig innhold."
+    ],
+    "keywords": [
+      "article",
+      "html article",
+      "Markerer selvstendig innhold."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<article><h2>Ny kafé åpner</h2><p>Brukerne\b inviterer til lunsj.</p></article>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-aside",
+    "title": "<aside>",
+    "sortTitle": "aside>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<aside><h2>Visste du?</h2><p>Stien er to kilometer lang.</p></aside>",
+    "syntax": "<aside><h2>Visste du?</h2><p>Stien er to kilometer lang.</p></aside>",
+    "short": "Markerer utfyllende innhold.",
+    "explanation": "Bruk aside til informasjon som støtter hovedinnholdet, for eksempel en faktaboks. Betydningen er ikke knyttet til om boksen vises på høyre side.",
+    "when": "Bruk aside til informasjon som støtter hovedinnholdet, for eksempel en faktaboks.",
+    "mistakes": "Ikke bruk aside som eneste måte å plassere noe visuelt på siden.",
+    "aliases": [
+      "aside",
+      "html aside",
+      "Markerer utfyllende innhold."
+    ],
+    "keywords": [
+      "aside",
+      "html aside",
+      "Markerer utfyllende innhold."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<aside><h2>Visste du?</h2><p>Stien er to kilometer lang.</p></aside>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-footer",
+    "title": "<footer>",
+    "sortTitle": "footer>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<footer><p>Laget av redaksjonen.</p></footer>",
+    "syntax": "<footer><p>Laget av redaksjonen.</p></footer>",
+    "short": "Avslutter en side eller en del.",
+    "explanation": "Bruk footer til informasjon om forfatter, relaterte lenker eller kontakt. Et article kan ha sin egen footer.",
+    "when": "Bruk footer til informasjon om forfatter, relaterte lenker eller kontakt.",
+    "mistakes": "Footer betyr ikke automatisk at elementet festes nederst i vinduet.",
+    "aliases": [
+      "footer",
+      "html footer",
+      "Avslutter en side eller en del."
+    ],
+    "keywords": [
+      "footer",
+      "html footer",
+      "Avslutter en side eller en del."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<footer><p>Laget av redaksjonen.</p></footer>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-h1",
+    "title": "<h1>",
+    "sortTitle": "h1>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<h1>Min filmside</h1>",
+    "syntax": "<h1>Min filmside</h1>",
+    "short": "Sidens hovedoverskrift.",
+    "explanation": "Bruk h1 til sidens viktigste overskrift, og h2 til delene under. En tydelig hovedoverskrift gjør det lettere å orientere seg.",
+    "when": "Bruk h1 til sidens viktigste overskrift, og h2 til delene under.",
+    "mistakes": "Ikke bruk overskriftsnivå bare for å få en bestemt skriftstørrelse.",
+    "aliases": [
+      "h1",
+      "html h1",
+      "Sidens hovedoverskrift."
+    ],
+    "keywords": [
+      "h1",
+      "html h1",
+      "Sidens hovedoverskrift."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<h1>Min filmside</h1>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-h3",
+    "title": "<h3>",
+    "sortTitle": "h3>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<h2>Eventyrfilmer</h2><h3>Filmer fra Norge</h3>",
+    "syntax": "<h2>Eventyrfilmer</h2><h3>Filmer fra Norge</h3>",
+    "short": "Overskrift under en h2-del.",
+    "explanation": "Bruk h3 for en underdel av en seksjon med h2. Fortsett med h4, h5 og h6 ved behov for flere nivåer.",
+    "when": "Bruk h3 for en underdel av en seksjon med h2.",
+    "mistakes": "Ikke hopp nivåer uten en strukturell grunn.",
+    "aliases": [
+      "h3",
+      "html h3",
+      "Overskrift under en h2-del."
+    ],
+    "keywords": [
+      "h3",
+      "html h3",
+      "Overskrift under en h2-del."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<h2>Eventyrfilmer</h2><h3>Filmer fra Norge</h3>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-h4",
+    "title": "<h4>",
+    "sortTitle": "h4>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<h3>Filmer fra Norge</h3><h4>Filmer fra 2025</h4>",
+    "syntax": "<h3>Filmer fra Norge</h3><h4>Filmer fra 2025</h4>",
+    "short": "Fjerde overskriftsnivå.",
+    "explanation": "Bruk h4 under en h3 når dokumentet trenger en dypere underdeling. CSS bestemmer den visuelle størrelsen.",
+    "when": "Bruk h4 under en h3 når dokumentet trenger en dypere underdeling.",
+    "mistakes": "Ikke velg h4 som en snarvei til liten tekst.",
+    "aliases": [
+      "h4",
+      "html h4",
+      "Fjerde overskriftsnivå."
+    ],
+    "keywords": [
+      "h4",
+      "html h4",
+      "Fjerde overskriftsnivå."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<h3>Filmer fra Norge</h3><h4>Filmer fra 2025</h4>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-h5",
+    "title": "<h5>",
+    "sortTitle": "h5>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<h4>Tekniske detaljer</h4><h5>Lyd</h5>",
+    "syntax": "<h4>Tekniske detaljer</h4><h5>Lyd</h5>",
+    "short": "Femte overskriftsnivå.",
+    "explanation": "Bruk h5 under en h4 i et dokument med dyp struktur. Vurder om innholdet heller kan deles i kortere sider.",
+    "when": "Bruk h5 under en h4 i et dokument med dyp struktur.",
+    "mistakes": "Et dypt hierarki kan bli vanskelig å orientere seg i.",
+    "aliases": [
+      "h5",
+      "html h5",
+      "Femte overskriftsnivå."
+    ],
+    "keywords": [
+      "h5",
+      "html h5",
+      "Femte overskriftsnivå."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<h4>Tekniske detaljer</h4><h5>Lyd</h5>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-h6",
+    "title": "<h6>",
+    "sortTitle": "h6>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<h5>Lyd</h5><h6>Opptak</h6>",
+    "syntax": "<h5>Lyd</h5><h6>Opptak</h6>",
+    "short": "Sjette og siste overskriftsnivå.",
+    "explanation": "Bruk h6 som undernivå til h5 når hierarkiet krever det. HTML har ikke h7.",
+    "when": "Bruk h6 som undernivå til h5 når hierarkiet krever det.",
+    "mistakes": "Ikke bruk h6 til bildetekster; figcaption har riktig betydning.",
+    "aliases": [
+      "h6",
+      "html h6",
+      "Sjette og siste overskriftsnivå."
+    ],
+    "keywords": [
+      "h6",
+      "html h6",
+      "Sjette og siste overskriftsnivå."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<h5>Lyd</h5><h6>Opptak</h6>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-p",
+    "title": "<p>",
+    "sortTitle": "p>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<p>Her samler jeg filmer jeg liker.</p>",
+    "syntax": "<p>Her samler jeg filmer jeg liker.</p>",
+    "short": "Markerer et avsnitt.",
+    "explanation": "Bruk p rundt en sammenhengende tanke. Ekstra linjeskift i koden lager vanligvis ikke nye avsnitt i visningen.",
+    "when": "Bruk p rundt en sammenhengende tanke.",
+    "mistakes": "Ikke legg section, div eller overskrifter inni p.",
+    "aliases": [
+      "p",
+      "html p",
+      "Markerer et avsnitt."
+    ],
+    "keywords": [
+      "p",
+      "html p",
+      "Markerer et avsnitt."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<p>Her samler jeg filmer jeg liker.</p>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-a",
+    "title": "<a>",
+    "sortTitle": "a>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<a href=\"#tips\">Gå til filmtips</a><h2 id=\"tips\">Filmtips</h2>",
+    "syntax": "<a href=\"#tips\">Gå til filmtips</a><h2 id=\"tips\">Filmtips</h2>",
+    "short": "Lager en lenke med href.",
+    "explanation": "Bruk a når brukeren skal navigere til en annen side, fil eller del av dokumentet. Lenketeksten bør beskrive målet.",
+    "when": "Bruk a når brukeren skal navigere til en annen side, fil eller del av dokumentet.",
+    "mistakes": "Bruk button til handlinger som endrer siden.",
+    "aliases": [
+      "a",
+      "html a",
+      "Lager en lenke med href."
+    ],
+    "keywords": [
+      "a",
+      "html a",
+      "Lager en lenke med href."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<a href=\"#tips\">Gå til filmtips</a><h2 id=\"tips\">Filmtips</h2>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-img",
+    "title": "<img>",
+    "sortTitle": "img>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<img src=\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27120%27 height=%2780%27%3E%3Crect width=%27120%27 height=%2780%27 fill=%27%23174f42%27/%3E%3C/svg%3E\" width=\"120\" height=\"80\" alt=\"Et mørkegrønt fargefelt\">",
+    "syntax": "<img src=\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27120%27 height=%2780%27%3E%3Crect width=%27120%27 height=%2780%27 fill=%27%23174f42%27/%3E%3C/svg%3E\" width=\"120\" height=\"80\" alt=\"Et mørkegrønt fargefelt\">",
+    "short": "Viser et bilde med en tekstlig erstatning.",
+    "explanation": "Bruk src for bildekilden og alt for relevant alternativ tekst. Dekorative bilder får alt=\"\".",
+    "when": "Bruk src for bildekilden og alt for relevant alternativ tekst.",
+    "mistakes": "Img har ingen avslutningstagg. Ikke skriv bare «bilde» som alternativ tekst.",
+    "aliases": [
+      "img",
+      "html img",
+      "Viser et bilde med en tekstlig erstatning."
+    ],
+    "keywords": [
+      "img",
+      "html img",
+      "Viser et bilde med en tekstlig erstatning."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<img src=\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27120%27 height=%2780%27%3E%3Crect width=%27120%27 height=%2780%27 fill=%27%23174f42%27/%3E%3C/svg%3E\" width=\"120\" height=\"80\" alt=\"Et mørkegrønt fargefelt\">",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-figure",
+    "title": "<figure>",
+    "sortTitle": "figure>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<figure><p>1 → 2 → 3</p><figcaption>Tre steg i prosessen.</figcaption></figure>",
+    "syntax": "<figure><p>1 → 2 → 3</p><figcaption>Tre steg i prosessen.</figcaption></figure>",
+    "short": "Samler et selvstendig bilde eller annet illustrerende innhold.",
+    "explanation": "Bruk figure når innhold og eventuell figcaption skal høre sammen. Det kan også være en kodefigur eller et diagram.",
+    "when": "Bruk figure når innhold og eventuell figcaption skal høre sammen.",
+    "mistakes": "En figure trenger fortsatt alternativ tekst for meningsbærende bilder.",
+    "aliases": [
+      "figure",
+      "html figure",
+      "Samler et selvstendig bilde eller annet illustrerende innhold."
+    ],
+    "keywords": [
+      "figure",
+      "html figure",
+      "Samler et selvstendig bilde eller annet illustrerende innhold."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<figure><p>1 → 2 → 3</p><figcaption>Tre steg i prosessen.</figcaption></figure>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-figcaption",
+    "title": "<figcaption>",
+    "sortTitle": "figcaption>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<figure><p>HTML → DOM</p><figcaption>Nettleseren bygger en struktur.</figcaption></figure>",
+    "syntax": "<figure><p>HTML → DOM</p><figcaption>Nettleseren bygger en struktur.</figcaption></figure>",
+    "short": "Gir en synlig bildetekst til en figure.",
+    "explanation": "Plasser figcaption som første eller siste barn i figure. Teksten er synlig for alle lesere.",
+    "when": "Plasser figcaption som første eller siste barn i figure.",
+    "mistakes": "Bildetekst erstatter ikke automatisk alt-teksten på et bilde.",
+    "aliases": [
+      "figcaption",
+      "html figcaption",
+      "Gir en synlig bildetekst til en figure."
+    ],
+    "keywords": [
+      "figcaption",
+      "html figcaption",
+      "Gir en synlig bildetekst til en figure."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<figure><p>HTML → DOM</p><figcaption>Nettleseren bygger en struktur.</figcaption></figure>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-ul",
+    "title": "<ul>",
+    "sortTitle": "ul>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<ul><li>Vann</li><li>Gode sko</li></ul>",
+    "syntax": "<ul><li>Vann</li><li>Gode sko</li></ul>",
+    "short": "En liste uten betydningsfull rekkefølge.",
+    "explanation": "Bruk ul når punktene hører sammen, men nummereringen ikke betyr noe. Hvert punkt legges i li.",
+    "when": "Bruk ul når punktene hører sammen, men nummereringen ikke betyr noe.",
+    "mistakes": "Ikke skriv tekst rett i ul uten li.",
+    "aliases": [
+      "ul",
+      "html ul",
+      "En liste uten betydningsfull rekkefølge."
+    ],
+    "keywords": [
+      "ul",
+      "html ul",
+      "En liste uten betydningsfull rekkefølge."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<ul><li>Vann</li><li>Gode sko</li></ul>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-ol",
+    "title": "<ol>",
+    "sortTitle": "ol>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<ol><li>Åpne editoren.</li><li>Lagre filen.</li></ol>",
+    "syntax": "<ol><li>Åpne editoren.</li><li>Lagre filen.</li></ol>",
+    "short": "En ordnet liste.",
+    "explanation": "Bruk ol når rekkefølgen er del av innholdet, for eksempel en oppskrift. Nettleseren nummererer li-punktene.",
+    "when": "Bruk ol når rekkefølgen er del av innholdet, for eksempel en oppskrift.",
+    "mistakes": "Ikke skriv numrene som vanlig tekst foran avsnitt.",
+    "aliases": [
+      "ol",
+      "html ol",
+      "En ordnet liste."
+    ],
+    "keywords": [
+      "ol",
+      "html ol",
+      "En ordnet liste."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<ol><li>Åpne editoren.</li><li>Lagre filen.</li></ol>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-li",
+    "title": "<li>",
+    "sortTitle": "li>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<ul><li>HTML<ul><li>Tagger</li></ul></li><li>CSS</li></ul>",
+    "syntax": "<ul><li>HTML<ul><li>Tagger</li></ul></li><li>CSS</li></ul>",
+    "short": "Ett punkt i en liste.",
+    "explanation": "Legg li inni ul eller ol. En eventuell underliste skal ligge inni det punktet den hører til.",
+    "when": "Legg li inni ul eller ol.",
+    "mistakes": "Li skal ikke stå alene uten en passende listeforelder.",
+    "aliases": [
+      "li",
+      "html li",
+      "Ett punkt i en liste."
+    ],
+    "keywords": [
+      "li",
+      "html li",
+      "Ett punkt i en liste."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<ul><li>HTML<ul><li>Tagger</li></ul></li><li>CSS</li></ul>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-div",
+    "title": "<div>",
+    "sortTitle": "div>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<div class=\"card\"><h2>Et kort</h2><p>Samlet innhold.</p></div>",
+    "syntax": "<div class=\"card\"><h2>Et kort</h2><p>Samlet innhold.</p></div>",
+    "short": "En generell blokkbeholder uten egen semantisk rolle.",
+    "explanation": "Bruk div når du trenger å gruppere innhold for layout og ingen mer presis tagg passer. CSS bestemmer utseendet.",
+    "when": "Bruk div når du trenger å gruppere innhold for layout og ingen mer presis tagg passer.",
+    "mistakes": "Ikke erstatt knapper, overskrifter og navigasjon med div.",
+    "aliases": [
+      "div",
+      "html div",
+      "En generell blokkbeholder uten egen semantisk rolle."
+    ],
+    "keywords": [
+      "div",
+      "html div",
+      "En generell blokkbeholder uten egen semantisk rolle."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<div class=\"card\"><h2>Et kort</h2><p>Samlet innhold.</p></div>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-span",
+    "title": "<span>",
+    "sortTitle": "span>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<p>Status: <span class=\"status\">klar</span></p>",
+    "syntax": "<p>Status: <span class=\"status\">klar</span></p>",
+    "short": "En generell beholder inne i tekst.",
+    "explanation": "Bruk span når en liten tekstdel trenger en klasse eller et attributt uten ny semantisk betydning. Den er inline som standard.",
+    "when": "Bruk span når en liten tekstdel trenger en klasse eller et attributt uten ny semantisk betydning.",
+    "mistakes": "Bruk strong eller em når teksten faktisk har viktighet eller betoning.",
+    "aliases": [
+      "span",
+      "html span",
+      "En generell beholder inne i tekst."
+    ],
+    "keywords": [
+      "span",
+      "html span",
+      "En generell beholder inne i tekst."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<p>Status: <span class=\"status\">klar</span></p>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-strong",
+    "title": "<strong>",
+    "sortTitle": "strong>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<p><strong>Husk å lagre</strong> før du lukker editoren.</p>",
+    "syntax": "<p><strong>Husk å lagre</strong> før du lukker editoren.</p>",
+    "short": "Markerer sterk viktighet.",
+    "explanation": "Bruk strong når et ord eller en beskjed er særlig viktig. Standardstilen er vanligvis fet, men betydningen er uavhengig av CSS.",
+    "when": "Bruk strong når et ord eller en beskjed er særlig viktig.",
+    "mistakes": "Bruk font-weight hvis formålet bare er visuell vekt.",
+    "aliases": [
+      "strong",
+      "html strong",
+      "Markerer sterk viktighet."
+    ],
+    "keywords": [
+      "strong",
+      "html strong",
+      "Markerer sterk viktighet."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<p><strong>Husk å lagre</strong> før du lukker editoren.</p>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-em",
+    "title": "<em>",
+    "sortTitle": "em>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<p>Du kan endre <em>din egen</em> kode.</p>",
+    "syntax": "<p>Du kan endre <em>din egen</em> kode.</p>",
+    "short": "Markerer betoning i en setning.",
+    "explanation": "Bruk em når trykket på et ord påvirker meningen. Standardvisningen er ofte kursiv.",
+    "when": "Bruk em når trykket på et ord påvirker meningen.",
+    "mistakes": "Ikke bruk em bare for dekorativ kursiv.",
+    "aliases": [
+      "em",
+      "html em",
+      "Markerer betoning i en setning."
+    ],
+    "keywords": [
+      "em",
+      "html em",
+      "Markerer betoning i en setning."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<p>Du kan endre <em>din egen</em> kode.</p>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-br",
+    "title": "<br>",
+    "sortTitle": "br>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<p>Storgata 1<br>0123 Oslo</p>",
+    "syntax": "<p>Storgata 1<br>0123 Oslo</p>",
+    "short": "Lager et linjeskift i samme tekstblokk.",
+    "explanation": "Bruk br der linjedelingen er del av innholdet, for eksempel en adresse eller et dikt.",
+    "when": "Bruk br der linjedelingen er del av innholdet, for eksempel en adresse eller et dikt.",
+    "mistakes": "Ikke bruk mange br for å lage avstand mellom seksjoner.",
+    "aliases": [
+      "br",
+      "html br",
+      "Lager et linjeskift i samme tekstblokk."
+    ],
+    "keywords": [
+      "br",
+      "html br",
+      "Lager et linjeskift i samme tekstblokk."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<p>Storgata 1<br>0123 Oslo</p>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-hr",
+    "title": "<hr>",
+    "sortTitle": "hr>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<p>Første tema.</p><hr><p>Et nytt tema.</p>",
+    "syntax": "<p>Første tema.</p><hr><p>Et nytt tema.</p>",
+    "short": "Markerer et tematisk skille.",
+    "explanation": "Bruk hr når innholdet skifter tema innenfor samme flyt. Den vises ofte som en vannrett linje.",
+    "when": "Bruk hr når innholdet skifter tema innenfor samme flyt.",
+    "mistakes": "Bruk CSS border til rent dekorative streker.",
+    "aliases": [
+      "hr",
+      "html hr",
+      "Markerer et tematisk skille."
+    ],
+    "keywords": [
+      "hr",
+      "html hr",
+      "Markerer et tematisk skille."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<p>Første tema.</p><hr><p>Et nytt tema.</p>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-button",
+    "title": "<button>",
+    "sortTitle": "button>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<button type=\"button\">Prøv handlingen</button>",
+    "syntax": "<button type=\"button\">Prøv handlingen</button>",
+    "short": "En kontroll som utfører en handling.",
+    "explanation": "Bruk button for en handling på siden. Inni skjema er standardtypen submit; bruk type=\"button\" for en knapp som ikke skal sende inn.",
+    "when": "Bruk button for en handling på siden.",
+    "mistakes": "Ikke lag klikkbare div-er når en knapp passer.",
+    "aliases": [
+      "button",
+      "html button",
+      "En kontroll som utfører en handling."
+    ],
+    "keywords": [
+      "button",
+      "html button",
+      "En kontroll som utfører en handling."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<button type=\"button\">Prøv handlingen</button>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-form",
+    "title": "<form>",
+    "sortTitle": "form>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<form><label for=\"navn\">Navn</label><input id=\"navn\" name=\"navn\"><button>Send</button></form>",
+    "syntax": "<form><label for=\"navn\">Navn</label><input id=\"navn\" name=\"navn\"><button>Send</button></form>",
+    "short": "Samler felt som kan sendes inn.",
+    "explanation": "Bruk form for beslektede inndata. Submit-hendelsen dekker både innsending med knapp og Enter i felt.",
+    "when": "Bruk form for beslektede inndata.",
+    "mistakes": "Form alene lager ikke en backend. Ikke påstå at data er sendt i en lokal demo.",
+    "aliases": [
+      "form",
+      "html form",
+      "Samler felt som kan sendes inn."
+    ],
+    "keywords": [
+      "form",
+      "html form",
+      "Samler felt som kan sendes inn."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<form><label for=\"navn\">Navn</label><input id=\"navn\" name=\"navn\"><button>Send</button></form>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": "document.querySelector(\"form\").onsubmit = e => { e.preventDefault(); };"
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-label",
+    "title": "<label>",
+    "sortTitle": "label>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<label for=\"navn\">Fornavn</label><input id=\"navn\" name=\"navn\">",
+    "syntax": "<label for=\"navn\">Fornavn</label><input id=\"navn\" name=\"navn\">",
+    "short": "Gir et skjemafelt en synlig ledetekst.",
+    "explanation": "Koble label for=\"navn\" til input id=\"navn\". Da aktiveres feltet også når du klikker på teksten.",
+    "when": "Koble label for=\"navn\" til input id=\"navn\".",
+    "mistakes": "Placeholder er ikke en erstatning for label.",
+    "aliases": [
+      "label",
+      "html label",
+      "Gir et skjemafelt en synlig ledetekst."
+    ],
+    "keywords": [
+      "label",
+      "html label",
+      "Gir et skjemafelt en synlig ledetekst."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<label for=\"navn\">Fornavn</label><input id=\"navn\" name=\"navn\">",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-input",
+    "title": "<input>",
+    "sortTitle": "input>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<label for=\"antall\">Antall</label><input id=\"antall\" type=\"number\" min=\"1\" value=\"1\">",
+    "syntax": "<label for=\"antall\">Antall</label><input id=\"antall\" type=\"number\" min=\"1\" value=\"1\">",
+    "short": "Et felt for tekst, valg eller andre inndata.",
+    "explanation": "Bruk type for å velge passende kontroll, og knytt en label til feltet. Flere typer gir egne tastaturer på mobil.",
+    "when": "Bruk type for å velge passende kontroll, og knytt en label til feltet.",
+    "mistakes": "Verdien i value er vanligvis tekst selv når du forventer et tall.",
+    "aliases": [
+      "input",
+      "html input",
+      "Et felt for tekst, valg eller andre inndata."
+    ],
+    "keywords": [
+      "input",
+      "html input",
+      "Et felt for tekst, valg eller andre inndata."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<label for=\"antall\">Antall</label><input id=\"antall\" type=\"number\" min=\"1\" value=\"1\">",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-textarea",
+    "title": "<textarea>",
+    "sortTitle": "textarea>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<label for=\"melding\">Melding</label><textarea id=\"melding\" rows=\"4\">Hei!</textarea>",
+    "syntax": "<label for=\"melding\">Melding</label><textarea id=\"melding\" rows=\"4\">Hei!</textarea>",
+    "short": "Et felt for flere linjer tekst.",
+    "explanation": "Bruk textarea til kommentarer eller lengre svar. Standardtekst skrives mellom åpning og avslutning, ikke i et value-attributt.",
+    "when": "Bruk textarea til kommentarer eller lengre svar.",
+    "mistakes": "Husk label. Ikke sett fast høyde som gjør tekst uleselig ved zoom.",
+    "aliases": [
+      "textarea",
+      "html textarea",
+      "Et felt for flere linjer tekst."
+    ],
+    "keywords": [
+      "textarea",
+      "html textarea",
+      "Et felt for flere linjer tekst."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<label for=\"melding\">Melding</label><textarea id=\"melding\" rows=\"4\">Hei!</textarea>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-select",
+    "title": "<select>",
+    "sortTitle": "select>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<label for=\"fag\">Fag</label><select id=\"fag\"><option>HTML</option><option>CSS</option></select>",
+    "syntax": "<label for=\"fag\">Fag</label><select id=\"fag\"><option>HTML</option><option>CSS</option></select>",
+    "short": "En kontroll for å velge mellom alternativer.",
+    "explanation": "Bruk select sammen med option og en label. Native select har innebygd tastaturstøtte.",
+    "when": "Bruk select sammen med option og en label.",
+    "mistakes": "Ikke overstyr piltastene mens brukeren velger et alternativ.",
+    "aliases": [
+      "select",
+      "html select",
+      "En kontroll for å velge mellom alternativer."
+    ],
+    "keywords": [
+      "select",
+      "html select",
+      "En kontroll for å velge mellom alternativer."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<label for=\"fag\">Fag</label><select id=\"fag\"><option>HTML</option><option>CSS</option></select>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-option",
+    "title": "<option>",
+    "sortTitle": "option>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<label for=\"nivaa\">Nivå</label><select id=\"nivaa\"><option value=\"basic\">Grunnleggende</option><option value=\"advanced\">Fordypning</option></select>",
+    "syntax": "<label for=\"nivaa\">Nivå</label><select id=\"nivaa\"><option value=\"basic\">Grunnleggende</option><option value=\"advanced\">Fordypning</option></select>",
+    "short": "Ett alternativ i en select.",
+    "explanation": "Bruk value for verdien programmet skal lese, og teksten mellom taggene for etiketten brukeren ser.",
+    "when": "Bruk value for verdien programmet skal lese, og teksten mellom taggene for etiketten brukeren ser.",
+    "mistakes": "Synlig etikett og value kan være forskjellige.",
+    "aliases": [
+      "option",
+      "html option",
+      "Ett alternativ i en select."
+    ],
+    "keywords": [
+      "option",
+      "html option",
+      "Ett alternativ i en select."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<label for=\"nivaa\">Nivå</label><select id=\"nivaa\"><option value=\"basic\">Grunnleggende</option><option value=\"advanced\">Fordypning</option></select>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-table",
+    "title": "<table>",
+    "sortTitle": "table>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<table><caption>Priser</caption><tr><th scope=\"col\">Vare</th><th scope=\"col\">Pris</th></tr><tr><td>Vann</td><td>20 kr</td></tr></table>",
+    "syntax": "<table><caption>Priser</caption><tr><th scope=\"col\">Vare</th><th scope=\"col\">Pris</th></tr><tr><td>Vann</td><td>20 kr</td></tr></table>",
+    "short": "En tabell for data med rad- og kolonnesammenheng.",
+    "explanation": "Bruk table med caption, th og td for tabulære data. scope på th forklarer overskriftenes retning.",
+    "when": "Bruk table med caption, th og td for tabulære data.",
+    "mistakes": "Ikke bruk tabell til sidens generelle layout.",
+    "aliases": [
+      "table",
+      "html table",
+      "En tabell for data med rad- og kolonnesammenheng."
+    ],
+    "keywords": [
+      "table",
+      "html table",
+      "En tabell for data med rad- og kolonnesammenheng."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<table><caption>Priser</caption><tr><th scope=\"col\">Vare</th><th scope=\"col\">Pris</th></tr><tr><td>Vann</td><td>20 kr</td></tr></table>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-thead",
+    "title": "<thead>",
+    "sortTitle": "thead>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<table><thead><tr><th scope=\"col\">Fag</th></tr></thead><tbody><tr><td>HTML</td></tr></tbody></table>",
+    "syntax": "<table><thead><tr><th scope=\"col\">Fag</th></tr></thead><tbody><tr><td>HTML</td></tr></tbody></table>",
+    "short": "Grupperer tabellens overskriftsrader.",
+    "explanation": "Legg tr med th-celler i thead. Den gir struktur til tabellen og kan styles som en egen del.",
+    "when": "Legg tr med th-celler i thead.",
+    "mistakes": "Thead inneholder rader, ikke celler direkte.",
+    "aliases": [
+      "thead",
+      "html thead",
+      "Grupperer tabellens overskriftsrader."
+    ],
+    "keywords": [
+      "thead",
+      "html thead",
+      "Grupperer tabellens overskriftsrader."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<table><thead><tr><th scope=\"col\">Fag</th></tr></thead><tbody><tr><td>HTML</td></tr></tbody></table>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-tbody",
+    "title": "<tbody>",
+    "sortTitle": "tbody>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<table><tbody><tr><td>HTML</td><td>09.00</td></tr></tbody></table>",
+    "syntax": "<table><tbody><tr><td>HTML</td><td>09.00</td></tr></tbody></table>",
+    "short": "Grupperer tabellens datarader.",
+    "explanation": "Bruk tbody rundt rader med selve innholdet. Nettleseren kan legge til tbody i DOM også når den ikke står i kilden.",
+    "when": "Bruk tbody rundt rader med selve innholdet.",
+    "mistakes": "Husk at nettleserens DOM kan ha et ekstra tbody-nivå ved CSS-selektorer.",
+    "aliases": [
+      "tbody",
+      "html tbody",
+      "Grupperer tabellens datarader."
+    ],
+    "keywords": [
+      "tbody",
+      "html tbody",
+      "Grupperer tabellens datarader."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<table><tbody><tr><td>HTML</td><td>09.00</td></tr></tbody></table>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-tr",
+    "title": "<tr>",
+    "sortTitle": "tr>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<table><tr><th scope=\"col\">Fag</th></tr><tr><td>CSS</td></tr></table>",
+    "syntax": "<table><tr><th scope=\"col\">Fag</th></tr><tr><td>CSS</td></tr></table>",
+    "short": "Én rad i en tabell.",
+    "explanation": "Legg th eller td inni tr. Radene bør ha en konsekvent sammenheng med kolonnene.",
+    "when": "Legg th eller td inni tr.",
+    "mistakes": "Ikke plasser en tr utenfor table eller tabellens radgrupper.",
+    "aliases": [
+      "tr",
+      "html tr",
+      "Én rad i en tabell."
+    ],
+    "keywords": [
+      "tr",
+      "html tr",
+      "Én rad i en tabell."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<table><tr><th scope=\"col\">Fag</th></tr><tr><td>CSS</td></tr></table>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-th",
+    "title": "<th>",
+    "sortTitle": "th>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<table><tr><th scope=\"row\">Mandag</th><td>HTML</td></tr></table>",
+    "syntax": "<table><tr><th scope=\"row\">Mandag</th><td>HTML</td></tr></table>",
+    "short": "En overskriftscelle i en tabell.",
+    "explanation": "Bruk scope=\"col\" for en kolonne og scope=\"row\" for en rad. Dette hjelper hjelpemidler å knytte data til riktig overskrift.",
+    "when": "Bruk scope=\"col\" for en kolonne og scope=\"row\" for en rad.",
+    "mistakes": "Fet tekst i en td gir ikke samme semantikk som th.",
+    "aliases": [
+      "th",
+      "html th",
+      "En overskriftscelle i en tabell."
+    ],
+    "keywords": [
+      "th",
+      "html th",
+      "En overskriftscelle i en tabell."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<table><tr><th scope=\"row\">Mandag</th><td>HTML</td></tr></table>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-td",
+    "title": "<td>",
+    "sortTitle": "td>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<table><tr><th scope=\"col\">Pris</th></tr><tr><td>25 kr</td></tr></table>",
+    "syntax": "<table><tr><th scope=\"col\">Pris</th></tr><tr><td>25 kr</td></tr></table>",
+    "short": "En datacelle i en tabellrad.",
+    "explanation": "Bruk td til data, og th til overskriftene som forklarer dem. Celler kan inneholde tekst og andre elementer.",
+    "when": "Bruk td til data, og th til overskriftene som forklarer dem.",
+    "mistakes": "Ikke glem tabellens overskrifter når du legger til nye kolonner.",
+    "aliases": [
+      "td",
+      "html td",
+      "En datacelle i en tabellrad."
+    ],
+    "keywords": [
+      "td",
+      "html td",
+      "En datacelle i en tabellrad."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<table><tr><th scope=\"col\">Pris</th></tr><tr><td>25 kr</td></tr></table>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-video",
+    "title": "<video>",
+    "sortTitle": "video>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<video controls width=\"320\" aria-label=\"Eksempelvideo\"><p>Nettleseren støtter ikke video.</p></video><p>Legg til en lokal videofil via src på egen side.</p>",
+    "syntax": "<video controls width=\"320\" aria-label=\"Eksempelvideo\"><p>Nettleseren støtter ikke video.</p></video><p>Legg til en lokal videofil via src på egen side.</p>",
+    "short": "Et innebygd videoelement.",
+    "explanation": "Bruk controls for avspillingskontroller og track for teksting. Eksempelet viser kontrollen uten videofil; legg til en lokal fil på egen side.",
+    "when": "Bruk controls for avspillingskontroller og track for teksting.",
+    "mistakes": "Ikke autoplay lyd. En video med tale trenger tilgjengelige alternativer.",
+    "aliases": [
+      "video",
+      "html video",
+      "Et innebygd videoelement."
+    ],
+    "keywords": [
+      "video",
+      "html video",
+      "Et innebygd videoelement."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<video controls width=\"320\" aria-label=\"Eksempelvideo\"><p>Nettleseren støtter ikke video.</p></video><p>Legg til en lokal videofil via src på egen side.</p>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-audio",
+    "title": "<audio>",
+    "sortTitle": "audio>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<audio controls aria-label=\"Eksempellyd\"></audio><p>Legg til en lokal lydfil. Tekstversjon: Velkommen til verkstedet.</p>",
+    "syntax": "<audio controls aria-label=\"Eksempellyd\"></audio><p>Legg til en lokal lydfil. Tekstversjon: Velkommen til verkstedet.</p>",
+    "short": "Et innebygd lydelement.",
+    "explanation": "Bruk controls og tilby en tekstlig gjengivelse av viktig lydinnhold. En kilde må legges til for å spille av lyd.",
+    "when": "Bruk controls og tilby en tekstlig gjengivelse av viktig lydinnhold.",
+    "mistakes": "Ikke la lyd starte uten at brukeren har bedt om det.",
+    "aliases": [
+      "audio",
+      "html audio",
+      "Et innebygd lydelement."
+    ],
+    "keywords": [
+      "audio",
+      "html audio",
+      "Et innebygd lydelement."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<audio controls aria-label=\"Eksempellyd\"></audio><p>Legg til en lokal lydfil. Tekstversjon: Velkommen til verkstedet.</p>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-source",
+    "title": "<source>",
+    "sortTitle": "source>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<video controls aria-label=\"Video\"><source src=\"film.mp4\" type=\"video/mp4\"></video><p>film.mp4 må finnes på din egen side.</p>",
+    "syntax": "<video controls aria-label=\"Video\"><source src=\"film.mp4\" type=\"video/mp4\"></video><p>film.mp4 må finnes på din egen side.</p>",
+    "short": "Tilbyr en mediekilde til video, audio eller picture.",
+    "explanation": "Bruk source når du vil gi flere formater eller bildekilder. Nettleseren velger en kilde den kan bruke.",
+    "when": "Bruk source når du vil gi flere formater eller bildekilder.",
+    "mistakes": "Source må stå inni et egnet foreldrelement. Ingen kildefil følger dette eksempelet.",
+    "aliases": [
+      "source",
+      "html source",
+      "Tilbyr en mediekilde til video, audio eller picture."
+    ],
+    "keywords": [
+      "source",
+      "html source",
+      "Tilbyr en mediekilde til video, audio eller picture."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<video controls aria-label=\"Video\"><source src=\"film.mp4\" type=\"video/mp4\"></video><p>film.mp4 må finnes på din egen side.</p>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-details",
+    "title": "<details>",
+    "sortTitle": "details>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<details><summary>Se forklaringen</summary><p>Dette er ekstra informasjon.</p></details>",
+    "syntax": "<details><summary>Se forklaringen</summary><p>Dette er ekstra informasjon.</p></details>",
+    "short": "Et område som kan foldes ut.",
+    "explanation": "Bruk details for tilleggsinformasjon som brukeren kan åpne. Første summary er den synlige kontrollen.",
+    "when": "Bruk details for tilleggsinformasjon som brukeren kan åpne.",
+    "mistakes": "Ikke legg kritisk informasjon utilgjengelig bak en uklar etikett.",
+    "aliases": [
+      "details",
+      "html details",
+      "Et område som kan foldes ut."
+    ],
+    "keywords": [
+      "details",
+      "html details",
+      "Et område som kan foldes ut."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<details><summary>Se forklaringen</summary><p>Dette er ekstra informasjon.</p></details>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-summary",
+    "title": "<summary>",
+    "sortTitle": "summary>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<details><summary>Hvorfor bruke semantisk HTML?</summary><p>Det beskriver innholdets rolle.</p></details>",
+    "syntax": "<details><summary>Hvorfor bruke semantisk HTML?</summary><p>Det beskriver innholdets rolle.</p></details>",
+    "short": "Den synlige kontrollen til details.",
+    "explanation": "Bruk en presis tekst som beskriver innholdet som åpnes. Nettleseren gir tastaturstøtte og åpen/lukket tilstand.",
+    "when": "Bruk en presis tekst som beskriver innholdet som åpnes.",
+    "mistakes": "Summary skal være første summary-barn i details.",
+    "aliases": [
+      "summary",
+      "html summary",
+      "Den synlige kontrollen til details."
+    ],
+    "keywords": [
+      "summary",
+      "html summary",
+      "Den synlige kontrollen til details."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<details><summary>Hvorfor bruke semantisk HTML?</summary><p>Det beskriver innholdets rolle.</p></details>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-dialog",
+    "title": "<dialog>",
+    "sortTitle": "dialog>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<button id=\"apne\">Åpne dialog</button><dialog aria-labelledby=\"tittel\"><h2 id=\"tittel\">En beskjed</h2><form method=\"dialog\"><button>Lukk</button></form></dialog>",
+    "syntax": "<button id=\"apne\">Åpne dialog</button><dialog aria-labelledby=\"tittel\"><h2 id=\"tittel\">En beskjed</h2><form method=\"dialog\"><button>Lukk</button></form></dialog>",
+    "short": "En native dialog som kan åpnes modalt.",
+    "explanation": "Bruk showModal() for modal visning med fokusfelle og utilgjengelig bakgrunn. Gi dialogen navn og en lukkeknapp.",
+    "when": "Bruk showModal() for modal visning med fokusfelle og utilgjengelig bakgrunn.",
+    "mistakes": "Ikke forvent at open-attributtet alene gjør dialogen modal.",
+    "aliases": [
+      "dialog",
+      "html dialog",
+      "En native dialog som kan åpnes modalt."
+    ],
+    "keywords": [
+      "dialog",
+      "html dialog",
+      "En native dialog som kan åpnes modalt."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<button id=\"apne\">Åpne dialog</button><dialog aria-labelledby=\"tittel\"><h2 id=\"tittel\">En beskjed</h2><form method=\"dialog\"><button>Lukk</button></form></dialog>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": "document.querySelector(\"#apne\").onclick = () => document.querySelector(\"dialog\").showModal();"
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-fieldset",
+    "title": "<fieldset>",
+    "sortTitle": "fieldset>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<fieldset><legend>Velg fag</legend><label><input type=\"radio\" name=\"fag\"> HTML</label><label><input type=\"radio\" name=\"fag\"> CSS</label></fieldset>",
+    "syntax": "<fieldset><legend>Velg fag</legend><label><input type=\"radio\" name=\"fag\"> HTML</label><label><input type=\"radio\" name=\"fag\"> CSS</label></fieldset>",
+    "short": "Grupperer relaterte skjemakontroller.",
+    "explanation": "Bruk fieldset og legend for radioknapper som svarer på samme spørsmål. Hjelpemidler kan lese gruppens navn sammen med kontrollene.",
+    "when": "Bruk fieldset og legend for radioknapper som svarer på samme spørsmål.",
+    "mistakes": "En visuell ramme alene erstatter ikke den semantiske gruppen.",
+    "aliases": [
+      "fieldset",
+      "html fieldset",
+      "Grupperer relaterte skjemakontroller."
+    ],
+    "keywords": [
+      "fieldset",
+      "html fieldset",
+      "Grupperer relaterte skjemakontroller."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<fieldset><legend>Velg fag</legend><label><input type=\"radio\" name=\"fag\"> HTML</label><label><input type=\"radio\" name=\"fag\"> CSS</label></fieldset>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-legend",
+    "title": "<legend>",
+    "sortTitle": "legend>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<fieldset><legend>Kontaktmåte</legend><label><input type=\"checkbox\"> E-post</label></fieldset>",
+    "syntax": "<fieldset><legend>Kontaktmåte</legend><label><input type=\"checkbox\"> E-post</label></fieldset>",
+    "short": "Gir en fieldset-gruppe navn.",
+    "explanation": "Plasser legend først i fieldset og skriv selve spørsmålet eller gruppenavnet.",
+    "when": "Plasser legend først i fieldset og skriv selve spørsmålet eller gruppenavnet.",
+    "mistakes": "Ikke bruk legend som en generell bildetekst.",
+    "aliases": [
+      "legend",
+      "html legend",
+      "Gir en fieldset-gruppe navn."
+    ],
+    "keywords": [
+      "legend",
+      "html legend",
+      "Gir en fieldset-gruppe navn."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<fieldset><legend>Kontaktmåte</legend><label><input type=\"checkbox\"> E-post</label></fieldset>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-script",
+    "title": "<script>",
+    "sortTitle": "script>",
+    "category": "html",
+    "type": "HTML-tagg",
+    "displayCode": "<p id=\"melding\">Venter</p><script>document.querySelector(\"#melding\").textContent = \"JavaScript kjørte\";</script>",
+    "syntax": "<p id=\"melding\">Venter</p><script>document.querySelector(\"#melding\").textContent = \"JavaScript kjørte\";</script>",
+    "short": "Laster eller inneholder JavaScript.",
+    "explanation": "Bruk type=\"module\" for moderne import/export og eget scope. En ekstern fil angis med src.",
+    "when": "Bruk type=\"module\" for moderne import/export og eget scope.",
+    "mistakes": "Ikke kjør koden før elementene den trenger finnes. Eksterne filstier er sperret i verkstedet.",
+    "aliases": [
+      "script",
+      "html script",
+      "Laster eller inneholder JavaScript."
+    ],
+    "keywords": [
+      "script",
+      "html script",
+      "Laster eller inneholder JavaScript."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<p id=\"melding\">Venter</p><script>document.querySelector(\"#melding\").textContent = \"JavaScript kjørte\";</script>",
+      "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-attr-id",
+    "title": "id (attributt)",
+    "sortTitle": "id (attributt)",
+    "category": "html",
+    "type": "HTML-attributt",
+    "displayCode": "<h2 id=\"tips\">Tips</h2><a href=\"#tips\">Gå til tips</a>",
+    "syntax": "<h2 id=\"tips\">Tips</h2><a href=\"#tips\">Gå til tips</a>",
+    "short": "En unik identifikator for ett element.",
+    "explanation": "Bruk id for ankermål, label-koblinger og JavaScript-oppslag. CSS velger en id med #.",
+    "when": "Bruk id for ankermål, label-koblinger og JavaScript-oppslag.",
+    "mistakes": "Hver id skal være unik i dokumentet.",
+    "aliases": [
+      "id",
+      "En unik identifikator for ett element."
+    ],
+    "keywords": [
+      "id",
+      "En unik identifikator for ett element."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<h2 id=\"tips\">Tips</h2><a href=\"#tips\">Gå til tips</a>",
+      "css": "",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-attr-href",
+    "title": "href (attributt)",
+    "sortTitle": "href (attributt)",
+    "category": "html",
+    "type": "HTML-attributt",
+    "displayCode": "<a href=\"#tips\">Se tips</a><h2 id=\"tips\">Tips</h2>",
+    "syntax": "<a href=\"#tips\">Se tips</a><h2 id=\"tips\">Tips</h2>",
+    "short": "Målet til en lenke eller ressurskobling.",
+    "explanation": "Bruk href på a for navigasjon og på link for en ressurs. Relative stier regnes fra dokumentets adresse.",
+    "when": "Bruk href på a for navigasjon og på link for en ressurs.",
+    "mistakes": "Ikke bruk src når du mener målet til en lenke.",
+    "aliases": [
+      "href",
+      "Målet til en lenke eller ressurskobling."
+    ],
+    "keywords": [
+      "href",
+      "Målet til en lenke eller ressurskobling."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<a href=\"#tips\">Se tips</a><h2 id=\"tips\">Tips</h2>",
+      "css": "",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-attr-src",
+    "title": "src (attributt)",
+    "sortTitle": "src (attributt)",
+    "category": "html",
+    "type": "HTML-attributt",
+    "displayCode": "<img src=\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27120%27 height=%2780%27%3E%3Crect width=%27120%27 height=%2780%27 fill=%27%23174f42%27/%3E%3C/svg%3E\" alt=\"Grønt fargefelt\">",
+    "syntax": "<img src=\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27120%27 height=%2780%27%3E%3Crect width=%27120%27 height=%2780%27 fill=%27%23174f42%27/%3E%3C/svg%3E\" alt=\"Grønt fargefelt\">",
+    "short": "Adressen til en ressurs som skal lastes.",
+    "explanation": "Bruk src på for eksempel img, script, audio og video. Filen må finnes på adressen.",
+    "when": "Bruk src på for eksempel img, script, audio og video.",
+    "mistakes": "Ikke forvent at lokale filer på din disk finnes på alle besøkendes maskiner.",
+    "aliases": [
+      "src",
+      "Adressen til en ressurs som skal lastes."
+    ],
+    "keywords": [
+      "src",
+      "Adressen til en ressurs som skal lastes."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<img src=\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27120%27 height=%2780%27%3E%3Crect width=%27120%27 height=%2780%27 fill=%27%23174f42%27/%3E%3C/svg%3E\" alt=\"Grønt fargefelt\">",
+      "css": "",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-attr-alt",
+    "title": "alt (attributt)",
+    "sortTitle": "alt (attributt)",
+    "category": "html",
+    "type": "HTML-attributt",
+    "displayCode": "<img src=\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27120%27 height=%2780%27%3E%3Crect width=%27120%27 height=%2780%27 fill=%27%23174f42%27/%3E%3C/svg%3E\" alt=\"Mørkegrønn fargeprøve\">",
+    "syntax": "<img src=\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27120%27 height=%2780%27%3E%3Crect width=%27120%27 height=%2780%27 fill=%27%23174f42%27/%3E%3C/svg%3E\" alt=\"Mørkegrønn fargeprøve\">",
+    "short": "En tekstlig erstatning for et bilde.",
+    "explanation": "Beskriv bildets funksjon eller relevante innhold. Et dekorativt bilde får tom alt-tekst.",
+    "when": "Beskriv bildets funksjon eller relevante innhold.",
+    "mistakes": "Manglende alt og alt=\"\" betyr forskjellige ting.",
+    "aliases": [
+      "alt",
+      "En tekstlig erstatning for et bilde."
+    ],
+    "keywords": [
+      "alt",
+      "En tekstlig erstatning for et bilde."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<img src=\"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27120%27 height=%2780%27%3E%3Crect width=%27120%27 height=%2780%27 fill=%27%23174f42%27/%3E%3C/svg%3E\" alt=\"Mørkegrønn fargeprøve\">",
+      "css": "",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-attr-title",
+    "title": "title (attributt)",
+    "sortTitle": "title (attributt)",
+    "category": "html",
+    "type": "HTML-attributt",
+    "displayCode": "<p title=\"HyperText Markup Language\">HTML beskriver strukturen.</p>",
+    "syntax": "<p title=\"HyperText Markup Language\">HTML beskriver strukturen.</p>",
+    "short": "Utfyllende informasjon som noen nettlesere viser ved hover.",
+    "explanation": "Bruk title bare til supplerende informasjon. Det er ikke en pålitelig erstatning for synlig tekst eller label.",
+    "when": "Bruk title bare til supplerende informasjon.",
+    "mistakes": "Viktig informasjon må ikke bare finnes i title.",
+    "aliases": [
+      "title",
+      "Utfyllende informasjon som noen nettlesere viser ved hover."
+    ],
+    "keywords": [
+      "title",
+      "Utfyllende informasjon som noen nettlesere viser ved hover."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<p title=\"HyperText Markup Language\">HTML beskriver strukturen.</p>",
+      "css": "",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-attr-lang",
+    "title": "lang (attributt)",
+    "sortTitle": "lang (attributt)",
+    "category": "html",
+    "type": "HTML-attributt",
+    "displayCode": "<p lang=\"nb\">En norsk setning.</p><p lang=\"en\">An English sentence.</p>",
+    "syntax": "<p lang=\"nb\">En norsk setning.</p><p lang=\"en\">An English sentence.</p>",
+    "short": "Angir språket i dokumentet eller en tekstdel.",
+    "explanation": "Bruk lang=\"nb\" på html for norsk bokmål. Marker en engelsk tekstdel med lang=\"en\" ved behov.",
+    "when": "Bruk lang=\"nb\" på html for norsk bokmål.",
+    "mistakes": "Ikke bruk landkode NO alene som språkkode.",
+    "aliases": [
+      "lang",
+      "Angir språket i dokumentet eller en tekstdel."
+    ],
+    "keywords": [
+      "lang",
+      "Angir språket i dokumentet eller en tekstdel."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<p lang=\"nb\">En norsk setning.</p><p lang=\"en\">An English sentence.</p>",
+      "css": "",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-attr-type",
+    "title": "type (attributt)",
+    "sortTitle": "type (attributt)",
+    "category": "html",
+    "type": "HTML-attributt",
+    "displayCode": "<label for=\"epost\">E-post</label><input id=\"epost\" type=\"email\"><button type=\"button\">Kontroller</button>",
+    "syntax": "<label for=\"epost\">E-post</label><input id=\"epost\" type=\"email\"><button type=\"button\">Kontroller</button>",
+    "short": "Bestemmer kontrollens eller ressursens type.",
+    "explanation": "Bruk type=\"email\" på et e-postfelt og type=\"button\" på en knapp som ikke skal sende inn skjema.",
+    "when": "Bruk type=\"email\" på et e-postfelt og type=\"button\" på en knapp som ikke skal sende inn skjema.",
+    "mistakes": "Type betyr ulike ting på ulike elementer.",
+    "aliases": [
+      "type",
+      "Bestemmer kontrollens eller ressursens type."
+    ],
+    "keywords": [
+      "type",
+      "Bestemmer kontrollens eller ressursens type."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<label for=\"epost\">E-post</label><input id=\"epost\" type=\"email\"><button type=\"button\">Kontroller</button>",
+      "css": "",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-attr-name",
+    "title": "name (attributt)",
+    "sortTitle": "name (attributt)",
+    "category": "html",
+    "type": "HTML-attributt",
+    "displayCode": "<label for=\"fornavn\">Fornavn</label><input id=\"fornavn\" name=\"fornavn\">",
+    "syntax": "<label for=\"fornavn\">Fornavn</label><input id=\"fornavn\" name=\"fornavn\">",
+    "short": "Navnet på en verdi som sendes inn fra skjema.",
+    "explanation": "Bruk name for felter som skal inkluderes i FormData. Radioknapper med samme name utgjør en gruppe.",
+    "when": "Bruk name for felter som skal inkluderes i FormData.",
+    "mistakes": "Id kobler label til feltet; name er nøkkelen til verdien ved innsending.",
+    "aliases": [
+      "name",
+      "Navnet på en verdi som sendes inn fra skjema."
+    ],
+    "keywords": [
+      "name",
+      "Navnet på en verdi som sendes inn fra skjema."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<label for=\"fornavn\">Fornavn</label><input id=\"fornavn\" name=\"fornavn\">",
+      "css": "",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-attr-value",
+    "title": "value (attributt)",
+    "sortTitle": "value (attributt)",
+    "category": "html",
+    "type": "HTML-attributt",
+    "displayCode": "<label for=\"antall\">Antall</label><input id=\"antall\" type=\"number\" value=\"3\">",
+    "syntax": "<label for=\"antall\">Antall</label><input id=\"antall\" type=\"number\" value=\"3\">",
+    "short": "Startverdi eller innsendt verdi for en kontroll.",
+    "explanation": "Bruk value for input og option. I JavaScript leser du feltets nåværende verdi via value-egenskapen.",
+    "when": "Bruk value for input og option.",
+    "mistakes": "Textarea bruker innhold mellom taggene som standardtekst.",
+    "aliases": [
+      "value",
+      "Startverdi eller innsendt verdi for en kontroll."
+    ],
+    "keywords": [
+      "value",
+      "Startverdi eller innsendt verdi for en kontroll."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<label for=\"antall\">Antall</label><input id=\"antall\" type=\"number\" value=\"3\">",
+      "css": "",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-attr-placeholder",
+    "title": "placeholder (attributt)",
+    "sortTitle": "placeholder (attributt)",
+    "category": "html",
+    "type": "HTML-attributt",
+    "displayCode": "<label for=\"navn\">Fornavn</label><input id=\"navn\" placeholder=\"For eksempel Ada\">",
+    "syntax": "<label for=\"navn\">Fornavn</label><input id=\"navn\" placeholder=\"For eksempel Ada\">",
+    "short": "Et kort eksempel som vises når feltet er tomt.",
+    "explanation": "Bruk placeholder for et eksempel på formatet, sammen med en synlig label. Teksten forsvinner når brukeren skriver.",
+    "when": "Bruk placeholder for et eksempel på formatet, sammen med en synlig label.",
+    "mistakes": "Placeholder erstatter ikke label eller en varig instruksjon.",
+    "aliases": [
+      "placeholder",
+      "Et kort eksempel som vises når feltet er tomt."
+    ],
+    "keywords": [
+      "placeholder",
+      "Et kort eksempel som vises når feltet er tomt."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<label for=\"navn\">Fornavn</label><input id=\"navn\" placeholder=\"For eksempel Ada\">",
+      "css": "",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-attr-required",
+    "title": "required (attributt)",
+    "sortTitle": "required (attributt)",
+    "category": "html",
+    "type": "HTML-attributt",
+    "displayCode": "<form><label for=\"navn\">Navn (obligatorisk)</label><input id=\"navn\" required><button>Prøv</button></form>",
+    "syntax": "<form><label for=\"navn\">Navn (obligatorisk)</label><input id=\"navn\" required><button>Prøv</button></form>",
+    "short": "Markerer at feltet må fylles ut for gyldig innsending.",
+    "explanation": "Bruk required på obligatoriske felt og forklar kravet i teksten. Nettleseren utfører grunnvalidering.",
+    "when": "Bruk required på obligatoriske felt og forklar kravet i teksten.",
+    "mistakes": "required=\"false\" aktiverer fortsatt attributtet; fjern det for å slå av kravet.",
+    "aliases": [
+      "required",
+      "Markerer at feltet må fylles ut for gyldig innsending."
+    ],
+    "keywords": [
+      "required",
+      "Markerer at feltet må fylles ut for gyldig innsending."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<form><label for=\"navn\">Navn (obligatorisk)</label><input id=\"navn\" required><button>Prøv</button></form>",
+      "css": "",
+      "js": "document.querySelector(\"form\").onsubmit=e=>e.preventDefault();"
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-attr-disabled",
+    "title": "disabled (attributt)",
+    "sortTitle": "disabled (attributt)",
+    "category": "html",
+    "type": "HTML-attributt",
+    "displayCode": "<button disabled>Lagrer …</button><p>Knappen blir tilgjengelig når lagringen er ferdig.</p>",
+    "syntax": "<button disabled>Lagrer …</button><p>Knappen blir tilgjengelig når lagringen er ferdig.</p>",
+    "short": "Deaktiverer en skjemakontroll.",
+    "explanation": "Bruk disabled når en kontroll midlertidig ikke kan brukes. Forklar gjerne årsaken i synlig tekst.",
+    "when": "Bruk disabled når en kontroll midlertidig ikke kan brukes.",
+    "mistakes": "Deaktiverte felt inngår vanligvis ikke i skjemainnsendingen og kan ikke fokuseres.",
+    "aliases": [
+      "disabled",
+      "Deaktiverer en skjemakontroll."
+    ],
+    "keywords": [
+      "disabled",
+      "Deaktiverer en skjemakontroll."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<button disabled>Lagrer …</button><p>Knappen blir tilgjengelig når lagringen er ferdig.</p>",
+      "css": "",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-attr-checked",
+    "title": "checked (attributt)",
+    "sortTitle": "checked (attributt)",
+    "category": "html",
+    "type": "HTML-attributt",
+    "displayCode": "<label><input type=\"checkbox\" checked> Vis tips</label>",
+    "syntax": "<label><input type=\"checkbox\" checked> Vis tips</label>",
+    "short": "Setter starttilstanden for checkbox eller radio.",
+    "explanation": "Bruk checked for et forhåndsvalgt alternativ. Les den nåværende tilstanden via checked-egenskapen i JavaScript.",
+    "when": "Bruk checked for et forhåndsvalgt alternativ.",
+    "mistakes": "checked=\"false\" betyr fortsatt på. Fjern attributtet for en avslått starttilstand.",
+    "aliases": [
+      "checked",
+      "Setter starttilstanden for checkbox eller radio."
+    ],
+    "keywords": [
+      "checked",
+      "Setter starttilstanden for checkbox eller radio."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<label><input type=\"checkbox\" checked> Vis tips</label>",
+      "css": "",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-attr-for",
+    "title": "for (attributt)",
+    "sortTitle": "for (attributt)",
+    "category": "html",
+    "type": "HTML-attributt",
+    "displayCode": "<label for=\"sted\">Sted</label><input id=\"sted\" name=\"reisemal\">",
+    "syntax": "<label for=\"sted\">Sted</label><input id=\"sted\" name=\"reisemal\">",
+    "short": "Kobler en label til et felt med tilsvarende id.",
+    "explanation": "Bruk samme verdi i labelens for og feltets id. Koblingen gjør teksten klikkbar og gir feltet et navn.",
+    "when": "Bruk samme verdi i labelens for og feltets id.",
+    "mistakes": "For peker til id, ikke til name.",
+    "aliases": [
+      "for",
+      "Kobler en label til et felt med tilsvarende id."
+    ],
+    "keywords": [
+      "for",
+      "Kobler en label til et felt med tilsvarende id."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<label for=\"sted\">Sted</label><input id=\"sted\" name=\"reisemal\">",
+      "css": "",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "html-attr-data-star",
+    "title": "data-* (attributt)",
+    "sortTitle": "data-* (attributt)",
+    "category": "html",
+    "type": "HTML-attributt",
+    "displayCode": "<button data-film-id=\"42\">Velg filmen</button>",
+    "syntax": "<button data-film-id=\"42\">Velg filmen</button>",
+    "short": "Egne dataattributter på HTML-elementer.",
+    "explanation": "Bruk data-navn for en liten verdi som JavaScript kan lese via dataset. data-film-id blir dataset.filmId.",
+    "when": "Bruk data-navn for en liten verdi som JavaScript kan lese via dataset.",
+    "mistakes": "Dataset-verdier er tekst, ikke automatisk tall eller boolske verdier.",
+    "aliases": [
+      "data-*",
+      "Egne dataattributter på HTML-elementer."
+    ],
+    "keywords": [
+      "data-*",
+      "Egne dataattributter på HTML-elementer."
+    ],
+    "related": [
+      "html-element"
+    ],
+    "files": {
+      "html": "<button data-film-id=\"42\">Velg filmen</button>",
+      "css": "",
+      "js": ""
+    },
+    "lesson": "#/html/basic/html-elements"
+  },
+  {
+    "id": "css-color",
+    "title": "color",
+    "sortTitle": "color",
+    "category": "css",
+    "type": "CSS-egenskap",
+    "displayCode": ".card {  color: #174f42; }",
+    "syntax": ".card {  color: #174f42; }",
+    "short": "Tekstfargen til et element.",
+    "explanation": "Bruk color når du vil endre teksten uten å endre bakgrunnen. Fargen arves normalt av barn.",
+    "when": "Bruk color når du vil endre teksten uten å endre bakgrunnen.",
+    "mistakes": "Kontroller kontrast mot bakgrunnen.",
+    "aliases": [
+      "color",
+      "tekstfarge"
+    ],
+    "keywords": [
+      "color",
+      "tekstfarge"
+    ],
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card {  color: #174f42; }",
+      "js": ""
+    },
+    "lesson": "#/css/basic/css-card"
+  },
+  {
+    "id": "css-background",
+    "title": "background",
+    "sortTitle": "background",
+    "category": "css",
+    "type": "CSS-egenskap",
+    "displayCode": ".card {  background: #e9f0e9; }",
+    "syntax": ".card {  background: #e9f0e9; }",
+    "short": "En kortform for flere bakgrunnsegenskaper.",
+    "explanation": "Bruk background når du vil angi bakgrunn samlet. Uspesifiserte delverdier settes til sine initialverdier.",
+    "when": "Bruk background når du vil angi bakgrunn samlet.",
+    "mistakes": "En kortform kan nullstille en tidligere background-image.",
+    "aliases": [
+      "background",
+      "bakgrunn"
+    ],
+    "keywords": [
+      "background",
+      "bakgrunn"
+    ],
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card {  background: #e9f0e9; }",
+      "js": ""
+    },
+    "lesson": "#/css/basic/css-card"
+  },
+  {
+    "id": "css-background-color",
+    "title": "background-color",
+    "sortTitle": "background-color",
+    "category": "css",
+    "type": "CSS-egenskap",
+    "displayCode": ".card {  background-color: #e9f0e9; }",
+    "syntax": ".card {  background-color: #e9f0e9; }",
+    "short": "Fargen bak innhold og padding.",
+    "explanation": "Bruk background-color når du bare skal endre bakgrunnsfargen. Margin får ikke denne fargen.",
+    "when": "Bruk background-color når du bare skal endre bakgrunnsfargen.",
+    "mistakes": "En bakgrunnsfarge sikrer ikke lesbarhet uten passende tekstfarge.",
+    "aliases": [
+      "background-color",
+      "bakgrunnsfarge"
+    ],
+    "keywords": [
+      "background-color",
+      "bakgrunnsfarge"
+    ],
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card {  background-color: #e9f0e9; }",
+      "js": ""
+    },
+    "lesson": "#/css/basic/css-card"
+  },
+  {
+    "id": "css-font-family",
+    "title": "font-family",
+    "sortTitle": "font-family",
+    "category": "css",
+    "type": "CSS-egenskap",
+    "displayCode": ".card {  font-family: system-ui, sans-serif; }",
+    "syntax": ".card {  font-family: system-ui, sans-serif; }",
+    "short": "Skriften som brukes til teksten.",
+    "explanation": "Oppgi en prioritert liste med skrifter og en generell reservefamilie. Systemfonter trenger ingen ekstern nedlasting.",
+    "when": "Oppgi en prioritert liste med skrifter og en generell reservefamilie.",
+    "mistakes": "En font som ikke finnes blir erstattet av neste i listen.",
+    "aliases": [
+      "font-family",
+      "skrifttype font"
+    ],
+    "keywords": [
+      "font-family",
+      "skrifttype font"
+    ],
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card {  font-family: system-ui, sans-serif; }",
+      "js": ""
+    },
+    "lesson": "#/css/basic/css-card"
+  },
+  {
+    "id": "css-font-size",
+    "title": "font-size",
+    "sortTitle": "font-size",
+    "category": "css",
+    "type": "CSS-egenskap",
+    "displayCode": ".card {  font-size: 1.2rem; }",
+    "syntax": ".card {  font-size: 1.2rem; }",
+    "short": "Størrelsen på teksten.",
+    "explanation": "Bruk relative enheter som rem når teksten skal følge brukerens skriftinnstilling.",
+    "when": "Bruk relative enheter som rem når teksten skal følge brukerens skriftinnstilling.",
+    "mistakes": "Ikke sett all brødtekst i en svært liten fast pikselstørrelse.",
+    "aliases": [
+      "font-size",
+      "skriftstørrelse tekststørrelse"
+    ],
+    "keywords": [
+      "font-size",
+      "skriftstørrelse tekststørrelse"
+    ],
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card {  font-size: 1.2rem; }",
+      "js": ""
+    },
+    "lesson": "#/css/basic/css-card"
+  },
+  {
+    "id": "css-font-weight",
+    "title": "font-weight",
+    "sortTitle": "font-weight",
+    "category": "css",
+    "type": "CSS-egenskap",
+    "displayCode": ".card {  font-weight: 700; }",
+    "syntax": ".card {  font-weight: 700; }",
+    "short": "Skriftens vekt eller tykkelse.",
+    "explanation": "Bruk for eksempel 400 for normal og 700 for fet. Tilgjengelige vekter avhenger av fonten.",
+    "when": "Bruk for eksempel 400 for normal og 700 for fet.",
+    "mistakes": "Font-weight gir ikke samme semantiske betydning som strong.",
+    "aliases": [
+      "font-weight",
+      "fet tykk skrift"
+    ],
+    "keywords": [
+      "font-weight",
+      "fet tykk skrift"
+    ],
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card {  font-weight: 700; }",
+      "js": ""
+    },
+    "lesson": "#/css/basic/css-card"
+  },
+  {
+    "id": "css-line-height",
+    "title": "line-height",
+    "sortTitle": "line-height",
+    "category": "css",
+    "type": "CSS-egenskap",
+    "displayCode": ".card {  line-height: 1.7; }",
+    "syntax": ".card {  line-height: 1.7; }",
+    "short": "Høyden på hver tekstlinje.",
+    "explanation": "En enhetsløs verdi ganger skriftstørrelsen og arves godt av barn.",
+    "when": "En enhetsløs verdi ganger skriftstørrelsen og arves godt av barn.",
+    "mistakes": "For liten linjehøyde kan få tekst til å overlappe ved zoom.",
+    "aliases": [
+      "line-height",
+      "linjeavstand"
+    ],
+    "keywords": [
+      "line-height",
+      "linjeavstand"
+    ],
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card {  line-height: 1.7; }",
+      "js": ""
+    },
+    "lesson": "#/css/basic/css-card"
+  },
+  {
+    "id": "css-text-align",
+    "title": "text-align",
+    "sortTitle": "text-align",
+    "category": "css",
+    "type": "CSS-egenskap",
+    "displayCode": ".card {  text-align: center; }",
+    "syntax": ".card {  text-align: center; }",
+    "short": "Plassering av inline-innhold inne i en blokk.",
+    "explanation": "Bruk text-align for tekstjustering. Det flytter ikke selve blokken i forelderen.",
+    "when": "Bruk text-align for tekstjustering.",
+    "mistakes": "Text-align center sentrerer ikke automatisk en div med fast bredde.",
+    "aliases": [
+      "text-align",
+      "sentrere tekst"
+    ],
+    "keywords": [
+      "text-align",
+      "sentrere tekst"
+    ],
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card {  text-align: center; }",
+      "js": ""
+    },
+    "lesson": "#/css/basic/css-card"
+  },
+  {
+    "id": "css-width",
+    "title": "width",
+    "sortTitle": "width",
+    "category": "css",
+    "type": "CSS-egenskap",
+    "displayCode": ".card {  width: 80%; }",
+    "syntax": ".card {  width: 80%; }",
+    "short": "Ønsket bredde på en boks.",
+    "explanation": "Prosentbredde regnes vanligvis fra bredden til den inneholdende blokken. Box-sizing bestemmer hva bredden inkluderer.",
+    "when": "Prosentbredde regnes vanligvis fra bredden til den inneholdende blokken.",
+    "mistakes": "Faste bredder kan gi horisontal rulling på mobil.",
+    "aliases": [
+      "width",
+      "bredde"
+    ],
+    "keywords": [
+      "width",
+      "bredde"
+    ],
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card {  width: 80%; }",
+      "js": ""
+    },
+    "lesson": "#/css/basic/css-card"
+  },
+  {
+    "id": "css-height",
+    "title": "height",
+    "sortTitle": "height",
+    "category": "css",
+    "type": "CSS-egenskap",
+    "displayCode": ".card {  height: 140px; }",
+    "syntax": ".card {  height: 140px; }",
+    "short": "Ønsket høyde på en boks.",
+    "explanation": "Bruk height når en bestemt høyde er nødvendig. For tekstbokser er auto eller min-height ofte mer robust.",
+    "when": "Bruk height når en bestemt høyde er nødvendig.",
+    "mistakes": "Fast høyde kan klippe tekst ved zoom.",
+    "aliases": [
+      "height",
+      "høyde"
+    ],
+    "keywords": [
+      "height",
+      "høyde"
+    ],
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card {  height: 140px; }",
+      "js": ""
+    },
+    "lesson": "#/css/basic/css-card"
+  },
+  {
+    "id": "css-max-width",
+    "title": "max-width",
+    "sortTitle": "max-width",
+    "category": "css",
+    "type": "CSS-egenskap",
+    "displayCode": ".card {  max-width: 320px; }",
+    "syntax": ".card {  max-width: 320px; }",
+    "short": "En øvre grense for bredden.",
+    "explanation": "Bruk max-width sammen med fleksibel width for lesbarhet og mobiltilpasning.",
+    "when": "Bruk max-width sammen med fleksibel width for lesbarhet og mobiltilpasning.",
+    "mistakes": "Max-width alene gjør ikke alle indre elementer responsive.",
+    "aliases": [
+      "max-width",
+      "maksimal bredde"
+    ],
+    "keywords": [
+      "max-width",
+      "maksimal bredde"
+    ],
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card {  max-width: 320px; }",
+      "js": ""
+    },
+    "lesson": "#/css/basic/css-card"
+  },
+  {
+    "id": "css-min-height",
+    "title": "min-height",
+    "sortTitle": "min-height",
+    "category": "css",
+    "type": "CSS-egenskap",
+    "displayCode": ".card {  min-height: 120px; }",
+    "syntax": ".card {  min-height: 120px; }",
+    "short": "En nedre grense for høyden.",
+    "explanation": "Bruk min-height når en boks skal ha plass, men kunne vokse med innholdet.",
+    "when": "Bruk min-height når en boks skal ha plass, men kunne vokse med innholdet.",
+    "mistakes": "Min-height er ikke en maksimal høyde.",
+    "aliases": [
+      "min-height",
+      "minste høyde"
+    ],
+    "keywords": [
+      "min-height",
+      "minste høyde"
+    ],
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card {  min-height: 120px; }",
+      "js": ""
+    },
+    "lesson": "#/css/basic/css-card"
+  },
+  {
+    "id": "css-margin",
+    "title": "margin",
+    "sortTitle": "margin",
+    "category": "css",
+    "type": "CSS-egenskap",
+    "displayCode": ".card {  margin: 16px; }",
+    "syntax": ".card {  margin: 16px; }",
+    "short": "Avstand utenfor kanten på boksen.",
+    "explanation": "Bruk margin for avstand til naboer. Vertikale margins kan slå seg sammen i normal blokkflyt.",
+    "when": "Bruk margin for avstand til naboer.",
+    "mistakes": "Margin er ikke en del av den fargede bakgrunnen.",
+    "aliases": [
+      "margin",
+      "margin padding avstand utenfor"
+    ],
+    "keywords": [
+      "margin",
+      "margin padding avstand utenfor"
+    ],
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card {  margin: 16px; }",
+      "js": ""
+    },
+    "lesson": "#/css/basic/css-card"
+  },
+  {
+    "id": "css-padding",
+    "title": "padding",
+    "sortTitle": "padding",
+    "category": "css",
+    "type": "CSS-egenskap",
+    "displayCode": ".card {  padding: 20px; }",
+    "syntax": ".card {  padding: 20px; }",
+    "short": "Avstand mellom innholdet og kanten.",
+    "explanation": "Bruk padding når teksten trenger luft inne i en boks. Bakgrunnen dekker normalt padding.",
+    "when": "Bruk padding når teksten trenger luft inne i en boks.",
+    "mistakes": "Padding legges til width ved content-box.",
+    "aliases": [
+      "padding",
+      "padding margin avstand inni"
+    ],
+    "keywords": [
+      "padding",
+      "padding margin avstand inni"
+    ],
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card {  padding: 20px; }",
+      "js": ""
+    },
+    "lesson": "#/css/basic/css-card"
+  },
+  {
+    "id": "css-border",
+    "title": "border",
+    "sortTitle": "border",
+    "category": "css",
+    "type": "CSS-egenskap",
+    "displayCode": ".card {  border: 2px solid #174f42; }",
+    "syntax": ".card {  border: 2px solid #174f42; }",
+    "short": "Kanten rundt innhold og padding.",
+    "explanation": "Kortformen kombinerer bredde, stil og farge. Bruk en synlig kant sammen med tekst når den betyr noe viktig.",
+    "when": "Kortformen kombinerer bredde, stil og farge.",
+    "mistakes": "Uten en border-style som solid vises vanligvis ingen kant.",
+    "aliases": [
+      "border",
+      "kant ramme"
+    ],
+    "keywords": [
+      "border",
+      "kant ramme"
+    ],
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card {  border: 2px solid #174f42; }",
+      "js": ""
+    },
+    "lesson": "#/css/basic/css-card"
+  },
+  {
+    "id": "css-border-radius",
+    "title": "border-radius",
+    "sortTitle": "border-radius",
+    "category": "css",
+    "type": "CSS-egenskap",
+    "displayCode": ".card {  border-radius: 12px; }",
+    "syntax": ".card {  border-radius: 12px; }",
+    "short": "Avrunder boksens hjørner.",
+    "explanation": "Bruk en liten radius for mykere hjørner. Prosentverdier beregnes fra boksens dimensjoner.",
+    "when": "Bruk en liten radius for mykere hjørner.",
+    "mistakes": "Border-radius beskjærer ikke automatisk alle barn; overflow kan også være relevant.",
+    "aliases": [
+      "border-radius",
+      "runde hjørner"
+    ],
+    "keywords": [
+      "border-radius",
+      "runde hjørner"
+    ],
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card {  border-radius: 12px; }",
+      "js": ""
+    },
+    "lesson": "#/css/basic/css-card"
+  },
+  {
+    "id": "css-box-shadow",
+    "title": "box-shadow",
+    "sortTitle": "box-shadow",
+    "category": "css",
+    "type": "CSS-egenskap",
+    "displayCode": ".card {  box-shadow: 0 3px 8px #0003; }",
+    "syntax": ".card {  box-shadow: 0 3px 8px #0003; }",
+    "short": "En skygge rundt en boks.",
+    "explanation": "Verdiene angir blant annet forskyvning, uskarphet og farge. Skyggen påvirker ikke layoutstørrelsen.",
+    "when": "Verdiene angir blant annet forskyvning, uskarphet og farge.",
+    "mistakes": "Skygge bør ikke være eneste synlige avgrensning i høy kontrast.",
+    "aliases": [
+      "box-shadow",
+      "skygge"
+    ],
+    "keywords": [
+      "box-shadow",
+      "skygge"
+    ],
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card {  box-shadow: 0 3px 8px #0003; }",
+      "js": ""
+    },
+    "lesson": "#/css/basic/css-card"
+  },
+  {
+    "id": "css-display",
+    "title": "display",
+    "sortTitle": "display",
+    "category": "css",
+    "type": "CSS-egenskap",
+    "displayCode": ".card {  display: block; }",
+    "syntax": ".card {  display: block; }",
+    "short": "Bestemmer hvordan elementet deltar i layouten.",
+    "explanation": "Block tar normalt en egen linje; inline følger tekstflyten. Flex og grid oppretter egne layoutmodeller for barna.",
+    "when": "Block tar normalt en egen linje; inline følger tekstflyten.",
+    "mistakes": "Display none fjerner elementet også fra tilgjengelighetstreet.",
+    "aliases": [
+      "display",
+      "display block inline forskjell"
+    ],
+    "keywords": [
+      "display",
+      "display block inline forskjell"
+    ],
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card {  display: block; }",
+      "js": ""
+    },
+    "lesson": "#/css/basic/css-card"
+  },
+  {
+    "id": "css-position",
+    "title": "position",
+    "sortTitle": "position",
+    "category": "css",
+    "type": "CSS-egenskap",
+    "displayCode": ".card {  position: relative; }",
+    "syntax": ".card {  position: relative; }",
+    "short": "Bestemmer posisjoneringsmodellen.",
+    "explanation": "Relative beholder plassen i normal flyt. Absolute bruker en posisjonerende forfader; fixed knyttes vanligvis til visningsområdet. Sticky følger flyten til en grense.",
+    "when": "Relative beholder plassen i normal flyt.",
+    "mistakes": "Absolute plasseres ikke nødvendigvis i forhold til direkte forelder.",
+    "aliases": [
+      "position",
+      "plassering relative absolute fixed sticky"
+    ],
+    "keywords": [
+      "position",
+      "plassering relative absolute fixed sticky"
+    ],
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card {  position: relative; }",
+      "js": ""
+    },
+    "lesson": "#/css/basic/css-card"
+  },
+  {
+    "id": "css-top",
+    "title": "top",
+    "sortTitle": "top",
+    "category": "css",
+    "type": "CSS-egenskap",
+    "displayCode": ".card { position: relative; top: 8px; }",
+    "syntax": ".card { position: relative; top: 8px; }",
+    "short": "Avstand fra øvre referansekant for et posisjonert element.",
+    "explanation": "Bruk top sammen med en annen position enn static. Tolkningen avhenger av posisjoneringsmodellen.",
+    "when": "Bruk top sammen med en annen position enn static.",
+    "mistakes": "Top har ingen forskyvningseffekt på et vanlig static-element.",
+    "aliases": [
+      "top",
+      "øverst top right bottom left"
+    ],
+    "keywords": [
+      "top",
+      "øverst top right bottom left"
+    ],
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card { position: relative; top: 8px; }",
+      "js": ""
+    },
+    "lesson": "#/css/basic/css-card"
+  },
+  {
+    "id": "css-right",
+    "title": "right",
+    "sortTitle": "right",
+    "category": "css",
+    "type": "CSS-egenskap",
+    "displayCode": ".card { position: relative; right: 8px; }",
+    "syntax": ".card { position: relative; right: 8px; }",
+    "short": "Avstand fra høyre referansekant.",
+    "explanation": "Bruk right til å plassere eller forskyve et posisjonert element fra høyresiden.",
+    "when": "Bruk right til å plassere eller forskyve et posisjonert element fra høyresiden.",
+    "mistakes": "Right betyr ikke at tekst høyrejusteres.",
+    "aliases": [
+      "right",
+      "høyre right"
+    ],
+    "keywords": [
+      "right",
+      "høyre right"
+    ],
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card { position: relative; right: 8px; }",
+      "js": ""
+    },
+    "lesson": "#/css/basic/css-card"
+  },
+  {
+    "id": "css-bottom",
+    "title": "bottom",
+    "sortTitle": "bottom",
+    "category": "css",
+    "type": "CSS-egenskap",
+    "displayCode": ".card { position: relative; bottom: 8px; }",
+    "syntax": ".card { position: relative; bottom: 8px; }",
+    "short": "Avstand fra nedre referansekant.",
+    "explanation": "Bruk bottom på et posisjonert element når bunnkanten skal være referanse.",
+    "when": "Bruk bottom på et posisjonert element når bunnkanten skal være referanse.",
+    "mistakes": "Et fixed-element kan dekke innhold ved zoom hvis plassen ikke er planlagt.",
+    "aliases": [
+      "bottom",
+      "nederst bottom"
+    ],
+    "keywords": [
+      "bottom",
+      "nederst bottom"
+    ],
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card { position: relative; bottom: 8px; }",
+      "js": ""
+    },
+    "lesson": "#/css/basic/css-card"
+  },
+  {
+    "id": "css-left",
+    "title": "left",
+    "sortTitle": "left",
+    "category": "css",
+    "type": "CSS-egenskap",
+    "displayCode": ".card { position: relative; left: 8px; }",
+    "syntax": ".card { position: relative; left: 8px; }",
+    "short": "Avstand fra venstre referansekant.",
+    "explanation": "Bruk left sammen med position for forskyvning. Ved internasjonal layout kan logiske inset-egenskaper være bedre.",
+    "when": "Bruk left sammen med position for forskyvning.",
+    "mistakes": "Left flytter ikke vanlig statisk innhold.",
+    "aliases": [
+      "left",
+      "venstre left"
+    ],
+    "keywords": [
+      "left",
+      "venstre left"
+    ],
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card { position: relative; left: 8px; }",
+      "js": ""
+    },
+    "lesson": "#/css/basic/css-card"
+  },
+  {
+    "id": "css-z-index",
+    "title": "z-index",
+    "sortTitle": "z-index",
+    "category": "css",
+    "type": "CSS-egenskap",
+    "displayCode": ".card { position: relative; z-index: 2; }",
+    "syntax": ".card { position: relative; z-index: 2; }",
+    "short": "Plassering i stablingsrekkefølgen.",
+    "explanation": "Bruk z-index for overlappende elementer innenfor samme stablingskontekst. Flex- og grid-elementer har også egne regler.",
+    "when": "Bruk z-index for overlappende elementer innenfor samme stablingskontekst.",
+    "mistakes": "Et høyt tall slipper ikke et barn ut av foreldrens stablingskontekst.",
+    "aliases": [
+      "z-index",
+      "lag foran bak"
+    ],
+    "keywords": [
+      "z-index",
+      "lag foran bak"
+    ],
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card { position: relative; z-index: 2; }",
+      "js": ""
+    },
+    "lesson": "#/css/basic/css-card"
+  },
+  {
+    "id": "css-overflow",
+    "title": "overflow",
+    "sortTitle": "overflow",
+    "category": "css",
+    "type": "CSS-egenskap",
+    "displayCode": ".card {  overflow: auto; }",
+    "syntax": ".card {  overflow: auto; }",
+    "short": "Hva som skjer med innhold som er større enn boksen.",
+    "explanation": "Auto gir rulling når det trengs. Hidden klipper innhold. Gjør rullbare regioner tilgjengelige med tastatur.",
+    "when": "Auto gir rulling når det trengs.",
+    "mistakes": "Ikke skjul viktig tekst med overflow hidden uten annen tilgang.",
+    "aliases": [
+      "overflow",
+      "rulling klippe"
+    ],
+    "keywords": [
+      "overflow",
+      "rulling klippe"
+    ],
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card {  overflow: auto; }",
+      "js": ""
+    },
+    "lesson": "#/css/basic/css-card"
+  },
+  {
+    "id": "css-opacity",
+    "title": "opacity",
+    "sortTitle": "opacity",
+    "category": "css",
+    "type": "CSS-egenskap",
+    "displayCode": ".card {  opacity: 0.8; }",
+    "syntax": ".card {  opacity: 0.8; }",
+    "short": "Gjennomsiktighet for hele elementet med innhold.",
+    "explanation": "Bruk en verdi fra 0 til 1. Både tekst og barn blir gjennomsiktige.",
+    "when": "Bruk en verdi fra 0 til 1.",
+    "mistakes": "Opacity 0 skjuler visuelt, men fjerner ikke tastaturfokus eller semantikk.",
+    "aliases": [
+      "opacity",
+      "gjennomsiktighet"
+    ],
+    "keywords": [
+      "opacity",
+      "gjennomsiktighet"
+    ],
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card {  opacity: 0.8; }",
+      "js": ""
+    },
+    "lesson": "#/css/basic/css-card"
+  },
+  {
+    "id": "css-transform",
+    "title": "transform",
+    "sortTitle": "transform",
+    "category": "css",
+    "type": "CSS-egenskap",
+    "displayCode": ".card {  transform: translateX(8px); }",
+    "syntax": ".card {  transform: translateX(8px); }",
+    "short": "Visuell flytting, skalering eller rotasjon.",
+    "explanation": "Transform endrer hvordan boksen tegnes uten å flytte naboene i normal dokumentflyt.",
+    "when": "Transform endrer hvordan boksen tegnes uten å flytte naboene i normal dokumentflyt.",
+    "mistakes": "Transform kan opprette en ny stablingskontekst.",
+    "aliases": [
+      "transform",
+      "flytte rotere skalere"
+    ],
+    "keywords": [
+      "transform",
+      "flytte rotere skalere"
+    ],
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card {  transform: translateX(8px); }",
+      "js": ""
+    },
+    "lesson": "#/css/basic/css-card"
+  },
+  {
+    "id": "css-transition",
+    "title": "transition",
+    "sortTitle": "transition",
+    "category": "css",
+    "type": "CSS-egenskap",
+    "displayCode": ".card {  transition: background-color 200ms; }",
+    "syntax": ".card {  transition: background-color 200ms; }",
+    "short": "Overgang når en egenskap endrer verdi.",
+    "explanation": "Bruk transition på egenskapen som skal endres, og tilby redusert bevegelse med prefers-reduced-motion.",
+    "when": "Bruk transition på egenskapen som skal endres, og tilby redusert bevegelse med prefers-reduced-motion.",
+    "mistakes": "En transition starter ikke uten en faktisk verdiendring.",
+    "aliases": [
+      "transition",
+      "overgang animasjon"
+    ],
+    "keywords": [
+      "transition",
+      "overgang animasjon"
+    ],
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card {  transition: background-color 200ms; }",
+      "js": ""
+    },
+    "lesson": "#/css/basic/css-card"
+  },
+  {
+    "id": "css-flex-direction",
+    "title": "flex-direction",
+    "sortTitle": "flex-direction",
+    "category": "css",
+    "type": "CSS-egenskap",
+    "displayCode": ".grid { display: flex; flex-direction: column; }",
+    "syntax": ".grid { display: flex; flex-direction: column; }",
+    "short": "Retningen på Flexbox-hovedaksen.",
+    "explanation": "Row gir rad og column gir kolonne. Justify-content følger denne aksen.",
+    "when": "Row gir rad og column gir kolonne.",
+    "mistakes": "Column endrer betydningen av langs og på tvers.",
+    "aliases": [
+      "flex-direction",
+      "flex retning"
+    ],
+    "keywords": [
+      "flex-direction",
+      "flex retning"
+    ],
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".grid { display: flex; flex-direction: column; }",
+      "js": ""
+    },
+    "lesson": "#/css/intermediate/css-flex"
+  },
+  {
+    "id": "css-justify-content",
+    "title": "justify-content",
+    "sortTitle": "justify-content",
+    "category": "css",
+    "type": "CSS-egenskap",
+    "displayCode": ".grid { display: flex; justify-content: space-between; }",
+    "syntax": ".grid { display: flex; justify-content: space-between; }",
+    "short": "Fordeling av ledig plass langs hovedaksen.",
+    "explanation": "I Flexbox bruker du justify-content når det er ledig plass å fordele. Retningen bestemmes av flex-direction.",
+    "when": "I Flexbox bruker du justify-content når det er ledig plass å fordele.",
+    "mistakes": "Uten ledig plass blir forskjellen ofte usynlig.",
+    "aliases": [
+      "justify-content",
+      "fordele plass sentrere flex"
+    ],
+    "keywords": [
+      "justify-content",
+      "fordele plass sentrere flex"
+    ],
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".grid { display: flex; justify-content: space-between; }",
+      "js": ""
+    },
+    "lesson": "#/css/intermediate/css-flex"
+  },
+  {
+    "id": "css-align-items",
+    "title": "align-items",
+    "sortTitle": "align-items",
+    "category": "css",
+    "type": "CSS-egenskap",
+    "displayCode": ".grid { display: flex; align-items: center; }",
+    "syntax": ".grid { display: flex; align-items: center; }",
+    "short": "Plassering av barna på tvers av hovedaksen.",
+    "explanation": "I Flexbox kan align-items sentrere eller strekke barna langs tverraksen. Grid bruker den langs blokkaksen.",
+    "when": "I Flexbox kan align-items sentrere eller strekke barna langs tverraksen.",
+    "mistakes": "Ikke forveksle align-items med justify-content.",
+    "aliases": [
+      "align-items",
+      "sentrere på tvers"
+    ],
+    "keywords": [
+      "align-items",
+      "sentrere på tvers"
+    ],
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".grid { display: flex; align-items: center; }",
+      "js": ""
+    },
+    "lesson": "#/css/intermediate/css-flex"
+  },
+  {
+    "id": "css-gap",
+    "title": "gap",
+    "sortTitle": "gap",
+    "category": "css",
+    "type": "CSS-egenskap",
+    "displayCode": ".grid { display: flex; gap: 16px; }",
+    "syntax": ".grid { display: flex; gap: 16px; }",
+    "short": "Mellomrom mellom rader og kolonner eller flex-elementer.",
+    "explanation": "Bruk gap på layoutbeholderen. Det lager mellomrom mellom barna, ikke utenfor hele gruppen.",
+    "when": "Bruk gap på layoutbeholderen.",
+    "mistakes": "Gap på en vanlig blokk med normal flyt lager ikke samme layoutavstand.",
+    "aliases": [
+      "gap",
+      "mellomrom avstand grid flex"
+    ],
+    "keywords": [
+      "gap",
+      "mellomrom avstand grid flex"
+    ],
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".grid { display: flex; gap: 16px; }",
+      "js": ""
+    },
+    "lesson": "#/css/intermediate/css-flex"
+  },
+  {
+    "id": "css-flex-wrap",
+    "title": "flex-wrap",
+    "sortTitle": "flex-wrap",
+    "category": "css",
+    "type": "CSS-egenskap",
+    "displayCode": ".grid { display: flex; flex-wrap: wrap; }",
+    "syntax": ".grid { display: flex; flex-wrap: wrap; }",
+    "short": "Tillater flex-elementer å gå over flere linjer.",
+    "explanation": "Bruk wrap når en fleksibel rad må tåle liten bredde.",
+    "when": "Bruk wrap når en fleksibel rad må tåle liten bredde.",
+    "mistakes": "Standard er nowrap, så elementene kan krympe eller renne ut.",
+    "aliases": [
+      "flex-wrap",
+      "bryte linjer flex"
+    ],
+    "keywords": [
+      "flex-wrap",
+      "bryte linjer flex"
+    ],
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".grid { display: flex; flex-wrap: wrap; }",
+      "js": ""
+    },
+    "lesson": "#/css/intermediate/css-flex"
+  },
+  {
+    "id": "css-grid-template-columns",
+    "title": "grid-template-columns",
+    "sortTitle": "grid-template-columns",
+    "category": "css",
+    "type": "CSS-egenskap",
+    "displayCode": ".grid { display: grid; grid-template-columns: repeat(2, 1fr); }",
+    "syntax": ".grid { display: grid; grid-template-columns: repeat(2, 1fr); }",
+    "short": "Definerer kolonnene i Grid.",
+    "explanation": "Bruk fr for andeler av ledig plass, eller minmax for grenser.",
+    "when": "Bruk fr for andeler av ledig plass, eller minmax for grenser.",
+    "mistakes": "To fr-kolonner med stort innhold kan trenge minmax(0,1fr) for å krympe.",
+    "aliases": [
+      "grid-template-columns",
+      "kolonner grid"
+    ],
+    "keywords": [
+      "grid-template-columns",
+      "kolonner grid"
+    ],
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".grid { display: grid; grid-template-columns: repeat(2, 1fr); }",
+      "js": ""
+    },
+    "lesson": "#/css/intermediate/css-flex"
+  },
+  {
+    "id": "css-grid-template-rows",
+    "title": "grid-template-rows",
+    "sortTitle": "grid-template-rows",
+    "category": "css",
+    "type": "CSS-egenskap",
+    "displayCode": ".grid { display: grid; grid-template-rows: auto auto; }",
+    "syntax": ".grid { display: grid; grid-template-rows: auto auto; }",
+    "short": "Definerer radene i Grid.",
+    "explanation": "Bruk auto når radene skal følge innholdet. Du kan kombinere faste og fleksible størrelser.",
+    "when": "Bruk auto når radene skal følge innholdet.",
+    "mistakes": "Faste radhøyder kan gi overlappende tekst.",
+    "aliases": [
+      "grid-template-rows",
+      "rader grid"
+    ],
+    "keywords": [
+      "grid-template-rows",
+      "rader grid"
+    ],
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".grid { display: grid; grid-template-rows: auto auto; }",
+      "js": ""
+    },
+    "lesson": "#/css/intermediate/css-flex"
+  },
+  {
+    "id": "css-box-sizing",
+    "title": "box-sizing",
+    "sortTitle": "box-sizing",
+    "category": "css",
+    "type": "CSS-egenskap",
+    "displayCode": ".card {  box-sizing: border-box; }",
+    "syntax": ".card {  box-sizing: border-box; }",
+    "short": "Bestemmer hva width og height inkluderer.",
+    "explanation": "Border-box inkluderer padding og border. Content-box angir bare innholdets størrelse.",
+    "when": "Border-box inkluderer padding og border.",
+    "mistakes": "Margin er ikke med i noen av de to modellene.",
+    "aliases": [
+      "box-sizing",
+      "boksmodell størrelse"
+    ],
+    "keywords": [
+      "box-sizing",
+      "boksmodell størrelse"
+    ],
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card {  box-sizing: border-box; }",
+      "js": ""
+    },
+    "lesson": "#/css/basic/css-card"
+  },
+  {
+    "id": "css-flex",
+    "title": "flex",
+    "sortTitle": "flex",
+    "category": "css",
+    "type": "CSS-egenskap",
+    "displayCode": ".card {  flex: 1 1 140px; }",
+    "syntax": ".card {  flex: 1 1 140px; }",
+    "short": "Kortform for vekst, krymping og basisstørrelse.",
+    "explanation": "Bruk flex på barna i en flex-beholder. 1 1 140px lar dem vokse og krympe fra en basis på 140px.",
+    "when": "Bruk flex på barna i en flex-beholder.",
+    "mistakes": "Flex hører på flex-elementet, ikke bare på forelderen.",
+    "aliases": [
+      "flex",
+      "flex grow shrink basis"
+    ],
+    "keywords": [
+      "flex",
+      "flex grow shrink basis"
+    ],
+    "related": [
+      "css-box-model"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card {  flex: 1 1 140px; }",
+      "js": ""
+    },
+    "lesson": "#/css/basic/css-card"
+  },
+  {
+    "id": "css-universal",
+    "title": "Universalselektor: *",
+    "sortTitle": "Universalselektor: *",
+    "category": "css",
+    "type": "CSS-selektor",
+    "displayCode": "* { box-sizing: border-box; }",
+    "syntax": "* { box-sizing: border-box; }",
+    "short": "Velger alle elementer.",
+    "explanation": "Bruk * til et lite sett grunnregler som box-sizing. Den har ingen egen spesifisitetsvekt.",
+    "when": "Bruk * til et lite sett grunnregler som box-sizing.",
+    "mistakes": "Ikke gi alle elementer samme margin uten å vurdere konsekvensene.",
+    "aliases": [
+      "universal selector alle elementer *"
+    ],
+    "keywords": [
+      "universal selector alle elementer *"
+    ],
+    "related": [
+      "css-descendant"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button><p data-kind=\"tip\">Et tips med data-attributt.</p>",
+      "css": "* { box-sizing: border-box; }",
+      "js": ""
+    },
+    "lesson": "#/css/intermediate/css-nested"
+  },
+  {
+    "id": "css-adjacent",
+    "title": "Neste søsken: A + B",
+    "sortTitle": "Neste søsken: A + B",
+    "category": "css",
+    "type": "CSS-selektor",
+    "displayCode": "h2 + p { color: #b34524; }",
+    "syntax": "h2 + p { color: #b34524; }",
+    "short": "Velger det første passende søskenet rett etter et element.",
+    "explanation": "Bruk + når et avsnitt rett etter en overskrift trenger en bestemt stil. Elementene må ha samme forelder.",
+    "when": "Bruk + når et avsnitt rett etter en overskrift trenger en bestemt stil.",
+    "mistakes": "Pluss betyr ikke alle etterfølgende søsken.",
+    "aliases": [
+      "adjacent sibling neste søsken"
+    ],
+    "keywords": [
+      "adjacent sibling neste søsken"
+    ],
+    "related": [
+      "css-descendant"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button><p data-kind=\"tip\">Et tips med data-attributt.</p>",
+      "css": "h2 + p { color: #b34524; }",
+      "js": ""
+    },
+    "lesson": "#/css/intermediate/css-nested"
+  },
+  {
+    "id": "css-sibling",
+    "title": "Senere søsken: A ~ B",
+    "sortTitle": "Senere søsken: A ~ B",
+    "category": "css",
+    "type": "CSS-selektor",
+    "displayCode": "h2 ~ p { color: #b34524; }",
+    "syntax": "h2 ~ p { color: #b34524; }",
+    "short": "Velger passende søsken som kommer senere.",
+    "explanation": "Bruk ~ når alle senere avsnitt på samme nivå skal treffes. Den velger ikke foreldre eller tidligere elementer.",
+    "when": "Bruk ~ når alle senere avsnitt på samme nivå skal treffes.",
+    "mistakes": "Elementene må dele forelder; avstanden i teksten er ikke nok.",
+    "aliases": [
+      "general sibling senere søsken"
+    ],
+    "keywords": [
+      "general sibling senere søsken"
+    ],
+    "related": [
+      "css-descendant"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button><p data-kind=\"tip\">Et tips med data-attributt.</p>",
+      "css": "h2 ~ p { color: #b34524; }",
+      "js": ""
+    },
+    "lesson": "#/css/intermediate/css-nested"
+  },
+  {
+    "id": "css-attribute",
+    "title": "Attributtselektor: [attr]",
+    "sortTitle": "Attributtselektor: [attr]",
+    "category": "css",
+    "type": "CSS-selektor",
+    "displayCode": "[data-kind=\"tip\"] { border: 2px solid #174f42; }",
+    "syntax": "[data-kind=\"tip\"] { border: 2px solid #174f42; }",
+    "short": "Velger etter et attributt eller en attributtverdi.",
+    "explanation": "Bruk [disabled] for tilstedeværelse eller [type=\"email\"] for en bestemt verdi.",
+    "when": "Bruk [disabled] for tilstedeværelse eller [type=\"email\"] for en bestemt verdi.",
+    "mistakes": "Sjekk stavemåte og anførselstegn i selektoren.",
+    "aliases": [
+      "attribute selector attributt"
+    ],
+    "keywords": [
+      "attribute selector attributt"
+    ],
+    "related": [
+      "css-descendant"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button><p data-kind=\"tip\">Et tips med data-attributt.</p>",
+      "css": "[data-kind=\"tip\"] { border: 2px solid #174f42; }",
+      "js": ""
+    },
+    "lesson": "#/css/intermediate/css-nested"
+  },
+  {
+    "id": "css-focus",
+    "title": "Fokus: :focus",
+    "sortTitle": "Fokus: :focus",
+    "category": "css",
+    "type": "CSS-selektor",
+    "displayCode": "button:focus { outline: 3px solid #b34524; }",
+    "syntax": "button:focus { outline: 3px solid #b34524; }",
+    "short": "Velger elementet som har fokus.",
+    "explanation": "Bruk en tydelig fokusmarkering slik at brukeren finner den aktive kontrollen.",
+    "when": "Bruk en tydelig fokusmarkering slik at brukeren finner den aktive kontrollen.",
+    "mistakes": "Ikke fjern outline uten en like tydelig erstatning.",
+    "aliases": [
+      "focus tastatur fokus"
+    ],
+    "keywords": [
+      "focus tastatur fokus"
+    ],
+    "related": [
+      "css-descendant"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button><p data-kind=\"tip\">Et tips med data-attributt.</p>",
+      "css": "button:focus { outline: 3px solid #b34524; }",
+      "js": ""
+    },
+    "lesson": "#/css/intermediate/css-nested"
+  },
+  {
+    "id": "css-focus-visible",
+    "title": "Synlig fokus: :focus-visible",
+    "sortTitle": "Synlig fokus: :focus-visible",
+    "category": "css",
+    "type": "CSS-selektor",
+    "displayCode": "button:focus-visible { outline: 3px solid #b34524; outline-offset: 3px; }",
+    "syntax": "button:focus-visible { outline: 3px solid #b34524; outline-offset: 3px; }",
+    "short": "Velger fokus når nettleseren vurderer at markering trengs.",
+    "explanation": "Bruk focus-visible til tydelig tastaturfokus uten å tvinge samme visning ved alle museklikk.",
+    "when": "Bruk focus-visible til tydelig tastaturfokus uten å tvinge samme visning ved alle museklikk.",
+    "mistakes": "Ikke bruk regelen som grunn til å fjerne all fokusinformasjon.",
+    "aliases": [
+      "focus visible fokusmarkering"
+    ],
+    "keywords": [
+      "focus visible fokusmarkering"
+    ],
+    "related": [
+      "css-descendant"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button><p data-kind=\"tip\">Et tips med data-attributt.</p>",
+      "css": "button:focus-visible { outline: 3px solid #b34524; outline-offset: 3px; }",
+      "js": ""
+    },
+    "lesson": "#/css/intermediate/css-nested"
+  },
+  {
+    "id": "css-first-child",
+    "title": "Første barn: :first-child",
+    "sortTitle": "Første barn: :first-child",
+    "category": "css",
+    "type": "CSS-selektor",
+    "displayCode": ".card:first-child { border: 3px solid #174f42; }",
+    "syntax": ".card:first-child { border: 3px solid #174f42; }",
+    "short": "Velger et element som er første barn blant element-søsken.",
+    "explanation": "Bruk first-child når plasseringen først i gruppen er det relevante.",
+    "when": "Bruk first-child når plasseringen først i gruppen er det relevante.",
+    "mistakes": "Det betyr ikke første element av en bestemt type; bruk first-of-type ved behov.",
+    "aliases": [
+      "første barn first child"
+    ],
+    "keywords": [
+      "første barn first child"
+    ],
+    "related": [
+      "css-descendant"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button><p data-kind=\"tip\">Et tips med data-attributt.</p>",
+      "css": ".card:first-child { border: 3px solid #174f42; }",
+      "js": ""
+    },
+    "lesson": "#/css/intermediate/css-nested"
+  },
+  {
+    "id": "css-last-child",
+    "title": "Siste barn: :last-child",
+    "sortTitle": "Siste barn: :last-child",
+    "category": "css",
+    "type": "CSS-selektor",
+    "displayCode": ".card:last-child { border: 3px solid #174f42; }",
+    "syntax": ".card:last-child { border: 3px solid #174f42; }",
+    "short": "Velger et element som er siste barn blant element-søsken.",
+    "explanation": "Bruk last-child til en avsluttende rad eller et siste kort.",
+    "when": "Bruk last-child til en avsluttende rad eller et siste kort.",
+    "mistakes": "Et etterfølgende element av en annen type kan gjøre at regelen ikke treffer.",
+    "aliases": [
+      "siste barn last child"
+    ],
+    "keywords": [
+      "siste barn last child"
+    ],
+    "related": [
+      "css-descendant"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button><p data-kind=\"tip\">Et tips med data-attributt.</p>",
+      "css": ".card:last-child { border: 3px solid #174f42; }",
+      "js": ""
+    },
+    "lesson": "#/css/intermediate/css-nested"
+  },
+  {
+    "id": "css-nth-child",
+    "title": "Plassering: :nth-child()",
+    "sortTitle": "Plassering: :nth-child()",
+    "category": "css",
+    "type": "CSS-selektor",
+    "displayCode": ".card:nth-child(2) { border: 3px solid #b34524; }",
+    "syntax": ".card:nth-child(2) { border: 3px solid #b34524; }",
+    "short": "Velger barn etter posisjon eller et mønster.",
+    "explanation": "Bruk 2 for andre barn, odd for oddetall eller 2n for annenhver. Tellingen starter på 1.",
+    "when": "Bruk 2 for andre barn, odd for oddetall eller 2n for annenhver.",
+    "mistakes": "Bruk heller en meningsfull klasse hvis stylingen betyr valgt eller viktig.",
+    "aliases": [
+      "nth-child andre kort ett kort i gruppe plassering"
+    ],
+    "keywords": [
+      "nth-child andre kort ett kort i gruppe plassering"
+    ],
+    "related": [
+      "css-descendant"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button><p data-kind=\"tip\">Et tips med data-attributt.</p>",
+      "css": ".card:nth-child(2) { border: 3px solid #b34524; }",
+      "js": ""
+    },
+    "lesson": "#/css/intermediate/css-nested"
+  },
+  {
+    "id": "css-before",
+    "title": "Før innhold: ::before",
+    "sortTitle": "Før innhold: ::before",
+    "category": "css",
+    "type": "CSS-selektor",
+    "displayCode": ".card::before { content: \"Tips\"; font-weight: bold; }",
+    "syntax": ".card::before { content: \"Tips\"; font-weight: bold; }",
+    "short": "Et pseudoelement før elementets innhold.",
+    "explanation": "Bruk before til enkel dekor eller et supplerende visuelt merke. content er vanligvis nødvendig for at det vises.",
+    "when": "Bruk before til enkel dekor eller et supplerende visuelt merke.",
+    "mistakes": "Viktig informasjon bør være i HTML, ikke bare i generert CSS-innhold.",
+    "aliases": [
+      "before pseudoelement før"
+    ],
+    "keywords": [
+      "before pseudoelement før"
+    ],
+    "related": [
+      "css-descendant"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button><p data-kind=\"tip\">Et tips med data-attributt.</p>",
+      "css": ".card::before { content: \"Tips\"; font-weight: bold; }",
+      "js": ""
+    },
+    "lesson": "#/css/intermediate/css-nested"
+  },
+  {
+    "id": "css-after",
+    "title": "Etter innhold: ::after",
+    "sortTitle": "Etter innhold: ::after",
+    "category": "css",
+    "type": "CSS-selektor",
+    "displayCode": ".card::after { content: \" →\"; }",
+    "syntax": ".card::after { content: \" →\"; }",
+    "short": "Et pseudoelement etter elementets innhold.",
+    "explanation": "Bruk after til en dekorativ pil eller en form som hører til komponenten.",
+    "when": "Bruk after til en dekorativ pil eller en form som hører til komponenten.",
+    "mistakes": "Ikke stol på at alle hjelpemidler formidler generert innhold likt.",
+    "aliases": [
+      "after pseudoelement etter"
+    ],
+    "keywords": [
+      "after pseudoelement etter"
+    ],
+    "related": [
+      "css-descendant"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button><p data-kind=\"tip\">Et tips med data-attributt.</p>",
+      "css": ".card::after { content: \" →\"; }",
+      "js": ""
+    },
+    "lesson": "#/css/intermediate/css-nested"
+  },
+  {
+    "id": "css-grid",
+    "title": "Grid",
+    "sortTitle": "Grid",
+    "category": "css",
+    "type": "CSS-konsept",
+    "displayCode": "display: grid",
+    "syntax": ".grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }",
+    "short": "Styrer rader og kolonner i samme layout.",
+    "explanation": "Bruk Grid når plasseringen henger sammen i to retninger. Flexbox er ofte enklere for én rad eller kolonne.",
+    "when": "Bruk Grid når plasseringen henger sammen i to retninger.",
+    "mistakes": "Grid på forelderen gjør bare de direkte barna til grid-elementer.",
+    "aliases": [
+      "grid display: grid flexbox vs grid",
+      "display: grid"
+    ],
+    "keywords": [
+      "grid display: grid flexbox vs grid",
+      "display: grid"
+    ],
+    "related": [
+      "css-flexbox"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }",
+      "js": ""
+    },
+    "lesson": "#/css/advanced/css-cascade"
+  },
+  {
+    "id": "css-display-flex",
+    "title": "display: flex",
+    "sortTitle": "display: flex",
+    "category": "css",
+    "type": "CSS-konsept",
+    "displayCode": "display: flex",
+    "syntax": ".grid { display: flex; flex-wrap: wrap; gap: 12px; }",
+    "short": "Gjør direkte barn til flex-elementer.",
+    "explanation": "Sett display: flex på forelderen til det som skal fordeles. Bruk gap og flex-wrap for mellomrom og linjebryting.",
+    "when": "Sett display: flex på forelderen til det som skal fordeles.",
+    "mistakes": "Egenskapen legges på beholderen, ikke på hvert kort.",
+    "aliases": [
+      "display flex flexbox",
+      "display: flex"
+    ],
+    "keywords": [
+      "display flex flexbox",
+      "display: flex"
+    ],
+    "related": [
+      "css-flexbox"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".grid { display: flex; flex-wrap: wrap; gap: 12px; }",
+      "js": ""
+    },
+    "lesson": "#/css/advanced/css-cascade"
+  },
+  {
+    "id": "css-fr",
+    "title": "fr-enheten",
+    "sortTitle": "fr-enheten",
+    "category": "css",
+    "type": "CSS-konsept",
+    "displayCode": "1fr",
+    "syntax": ".grid { display: grid; grid-template-columns: 2fr 1fr; gap: 12px; }",
+    "short": "En andel av den ledige plassen i Grid.",
+    "explanation": "Bruk 2fr 1fr når første kolonne skal få dobbelt så stor andel av ledig plass som andre.",
+    "when": "Bruk 2fr 1fr når første kolonne skal få dobbelt så stor andel av ledig plass som andre.",
+    "mistakes": "Fr er ikke en vanlig breddeenhet utenfor grid-sporstørrelser.",
+    "aliases": [
+      "fr brøkdel grid",
+      "1fr"
+    ],
+    "keywords": [
+      "fr brøkdel grid",
+      "1fr"
+    ],
+    "related": [
+      "css-flexbox"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".grid { display: grid; grid-template-columns: 2fr 1fr; gap: 12px; }",
+      "js": ""
+    },
+    "lesson": "#/css/advanced/css-cascade"
+  },
+  {
+    "id": "css-minmax",
+    "title": "minmax()",
+    "sortTitle": "minmax()",
+    "category": "css",
+    "type": "CSS-konsept",
+    "displayCode": "minmax(120px, 1fr)",
+    "syntax": ".grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%,120px),1fr)); gap: 12px; }",
+    "short": "Setter nedre og øvre størrelse for et grid-spor.",
+    "explanation": "Bruk minmax for kolonner som skal være fleksible innenfor grenser.",
+    "when": "Bruk minmax for kolonner som skal være fleksible innenfor grenser.",
+    "mistakes": "Et for stort minimum kan fortsatt gi horisontal rulling.",
+    "aliases": [
+      "minmax grid minimum maksimum",
+      "minmax(120px, 1fr)"
+    ],
+    "keywords": [
+      "minmax grid minimum maksimum",
+      "minmax(120px, 1fr)"
+    ],
+    "related": [
+      "css-flexbox"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%,120px),1fr)); gap: 12px; }",
+      "js": ""
+    },
+    "lesson": "#/css/advanced/css-cascade"
+  },
+  {
+    "id": "css-media",
+    "title": "Media queries",
+    "sortTitle": "Media queries",
+    "category": "css",
+    "type": "CSS-konsept",
+    "displayCode": "@media (min-width: 600px)",
+    "syntax": ".grid { display: grid; gap: 12px; } @media (min-width: 600px) { .grid { grid-template-columns: repeat(3, 1fr); } }",
+    "short": "Aktiverer CSS under bestemte forhold.",
+    "explanation": "Bruk en media query til å tilpasse layouten til visningsområdets bredde eller brukerpreferanser.",
+    "when": "Bruk en media query til å tilpasse layouten til visningsområdets bredde eller brukerpreferanser.",
+    "mistakes": "Ikke anta en bestemt enhet bare ut fra skjermbredden.",
+    "aliases": [
+      "media query responsiv mobil skjerm",
+      "@media (min-width: 600px)"
+    ],
+    "keywords": [
+      "media query responsiv mobil skjerm",
+      "@media (min-width: 600px)"
+    ],
+    "related": [
+      "css-flexbox"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".grid { display: grid; gap: 12px; } @media (min-width: 600px) { .grid { grid-template-columns: repeat(3, 1fr); } }",
+      "js": ""
+    },
+    "lesson": "#/css/advanced/css-cascade"
+  },
+  {
+    "id": "css-clamp",
+    "title": "clamp()",
+    "sortTitle": "clamp()",
+    "category": "css",
+    "type": "CSS-konsept",
+    "displayCode": "clamp(1rem, 2vw, 2rem)",
+    "syntax": "h1 { font-size: clamp(1.5rem, 1rem + 2vw, 3rem); }",
+    "short": "Begrenser en verdi mellom et minimum og maksimum.",
+    "explanation": "Bruk clamp for flytende typografi eller avstand som har tydelige grenser.",
+    "when": "Bruk clamp for flytende typografi eller avstand som har tydelige grenser.",
+    "mistakes": "En ren viewport-basert verdi kan reagere dårlig på zoom; kombiner gjerne med rem.",
+    "aliases": [
+      "clamp flytende størrelse",
+      "clamp(1rem, 2vw, 2rem)"
+    ],
+    "keywords": [
+      "clamp flytende størrelse",
+      "clamp(1rem, 2vw, 2rem)"
+    ],
+    "related": [
+      "css-flexbox"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": "h1 { font-size: clamp(1.5rem, 1rem + 2vw, 3rem); }",
+      "js": ""
+    },
+    "lesson": "#/css/advanced/css-cascade"
+  },
+  {
+    "id": "css-cascade",
+    "title": "Kaskaden (cascade)",
+    "sortTitle": "Kaskaden (cascade)",
+    "category": "css",
+    "type": "CSS-konsept",
+    "displayCode": "color: #174f42",
+    "syntax": ".card { color: #174f42; } .card { color: #b34524; }",
+    "short": "Reglene som avgjør hvilken CSS-deklarasjon som vinner.",
+    "explanation": "Se på opprinnelse, viktighet, lag, spesifisitet og rekkefølge når regler kolliderer. Innen samme normale lag vinner siste regel ved lik spesifisitet.",
+    "when": "Se på opprinnelse, viktighet, lag, spesifisitet og rekkefølge når regler kolliderer.",
+    "mistakes": "Siste linje vinner ikke alltid hvis en tidligere regel er mer spesifikk.",
+    "aliases": [
+      "cascade kaskade hvorfor virker ikke css",
+      "color: #174f42"
+    ],
+    "keywords": [
+      "cascade kaskade hvorfor virker ikke css",
+      "color: #174f42"
+    ],
+    "related": [
+      "css-flexbox"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card { color: #174f42; } .card { color: #b34524; }",
+      "js": ""
+    },
+    "lesson": "#/css/advanced/css-cascade"
+  },
+  {
+    "id": "css-specificity",
+    "title": "Spesifisitet (specificity)",
+    "sortTitle": "Spesifisitet (specificity)",
+    "category": "css",
+    "type": "CSS-konsept",
+    "displayCode": ".card.featured",
+    "syntax": ".card { color: #174f42; } .card.featured { color: #b34524; }",
+    "short": "En selektors vekt når ellers like regler konkurrerer.",
+    "explanation": "Klasser veier mer enn elementnavn, og id-er veier mer enn klasser. Flere klasser øker klasse-delen av vekten.",
+    "when": "Klasser veier mer enn elementnavn, og id-er veier mer enn klasser.",
+    "mistakes": "Spesifisitet er ikke et enkelt desimaltall der mange elementnavn kan bli én id.",
+    "aliases": [
+      "specificity spesifisitet prioritet",
+      ".card.featured"
+    ],
+    "keywords": [
+      "specificity spesifisitet prioritet",
+      ".card.featured"
+    ],
+    "related": [
+      "css-flexbox"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card { color: #174f42; } .card.featured { color: #b34524; }",
+      "js": ""
+    },
+    "lesson": "#/css/advanced/css-cascade"
+  },
+  {
+    "id": "css-inheritance",
+    "title": "Arv (inheritance)",
+    "sortTitle": "Arv (inheritance)",
+    "category": "css",
+    "type": "CSS-konsept",
+    "displayCode": "color: inherit",
+    "syntax": ".grid { color: #174f42; } .featured { color: #b34524; }",
+    "short": "Noen egenskaper følger fra forelder til barn.",
+    "explanation": "Tekstfarge og skriftegenskaper arves ofte. Margin og border arves normalt ikke. inherit kan be eksplisitt om foreldrens beregnede verdi.",
+    "when": "Tekstfarge og skriftegenskaper arves ofte.",
+    "mistakes": "En eksplisitt deklarasjon på barnet kan overstyre det som ellers ville blitt arvet.",
+    "aliases": [
+      "inherit inheritance arv forelder barn",
+      "color: inherit"
+    ],
+    "keywords": [
+      "inherit inheritance arv forelder barn",
+      "color: inherit"
+    ],
+    "related": [
+      "css-flexbox"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".grid { color: #174f42; } .featured { color: #b34524; }",
+      "js": ""
+    },
+    "lesson": "#/css/advanced/css-cascade"
+  },
+  {
+    "id": "css-variables",
+    "title": "CSS-variabler",
+    "sortTitle": "CSS-variabler",
+    "category": "css",
+    "type": "CSS-konsept",
+    "displayCode": "var(--accent)",
+    "syntax": ":root { --accent: #174f42; } .card { border: 2px solid var(--accent); }",
+    "short": "Egendefinerte egenskaper som kan gjenbrukes.",
+    "explanation": "Definer --accent på :root eller en komponent og bruk var(--accent) der verdien trengs. Verdiene følger kaskade og arv.",
+    "when": "Definer --accent på :root eller en komponent og bruk var(--accent) der verdien trengs.",
+    "mistakes": "Variabelnavn er case-sensitive og trenger to bindestreker.",
+    "aliases": [
+      "custom properties css variables variabler",
+      "var(--accent)"
+    ],
+    "keywords": [
+      "custom properties css variables variabler",
+      "var(--accent)"
+    ],
+    "related": [
+      "css-flexbox"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ":root { --accent: #174f42; } .card { border: 2px solid var(--accent); }",
+      "js": ""
+    },
+    "lesson": "#/css/advanced/css-cascade"
+  },
+  {
+    "id": "css-container",
+    "title": "Container queries",
+    "sortTitle": "Container queries",
+    "category": "css",
+    "type": "CSS-konsept",
+    "displayCode": "@container (min-width: 400px)",
+    "syntax": ".grid { container-type: inline-size; } @container (min-width: 400px) { .card { display: flex; gap: 1rem; } }",
+    "short": "CSS som følger en beholders størrelse.",
+    "explanation": "Bruk container-type på en forelder og @container for regler inni. Det lar en komponent tilpasse seg sin egen plass.",
+    "when": "Bruk container-type på en forelder og @container for regler inni.",
+    "mistakes": "Containeren må etableres; queryen måler ikke automatisk ethvert element.",
+    "aliases": [
+      "container query beholder responsiv",
+      "@container (min-width: 400px)"
+    ],
+    "keywords": [
+      "container query beholder responsiv",
+      "@container (min-width: 400px)"
+    ],
+    "related": [
+      "css-flexbox"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".grid { container-type: inline-size; } @container (min-width: 400px) { .card { display: flex; gap: 1rem; } }",
+      "js": ""
+    },
+    "lesson": "#/css/advanced/css-cascade"
+  },
+  {
+    "id": "css-block-inline",
+    "title": "Block og inline",
+    "sortTitle": "Block og inline",
+    "category": "css",
+    "type": "CSS-konsept",
+    "displayCode": "display: block",
+    "syntax": ".card { display: inline-block; width: 140px; vertical-align: top; margin: 4px; }",
+    "short": "To vanlige måter å delta i dokumentflyten på.",
+    "explanation": "En blokk starter normalt en ny linje og bruker tilgjengelig bredde. Inline følger tekstflyten; width og height virker ikke som på en vanlig blokk. Inline-block kombinerer inline-plassering med en boks.",
+    "when": "En blokk starter normalt en ny linje og bruker tilgjengelig bredde.",
+    "mistakes": "Display endrer layout, ikke elementets semantiske rolle.",
+    "aliases": [
+      "block inline inline-block forskjell",
+      "display: block"
+    ],
+    "keywords": [
+      "block inline inline-block forskjell",
+      "display: block"
+    ],
+    "related": [
+      "css-flexbox"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card { display: inline-block; width: 140px; vertical-align: top; margin: 4px; }",
+      "js": ""
+    },
+    "lesson": "#/css/advanced/css-cascade"
+  },
+  {
+    "id": "css-unit-percent",
+    "title": "%",
+    "sortTitle": "Prosent",
+    "category": "css",
+    "type": "CSS-enhet",
+    "displayCode": ".card { width: 50%; max-width: 100%; }",
+    "syntax": ".card { width: 50%; max-width: 100%; }",
+    "short": "Prosent måles mot en relevant referanse som avhenger av egenskapen.",
+    "explanation": "Prosent måles mot en relevant referanse som avhenger av egenskapen. Width bruker vanligvis den inneholdende blokkens bredde.",
+    "when": "Prosent måles mot en relevant referanse som avhenger av egenskapen.",
+    "mistakes": "En prosenthøyde trenger en passende bestemt referansehøyde.",
+    "aliases": [
+      "%",
+      "enhet størrelse responsiv"
+    ],
+    "keywords": [
+      "%",
+      "enhet størrelse responsiv"
+    ],
+    "related": [
+      "css-width"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card { width: 50%; max-width: 100%; }",
+      "js": ""
+    },
+    "lesson": "#/css/intermediate/css-responsive"
+  },
+  {
+    "id": "css-unit-px",
+    "title": "px",
+    "sortTitle": "px",
+    "category": "css",
+    "type": "CSS-enhet",
+    "displayCode": ".card { width: 200px; max-width: 100%; }",
+    "syntax": ".card { width: 200px; max-width: 100%; }",
+    "short": "En CSS-piksel er en logisk enhet, ikke alltid én fysisk skjermpiksel.",
+    "explanation": "En CSS-piksel er en logisk enhet, ikke alltid én fysisk skjermpiksel.",
+    "when": "En CSS-piksel er en logisk enhet, ikke alltid én fysisk skjermpiksel.",
+    "mistakes": "En fast pikselbredde kan bli for stor på smale skjermer.",
+    "aliases": [
+      "px",
+      "enhet størrelse responsiv"
+    ],
+    "keywords": [
+      "px",
+      "enhet størrelse responsiv"
+    ],
+    "related": [
+      "css-width"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card { width: 200px; max-width: 100%; }",
+      "js": ""
+    },
+    "lesson": "#/css/intermediate/css-responsive"
+  },
+  {
+    "id": "css-unit-rem",
+    "title": "rem",
+    "sortTitle": "rem",
+    "category": "css",
+    "type": "CSS-enhet",
+    "displayCode": ".card { font-size: 2rem; max-width: 100%; }",
+    "syntax": ".card { font-size: 2rem; max-width: 100%; }",
+    "short": "Rem måles mot skriftstørrelsen til rotelementet html.",
+    "explanation": "Rem måles mot skriftstørrelsen til rotelementet html.",
+    "when": "Rem måles mot skriftstørrelsen til rotelementet html.",
+    "mistakes": "Ikke overstyr brukerens tekstbehov med en for liten rotstørrelse.",
+    "aliases": [
+      "rem",
+      "enhet størrelse responsiv"
+    ],
+    "keywords": [
+      "rem",
+      "enhet størrelse responsiv"
+    ],
+    "related": [
+      "css-width"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card { font-size: 2rem; max-width: 100%; }",
+      "js": ""
+    },
+    "lesson": "#/css/intermediate/css-responsive"
+  },
+  {
+    "id": "css-unit-em",
+    "title": "em",
+    "sortTitle": "em",
+    "category": "css",
+    "type": "CSS-enhet",
+    "displayCode": ".card { font-size: 2em; max-width: 100%; }",
+    "syntax": ".card { font-size: 2em; max-width: 100%; }",
+    "short": "Em måles mot elementets skriftstørrelse.",
+    "explanation": "Em måles mot elementets skriftstørrelse. I font-size måles den mot den arvede skriftstørrelsen.",
+    "when": "Em måles mot elementets skriftstørrelse.",
+    "mistakes": "Nestede em-baserte skriftstørrelser kan multiplisere hverandre.",
+    "aliases": [
+      "em",
+      "enhet størrelse responsiv"
+    ],
+    "keywords": [
+      "em",
+      "enhet størrelse responsiv"
+    ],
+    "related": [
+      "css-width"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card { font-size: 2em; max-width: 100%; }",
+      "js": ""
+    },
+    "lesson": "#/css/intermediate/css-responsive"
+  },
+  {
+    "id": "css-unit-vw",
+    "title": "vw",
+    "sortTitle": "vw",
+    "category": "css",
+    "type": "CSS-enhet",
+    "displayCode": ".card { width: 50vw; max-width: 100%; }",
+    "syntax": ".card { width: 50vw; max-width: 100%; }",
+    "short": "Én vw er én hundredel av bredden til visningsområdet.",
+    "explanation": "Én vw er én hundredel av bredden til visningsområdet.",
+    "when": "Én vw er én hundredel av bredden til visningsområdet.",
+    "mistakes": "Bare vw i font-size kan gi dårlig skalering ved zoom.",
+    "aliases": [
+      "vw",
+      "enhet størrelse responsiv"
+    ],
+    "keywords": [
+      "vw",
+      "enhet størrelse responsiv"
+    ],
+    "related": [
+      "css-width"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card { width: 50vw; max-width: 100%; }",
+      "js": ""
+    },
+    "lesson": "#/css/intermediate/css-responsive"
+  },
+  {
+    "id": "css-unit-vh",
+    "title": "vh",
+    "sortTitle": "vh",
+    "category": "css",
+    "type": "CSS-enhet",
+    "displayCode": ".card { min-height: 30vh; max-width: 100%; }",
+    "syntax": ".card { min-height: 30vh; max-width: 100%; }",
+    "short": "Én vh følger en hundredel av den store viewport-høyden i moderne nettlesere.",
+    "explanation": "Én vh følger en hundredel av den store viewport-høyden i moderne nettlesere.",
+    "when": "Én vh følger en hundredel av den store viewport-høyden i moderne nettlesere.",
+    "mistakes": "Mobilens synlige område kan være mindre mens adressefeltet vises.",
+    "aliases": [
+      "vh",
+      "enhet størrelse responsiv"
+    ],
+    "keywords": [
+      "vh",
+      "enhet størrelse responsiv"
+    ],
+    "related": [
+      "css-width"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card { min-height: 30vh; max-width: 100%; }",
+      "js": ""
+    },
+    "lesson": "#/css/intermediate/css-responsive"
+  },
+  {
+    "id": "css-unit-dvh",
+    "title": "dvh",
+    "sortTitle": "dvh",
+    "category": "css",
+    "type": "CSS-enhet",
+    "displayCode": ".card { min-height: 30dvh; max-width: 100%; }",
+    "syntax": ".card { min-height: 30dvh; max-width: 100%; }",
+    "short": "Dvh følger den dynamiske viewport-høyden når nettlesergrensesnittet endrer plass.",
+    "explanation": "Dvh følger den dynamiske viewport-høyden når nettlesergrensesnittet endrer plass.",
+    "when": "Dvh følger den dynamiske viewport-høyden når nettlesergrensesnittet endrer plass.",
+    "mistakes": "Innhold kan endre høyde når adressefeltet vises eller skjules.",
+    "aliases": [
+      "dvh",
+      "enhet størrelse responsiv"
+    ],
+    "keywords": [
+      "dvh",
+      "enhet størrelse responsiv"
+    ],
+    "related": [
+      "css-width"
+    ],
+    "files": {
+      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "css": ".card { min-height: 30dvh; max-width: 100%; }",
+      "js": ""
+    },
+    "lesson": "#/css/intermediate/css-responsive"
+  }
+]

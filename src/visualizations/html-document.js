@@ -6,6 +6,7 @@ export function mount(host, { files }) {
   const caption = el('p', { class: 'visual-caption' });
   host.append(frame, tree, caption);
   const preview = mountPreview(frame);
+  preview.run(files);
   const parsed = new DOMParser().parseFromString(files.html, 'text/html');
   function branch(node, highlight, depth = 0) {
     if (depth > 4 || ['SCRIPT','STYLE','META','LINK'].includes(node.tagName)) return null;
@@ -16,5 +17,5 @@ export function mount(host, { files }) {
     if (children.length) item.append(el('ul', {}, children));
     return item;
   }
-  return { update(step) { preview.run(files, step.highlight); tree.replaceChildren(el('span', {}, 'DOM · dokumentets struktur'), el('ul', {}, branch(parsed.documentElement, step.highlight))); caption.textContent = step.caption || 'Elementene i koden blir noder i nettleserens DOM-tre.'; }, destroy() { preview.destroy(); } };
+  return { update(step) { preview.highlight(step.highlight); tree.replaceChildren(el('span', {}, 'DOM · dokumentets struktur'), el('ul', {}, branch(parsed.documentElement, step.highlight))); caption.textContent = step.caption || 'Elementene i koden blir noder i nettleserens DOM-tre.'; }, destroy() { preview.destroy(); } };
 }

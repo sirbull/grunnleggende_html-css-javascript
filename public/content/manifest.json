@@ -1,0 +1,562 @@
+{
+  "id": "webverkstedet",
+  "title": "Webverkstedet",
+  "reference": "content/reference/manifest.json",
+  "sections": [
+    {
+      "id": "html",
+      "title": "HTML",
+      "tracks": [
+        {
+          "id": "basic",
+          "title": "Grunnleggende",
+          "lessons": [
+            {
+              "id": "intro",
+              "title": "Hva er HTML?",
+              "description": "Gi innholdet en struktur som både mennesker og nettleseren kan forstå.",
+              "minutes": 4,
+              "content": "content/html/basic/intro.md",
+              "example": "examples/html/document",
+              "visualization": "html-document"
+            },
+            {
+              "id": "document",
+              "title": "Oppbygningen av et HTML-dokument",
+              "description": "Fra den første linjen til innholdet på skjermen. Bygg et dokument med riktig språk, metadata og struktur.",
+              "minutes": 6,
+              "content": "content/html/basic/document.md",
+              "example": "examples/html/document",
+              "visualization": "html-document"
+            },
+            {
+              "id": "html-elements",
+              "title": "Elementer, tagger og attributter",
+              "description": "Les HTML som en presis beskrivelse av innholdet.",
+              "content": "content/html/basic/html-elements.md",
+              "example": "examples/html/html-elements",
+              "visualization": "html-document",
+              "minutes": 5
+            },
+            {
+              "id": "html-headings",
+              "title": "Overskrifter og avsnitt",
+              "description": "Gjør en side enkel å lese og navigere i.",
+              "content": "content/html/basic/html-headings.md",
+              "example": "examples/html/html-headings",
+              "visualization": "html-document",
+              "minutes": 5
+            },
+            {
+              "id": "html-links",
+              "title": "Lenker som gir mening",
+              "description": "Koble innhold sammen med tydelige lenketekster.",
+              "content": "content/html/basic/html-links.md",
+              "example": "examples/html/html-links",
+              "visualization": "preview",
+              "minutes": 5
+            },
+            {
+              "id": "html-images",
+              "title": "Bilder og alternativ tekst",
+              "description": "Beskriv bildets funksjon for den som ikke ser det.",
+              "content": "content/html/basic/html-images.md",
+              "example": "examples/html/html-images",
+              "visualization": "preview",
+              "minutes": 5
+            },
+            {
+              "id": "html-lists",
+              "title": "Lister med og uten rekkefølge",
+              "description": "Velg liste etter hva elementene betyr.",
+              "content": "content/html/basic/html-lists.md",
+              "example": "examples/html/html-lists",
+              "visualization": "preview",
+              "minutes": 5
+            },
+            {
+              "id": "html-first-page",
+              "title": "Din første komplette side",
+              "description": "Samle overskrifter, tekst, bilde og lenker i én side.",
+              "content": "content/html/basic/html-first-page.md",
+              "example": "examples/html/html-first-page",
+              "visualization": "preview",
+              "minutes": 5
+            }
+          ]
+        },
+        {
+          "id": "intermediate",
+          "title": "Videre",
+          "lessons": [
+            {
+              "id": "html-semantics",
+              "title": "Semantisk sidestruktur",
+              "description": "La HTML fortelle hvor navigasjon og hovedinnhold finnes.",
+              "content": "content/html/intermediate/html-semantics.md",
+              "example": "examples/html/html-semantics",
+              "visualization": "html-document",
+              "minutes": 7
+            },
+            {
+              "id": "html-forms",
+              "title": "Skjemaer med gode ledetekster",
+              "description": "Knytt label, input og knapp sammen.",
+              "content": "content/html/intermediate/html-forms.md",
+              "example": "examples/html/html-forms",
+              "visualization": "preview",
+              "minutes": 7
+            },
+            {
+              "id": "html-tables-media",
+              "title": "Tabeller og medieinnhold",
+              "description": "Bruk riktig struktur for data og medier.",
+              "content": "content/html/intermediate/html-tables-media.md",
+              "example": "examples/html/html-tables-media",
+              "visualization": "preview",
+              "minutes": 7
+            }
+          ]
+        },
+        {
+          "id": "advanced",
+          "title": "Fordypning",
+          "lessons": [
+            {
+              "id": "html-dom-validation",
+              "title": "DOM, metadata og validering",
+              "description": "Forstå forskjellen mellom kildekode og det nettleseren bygger.",
+              "content": "content/html/advanced/html-dom-validation.md",
+              "example": "examples/html/html-dom-validation",
+              "visualization": "html-document",
+              "minutes": 7
+            },
+            {
+              "id": "html-names",
+              "title": "Tilgjengelige navn og hjelpetekster",
+              "description": "Gi kontroller et navn som forklarer handlingen.",
+              "content": "content/html/advanced/html-names.md",
+              "example": "examples/html/html-names",
+              "visualization": "preview",
+              "minutes": 7
+            },
+            {
+              "id": "html-dialog",
+              "title": "Native dialoger og detaljer",
+              "description": "Bruk nettleserens innebygde interaksjoner.",
+              "content": "content/html/advanced/html-dialog.md",
+              "example": "examples/html/html-dialog",
+              "visualization": "preview",
+              "minutes": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "css",
+      "title": "CSS",
+      "tracks": [
+        {
+          "id": "basic",
+          "title": "Grunnleggende",
+          "lessons": [
+            {
+              "id": "css-intro",
+              "title": "Hva gjør CSS?",
+              "description": "Gi den samme HTML-strukturen et nytt uttrykk.",
+              "content": "content/css/basic/css-intro.md",
+              "example": "examples/css/css-intro",
+              "visualization": "preview",
+              "minutes": 5
+            },
+            {
+              "id": "css-selectors",
+              "title": "Velg elementer med selektorer",
+              "description": "Skill mellom en tagg, en klasse og en id.",
+              "content": "content/css/basic/css-selectors.md",
+              "example": "examples/css/css-selectors",
+              "visualization": "preview",
+              "minutes": 5
+            },
+            {
+              "id": "css-colors",
+              "title": "Farger og lesbar kontrast",
+              "description": "Velg tekst- og bakgrunnsfarger som fungerer sammen.",
+              "content": "content/css/basic/css-colors.md",
+              "example": "examples/css/css-colors",
+              "visualization": "preview",
+              "minutes": 5
+            },
+            {
+              "id": "css-type",
+              "title": "Tekst og typografi",
+              "description": "Juster størrelse, linjehøyde og linjelengde.",
+              "content": "content/css/basic/css-type.md",
+              "example": "examples/css/css-type",
+              "visualization": "preview",
+              "minutes": 5
+            },
+            {
+              "id": "css-spacing",
+              "title": "Margin, padding og border",
+              "description": "Se hvor avstanden rundt en boks kommer fra.",
+              "content": "content/css/basic/css-spacing.md",
+              "example": "examples/css/css-spacing",
+              "visualization": "box-model",
+              "minutes": 5
+            },
+            {
+              "id": "css-card",
+              "title": "Style et ferdig kort",
+              "description": "Sett farge, typografi og avstand sammen.",
+              "content": "content/css/basic/css-card.md",
+              "example": "examples/css/css-card",
+              "visualization": "preview",
+              "minutes": 5
+            }
+          ]
+        },
+        {
+          "id": "intermediate",
+          "title": "Videre",
+          "lessons": [
+            {
+              "id": "css-nested",
+              "title": "Klasser inni klasser",
+              "description": "Velg alle kortene, direkte barn eller bare det fremhevede kortet.",
+              "content": "content/css/intermediate/css-nested.md",
+              "example": "examples/css/css-nested",
+              "visualization": "preview",
+              "minutes": 7
+            },
+            {
+              "id": "css-flex",
+              "title": "Flexbox i praksis",
+              "description": "Fordel kort langs én hovedakse.",
+              "content": "content/css/intermediate/css-flex.md",
+              "example": "examples/css/css-flex",
+              "visualization": "preview",
+              "minutes": 7
+            },
+            {
+              "id": "css-grid",
+              "title": "Grid og responsive kolonner",
+              "description": "Styr rader og kolonner med én layout.",
+              "content": "content/css/intermediate/css-grid.md",
+              "example": "examples/css/css-grid",
+              "visualization": "preview",
+              "minutes": 7
+            },
+            {
+              "id": "css-responsive",
+              "title": "Responsiv CSS og tilstander",
+              "description": "Tilpass plass, enheter og fokus til brukeren.",
+              "content": "content/css/intermediate/css-responsive.md",
+              "example": "examples/css/css-responsive",
+              "visualization": "preview",
+              "minutes": 7
+            }
+          ]
+        },
+        {
+          "id": "advanced",
+          "title": "Fordypning",
+          "lessons": [
+            {
+              "id": "css-cascade",
+              "title": "Cascade, arv og spesifisitet",
+              "description": "Finn ut hvorfor en regel vinner over en annen.",
+              "content": "content/css/advanced/css-cascade.md",
+              "example": "examples/css/css-cascade",
+              "visualization": "preview",
+              "minutes": 7
+            },
+            {
+              "id": "css-fluid",
+              "title": "Flytende størrelser og containere",
+              "description": "Tilpass en komponent til plassen den faktisk får.",
+              "content": "content/css/advanced/css-fluid.md",
+              "example": "examples/css/css-fluid",
+              "visualization": "preview",
+              "minutes": 7
+            },
+            {
+              "id": "css-motion",
+              "title": "Bevegelse med kontroll",
+              "description": "Lag rolige overganger som kan slås av.",
+              "content": "content/css/advanced/css-motion.md",
+              "example": "examples/css/css-motion",
+              "visualization": "preview",
+              "minutes": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "javascript",
+      "title": "JavaScript",
+      "tracks": [
+        {
+          "id": "basic",
+          "title": "Grunnleggende",
+          "lessons": [
+            {
+              "id": "js-intro",
+              "title": "Hva gjør JavaScript?",
+              "description": "La en handling endre siden.",
+              "content": "content/javascript/basic/js-intro.md",
+              "example": "examples/javascript/js-intro",
+              "visualization": "code-flow",
+              "minutes": 6
+            },
+            {
+              "id": "js-console",
+              "title": "Console og feilsøking",
+              "description": "Se hva programmet gjør underveis.",
+              "content": "content/javascript/basic/js-console.md",
+              "example": "examples/javascript/js-console",
+              "visualization": "code-flow",
+              "minutes": 6
+            },
+            {
+              "id": "js-variables",
+              "title": "Variabler: let og const",
+              "description": "Gi verdier navn og følg når de endres.",
+              "content": "content/javascript/basic/js-variables.md",
+              "example": "examples/javascript/js-variables",
+              "visualization": "code-flow",
+              "minutes": 6
+            },
+            {
+              "id": "js-types",
+              "title": "Tekst, tall og boolske verdier",
+              "description": "Forstå hvorfor \"2\" og 2 ikke alltid oppfører seg likt.",
+              "content": "content/javascript/basic/js-types.md",
+              "example": "examples/javascript/js-types",
+              "visualization": "code-flow",
+              "minutes": 6
+            },
+            {
+              "id": "js-operators",
+              "title": "Operatorer og sammenligning",
+              "description": "Regn ut verdier og still presise spørsmål.",
+              "content": "content/javascript/basic/js-operators.md",
+              "example": "examples/javascript/js-operators",
+              "visualization": "code-flow",
+              "minutes": 6
+            },
+            {
+              "id": "js-if",
+              "title": "Valg med if og else",
+              "description": "La programmet følge ulike veier.",
+              "content": "content/javascript/basic/js-if.md",
+              "example": "examples/javascript/js-if",
+              "visualization": "code-flow",
+              "minutes": 6
+            },
+            {
+              "id": "js-functions",
+              "title": "Funksjoner, parametere og return",
+              "description": "Skriv en beregning én gang og bruk den flere steder.",
+              "content": "content/javascript/basic/js-functions.md",
+              "example": "examples/javascript/js-functions",
+              "visualization": "code-flow",
+              "minutes": 6
+            },
+            {
+              "id": "js-dom-text",
+              "title": "Finn og endre et element",
+              "description": "Koble en JavaScript-verdi til tekst på siden.",
+              "content": "content/javascript/basic/js-dom-text.md",
+              "example": "examples/javascript/js-dom-text",
+              "visualization": "code-flow",
+              "minutes": 6
+            },
+            {
+              "id": "js-events",
+              "title": "Hendelser og knapper",
+              "description": "Skill mellom kode som registreres nå og kode som kjører senere.",
+              "content": "content/javascript/basic/js-events.md",
+              "example": "examples/javascript/js-events",
+              "visualization": "code-flow",
+              "minutes": 6
+            }
+          ]
+        },
+        {
+          "id": "intermediate",
+          "title": "Videre",
+          "lessons": [
+            {
+              "id": "js-arrays",
+              "title": "Arrays og objekter",
+              "description": "Samle verdier som hører sammen.",
+              "content": "content/javascript/intermediate/js-arrays.md",
+              "example": "examples/javascript/js-arrays",
+              "visualization": "code-flow",
+              "minutes": 9
+            },
+            {
+              "id": "js-loops",
+              "title": "Løkker som bygger en liste",
+              "description": "Gjør samme handling for flere verdier.",
+              "content": "content/javascript/intermediate/js-loops.md",
+              "example": "examples/javascript/js-loops",
+              "visualization": "code-flow",
+              "minutes": 9
+            },
+            {
+              "id": "js-forms",
+              "title": "Inndata og skjemahendelser",
+              "description": "Les en verdi og gi en forståelig tilbakemelding.",
+              "content": "content/javascript/intermediate/js-forms.md",
+              "example": "examples/javascript/js-forms",
+              "visualization": "code-flow",
+              "minutes": 9
+            },
+            {
+              "id": "js-dom-list",
+              "title": "Opprett og fjern elementer",
+              "description": "La brukerens handling endre en samling.",
+              "content": "content/javascript/intermediate/js-dom-list.md",
+              "example": "examples/javascript/js-dom-list",
+              "visualization": "code-flow",
+              "minutes": 9
+            }
+          ]
+        },
+        {
+          "id": "advanced",
+          "title": "Fordypning",
+          "lessons": [
+            {
+              "id": "js-scope",
+              "title": "Scope, callbacks og pilfunksjoner",
+              "description": "Forstå hvor navn finnes og når funksjoner kjøres.",
+              "content": "content/javascript/advanced/js-scope.md",
+              "example": "examples/javascript/js-scope",
+              "visualization": "code-flow",
+              "minutes": 9
+            },
+            {
+              "id": "js-async",
+              "title": "Promise, async og await",
+              "description": "Hent data uten å stanse resten av siden.",
+              "content": "content/javascript/advanced/js-async.md",
+              "example": "examples/javascript/js-async",
+              "visualization": "code-flow",
+              "minutes": 9
+            },
+            {
+              "id": "js-storage",
+              "title": "JSON og lokal lagring",
+              "description": "Behold små innstillinger mellom besøk.",
+              "content": "content/javascript/advanced/js-storage.md",
+              "example": "examples/javascript/js-storage",
+              "visualization": "code-flow",
+              "minutes": 9
+            },
+            {
+              "id": "js-modules",
+              "title": "Moduler og asynkron rekkefølge",
+              "description": "Del ansvar og forstå hva som kjører først.",
+              "content": "content/javascript/advanced/js-modules.md",
+              "example": "examples/javascript/js-modules",
+              "visualization": "code-flow",
+              "minutes": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "combined",
+      "title": "Samspill",
+      "tracks": [
+        {
+          "id": "basic",
+          "title": "Grunnleggende",
+          "lessons": [
+            {
+              "id": "project-profile",
+              "title": "Et profilkort med en handling",
+              "description": "Bygg en liten komponent med struktur, stil og oppførsel.",
+              "content": "content/combined/basic/project-profile.md",
+              "example": "examples/combined/project-profile",
+              "visualization": "preview",
+              "minutes": 6
+            },
+            {
+              "id": "project-theme",
+              "title": "Lys og mørk visning",
+              "description": "La én klasse endre flere farger samtidig.",
+              "content": "content/combined/basic/project-theme.md",
+              "example": "examples/combined/project-theme",
+              "visualization": "preview",
+              "minutes": 6
+            },
+            {
+              "id": "project-quiz",
+              "title": "En liten quiz",
+              "description": "Gi et spørsmål, la brukeren svare og forklar svaret.",
+              "content": "content/combined/basic/project-quiz.md",
+              "example": "examples/combined/project-quiz",
+              "visualization": "preview",
+              "minutes": 6
+            }
+          ]
+        },
+        {
+          "id": "intermediate",
+          "title": "Videre",
+          "lessons": [
+            {
+              "id": "project-filter",
+              "title": "Et søkbart kortgalleri",
+              "description": "Koble et input-felt til flere kort.",
+              "content": "content/combined/intermediate/project-filter.md",
+              "example": "examples/combined/project-filter",
+              "visualization": "preview",
+              "minutes": 9
+            },
+            {
+              "id": "project-form",
+              "title": "Et skjema med tydelig tilbakemelding",
+              "description": "Valider lokalt og gi brukeren neste steg.",
+              "content": "content/combined/intermediate/project-form.md",
+              "example": "examples/combined/project-form",
+              "visualization": "preview",
+              "minutes": 9
+            }
+          ]
+        },
+        {
+          "id": "advanced",
+          "title": "Fordypning",
+          "lessons": [
+            {
+              "id": "project-tasks",
+              "title": "En liten oppgaveapp",
+              "description": "La tilstand være kilden til det som vises.",
+              "content": "content/combined/advanced/project-tasks.md",
+              "example": "examples/combined/project-tasks",
+              "visualization": "preview",
+              "minutes": 9
+            },
+            {
+              "id": "project-data",
+              "title": "Bygg et grensesnitt fra JSON",
+              "description": "Hent data, vis venting og håndter feil.",
+              "content": "content/combined/advanced/project-data.md",
+              "example": "examples/combined/project-data",
+              "visualization": "preview",
+              "minutes": 9
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

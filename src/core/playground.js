@@ -10,7 +10,7 @@ export async function mountPlayground(host, { id, files, title, onClose, signal 
   let current = stored && ['html','css','js'].every(k => typeof stored[k] === 'string') ? { ...stored } : { ...files };
   let timer, active = 'html', disposed = false;
   const views = {}, panes = {}, tabs = {};
-  const output = el('pre', { class: 'console-output', 'aria-label': 'Konsoll og feil' }, 'Konsollen er klar.');
+  const output = el('pre', { class: 'console-output', tabindex: '0', 'aria-label': 'Konsoll og feil' }, 'Konsollen er klar.');
   const frame = el('iframe', { class: 'preview-frame', title: `Resultat: ${title}`, sandbox: 'allow-scripts' });
   const preview = mountPreview(frame, message => {
     if (output.textContent === 'Konsollen er klar.') output.textContent = '';
@@ -27,6 +27,7 @@ export async function mountPlayground(host, { id, files, title, onClose, signal 
       tabs[key].setAttribute('aria-selected', String(key === active));
       tabs[key].tabIndex = key === active ? 0 : -1;
       panes[key].hidden = !all.checked && key !== active;
+      panes[key].setAttribute('role', all.checked ? 'region' : 'tabpanel');
       if (!panes[key].hidden) views[key]?.requestMeasure();
     }
     if (focus) tabs[language].focus();

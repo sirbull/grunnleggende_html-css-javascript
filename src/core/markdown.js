@@ -5,6 +5,7 @@ import { el } from './dom.js';
 export function markdownFragment(source, entries = []) {
   const template = document.createElement('template');
   template.innerHTML = DOMPurify.sanitize(renderMarkdown(source));
+  template.content.querySelectorAll('pre').forEach(pre => { pre.tabIndex = 0; pre.setAttribute('aria-label', 'Kodeeksempel'); });
   const walker = document.createTreeWalker(template.content, NodeFilter.SHOW_TEXT);
   const texts = []; let node;
   while ((node = walker.nextNode())) if (!node.parentElement?.closest('code, pre, a, button')) texts.push(node);

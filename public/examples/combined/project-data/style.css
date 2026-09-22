@@ -1,0 +1,3 @@
+.grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,150px),1fr)); gap: 12px; }
+article { border: 1px solid #78877d; padding: 1rem; }
+button { padding: .6rem; }

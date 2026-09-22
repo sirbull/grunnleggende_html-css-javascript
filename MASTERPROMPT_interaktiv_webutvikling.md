@@ -8,7 +8,7 @@
 
 ## 1. Oppdrag
 
-Bygg en interaktiv, universelt utformet læringsside for elever som skal lære:
+Bygg en interaktiv, universelt utformet læringsside for brukere som skal lære:
 
 1. **HTML**
 2. **CSS**
@@ -159,11 +159,11 @@ Ikke kopier gammel arkitektur ukritisk. Gjenbruk gode prinsipper, men bygg dette
 
 Løsningen skal:
 
-- være enkel å bruke for elever med svært ulik forkunnskap,
+- fungere for brukere med svært ulik forkunnskap,
 - ha flere progresjonsnivåer,
 - bruke korte og forståelige forklaringer,
 - visualisere det teksten forklarer,
-- la eleven redigere kode og se resultatet direkte,
+- la brukeren redigere kode og se resultatet direkte,
 - fungere uten backend,
 - kunne bygges lokalt og lastes opp som en vanlig mappe til `teach.bullfolio.no`,
 - fungere fra en undermappe, ikke bare fra domenets rot,
@@ -176,7 +176,7 @@ Løsningen skal:
 - tilby en valgfri fokusmodus der tekst som ikke er aktiv blir visuelt nedtonet/bluret,
 - ha ordforklaringer for fagbegreper,
 - ha en omfattende, søkbar **Ordliste / Cheat sheet** med syntaks, forklaring, eksempler, vanlige feil og relaterte begreper,
-- la elever slå opp både eksakte kodeuttrykk som `h2`, `.h2`, `#id`, `querySelector` og naturlige søk som «class inni class» eller «style ett kort i en gruppe»,
+- la brukere slå opp både eksakte kodeuttrykk som `h2`, `.h2`, `#id`, `querySelector` og naturlige søk som «class inni class» eller «style ett kort i en gruppe»,
 - lagre artikkelinnhold og referanseinnhold i separate redigerbare filer,
 - og være lett å videreutvikle med nye fag, temaer og læringsartikler.
 
@@ -186,7 +186,7 @@ Ikke bygg en tung serverløsning. Alt som kan løses i nettleseren skal løses i
 
 # 3. Målgruppe og pedagogisk nivå
 
-Primær målgruppe er elever i videregående opplæring som kan ha alt fra ingen erfaring til noe erfaring med webutvikling.
+Primær målgruppe er brukere som kan ha alt fra ingen erfaring til noe erfaring med webutvikling, uavhengig av alder og bakgrunn.
 
 Språket skal være:
 
@@ -204,7 +204,7 @@ Eksempel:
 
 Ikke bruk komplekse metaforer dersom de gjør det vanskeligere å forstå den faktiske teknologien.
 
-Forklar først hva noe gjør, vis deretter et lite eksempel, og la deretter eleven eksperimentere.
+Forklar først hva noe gjør, vis deretter et lite eksempel, og la deretter brukeren eksperimentere.
 
 ---
 
@@ -222,7 +222,7 @@ Forklar først hva noe gjør, vis deretter et lite eksempel, og la deretter elev
 
 «Samspill» betyr eksempler og små prosjekter der HTML, CSS og JavaScript brukes sammen.
 
-«Ordliste / Cheat sheet» er et eget søkbart oppslagsverk. Det skal ikke følge lesesporene på samme måte som artiklene. Her skal eleven raskt kunne finne en HTML-tag, CSS-selektor, CSS-egenskap, JavaScript-metode, DOM-begrep eller annet faguttrykk og få en kort forklaring med konkret kodeeksempel.
+«Ordliste / Cheat sheet» er et eget søkbart oppslagsverk. Det skal ikke følge lesesporene på samme måte som artiklene. Her skal brukeren raskt kunne finne en HTML-tag, CSS-selektor, CSS-egenskap, JavaScript-metode, DOM-begrep eller annet faguttrykk og få en kort forklaring med konkret kodeeksempel.
 
 Dette skal være ekte navigasjon, ikke bare dekorative faner.
 
@@ -473,7 +473,7 @@ Forslag:
 
 ## 5.13 Ordliste / Cheat sheet – søkbart referanseverk
 
-Bygg en egen omfattende referanseseksjon som eleven kan bruke mens hen arbeider med oppgaver.
+Bygg en egen omfattende referanseseksjon som brukeren kan bruke mens hen arbeider med oppgaver.
 
 Dette skal være mer enn en tradisjonell ordliste.
 
@@ -762,7 +762,7 @@ men forklar at en meningsfull class som `.featured`, `.selected` eller `.warning
 
 ### Referanseinnhold som bør dekkes
 
-Cheat sheet skal være omfattende, men prioritere ting elevene faktisk møter.
+Cheat sheet skal være omfattende, men prioritere ting brukerne faktisk møter.
 
 #### HTML
 
@@ -1011,7 +1011,7 @@ await
 try / catch
 ```
 
-For JavaScript-oppføringer skal eksemplene så langt som mulig bruke DOM-eksempler eleven kan se resultatet av.
+For JavaScript-oppføringer skal eksemplene så langt som mulig bruke DOM-eksempler brukeren kan se resultatet av.
 
 ---
 
@@ -1077,7 +1077,7 @@ En class selector velger HTML-elementer som har en bestemt `class`.
 ```
 ```
 
-Dette gjør det enkelt for læreren eller AI-agenten å rette og utvide oppslagsverket uten å endre programkode.
+Dette gjør det enkelt for en redaktør eller AI-agenten å rette og utvide oppslagsverket uten å endre programkode.
 
 ---
 
@@ -1834,7 +1834,7 @@ Preview skal:
 - oppdateres fortløpende,
 - debounce endringer, eksempelvis rundt 200–400 ms,
 - ikke fryse hele hovedsiden ved vanlig syntaksfeil,
-- isolere elevkoden fra hovedapplikasjonen.
+- isolere brukerkoden fra hovedapplikasjonen.
 
 Bruk en restriktiv `sandbox`.
 
@@ -1848,7 +1848,7 @@ Ikke gi `allow-same-origin` uten en dokumentert grunn.
 
 Evaluer en CSP for innholdet som kjøres i preview.
 
-Elevkode skal ikke få direkte tilgang til hovedsidens DOM.
+Brukerkode skal ikke få direkte tilgang til hovedsidens DOM.
 
 ---
 
@@ -1881,7 +1881,7 @@ Ikke overless nybegynnere med komplekse stack traces som standard.
 
 ---
 
-## 18.5 Lagre elevens endringer
+## 18.5 Lagre brukerens endringer
 
 Bruk `localStorage`.
 
@@ -1944,7 +1944,7 @@ Hvis raw HTML i Markdown ikke er nødvendig, hold det deaktivert.
 
 Sanitiser generert HTML før det settes inn i dokumentet.
 
-Ikke sanitiser elevens playground-kode på samme måte; den skal i stedet kjøres isolert i sandboxet preview.
+Ikke sanitiser brukerens playground-kode på samme måte; den skal i stedet kjøres isolert i sandboxet preview.
 
 ---
 
@@ -2086,8 +2086,8 @@ Hvert lesesteg skal normalt gjøre én av disse tingene:
 
 - forklare ett nytt konsept,
 - vise et eksempel,
-- koble konseptet til noe eleven allerede har sett,
-- gi eleven en liten handling,
+- koble konseptet til noe brukeren allerede har sett,
+- gi brukeren en liten handling,
 - eller oppsummere.
 
 Unngå lange vegger med tekst.
@@ -2134,7 +2134,7 @@ fremfor:
 <div>foo</div>
 ```
 
-Eleven skal kunne forstå hvorfor koden finnes.
+Brukeren skal kunne forstå hvorfor koden finnes.
 
 Kode skal være korrekt og kjørbar.
 
@@ -2142,7 +2142,7 @@ Kode skal være korrekt og kjørbar.
 
 # 26. Progressjon
 
-En elev skal kunne starte på «Grunnleggende» uten å måtte forstå neste nivå.
+En bruker skal kunne starte på «Grunnleggende» uten å måtte forstå neste nivå.
 
 «Videre» kan anta at grunnleggende konsepter er kjent.
 
@@ -2457,7 +2457,7 @@ docs/ACCESSIBILITY.md
 
 # 33. Ytelse
 
-Siden skal føles rask også på skole-PC-er.
+Siden skal føles rask også på enkle og eldre maskiner.
 
 Prioriter:
 
@@ -2479,7 +2479,7 @@ Standardløsningen skal ikke kreve:
 - innlogging,
 - cookies,
 - analytics,
-- elevkonto,
+- brukerkonto,
 - skylagring.
 
 `localStorage` er tilstrekkelig for:
@@ -2810,7 +2810,7 @@ Krav:
 - dekk sentrale CSS-egenskaper og layoutkonsepter,
 - dekk sentral JavaScript-syntaks,
 - dekk vanlige DOM-metoder og events,
-- dekk universell utforming som elevene møter i webutvikling,
+- dekk universell utforming som brukerne møter i webutvikling,
 - skriv norske aliases og søkeord,
 - sorter korrekt alfabetisk,
 - legg inn relaterte begreper,
@@ -2831,13 +2831,13 @@ For konsepter som ofte blandes sammen, lag eksplisitte sammenligninger:
 - `querySelector()` vs `querySelectorAll()`,
 - function declaration vs arrow function.
 
-Sørg for at en elev kan finne disse ved å søke med egne ord, ikke bare korrekt terminologi.
+Sørg for at en bruker kan finne disse ved å søke med egne ord, ikke bare korrekt terminologi.
 
 ---
 
 ## FASE 11 – Samspill
 
-Lag små, komplette prosjekter der eleven ser:
+Lag små, komplette prosjekter der brukeren ser:
 
 ```text
 HTML = struktur
@@ -2845,7 +2845,7 @@ CSS = utseende/layout
 JavaScript = oppførsel
 ```
 
-Sørg for at elevens code playground kan vise alle tre samtidig.
+Sørg for at brukerens code playground kan vise alle tre samtidig.
 
 ---
 
@@ -2966,7 +2966,7 @@ Følg disse gjennom hele prosjektet:
 9. Ikke gjør blur-effekten til en barriere.
 10. Ikke bruk farge alene som signal.
 11. Ikke autoplay lyd.
-12. Ikke kjør elevkode i hovedsidens globale scope.
+12. Ikke kjør brukerkode i hovedsidens globale scope.
 13. Ikke la playground-iframe få unødvendige rettigheter.
 14. Ikke dupliser samme eksempel i flere filer dersom én kilde kan brukes.
 15. Ikke skriv ferdig 50 artikler før systemet er testet med ett komplett vertikalt snitt.
@@ -3099,7 +3099,7 @@ Ikke stol på gamle blogginnlegg når standarden eller API-et har god originaldo
 
 Resultatet skal ikke føles som «en nettside med noen artikler».
 
-Det skal føles som et **interaktivt læremiddel for webutvikling**, der eleven:
+Det skal føles som et **interaktivt læremiddel for webutvikling**, der brukeren:
 
 1. leser en kort forklaring,
 2. ser hva forklaringen betyr visuelt,
@@ -3112,6 +3112,6 @@ Det skal føles som et **interaktivt læremiddel for webutvikling**, der eleven:
 9. kan velge hvor dypt de ønsker å gå i temaet,
 10. og raskt kan slå opp en tag, selector, class, CSS-egenskap, JavaScript-metode eller et annet begrep uten å forlate læremiddelet.
 
-Ordliste / Cheat sheet skal fungere som elevens innebygde oppslagsverk mens hen koder, ikke bare som en liste over definisjoner.
+Ordliste / Cheat sheet skal fungere som brukerens innebygde oppslagsverk mens hen koder, ikke bare som en liste over definisjoner.
 
-Arkitekturen skal samtidig være generell nok til at samme motor senere kan brukes til andre interaktive undervisningsartikler.
+Arkitekturen skal samtidig være generell nok til at samme motor senere kan brukes til andre interaktive læringsartikler.
