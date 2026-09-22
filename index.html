@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="nb">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lær HTML, CSS og JavaScript med korte forklaringer, visuelle eksempler og et eget kodeverksted.">
+    <meta name="theme-color" content="#174f42">
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <title>Webverkstedet · Lær ved å bygge</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Hopp til innhold</a>
+    <header class="site-header">
+      <a class="brand" href="#/" aria-label="Webverkstedet, start"><span class="brand-mark" aria-hidden="true">&lt;/&gt;</span><span>Webverkstedet<small>Lær ved å bygge.</small></span></a>
+      <nav id="main-nav" aria-label="Hovedmeny"></nav>
+      <button id="settings-button" class="quiet">Innstillinger</button>
+    </header>
+    <main id="main" tabindex="-1"><p class="loading" role="status">Henter læringsinnhold …</p></main>
+    <footer class="site-footer"><span>Webverkstedet · 1.0</span><span>Et lite steg. En ny ferdighet.</span><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development">Lær mer hos MDN <span aria-hidden="true">↗</span></a></footer>
+    <div class="sr-only" id="status" role="status"></div>
+    <dialog id="glossary-dialog" aria-labelledby="glossary-title"></dialog>
+    <dialog id="settings-dialog" aria-labelledby="settings-title">
+      <div class="dialog-heading"><h2 id="settings-title">Dine innstillinger</h2><button data-close aria-label="Lukk innstillinger">×</button></div>
+      <p>Fremdrift, innstillinger og kode lagres bare i denne nettleseren. Du trenger ingen konto.</p>
+      <p>Opplesning bruker en stemme fra nettleseren eller operativsystemet. Noen stemmer kan bruke en nettbasert taletjeneste.</p>
+      <button id="clear-data">Slett mine lokale data</button><p id="clear-status" role="status"></p>
+    </dialog>
+    <noscript><p>Slå på JavaScript for å bruke læringsinnholdet og kodeverkstedet.</p></noscript>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
