@@ -42,56 +42,127 @@ label { display: inline-flex; gap: .5rem; align-items: center; }
 #main-nav a { min-height: 44px; display: inline-flex; align-items: center; text-decoration: none; padding: .5rem .85rem; color: var(--muted); border-bottom: 3px solid transparent; font-weight: 600; font-size: .92rem; }
 #main-nav a[aria-current] { color: var(--accent); border-bottom-color: var(--accent); background: var(--accent-soft); }
 .course-shell { max-width: var(--max); margin: auto; }
-.nav-dialog label { display: block; font-size: .85rem; font-weight: 650; }
-.nav-dialog select { width: 100%; margin: .5rem 0 1.5rem; }
 .nav-dialog-note { margin: 1.25rem 0 0; padding-top: 1rem; border-top: 1px solid var(--line); font-size: .9rem; }
-.nav-trigger { font-size: .85rem; }
+.nav-track { font-size: .8rem; text-transform: uppercase; letter-spacing: .08em; color: var(--warm); margin: 1.4rem 0 .4rem; }
 .lesson-list { list-style: none; margin: 0; padding: 0; }
 .lesson-list a { display: flex; gap: .75rem; padding: .7rem; line-height: 1.45; text-decoration: none; color: var(--muted); font-size: .9rem; border-left: 3px solid transparent; }
 .lesson-list a[aria-current] { background: var(--accent-soft); color: var(--accent); border-left-color: var(--accent); font-weight: 650; }
 .lesson-list .lesson-number { font: .75rem Consolas,monospace; min-width: 1.2rem; padding-top: .3rem; }
-.course-body { min-width: 0; padding: 2.5rem clamp(1rem,3.2vw,3.5rem); }
+.course-body { --gutter: clamp(1rem,3.2vw,3.5rem); min-width: 0; padding: 2.5rem var(--gutter); }
+.section-page { max-width: 84rem; margin: auto; }
 .eyebrow { color: var(--warm); font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; margin-bottom: .9rem; font-weight: 600; }
 .lesson-intro { max-width: 60ch; font-size: 1.08rem; color: var(--muted); }
-.meta-row { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; font-size: .8rem; color: var(--muted); margin: 1.5rem 0; }
+.meta-row { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; font-size: .8rem; color: var(--muted); margin: 1rem 0 0; }
 .meta-row span + span::before { content: '·'; margin-right: 1rem; }
-.reading-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; padding: .8rem 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin-bottom: 2rem; font-size: .85rem; }
-.reading-toolbar button[aria-pressed=true] { border-color: var(--accent); background: var(--accent-soft); }
-.speech-options { flex-basis: 100%; display: flex; flex-wrap: wrap; gap: .6rem; padding: .75rem 0; }
-.speech-status { flex-basis: 100%; color: var(--muted); font-size: .85rem; margin: 0; }
-.lesson-grid { display: grid; grid-template-columns: minmax(0,1.05fr) minmax(0,1fr); gap: clamp(1.5rem,3vw,3rem); align-items: start; }
-.article { min-width: 0; max-width: 70ch; }
-.reading-step { border-left: 3px solid transparent; padding: .65rem 0 1.8rem 1.25rem; margin: 0 0 1.5rem -1.25rem; scroll-margin-top: 2rem; }
+#header-tools { margin-left: auto; display: flex; align-items: center; gap: .6rem; font-size: .85rem; }
+/* Fokusmodus vises som en bryter, så det er tydelig om den er på eller av. */
+.focus-toggle { display: inline-flex; align-items: center; gap: .55rem; }
+.focus-toggle::before { content: ''; flex: none; width: 2rem; height: 1.15rem; border-radius: 1rem; background: #8a968e radial-gradient(circle at .58rem 50%, #fff .42rem, transparent .45rem); transition: background-position .2s; }
+.focus-toggle[aria-pressed=true] { border-color: var(--accent); background: var(--accent-soft); }
+.focus-toggle[aria-pressed=true]::before { background: var(--accent) radial-gradient(circle at 1.42rem 50%, #fff .42rem, transparent .45rem); }
+.icon-button { display: inline-grid; place-items: center; min-width: 44px; padding: .4rem; }
+.icon-button[aria-expanded=true] { border-color: var(--accent); background: var(--accent-soft); }
+.icon { display: inline-flex; }
+.icon svg { display: block; }
+/* Opplesning: innstillinger under ikonet i toppmenyen */
+.speech-menu { position: relative; }
+.speech-panel { position: absolute; right: 0; top: calc(100% + .5rem); z-index: 30; width: min(23rem, calc(100vw - 2rem)); display: grid; gap: .35rem; padding: 1.1rem; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: 0 12px 32px rgb(20 35 29 / .18); }
+.speech-panel h2 { font-size: 1rem; margin: 0 0 .4rem; }
+.speech-panel label { display: block; font-weight: 650; margin-top: .45rem; }
+.speech-panel select { width: 100%; }
+.speech-panel button.primary { margin-top: .9rem; display: inline-flex; gap: .4rem; align-items: center; justify-content: center; }
+.speech-note:not(:empty) { font-size: .8rem; color: var(--muted); margin: .2rem 0 0; }
+.speech-status { color: var(--muted); font-size: .85rem; margin: .2rem 0 0; }
+.speech-status:empty { display: none; }
+/* Avspilleren ligger nede til venstre, utenfor lesekolonnen på brede skjermer */
+.speech-player { position: fixed; left: 1rem; bottom: 1rem; z-index: 25; max-width: calc(100vw - 2rem); padding: .5rem .6rem; background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: var(--radius); box-shadow: 0 8px 26px rgb(20 35 29 / .2); }
+.player-now { margin: 0 0 .4rem; font-size: .78rem; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.player-now::before { content: 'Leser: '; font-weight: 700; color: var(--accent); }
+.player-controls { display: flex; gap: .3rem; align-items: center; }
+.player-controls .icon-button { min-width: 40px; min-height: 40px; padding: .3rem; }
+.player-now { max-width: 15rem; }
+.player-controls select { min-height: 40px; padding-inline: .35rem; }
+body.has-player { padding-bottom: 6rem; }
+/* Seksjonssiden: én lang side med tydelige leksjonshoder */
+.section-intro { margin-bottom: 1.5rem; }
+.lesson-bar { display: flex; gap: .5rem; align-items: center; position: sticky; top: 0; z-index: 10; margin: 0 calc(-1 * var(--gutter)) 1rem; padding: .5rem var(--gutter); background: var(--bg); border-bottom: 1px solid var(--line); }
+.lesson-tools { display: flex; gap: .5rem; align-items: center; font-size: .85rem; }
+.nav-trigger { display: flex; flex: 1; min-width: 0; align-items: center; gap: .6rem; text-align: left; font-size: .88rem; background: var(--surface); }
+.crumb-label { font-weight: 700; white-space: nowrap; }
+.crumb-lesson { color: var(--muted); font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+.crumb-lesson:not(:empty)::before { content: '·'; margin-right: .6rem; }
+.article { min-width: 0; }
+.track-title { font-size: clamp(1.5rem, 2.4vw, 2rem); margin: 4rem 0 1rem; padding: 1rem 0; border-bottom: 3px double var(--line); }
+.track:first-child .track-title { margin-top: 1rem; }
+.track-level { font: 600 .8rem Consolas,monospace; letter-spacing: .08em; text-transform: uppercase; color: var(--warm); vertical-align: middle; margin-right: .4rem; }
+.lesson { margin-top: 3.5rem; scroll-margin-top: 4.5rem; }
+.lesson-header { padding: 1.4rem 1.5rem 1.3rem; margin-bottom: 1.8rem; background: var(--surface); border: 1px solid var(--line); border-top: 6px solid var(--accent); border-radius: 0 0 var(--radius) var(--radius); }
+.lesson.current .lesson-header { box-shadow: 0 6px 20px rgb(23 79 66 / .1); }
+.lesson-file { display: flex; gap: .8rem; align-items: center; margin: 0 0 .6rem; font: 600 .75rem Consolas,monospace; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.lesson-file-number { display: grid; place-items: center; min-width: 2.4rem; height: 2.4rem; padding: 0 .4rem; border-radius: .35rem; background: var(--accent); color: #fff; font-size: 1rem; letter-spacing: 0; }
+.lesson-title { font-size: clamp(1.6rem, 2.8vw, 2.3rem); margin-bottom: .6rem; }
+.lesson-header .lesson-intro { margin-bottom: 0; }
+.lesson-footer { display: flex; flex-wrap: wrap; gap: .75rem 1rem; align-items: center; justify-content: space-between; margin-top: .5rem; padding: 1rem 0; border-top: 1px dashed var(--line); }
+.lesson-footer p { margin: 0; font-size: .85rem; color: var(--muted); }
+.lesson-actions { display: flex; gap: .6rem; flex-wrap: wrap; }
+.lesson-actions button[aria-pressed=true] { border-color: var(--accent); background: var(--accent-soft); }
+.reading-step { border-left: 3px solid transparent; padding: .65rem 0 1.8rem 1.25rem; margin: 0 0 1.5rem -1.25rem; scroll-margin-top: 4.5rem; }
 .reading-step.active { border-left-color: var(--accent); }
+/* Tekst og visuell forklaring side om side. Tekstkolonnen bytter side annethvert steg. */
+.reading-step { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 1.25rem clamp(1.5rem,3vw,3rem); align-items: start; }
+.reading-step.flip .step-text { order: 2; }
+.step-text { min-width: 0; }
+.step-visual { position: sticky; top: 5rem; min-width: 0; margin: 0; }
+.step-visual .visual-label { margin-left: .2rem; }
+.step-visual .example { margin: 0; }
+.visual-label { font: 600 .72rem Consolas,monospace; letter-spacing: .08em; text-transform: uppercase; color: var(--warm); margin: 0 0 .6rem; }
+.example-extra .dom-tree { line-height: 1.5; margin-top: 0; }
+.example-extra .trace-list { margin-top: 0; }
+/* Linjene steget handler om, markert i koden */
+.code-mark { display: inline-block; min-width: 100%; margin: 0 -.5rem; padding: 0 .5rem; background: rgb(246 213 169 / .22); color: inherit; box-shadow: inset 3px 0 0 #f0b36b; }
+.reading-stop, .track-title { scroll-margin-top: 4.5rem; }
+.reading-step h4 { font-size: clamp(1.35rem, 1.8vw, 1.65rem); margin-bottom: .8rem; }
+.reading-step h5 { font-size: 1.1rem; margin: 1.4rem 0 .6rem; }
 .step-label { display: block; font: .72rem Consolas,monospace; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); margin-bottom: .7rem; }
-.reading-step p { font-size: 1rem; }
+.reading-step p { font-size: 1rem; max-width: 70ch; }
 .reading-step li { margin-bottom: .5rem; }
 .reading-step blockquote { margin: 1.25rem 0; border-left: 3px solid var(--warm); padding: .75rem 1rem; background: #f7eee4; }
 .reading-step blockquote p:last-child { margin: 0; }
-.focus-mode .reading-step:not(.active):not(:focus-within):not(:hover) { filter: blur(1.5px); color: var(--muted); }
-.focus-mode .reading-step.active + .reading-step:not(:focus-within):not(:hover),
-.focus-mode .reading-step:has(+ .reading-step.active):not(:focus-within):not(:hover) { filter: blur(.6px); }
-.focus-mode.selecting .reading-step, .reading-step.speaking { filter: none !important; opacity: 1 !important; }
+/* Fokusmodus: det som ikke leses nå er tydelig uskarpt og delvis gjennomsiktig */
+/* Alt utenom det som leses nå er uskarpt og delvis gjennomsiktig: steg, leksjonshoder, leksjonsslutt
+   og nivåoverskrifter. Man ser at det kommer mer, men begynner ikke å lese det før man er der.
+   Musepekeren skjerper ikke tekst, fordi en mus som hviler på siden ellers ville avslørt tilfeldig tekst.
+   Klikk i et steg gjør det aktivt. Tastaturfokus, markering og opplesning skjerper alltid. */
+.focus-mode .reading-step, .focus-mode .lesson-header, .focus-mode .lesson-footer, .focus-mode .track-title { transition: filter .3s ease, opacity .3s ease; }
+.focus-mode .reading-step:not(.active):not(:focus-within) { filter: blur(4px); opacity: .22; }
+.focus-mode .reading-step.active + .reading-step:not(:focus-within),
+.focus-mode .reading-step:has(+ .reading-step.active):not(:focus-within) { filter: blur(3px); opacity: .38; }
+.focus-mode .lesson:not(.current) .lesson-header:not(:focus-within),
+.focus-mode .track:not(:has(.lesson.current)) .track-title,
+.focus-mode .lesson-footer:not(:focus-within) { filter: blur(3px); opacity: .3; }
+.focus-mode .lesson.current:has(.reading-step.last-step.active) .lesson-footer { filter: none; opacity: 1; }
+.focus-mode.selecting :is(.reading-step, .lesson-header, .lesson-footer, .track-title), .reading-step.speaking { filter: none !important; opacity: 1 !important; }
 .reading-step.speaking::before { content: 'Leses høyt'; display: block; font-size: .75rem; color: var(--accent); font-weight: 700; }
 .term { min-height: 0; padding: 0 .08em; border: 0; border-bottom: 1px dashed currentColor; border-radius: 0; font-weight: inherit; color: var(--accent); background: transparent; }
-.visual-panel { position: sticky; top: 1.5rem; min-width: 0; max-height: calc(100dvh - 3rem); display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); overflow: hidden; }
-.panel-heading { padding: .85rem 1.1rem; display: flex; justify-content: space-between; align-items: center; gap: .5rem; border-bottom: 1px solid var(--line); background: #eef1ea; }
-.panel-heading h2 { margin: 0; font-size: .85rem; letter-spacing: 0; }
-.panel-heading span { font: .7rem Consolas,monospace; color: var(--muted); }
-.visual-content { padding: 1.3rem; overflow: auto; min-height: 0; }
+/* Eksempel: kode og resultat deler samme plass */
+.example { margin: 1rem 0 1.25rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.example-bar { position: sticky; top: 3.9rem; z-index: 5; display: flex; justify-content: space-between; align-items: center; gap: .5rem; flex-wrap: wrap; padding: .45rem; background: #eef1ea; border-bottom: 1px solid var(--line); border-radius: var(--radius) var(--radius) 0 0; }
+.example-tabs { display: flex; flex-wrap: wrap; gap: .3rem; }
+.example-tabs button { font-size: .85rem; min-height: 40px; }
+.example-tabs button[aria-selected=true] { color: #fff; background: var(--accent); border-color: var(--accent); }
+.example-try { font-size: .85rem; min-height: 40px; }
+.example-pane pre { margin: 0; border-radius: 0 0 var(--radius) var(--radius); }
+.example-result, .example-extra { padding: 1rem; }
 .visual-caption { font-size: .83rem; color: var(--muted); margin: 1rem 0 0; }
 .preview-frame { display: block; width: 100%; min-height: 250px; border: 1px solid var(--line); border-radius: .3rem; background: white; }
-.visual-code { font-size: .78rem; }
 .dom-tree { font: .83rem/1.8 Consolas,monospace; padding: 1rem; background: var(--accent-soft); margin: 1rem 0; }
 .dom-tree ul { margin: 0; padding-left: 1.2rem; list-style: none; border-left: 1px solid #7b897f; }
 .dom-tree mark { background: #f6d5a9; color: #36250d; outline: 1px solid #ad7540; }
-.workshop-launch { padding: 1.1rem; border-top: 1px solid var(--line); flex-shrink: 0; }
-.workshop-launch button { width: 100%; }
-.workshop-launch p { font-size: .78rem; margin: .6rem 0 0; color: var(--muted); text-align: center; }
-.lesson-bottom { display: flex; gap: .75rem; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-top: 1.5rem; }
-.lesson-bottom { border-top: 1px solid var(--line); padding-top: 1.5rem; }
+/* Plass under siste leksjon, slik at også den kan scrolles helt opp og bli aktiv */
+.lesson-bottom { min-height: 60vh; display: flex; gap: .75rem; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; margin-top: 3rem; border-top: 1px solid var(--line); padding-top: 1.5rem; }
+.lesson-bottom p { margin: 0; color: var(--muted); }
 .lesson-bottom .button { text-decoration: none; }
-.workshop { margin-top: 2rem; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.25rem; }
+.workshop { scroll-margin-top: 4.5rem; margin-top: 2rem; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.25rem; }
 .workshop-top, .workshop-actions, .editor-tabs { display: flex; gap: .5rem; flex-wrap: wrap; align-items: center; }
 .workshop-top { justify-content: space-between; }
 .workshop-top h2 { margin: 0; }
@@ -145,12 +216,11 @@ dialog::backdrop { background: rgb(20 35 29 / .5); }
 .trace-list li { padding: .65rem; border: 1px solid var(--line); margin: .6rem 0; border-radius: .35rem; }
 .trace-list li.current { border: 2px solid var(--accent); background: var(--accent-soft); }
 .trace-list li.current::before { content: '→ '; font-weight: 800; }
-@media (min-width: 1000px) { .sidebar > details > summary { pointer-events: none; list-style: none; } }
-@media (max-width: 1150px) { .site-header { gap: 1rem; flex-wrap: wrap; } #main-nav { order: 3; flex-basis: 100%; } #settings-button { margin-left: auto; } .lesson-grid { gap: 1.5rem; } }
-@media (max-width: 1100px) { .lesson-grid { grid-template-columns: minmax(0,1fr); } .article { max-width: none; grid-row: 2; } .visual-panel { position: static; grid-row: 1; max-height: none; overflow: visible; } .visual-content { overflow: visible; } }
-@media (max-width: 950px) { .course-body { padding: 2rem 1.5rem; } }
-@media (max-width: 700px) { .editor-grid { grid-template-columns: minmax(0,1fr); } .reference-list { grid-template-columns: minmax(0,1fr); } .course-body { padding: 1.5rem 1.25rem; } .reading-step { margin-left: -.6rem; padding-left: .6rem; } .site-header { padding: 1rem; } #main-nav a { padding-inline: .65rem; } .reference-controls { padding: 1rem; } .workshop { padding: .8rem; } }
-@media (max-width: 380px) { .lesson-list { grid-template-columns: 1fr; } .brand { font-size: 1rem; } .brand-mark { width: 35px; height: 35px; } #settings-button { font-size: .8rem; padding-inline: .2rem; } }
+@media (max-width: 1150px) { .site-header { gap: 1rem; flex-wrap: wrap; } #main-nav { order: 3; flex-basis: 100%; } #header-tools { flex: 1; justify-content: flex-end; } }
+@media (max-width: 1000px) { .reading-step { grid-template-columns: minmax(0,1fr); } .reading-step.flip .step-text { order: 0; } .step-visual { position: static; } }
+@media (max-width: 950px) { .course-body { --gutter: 1.5rem; padding-top: 2rem; } }
+@media (max-width: 700px) { .crumb-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; } .crumb-lesson:not(:empty)::before { content: none; } #header-tools { flex-basis: 100%; order: 4; justify-content: flex-start; } .editor-grid { grid-template-columns: minmax(0,1fr); } .reference-list { grid-template-columns: minmax(0,1fr); } .course-body { --gutter: 1.25rem; padding-top: 1.5rem; } .lesson-header { padding: 1.1rem; } .reading-step { margin-left: -.6rem; padding-left: .6rem; } .site-header { padding: 1rem; } #main-nav a { padding-inline: .65rem; } .reference-controls { padding: 1rem; } .workshop { padding: .8rem; } }
+@media (max-width: 380px) { .lesson-list { grid-template-columns: 1fr; } .brand { font-size: 1rem; } .brand-mark { width: 35px; height: 35px; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation: none !important; transition: none !important; } }
-@media (forced-colors: active) { .focus-mode .reading-step { filter: none !important; opacity: 1 !important; } .reading-step.active { border-color: Highlight; } button, .reference-card { border: 1px solid ButtonText; } pre, pre code, code, .console-output { background: Canvas; color: CanvasText; } pre { border: 1px solid CanvasText; } }
-@media print { .site-header, .reading-toolbar, .visual-panel, .workshop, .site-footer, .lesson-bottom { display: none; } .course-shell, .lesson-grid { display: block; } .reading-step { filter: none !important; opacity: 1 !important; break-inside: avoid; } }
+@media (forced-colors: active) { .focus-mode :is(.reading-step, .lesson-header, .lesson-footer, .track-title) { filter: none !important; opacity: 1 !important; } .reading-step.active { border-color: Highlight; } button, .reference-card { border: 1px solid ButtonText; } pre, pre code, code, .console-output { background: Canvas; color: CanvasText; } pre { border: 1px solid CanvasText; } .code-mark { background: Mark; color: MarkText; box-shadow: none; } .example-tabs button[aria-selected=true] { outline: 3px solid Highlight; outline-offset: -3px; } .lesson-header { border-top-color: CanvasText; } }
+@media print { .site-header, .lesson-bar, .example-bar, .speech-player, .workshop, .site-footer, .lesson-bottom { display: none; } .example-pane[hidden] { display: block !important; } .example-pane.example-result, .example-pane.example-extra { display: none !important; } .reading-step { display: block; } .reading-step { filter: none !important; opacity: 1 !important; break-inside: avoid; } }

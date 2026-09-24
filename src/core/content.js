@@ -30,13 +30,10 @@ export function parseSteps(source) {
   return steps;
 }
 
-export function includeExample(source, files) {
-  return source.replace(/^:::example (html|css|js)$/gm, (_, language) => {
-    const code = files[language] || '';
-    const fence = '`'.repeat(Math.max(3, ...(code.match(/`+/g) || []).map(s => s.length + 1)));
-    return `${fence}${language === 'js' ? 'javascript' : language}\n${code}\n${fence}`;
-  });
-}
+// Eksempeldirektivet blir en plassholder i Markdown-teksten. Leksjonsvisningen bytter den ut
+// med en veksler mellom kode og resultat, slik at eksempelet står der teksten omtaler det.
+export const EXAMPLE_TOKEN = /^@@example:(html|css|js)@@$/;
+export const markExamples = source => source.replace(/^:::example (html|css|js)$/gm, '@@example:$1@@');
 
 export async function getFile(path, signal, json = false) {
   const url = new URL(path, document.baseURI);

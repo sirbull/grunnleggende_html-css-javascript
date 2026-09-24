@@ -18,6 +18,44 @@ export function previewDocument(files, token, highlight = '') {
       if (selector) try { document.querySelectorAll(selector).forEach(e => { marked.push([e, e.style.outline, e.style.outlineOffset]); e.style.outline='3px solid #a13e1d'; e.style.outlineOffset='4px'; }); } catch {}
     }
     highlight(data.highlight);
+    // Et srcdoc-dokument løser lenker mot hovedsidens adresse. Uten dette ville href="#tips" laste
+    // hele læringssiden inn i forhåndsvisningen. Ankere i eksempelet vises; andre lenker forklares.
+    let toast, toastTimer;
+    function notify(text) {
+      send('log', 'Lenke: ' + text);
+      if (!toast) {
+        toast = document.createElement('webverksted-melding'); toast.setAttribute('role', 'status');
+        toast.style.cssText = 'position:fixed;left:12px;right:12px;bottom:12px;z-index:2147483647;display:block;padding:10px 14px;border-radius:8px;background:#172b26;color:#fff;font:14px/1.45 system-ui,sans-serif;box-shadow:0 6px 20px rgb(0 0 0 / .25)';
+      }
+      toast.textContent = text; document.body.append(toast);
+      clearTimeout(toastTimer); toastTimer = setTimeout(() => toast.remove(), 6000);
+    }
+    function showTarget(target) {
+      const previous = [target.style.outline, target.style.outlineOffset];
+      target.style.outline = '3px dashed #174f42'; target.style.outlineOffset = '4px';
+      setTimeout(() => { target.style.outline = previous[0]; target.style.outlineOffset = previous[1]; }, 2500);
+      // Rammen vokser med innholdet, så den scrolles bare når den selv har noe å scrolle.
+      if (document.documentElement.scrollHeight > innerHeight + 2) scrollTo({ top: target.getBoundingClientRect().top + scrollY - 12 });
+      if (target.hasAttribute('tabindex') || target.matches('a[href],button,input,select,textarea')) target.focus({ preventScroll: true });
+    }
+    window.addEventListener('click', event => {
+      if (event.defaultPrevented || event.button !== 0) return;
+      const link = event.target.closest && event.target.closest('a[href], area[href]');
+      if (!link) return;
+      const href = link.getAttribute('href').trim();
+      if (/^javascript:/i.test(href)) return;
+      event.preventDefault();
+      if (href.startsWith('#')) {
+        let id = href.slice(1); try { id = decodeURIComponent(id); } catch {}
+        const target = id ? document.getElementById(id) || document.getElementsByName(id)[0] : document.body;
+        if (target) { showTarget(target); notify('Lenken hopper til ' + href + ' på samme side. Målet er markert.'); }
+        else notify('Lenken peker til ' + href + ', men ingen element i eksempelet har id="' + id + '".');
+        return;
+      }
+      notify(/^(https?:)?\\/\\//i.test(href)
+        ? 'Lenken går til ' + href + '. Eksterne nettsider åpnes ikke fra øvingsvinduet.'
+        : 'Lenken går til «' + href + '». Den siden finnes ikke ennå. Øvingsvinduet viser bare dette ene eksempelet.');
+    });
     window.addEventListener('message', event => { if (event.source === parent && event.data?.token === data.token && event.data?.type === 'highlight') highlight(event.data.selector); });
     window.addEventListener('preview-ready-' + data.token, () => send('ready', ''), { once: true });
     // Rammen melder fra om hoyden sin, slik at verten kan vokse med innholdet i stedet for aa klippe det.

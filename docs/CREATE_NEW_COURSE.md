@@ -14,7 +14,9 @@ Motoren er fagnøytral: den kan hverken HTML, CSS eller JavaScript. Den vet bare
 | `core/reference.js`, `reference-search.js` – søk, filtre | `examples/**` – kjørbare eksempler |
 | `core/glossary.js`, `dom.js` – ordforklaringsdialog | `favicon.svg` |
 | `core/playground.js`, `editor.js`, `preview.js` – kodeverksted | `index.html` – merkenavn, bunntekst, metabeskrivelse |
-| `core/speech.js` – opplesning | |
+| `core/section.js` – seksjonsside, leksjonshoder, leksjonsliste | |
+| `core/example.js` – veksler mellom kode og resultat | |
+| `core/speech.js` – opplesningspanel og avspiller | |
 | `core/storage.js` – lagring per kurs-ID | |
 | `styles/main.css` – design tokens og layout | |
 | `visualizations/` – pedagogiske illustrasjoner | |

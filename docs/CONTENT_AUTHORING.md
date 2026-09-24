@@ -105,7 +105,9 @@ ID-en må finnes i referanseverket, ellers feiler bygget. Fagord behandles bare 
 :::example html
 ````
 
-Direktivet erstattes med en kodeblokk som inneholder den faktiske filen fra leksjonens eksempelmappe. `html`, `css` og `js` er gyldige. Da kan ikke teksten og det kjørbare eksempelet komme i utakt.
+Alle steg viser eksempelkoden ved siden av teksten, med resultatet én fane unna. Direktivet bestemmer hvilket språk som vises først i steget det står i; uten direktiv vises seksjonens hovedspråk. Direktivlinjen fjernes fra teksten. `highlight` markerer elementene i resultatet og, for enkle velgere, linjene i HTML-koden. `html`, `css` og `js` er gyldige. Da kan ikke teksten og det kjørbare eksempelet komme i utakt. Legg direktivet i steget som forklarer koden, siden det er der leseren ser resultatet.
+
+Overskrifter skrives fortsatt med `##` og `###`. På seksjonssiden vises de to nivåer lavere, under seksjon, nivå og leksjonstittel.
 
 ## Eksempelmappen
 

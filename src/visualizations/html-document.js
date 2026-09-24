@@ -1,11 +1,11 @@
 import { el } from '../core/dom.js';
 import { mountPreview } from '../core/preview.js';
-export function mount(host, { files }) {
-  const frame = el('iframe', { class: 'preview-frame', sandbox: 'allow-scripts', title: 'HTML gjengitt i nettleseren' });
+export function mount(host, { files, preview: showPreview = true }) {
+  const frame = showPreview && el('iframe', { class: 'preview-frame', sandbox: 'allow-scripts', title: 'HTML gjengitt i nettleseren' });
   const tree = el('div', { class: 'dom-tree', 'aria-label': 'Forenklet DOM-tre' });
   const caption = el('p', { class: 'visual-caption' });
-  host.append(frame, tree, caption);
-  const preview = mountPreview(frame);
+  host.append(...[frame, tree, caption].filter(Boolean));
+  const preview = frame ? mountPreview(frame) : { run() {}, highlight() {}, destroy() {} };
   preview.run(files);
   const parsed = new DOMParser().parseFromString(files.html, 'text/html');
   function branch(node, highlight, depth = 0) {

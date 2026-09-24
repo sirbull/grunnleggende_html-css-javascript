@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { parseSteps, renderMarkdown, includeExample } from '../../src/core/content.js';
+import { parseSteps, renderMarkdown, markExamples, EXAMPLE_TOKEN } from '../../src/core/content.js';
 import { parseRoute, findLesson } from '../../src/core/router.js';
 import { searchEntries } from '../../src/core/reference-search.js';
 
@@ -13,7 +13,9 @@ test('step metadata, fences and duplicate ids', () => {
 });
 test('raw HTML is inert and shared examples preserve code', () => {
   assert.match(renderMarkdown('<script>alert(1)</script>'), /&lt;script&gt;/);
-  assert.match(includeExample(':::example js', { js: 'console.log("hei")' }), /```javascript/);
+  const lines = markExamples('Tekst\n:::example js\n:::example cs').split('\n');
+  assert.equal(lines[1].match(EXAMPLE_TOKEN)[1], 'js');
+  assert.equal(lines[2], ':::example cs');
 });
 test('hash routes and missing content', () => {
   assert.deepEqual(parseRoute('#/html/basic/intro'), { kind: 'lesson', section: 'html', track: 'basic', lesson: 'intro' });

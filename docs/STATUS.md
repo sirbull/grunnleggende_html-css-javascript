@@ -42,6 +42,16 @@ Fire funn fra gjennomgang i nettleser, alle rettet:
 
 Kursnavigasjonen flyttet fra fast venstrekolonne til dialog. Leksjonen får hele bredden, og oppsettet er to kolonner over 1100px og én kolonne under.
 
+## Endret etter brukertest (24.09.2026)
+1. Hver seksjon (HTML, CSS, JavaScript, Samspill) er én lang side. Nivåer har egne skillelinjer, og hver leksjon starter med et tydelig leksjonshode. En fast leksjonslinje viser hvilken leksjon du er i. Adressefeltet og sidetittelen følger lesingen.
+2. Sidepanelet «Se det i praksis» er erstattet av en veksler mellom kode og resultat der eksempelet står i teksten.
+3. Fokusmodus demper sterkere, med mer uskarphet og delvis gjennomsiktighet. Dette går bevisst på bekostning av kontrasten i dempet tekst; se `docs/ACCESSIBILITY.md`.
+4. Opplesning: ikon med innstillingspanel (stemme, hastighet, omfang) i leksjonslinjen og en liten avspiller nede til venstre. Naturlige norske stemmer i Edge velges automatisk.
+5. Visuell læring tilbake: hvert steg har tekst og kode side om side, med tekstkolonnen annethvert steg til venstre og høyre. Koden vises først, med stegets linjer markert, og resultatet er én fane unna. DOM-tre, boksmodell og programflyt er egne faner.
+6. Piltastene stopper på leksjonsoverskriftene.
+7. Lenker i forhåndsvisningen laster ikke lenger hovedsiden inn i rammen; se `docs/ARCHITECTURE.md`.
+8. Innstillingsdialogen er fjernet (endret i en parallell økt). Knappen «Slett mine lokale data» finnes dermed ikke lenger. Personvernteksten om nettbaserte stemmer står nå i opplesningspanelet.
+
 ## Next
 1. Manuell skjermlesertest og resten av listen i `docs/ACCESSIBILITY.md`.
 2. Produksjonsbuild lastes opp etter `docs/DEPLOYMENT.md`, og verifiseringslisten fylles ut på den ferdige adressen.
