@@ -10,22 +10,6 @@ En quiz trenger mer enn en melding om riktig eller feil. Forklar hvorfor svaret 
 Submit-lytteren finner det valgte alternativet. En statusmelding gir tilbakemelding. Nettleseren gir tastaturstøtte til radio-gruppen; ikke overstyr piltastene med egne snarveier.
 :::
 
-:::step {"id":"code","caption":"Gi et spørsmål, la brukeren svare og forklar svaret.","traceActive":-1}
-## Følg koden
-
-### HTML: struktur
-
-:::example html
-
-### CSS: utseende
-
-:::example css
-
-### JavaScript: oppførsel
-
-:::example js
-:::
-
 :::step {"id":"practice","caption":"Spørsmål og kode må stemme overens. Brukeren kan svare, få begrunnelse og prøve igjen.","traceActive":-1}
 ## Prøv selv
 

@@ -10,14 +10,6 @@ CSS Grid er nyttig når både rader og kolonner skal henge sammen. `display: gri
 `repeat(auto-fit, minmax(min(100%, 150px), 1fr))` lager så mange kolonner som får plass. minmax setter et minimum og maksimum. Den innerste min-funksjonen lar kolonnen passe også når hele beholderen er smalere enn 150px.
 :::
 
-:::step {"id":"code","caption":"Koden og resultatet er to visninger av det samme eksempelet.","highlight":""}
-## Se koden
-
-:::example css
-
-Eksempelet i kodeverkstedet bruker disse samme kildefilene.
-:::
-
 :::step {"id":"practice","caption":"Grid justerer kolonnebreddene sammen. Flexbox passer ofte til én rad eller kolonne; Grid passer når plasseringen skal henge sammen i to retninger.","highlight":""}
 ## Prøv selv
 

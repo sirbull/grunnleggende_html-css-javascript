@@ -10,22 +10,6 @@ En god skjemaflyt forklarer hva som skal fylles ut og hva som skjer etterpå. HT
 Bruk submit i stedet for bare click på knappen. Da får Enter samme oppførsel. Eksempelet bruker required og email, men en virkelig tjeneste trenger også servervalidering. Ikke gi inntrykk av at data er sendt når demonstrasjonen bare kjører lokalt.
 :::
 
-:::step {"id":"code","caption":"Valider lokalt og gi brukeren neste steg.","traceActive":-1}
-## Følg koden
-
-### HTML: struktur
-
-:::example html
-
-### CSS: utseende
-
-:::example css
-
-### JavaScript: oppførsel
-
-:::example js
-:::
-
 :::step {"id":"practice","caption":"Nettleseren fanger tomt required-felt og e-postformat. JavaScript fanger et navn som bare er blanke tegn.","traceActive":-1}
 ## Prøv selv
 

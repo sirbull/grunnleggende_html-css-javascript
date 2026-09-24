@@ -10,14 +10,6 @@
 `box-sizing: border-box` gjør at oppgitt bredde inkluderer padding og border. Margin er fortsatt utenfor. Med standard content-box kommer padding og border i tillegg til width. Bruk skyvekontrollen i figuren til å utforske padding.
 :::
 
-:::step {"id":"code","caption":"Koden og resultatet er to visninger av det samme eksempelet.","highlight":"padding"}
-## Se koden
-
-:::example css
-
-Eksempelet i kodeverkstedet bruker disse samme kildefilene.
-:::
-
 :::step {"id":"practice","caption":"Mer padding gjør den fargede flaten romsligere. Mer margin øker avstanden til andre elementer uten å farge mellomrommet.","highlight":"border"}
 ## Prøv selv
 

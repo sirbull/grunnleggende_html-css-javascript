@@ -10,12 +10,6 @@ Scope er området et navn er tilgjengelig i. let og const har blokkscope. Et nav
 En pilfunksjon er en kort funksjonsform: `x => x * 2`. Den har ikke sin egen this. En funksjonsdeklarasjon og en pilfunksjon lagret i const er derfor ikke alltid utskiftbare. Callbacks brukes blant annet av event-lyttere og arraymetoder.
 :::
 
-:::step {"id":"code","caption":"Forstå hvor navn finnes og når funksjoner kjøres.","traceActive":-1}
-## Følg koden
-
-:::example js
-:::
-
 :::step {"id":"practice","caption":"Hvert kall til lagTeller oppretter et nytt scope. Callbacken beholder tilgang til sin egen antall-variabel.","traceActive":-1}
 ## Prøv selv
 

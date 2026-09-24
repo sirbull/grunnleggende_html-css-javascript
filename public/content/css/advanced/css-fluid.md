@@ -10,14 +10,6 @@
 En container query måler en navngitt eller nærmeste relevant beholder i stedet for hele vinduet. Sett container-type: inline-size på en forelder. Komponenten kan da bytte layout når akkurat dens plass endres. Behold en brukbar grunnstil før query-reglene.
 :::
 
-:::step {"id":"code","caption":"Koden og resultatet er to visninger av det samme eksempelet.","highlight":""}
-## Se koden
-
-:::example css
-
-Eksempelet i kodeverkstedet bruker disse samme kildefilene.
-:::
-
 :::step {"id":"practice","caption":"Det er beholderens bredde som styrer container-queryen. Fontstørrelsen med clamp har samtidig en nedre og øvre grense.","highlight":""}
 ## Prøv selv
 

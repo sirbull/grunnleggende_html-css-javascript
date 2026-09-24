@@ -10,22 +10,6 @@ HTML inneholder et merket søkefelt og et kort for hvert prosjekt. CSS Grid gir 
 input-hendelsen kommer når feltet endres. Vi normaliserer til små bokstaver for at søket ikke skal avhenge av stor forbokstav. hidden fjerner et kort fra både visningen og tilgjengelighetstreet. En status viser antall treff.
 :::
 
-:::step {"id":"code","caption":"Koble et input-felt til flere kort.","traceActive":-1}
-## Følg koden
-
-### HTML: struktur
-
-:::example html
-
-### CSS: utseende
-
-:::example css
-
-### JavaScript: oppførsel
-
-:::example js
-:::
-
 :::step {"id":"practice","caption":"Alle kortene blir med fordi querySelectorAll finner dem ved oppstart. En tom søketekst viser alle igjen.","traceActive":-1}
 ## Prøv selv
 

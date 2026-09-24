@@ -10,12 +10,6 @@ ES-moduler deler kode i egne filer med import og export. Nettleseren laster dem 
 Synkron kode kjører først. Når den aktuelle oppgaven er ferdig, kjører ventende mikrotasks, for eksempel .then på en allerede oppfylt Promise. Det gir rekkefølgen 1, 3, 2 i eksempelet. Det er en liten demonstrasjon av event-loop, ikke hele modellen.
 :::
 
-:::step {"id":"code","caption":"Del ansvar og forstå hva som kjører først.","traceActive":-1}
-## Følg koden
-
-:::example js
-:::
-
 :::step {"id":"practice","caption":"Visningen blir 1 → 3 → 2. En import i en ekte side bruker for eksempel `import { vis } from \"./visning.js\"`. Eksterne modulstier er sperret i verkstedet.","traceActive":-1}
 ## Prøv selv
 

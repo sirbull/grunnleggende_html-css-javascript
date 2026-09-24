@@ -35,16 +35,16 @@ test('focus mode blurs everything but what is read now, ignores hover and follow
   const style = locator => locator.evaluate(node => ({ filter: getComputedStyle(node).filter, opacity: Number(getComputedStyle(node).opacity) }));
   await expect(steps.first()).toHaveClass(/active/);
   // Musepekeren over et senere steg skjerper det ikke.
-  await steps.nth(3).hover();
-  await expect.poll(async () => (await style(steps.nth(3))).opacity).toBeLessThan(.3);
-  expect((await style(steps.nth(3))).filter).toContain('blur');
+  await steps.nth(2).hover();
+  await expect.poll(async () => (await style(steps.nth(2))).opacity).toBeLessThan(.3);
+  expect((await style(steps.nth(2))).filter).toContain('blur');
   // Slutten av leksjonen og neste leksjonshode er også dempet.
   await expect.poll(async () => (await style(currentLesson(page).locator('.lesson-footer'))).opacity).toBeLessThan(.5);
   await expect.poll(async () => (await style(page.locator('#lesson-intermediate-css-grid .lesson-header'))).opacity).toBeLessThan(.5);
   // Klikk i steget gjør det aktivt og skarpt.
-  await steps.nth(3).locator('.step-text').click({ position: { x: 20, y: 20 } });
-  await expect(steps.nth(3)).toHaveClass(/active/);
-  await expect.poll(async () => (await style(steps.nth(3))).opacity).toBe(1);
+  await steps.nth(2).locator('.step-text').click({ position: { x: 20, y: 20 } });
+  await expect(steps.nth(2)).toHaveClass(/active/);
+  await expect.poll(async () => (await style(steps.nth(2))).opacity).toBe(1);
   await expect.poll(async () => (await style(currentLesson(page).locator('.lesson-footer'))).opacity).toBe(1);
   await toggle.click();
   await expect.poll(async () => (await style(steps.first())).opacity).toBe(1);
@@ -68,21 +68,21 @@ test('arrow keys stop on the heading of a new lesson before its text', async ({ 
 
 test('arrow keys keep moving between steps after tabbing to a button, and Tab continues from the new step', async ({ page }) => {
   await page.goto('#/html/basic/html-headings');
-  const codeStep = page.locator('#step-html-headings-code');
-  await codeStep.getByRole('button', { name: /Prøv selv i/ }).focus();
+  const mechanismStep = page.locator('#step-html-headings-mechanism');
+  await mechanismStep.getByRole('button', { name: /Prøv selv i/ }).focus();
   await page.keyboard.press('ArrowDown');
   await expect(page.locator('.reading-step.active')).toHaveAttribute('id', 'step-html-headings-practice');
   await expect(page.locator('#step-html-headings-practice')).toBeFocused();
   await page.keyboard.press('ArrowUp');
-  await expect(page.locator('.reading-step.active')).toHaveAttribute('id', 'step-html-headings-code');
+  await expect(page.locator('.reading-step.active')).toHaveAttribute('id', 'step-html-headings-mechanism');
   await page.keyboard.press('Tab');
-  expect(await page.evaluate(() => document.activeElement.closest('.reading-step')?.id)).toBe('step-html-headings-code');
+  expect(await page.evaluate(() => document.activeElement.closest('.reading-step')?.id)).toBe('step-html-headings-mechanism');
   // Pil ned/opp i en fane bytter også lesesteg; venstre/høyre bytter mellom kode og resultat.
-  await codeStep.getByRole('tab', { name: 'HTML-kode' }).focus();
+  await mechanismStep.getByRole('tab', { name: 'HTML-kode' }).focus();
   await page.keyboard.press('ArrowRight');
-  await expect(codeStep.getByRole('tab', { name: 'Resultat' })).toHaveAttribute('aria-selected', 'true');
-  await expect(codeStep.locator('.example-result .dom-tree')).toHaveCount(0);
-  await expect(codeStep.locator('.example-result iframe')).toHaveCount(1);
+  await expect(mechanismStep.getByRole('tab', { name: 'Resultat' })).toHaveAttribute('aria-selected', 'true');
+  await expect(mechanismStep.locator('.example-result .dom-tree')).toHaveCount(0);
+  await expect(mechanismStep.locator('.example-result iframe')).toHaveCount(1);
 });
 
 test('links in the preview never load the learning site inside the frame', async ({ page }) => {

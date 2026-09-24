@@ -32,7 +32,7 @@
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nlet antall = 1;\nantall += 1;\nvis(antall);"
     },
-    "lesson": "#/javascript/basic/js-types"
+    "lesson": "#/javascript/basic/js-variables"
   },
   {
     "id": "js-string",
@@ -665,7 +665,7 @@
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconsole.log(\"Regnestykket:\", 3 * 4);\nvis(\"Se konsollen under resultatet.\");"
     },
-    "lesson": "#/javascript/basic/js-types"
+    "lesson": "#/javascript/basic/js-console"
   },
   {
     "id": "js-json-parse",

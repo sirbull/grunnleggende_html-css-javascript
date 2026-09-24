@@ -10,14 +10,6 @@ Responsive sider tilpasser seg plassen de får. Prosent følger en relevant beho
 En media query som `@media (min-width: 600px)` gjelder når visningsområdet er bredt nok. Custom properties, for eksempel `--accent`, samler verdier du vil gjenbruke. `:focus-visible` gjør tastaturfokus tydelig, og :hover kan supplere for mus.
 :::
 
-:::step {"id":"code","caption":"Koden og resultatet er to visninger av det samme eksempelet.","highlight":""}
-## Se koden
-
-:::example css
-
-Eksempelet i kodeverkstedet bruker disse samme kildefilene.
-:::
-
 :::step {"id":"practice","caption":"Samme variabel endrer flere regler. Fokusmarkeringen er synlig uten mus. På små skjermer står innholdet under hverandre.","highlight":""}
 ## Prøv selv
 

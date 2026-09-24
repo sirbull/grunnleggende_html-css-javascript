@@ -10,14 +10,6 @@ En transition gir en overgang mellom to verdier. `transform` kan flytte eller sk
 Noen brukere ber operativsystemet om redusert bevegelse. Med prefers-reduced-motion: reduce kan du fjerne overganger og transformasjoner. Viktig informasjon må fortsatt være synlig. En hover-effekt må ha en tilsvarende brukbar fokusvisning.
 :::
 
-:::step {"id":"code","caption":"Koden og resultatet er to visninger av det samme eksempelet.","highlight":""}
-## Se koden
-
-:::example css
-
-Eksempelet i kodeverkstedet bruker disse samme kildefilene.
-:::
-
 :::step {"id":"practice","caption":"Med redusert bevegelse skjer fargeendringen direkte og knappen flytter seg ikke. Tekst og funksjon er uendret.","highlight":""}
 ## Prøv selv
 

@@ -10,12 +10,6 @@ En [[dom-event|hendelse]] forteller at noe har skjedd. Click betyr at en kontrol
 Funksjonen som gis til lytteren er en callback. Nettleseren kaller den når hendelsen skjer. `event.currentTarget` er elementet lytteren er registrert på. `event.target` kan være et barn inni elementet.
 :::
 
-:::step {"id":"code","caption":"Skill mellom kode som registreres nå og kode som kjører senere.","traceActive":-1}
-## Følg koden
-
-:::example js
-:::
-
 :::step {"id":"practice","caption":"Samme click-lytter virker med flere inndatametoder. Funksjonen gis som tellKlikk, uten parenteser, slik at den kjøres ved hendelsen.","traceActive":-1}
 ## Prøv selv
 

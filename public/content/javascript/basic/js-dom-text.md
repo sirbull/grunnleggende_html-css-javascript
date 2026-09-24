@@ -10,12 +10,6 @@
 [[dom-textcontent|textContent]] erstatter tekstinnholdet. Det parser ikke HTML. `innerHTML` tolker tekst som HTML og skal ikke brukes ukritisk på brukerdata. Bruk [[dom-classlist|classList]] for å endre stil med klasser.
 :::
 
-:::step {"id":"code","caption":"Koble en JavaScript-verdi til tekst på siden.","traceActive":-1}
-## Følg koden
-
-:::example js
-:::
-
 :::step {"id":"practice","caption":"Når elementet finnes, endres teksten og klassen. HTML-filen på disken er uendret; du endrer den levende DOM-strukturen.","traceActive":-1}
 ## Prøv selv
 

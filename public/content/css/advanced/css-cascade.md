@@ -10,14 +10,6 @@ Når flere regler treffer samme element, bestemmer kaskaden hvilken deklarasjon 
 Ved lik spesifisitet vinner regelen som står sist. Noen egenskaper, som color, arves fra foreldre hvis barnet ikke har en egen verdi. Margin arves vanligvis ikke. Bruk utviklerverktøyenes Styles-panel for å se overstyrte deklarasjoner. Unngå å løse alt med !important.
 :::
 
-:::step {"id":"code","caption":"Koden og resultatet er to visninger av det samme eksempelet.","highlight":""}
-## Se koden
-
-:::example css
-
-Eksempelet i kodeverkstedet bruker disse samme kildefilene.
-:::
-
 :::step {"id":"practice","caption":"Rekkefølgen avgjør bare mellom ellers like sterke regler. En mer spesifikk selektor kan vinne selv om den står tidligere.","highlight":""}
 ## Prøv selv
 

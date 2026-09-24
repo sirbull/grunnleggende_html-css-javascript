@@ -10,12 +10,6 @@ Bruk +, -, * og / for de vanlige regneartene. Parenteser bestemmer hva som regne
 `&&` betyr at begge betingelser må være sanne. `||` betyr at minst én må være sann. `!` snur en boolsk verdi. Ikke forveksle `=` som tilordner med `===` som sammenligner.
 :::
 
-:::step {"id":"code","caption":"Regn ut verdier og still presise spørsmål.","traceActive":-1}
-## Følg koden
-
-:::example js
-:::
-
 :::step {"id":"practice","caption":"Totalen blir 160. Sammenligningen 160 <= 150 blir false. Verdien kan brukes til å velge hva programmet skal gjøre.","traceActive":-1}
 ## Prøv selv
 

@@ -10,14 +10,6 @@
 [[css-child|.card-grid > .card]] velger bare direkte barn. `:nth-child(2)` velger etter plassering blant søsken. Bruk en meningsfull klasse når stylingen handler om hva elementet er. Da tåler den at rekkefølgen endres.
 :::
 
-:::step {"id":"code","caption":"Koden og resultatet er to visninger av det samme eksempelet.","highlight":""}
-## Se koden
-
-:::example css
-
-Eksempelet i kodeverkstedet bruker disse samme kildefilene.
-:::
-
 :::step {"id":"practice","caption":"Kanten følger klassen featured. En regel med nth-child(2) ville fulgt plasseringen i stedet. Dette er forskjellen på tilstand og posisjon.","highlight":""}
 ## Prøv selv
 

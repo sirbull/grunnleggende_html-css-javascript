@@ -10,14 +10,6 @@ Et kort er en liten samling innhold med en tydelig avgrensning. Bruk en klasse p
 `border-radius` avrunder hjørnene. `box-shadow` kan gi en svak skygge. `max-width` begrenser bredden samtidig som kortet kan krympe på mobil. Unngå fast høyde når teksten kan vokse ved zoom eller oversettelse.
 :::
 
-:::step {"id":"code","caption":"Koden og resultatet er to visninger av det samme eksempelet.","highlight":""}
-## Se koden
-
-:::example css
-
-Eksempelet i kodeverkstedet bruker disse samme kildefilene.
-:::
-
 :::step {"id":"practice","caption":"Samme HTML kan få et ekstra visuelt signal uten at grunnstilen dupliseres. Gi også kortet en tekstlig etikett hvis signalet betyr noe viktig.","highlight":""}
 ## Prøv selv
 

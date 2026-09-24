@@ -491,7 +491,7 @@
       "css": ".featured { background: #e9f0e9; border: 2px solid #174f42; padding: 1rem; }",
       "js": "const navn = \"Ada\";\ndocument.querySelector(\"#resultat\").textContent = navn;"
     },
-    "lesson": "#/javascript/basic/js-dom-text"
+    "lesson": "#/javascript/basic/js-variables"
   },
   {
     "id": "js-function",

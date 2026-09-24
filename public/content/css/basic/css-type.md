@@ -10,14 +10,6 @@
 En enhetsløs line-height, for eksempel 1.65, følger skriftstørrelsen. Begrens lange tekstlinjer med max-width. `ch` er basert på bredden til nulltegnet i skriften og kan gi en nyttig lesebredde. Tekstjustering til venstre passer vanlig brødtekst på norsk.
 :::
 
-:::step {"id":"code","caption":"Koden og resultatet er to visninger av det samme eksempelet.","highlight":""}
-## Se koden
-
-:::example css
-
-Eksempelet i kodeverkstedet bruker disse samme kildefilene.
-:::
-
 :::step {"id":"practice","caption":"Linjehøyde gir luft mellom linjene. Den endrer ikke avstanden mellom separate bokser; der bruker du margin eller gap.","highlight":""}
 ## Prøv selv
 

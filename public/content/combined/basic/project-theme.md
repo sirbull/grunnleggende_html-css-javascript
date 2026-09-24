@@ -10,22 +10,6 @@ CSS-variabler samler fargene. En klasse på body erstatter verdiene. JavaScript 
 En knapp med aria-pressed beskriver om mørk visning er aktiv. Kontroller kontrast i begge temaer. Et mørkt tema trenger mer enn å bytte bakgrunn; tekst, kanter og knapper må fortsatt kunne leses.
 :::
 
-:::step {"id":"code","caption":"La én klasse endre flere farger samtidig.","traceActive":-1}
-## Følg koden
-
-### HTML: struktur
-
-:::example html
-
-### CSS: utseende
-
-:::example css
-
-### JavaScript: oppførsel
-
-:::example js
-:::
-
 :::step {"id":"practice","caption":"Klassen styrer utseendet. aria-pressed gir tilstanden et navn også for den som ikke ser fargene.","traceActive":-1}
 ## Prøv selv
 

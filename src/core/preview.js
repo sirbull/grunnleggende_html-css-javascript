@@ -22,7 +22,7 @@ export function previewDocument(files, token, highlight = '') {
     // hele læringssiden inn i forhåndsvisningen. Ankere i eksempelet vises; andre lenker forklares.
     let toast, toastTimer;
     function notify(text) {
-      send('log', 'Lenke: ' + text);
+      send('notice', 'Lenke: ' + text);
       if (!toast) {
         toast = document.createElement('webverksted-melding'); toast.setAttribute('role', 'status');
         toast.style.cssText = 'position:fixed;left:12px;right:12px;bottom:12px;z-index:2147483647;display:block;padding:10px 14px;border-radius:8px;background:#172b26;color:#fff;font:14px/1.45 system-ui,sans-serif;box-shadow:0 6px 20px rgb(0 0 0 / .25)';
@@ -84,7 +84,7 @@ export function mountPreview(frame, onMessage = () => {}) {
     if (event.source !== frame.contentWindow || event.data?.channel !== 'webverkstedet-preview' || event.data.token !== token) return;
     if (event.data.type === 'ready') { updateHighlight(); return; }
     if (event.data.type === 'height') { if (heightUpdates++ < 40) frame.style.height = `${Math.min(event.data.value, MAX_AUTO_HEIGHT)}px`; return; }
-    if (!['log','error'].includes(event.data.type)) return;
+    if (!['log','error','notice'].includes(event.data.type)) return;
     onMessage(event.data);
   };
   window.addEventListener('message', listener);

@@ -31,12 +31,6 @@ JSON kan inneholde tekst, tall, `true`, `false`, `null`, lister og objekter. Nav
 Tilgang kan feile eller være sperret. Ugyldig JSON får også `JSON.parse()` til å kaste en feil. Bruk `try/catch` og en standardverdi. I det isolerte resultatvinduet brukes et midlertidig minnelager: verdiene forsvinner når koden kjøres på nytt. Appens egne innstillinger og kode lagres derimot varig i hovedsidens nettleserlager.
 :::
 
-:::step {"id":"code","caption":"Behold små innstillinger mellom besøk.","traceActive":-1}
-## Følg koden
-
-:::example js
-:::
-
 :::step {"id":"practice","caption":"Verdien lagres som JSON-tekst. Ikke lagre passord eller hemmeligheter i localStorage; JavaScript på samme origin kan lese det.","traceActive":-1}
 ## Prøv selv
 

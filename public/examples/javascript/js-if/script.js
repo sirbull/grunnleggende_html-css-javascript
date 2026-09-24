@@ -5,4 +5,4 @@ if (alder >= 18) {
 } else {
   melding = "Ungdomsbillett";
 }
-document.querySelector("#resultat").textContent = melding;
+console.log(melding);

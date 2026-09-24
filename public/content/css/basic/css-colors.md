@@ -10,14 +10,6 @@
 Vanlig tekst bør ha minst 4,5:1 kontrast etter WCAG AA. Stor tekst har et lavere krav på 3:1. En viktig tilstand må også ha et tekstlig eller formmessig signal. En feil skal for eksempel ha en forståelig melding, ikke bare rød kant.
 :::
 
-:::step {"id":"code","caption":"Koden og resultatet er to visninger av det samme eksempelet.","highlight":""}
-## Se koden
-
-:::example css
-
-Eksempelet i kodeverkstedet bruker disse samme kildefilene.
-:::
-
 :::step {"id":"practice","caption":"Tekst, kant og bakgrunn er tre forskjellige flater. Kontroller faktiske fargeverdier med et kontrastverktøy, ikke bare med øyemål.","highlight":""}
 ## Prøv selv
 

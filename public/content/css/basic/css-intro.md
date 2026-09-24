@@ -1,27 +1,82 @@
-:::step {"id":"concept","caption":"Gi den samme HTML-strukturen et nytt uttrykk.","highlight":""}
-## Hva lærer du?
+:::step {"id":"concept","caption":"HTML-en er den samme. CSS-en bestemmer fargen på overskriften og linjeavstanden i avsnittet.","highlight":"h1"}
+## HTML er innholdet, CSS er utseendet
 
-CSS står for Cascading Style Sheets. En regel velger elementer og bestemmer hvordan de skal vises. HTML beskriver innholdet. CSS kan endre farge, avstand, skrifttype og plassering uten å endre betydningen.
+[[what-is-css|CSS]] står for *Cascading Style Sheets*. Det er språket som bestemmer **hvordan** en nettside ser ut: farger, skrifttyper, avstander og hvor ting står.
+
+Tenk på et hus:
+
+- **HTML** er veggene og rommene. Det bestemmer *hva* som finnes.
+- **CSS** er malingen, tapetet og møblene. Det bestemmer *hvordan* det ser ut.
+
+HTML og CSS skrives i hver sin fil. Den samme HTML-en kan få et helt nytt utseende bare ved at du bytter CSS-en. Innholdet og betydningen er de samme, bare utseendet endres.
+
+I eksempelet har HTML-en en overskrift og et avsnitt. CSS-en gjør overskriften grønn og gir avsnittet mer luft mellom linjene.
 :::
 
-:::step {"id":"mechanism","caption":"Se hvordan strukturen og resultatet hører sammen.","highlight":""}
-## Slik henger det sammen
+:::step {"id":"mechanism","caption":"Regelen h1 { color: #174f42; } gjør alle h1-elementer mørkegrønne.","highlight":"h1"
+}
+## Slik er en CSS-regel bygget
 
-En regel har en [[css-type-selector|selektor]] foran krøllparentesene. Inni står deklarasjoner med egenskap og verdi: `color: #174f42;`. I en vanlig side kobler du en CSS-fil til head med `<link rel="stylesheet" href="style.css">`. Verkstedet kobler CSS-fanen til resultatet for deg.
+CSS består av **regler**. Hver regel sier: «*disse* elementene skal se *slik* ut». Her er den første regelen i eksempelet:
+
+```css
+h1 { color: #174f42; }
+```
+
+Regelen har tre deler:
+
+- `h1` er **selektoren**. Den *velger* hvilke elementer regelen gjelder for. Her: alle `h1`-elementer.
+- `color` er **egenskapen**, altså *hva* du vil endre. `color` betyr tekstfarge.
+- `#174f42` er **verdien**, altså *hva* det skal endres til. Her er det en mørk grønnfarge.
+
+Resten er skilletegn, og de må være med:
+
+- **Krøllparentesene** `{ }` rammer inn alt som gjelder for selektoren.
+- **Kolon** `:` skiller egenskapen fra verdien.
+- **Semikolon** `;` avslutter linjen, slik at du kan skrive flere linjer etter hverandre.
+
+En linje med egenskap og verdi kalles en **deklarasjon**. En regel kan ha mange:
+
+```css
+h1 {
+  color: #174f42;
+  font-size: 2rem;
+}
+```
 :::
 
-:::step {"id":"code","caption":"Koden og resultatet er to visninger av det samme eksempelet.","highlight":""}
-## Se koden
+:::step {"id":"link","caption":"På en vanlig nettside kobles CSS-filen til HTML-en med et link-element i head.","highlight":""}
+## Slik kobler du CSS til HTML
 
-:::example css
+På en vanlig nettside ligger CSS-en i en egen fil, for eksempel `style.css`. Du kobler den til HTML-en med et [[html-link|link-element]] i `head`:
 
-Eksempelet i kodeverkstedet bruker disse samme kildefilene.
+```html
+<head>
+  <meta charset="UTF-8">
+  <title>Min side</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+```
+
+- `rel="stylesheet"` betyr «denne filen er et stilark».
+- `href="style.css"` er filnavnet, akkurat som i en lenke.
+
+I dette kurset trenger du ikke gjøre det selv. Kodeverkstedet kobler CSS-fanen til resultatet automatisk.
 :::
 
-:::step {"id":"practice","caption":"Utseendet endres mens HTML-strukturen er den samme. Hvis en regel ikke virker, sjekk selektor, kolon og avsluttende krøllparentes.","highlight":""}
+:::step {"id":"practice","caption":"Utseendet endres mens HTML-strukturen er den samme. Hvis en regel ikke virker, sjekk selektor, kolon og avsluttende krøllparentes.","highlight":"h1"}
 ## Prøv selv
 
-Bytt fargen på h1 til `#b34524`. Legg til `background-color: #e9f0e9` på body. Slå gjerne auto-oppdatering av og bruk Kjør kode.
+Åpne kodeverkstedet og gå til CSS-fanen:
 
-**Dette skal du se:** Utseendet endres mens HTML-strukturen er den samme. Hvis en regel ikke virker, sjekk selektor, kolon og avsluttende krøllparentes.
+1. Bytt fargen på `h1` til `#b34524`, en rødbrun farge.
+2. Legg til en helt ny regel nederst som gir hele siden en lys bakgrunn:
+
+```css
+body { background-color: #e9f0e9; }
+```
+
+**Dette skal du se:** Siden endrer utseende, men HTML-koden er akkurat den samme.
+
+**Virker ikke regelen?** Sjekk de tre vanligste feilene: Er selektoren skrevet riktig? Står det kolon mellom egenskap og verdi? Er krøllparentesen lukket?
 :::

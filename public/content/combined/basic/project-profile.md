@@ -10,22 +10,6 @@ HTML beskriver navnet, beskrivelsen og knappen. CSS gir kortet luft og en kant. 
 Knappen endrer både hidden på teksten og aria-expanded på seg selv. Slik får både seende brukere og hjelpemidler informasjon om tilstanden. Bruk en ekte knapp for handlingen.
 :::
 
-:::step {"id":"code","caption":"Bygg en liten komponent med struktur, stil og oppførsel.","traceActive":-1}
-## Følg koden
-
-### HTML: struktur
-
-:::example html
-
-### CSS: utseende
-
-:::example css
-
-### JavaScript: oppførsel
-
-:::example js
-:::
-
 :::step {"id":"practice","caption":"Alle tre språkene bidrar til én komponent. Knappens tilstand følger om tipset er synlig.","traceActive":-1}
 ## Prøv selv
 

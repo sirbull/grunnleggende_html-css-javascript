@@ -15,7 +15,7 @@ test('JSON has a definition, a working example and a link to the lesson', async 
   await expect(preview.locator('#resultat')).toHaveText('Skogsturen: 3 km');
   await page.getByRole('link', { name: /Gå til leksjonen/ }).click();
   await expect(lessonTitle(page)).toHaveText('JSON og lokal lagring');
-  await expect(currentLesson(page).locator('.reading-step')).toHaveCount(6);
+  await expect(currentLesson(page).locator('.reading-step')).toHaveCount(5);
   const term = currentLesson(page).locator('[data-term="what-is-json"]').first();
   await term.click();
   await expect(page.getByRole('dialog')).toContainText('JavaScript Object Notation');

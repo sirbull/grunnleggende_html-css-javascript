@@ -10,14 +10,6 @@
 Bruk meningsfulle klassenavn som `.card` og `.featured`. Flere elementer kan ha samme class. En [[css-id-selector|id-selektor]] begynner med # og peker til en unik id. Klasser er et godt utgangspunkt for gjenbrukbar styling.
 :::
 
-:::step {"id":"code","caption":"Koden og resultatet er to visninger av det samme eksempelet.","highlight":""}
-## Se koden
-
-:::example css
-
-Eksempelet i kodeverkstedet bruker disse samme kildefilene.
-:::
-
 :::step {"id":"practice","caption":"Regelen h2 treffer overskriften. Regelen .h2 treffer avsnittene med riktig klasse, uten å gjøre dem til overskrifter.","highlight":""}
 ## Prøv selv
 

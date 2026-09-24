@@ -304,39 +304,30 @@
           "lessons": [
             {
               "id": "js-intro",
-              "title": "Hva gjør JavaScript?",
-              "description": "La en handling endre siden.",
+              "title": "Hva kan JavaScript brukes til?",
+              "description": "Se hva JavaScript gjør på nettsider, og skriv ditt første lille program.",
               "content": "content/javascript/basic/js-intro.md",
               "example": "examples/javascript/js-intro",
               "visualization": "code-flow",
-              "minutes": 6
-            },
-            {
-              "id": "js-console",
-              "title": "Console og feilsøking",
-              "description": "Se hva programmet gjør underveis.",
-              "content": "content/javascript/basic/js-console.md",
-              "example": "examples/javascript/js-console",
-              "visualization": "code-flow",
-              "minutes": 6
+              "minutes": 7
             },
             {
               "id": "js-variables",
-              "title": "Variabler: let og const",
-              "description": "Gi verdier navn og følg når de endres.",
+              "title": "Hva er en variabel?",
+              "description": "Gi en verdi et navn, slik at programmet kan huske den og endre den.",
               "content": "content/javascript/basic/js-variables.md",
               "example": "examples/javascript/js-variables",
               "visualization": "code-flow",
-              "minutes": 6
+              "minutes": 8
             },
             {
               "id": "js-types",
-              "title": "Tekst, tall og boolske verdier",
-              "description": "Forstå hvorfor \"2\" og 2 ikke alltid oppfører seg likt.",
+              "title": "Tekst, tall og sant/usant",
+              "description": "Bli kjent med de tre vanligste typene verdier: string, number og boolean.",
               "content": "content/javascript/basic/js-types.md",
               "example": "examples/javascript/js-types",
               "visualization": "code-flow",
-              "minutes": 6
+              "minutes": 8
             },
             {
               "id": "js-operators",
@@ -362,6 +353,15 @@
               "description": "Skriv en beregning én gang og bruk den flere steder.",
               "content": "content/javascript/basic/js-functions.md",
               "example": "examples/javascript/js-functions",
+              "visualization": "code-flow",
+              "minutes": 6
+            },
+            {
+              "id": "js-console",
+              "title": "Når koden ikke virker",
+              "description": "Bruk konsollen og feilmeldingene til å finne ut hva som gikk galt.",
+              "content": "content/javascript/basic/js-console.md",
+              "example": "examples/javascript/js-console",
               "visualization": "code-flow",
               "minutes": 6
             },

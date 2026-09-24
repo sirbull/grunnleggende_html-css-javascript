@@ -183,6 +183,14 @@ body.has-player { padding-bottom: 6rem; }
 .workshop-output iframe { min-height: 355px; }
 .console-output { white-space: pre-wrap; background: #eef1ea; color: var(--ink); font-size: .8rem; }
 .error-text { color: #9e2419; }
+.step-text table { border-collapse: collapse; margin: 1rem 0; font-size: .92rem; }
+.step-text :is(th, td) { text-align: left; padding: .4rem .9rem .4rem 0; border-bottom: 1px solid var(--line); }
+/* Nybegynnere skal se tegnene de må skrive: >= og ikke ≥. */
+code, pre { font-variant-ligatures: none; }
+.preview-console { margin-top: .75rem; }
+.preview-console .console-output { margin: 0; }
+.console-title { margin: 0 0 .3rem; font: 600 .75rem Consolas,monospace; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.console-error { color: #9e2419; }
 .reference-page { max-width: 1150px; margin: auto; padding: 3rem 1.5rem; }
 .reference-page h1 { max-width: none; }
 .reference-controls { padding: 1.5rem; border: 1px solid var(--line); background: var(--surface); border-radius: var(--radius); margin: 2rem 0; }
