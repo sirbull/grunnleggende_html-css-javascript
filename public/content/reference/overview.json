@@ -1,0 +1,319 @@
+[
+  {
+    "id": "what-is-html",
+    "title": "HTML",
+    "english": "HyperText Markup Language",
+    "sortTitle": "HTML",
+    "category": "html",
+    "overviewFor": "html",
+    "type": "Språk og grunnbegrep",
+    "displayCode": "<h1>Min nettside</h1>",
+    "short": "HTML står for HyperText Markup Language. Det er markeringsspråket som beskriver innholdet og strukturen på en nettside.",
+    "explanation": "HTML forteller nettleseren hva innholdet er: en overskrift, et avsnitt, en lenke, et bilde eller et skjemafelt. Du skriver dette med elementer og attributter. Nettleseren leser HTML og bygger dokumentets DOM-tre.\n\nHTML gir innholdet betydning og struktur. CSS styrer utseende og layout, mens JavaScript kan behandle data og reagere på handlinger. En side kan fungere med bare HTML, for eksempel med lenker, skjemaer og utvidbare details-elementer.",
+    "when": "Bruk HTML når du bygger innholdet på en nettside. Velg elementer etter hva teksten og kontrollene betyr.",
+    "mistakes": "HTML er et markeringsspråk, ikke et programmeringsspråk med løkker og beregninger. Velg ikke elementer bare ut fra hvordan de ser ut som standard.",
+    "syntax": "<main>\n  <h1>Min nettside</h1>\n  <p>Her lærer jeg webutvikling.</p>\n  <a href=\"#tips\">Se tipsene</a>\n  <h2 id=\"tips\">Start med strukturen</h2>\n</main>",
+    "aliases": [
+      "html",
+      "hva er html",
+      "hva står html for",
+      "hypertext markup language",
+      "html betyr",
+      "html sin jobb",
+      "struktur på nettside",
+      "markeringsspråk"
+    ],
+    "keywords": [
+      "innhold",
+      "struktur",
+      "språk",
+      "tagger",
+      "elementer",
+      "nettside"
+    ],
+    "related": [
+      "what-is-css",
+      "what-is-javascript",
+      "dom",
+      "html-element"
+    ],
+    "lesson": "#/html/basic/intro",
+    "files": {
+      "html": "<main>\n  <h1>Min nettside</h1>\n  <p>Her lærer jeg webutvikling.</p>\n  <a href=\"#tips\">Se tipsene</a>\n  <h2 id=\"tips\">Start med strukturen</h2>\n</main>",
+      "css": "",
+      "js": ""
+    }
+  },
+  {
+    "id": "what-is-css",
+    "title": "CSS",
+    "english": "Cascading Style Sheets",
+    "sortTitle": "CSS",
+    "category": "css",
+    "overviewFor": "css",
+    "type": "Språk og grunnbegrep",
+    "displayCode": "h1 { color: #174f42; }",
+    "short": "CSS står for Cascading Style Sheets. Det er stilspråket som bestemmer hvordan HTML-innholdet skal se ut og plasseres.",
+    "explanation": "CSS styrer blant annet farger, skrifter, mellomrom, bredder og layout. En selektor velger elementer, og deklarasjoner sier hvilke egenskaper og verdier de skal få.\n\n«Cascading» viser til kaskaden: reglene nettleseren bruker for å avgjøre hvilken deklarasjon som vinner når flere gjelder. Samme HTML kan få ulike uttrykk med forskjellige stilark. CSS kan også tilpasse visningen til skjermbredde og brukerens preferanser.",
+    "when": "Bruk CSS for å gjøre strukturert HTML lesbart, responsivt og visuelt tydelig.",
+    "mistakes": "CSS endrer ikke automatisk elementenes semantiske betydning. Et avsnitt som ser ut som en overskrift er fortsatt et avsnitt hvis HTML bruker p.",
+    "syntax": "h1 {\n  color: #174f42;\n  font-size: 2rem;\n}\nmain {\n  max-width: 45ch;\n  padding: 1rem;\n}",
+    "aliases": [
+      "css",
+      "hva er css",
+      "hva står css for",
+      "cascading style sheets",
+      "css betyr",
+      "stilark",
+      "stilspråk",
+      "utseende på nettside"
+    ],
+    "keywords": [
+      "stil",
+      "farge",
+      "layout",
+      "design",
+      "responsiv"
+    ],
+    "related": [
+      "what-is-html",
+      "what-is-javascript",
+      "css-type-selector",
+      "css-cascade"
+    ],
+    "lesson": "#/css/basic/css-intro",
+    "files": {
+      "html": "<main>\n  <h1>En liten nettside</h1>\n  <p>CSS former utseendet.</p>\n</main>",
+      "css": "h1 {\n  color: #174f42;\n  font-size: 2rem;\n}\nmain {\n  max-width: 45ch;\n  padding: 1rem;\n}",
+      "js": ""
+    }
+  },
+  {
+    "id": "what-is-javascript",
+    "title": "JavaScript",
+    "english": "JavaScript",
+    "sortTitle": "JavaScript",
+    "category": "javascript",
+    "overviewFor": "javascript",
+    "type": "Språk og grunnbegrep",
+    "displayCode": "knapp.addEventListener(\"click\", visMelding);",
+    "short": "JavaScript er et programmeringsspråk. På nettsider brukes det blant annet til å reagere på handlinger, behandle data og oppdatere innhold.",
+    "explanation": "JavaScript kan regne, gjøre valg, gjenta handlinger og hente data. I nettleseren bruker det blant annet DOM og Web API-er til å finne elementer, endre tekst og lytte til hendelser.\n\nHTML beskriver strukturen, CSS gir utseendet og JavaScript programmerer oppførselen. JavaScript er navnet på språket, ikke en forkortelse som HTML eller CSS. JS er en vanlig kortform. JavaScript og Java er forskjellige programmeringsspråk. JavaScript kan også brukes utenfor nettleseren, for eksempel med Node.js.",
+    "when": "Bruk JavaScript når siden skal utføre beregninger, behandle data eller reagere på handlinger som går utover det native HTML allerede gjør.",
+    "mistakes": "En knapp trenger ikke alltid JavaScript; native HTML dekker mye. Ikke gjør vanlig navigasjon eller grunnleggende innhold unødvendig avhengig av script.",
+    "syntax": "const knapp = document.querySelector(\"button\");\nknapp.addEventListener(\"click\", () => {\n  document.querySelector(\"p\").textContent = \"Du fikk siden til å reagere!\";\n});",
+    "aliases": [
+      "javascript",
+      "java script",
+      "js",
+      "hva er javascript",
+      "hva står javascript for",
+      "hva gjør js",
+      "programmeringsspråk",
+      "oppførsel på nettside"
+    ],
+    "keywords": [
+      "handling",
+      "logikk",
+      "interaktivitet",
+      "programmering",
+      "data"
+    ],
+    "related": [
+      "what-is-html",
+      "what-is-css",
+      "dom",
+      "dom-event",
+      "js-function"
+    ],
+    "lesson": "#/javascript/basic/js-intro",
+    "files": {
+      "html": "<h1>En interaktiv side</h1>\n<p>Klar til å prøve.</p>\n<button>Trykk her</button>",
+      "css": "",
+      "js": "const knapp = document.querySelector(\"button\");\nknapp.addEventListener(\"click\", () => {\n  document.querySelector(\"p\").textContent = \"Du fikk siden til å reagere!\";\n});"
+    }
+  },
+  {
+    "id": "what-is-json",
+    "title": "JSON",
+    "english": "JavaScript Object Notation",
+    "sortTitle": "JSON",
+    "category": "javascript",
+    "type": "Dataformat",
+    "displayCode": "{\"tittel\":\"Skogsturen\"}",
+    "short": "JSON står for JavaScript Object Notation. Det er et tekstformat for å lagre og utveksle strukturerte data mellom programmer.",
+    "explanation": "JSON beskriver data som objekter med navn og verdier, eller som lister. Verdiene kan være tekst, tall, true, false, null, objekter og lister. Det kan for eksempel brukes i en .json-fil, som svar fra en tjeneste eller når et objekt lagres som tekst.\n\nNavnet kommer fra JavaScript, men JSON er et eget dataformat som også mange andre programmeringsspråk kan lese. JSON er tekst, ikke et JavaScript-objekt. `JSON.parse()` gjør gyldig JSON-tekst til en JavaScript-verdi. `JSON.stringify()` gjør en JavaScript-verdi til JSON-tekst. Egenskapsnavn og tekstverdier må ha doble anførselstegn.",
+    "when": "Bruk JSON når strukturerte data skal lagres som tekst eller sendes mellom programmer, for eksempel i en fil eller et API-svar.",
+    "mistakes": "Ikke bland JSON-tekst med et JavaScript-objekt. JSON tillater ikke kommentarer, enkle anførselstegn, umerkede egenskapsnavn eller komma etter siste verdi.",
+    "syntax": "{\n  \"tittel\": \"Skogsturen\",\n  \"lengdeKm\": 3,\n  \"åpen\": true,\n  \"tema\": [\"natur\", \"tur\"]\n}",
+    "aliases": ["json", "hva er json", "hva står json for", "javascript object notation", "json format", "json fil", "dataformat"],
+    "keywords": ["strukturert data", "tekstformat", "objekt", "liste", "lagring", "utveksling"],
+    "related": ["js-json-parse", "js-json-stringify", "dom-storage", "what-is-javascript"],
+    "lesson": "#/javascript/advanced/js-storage",
+    "files": {
+      "html": "<h1>JSON som tekst</h1>\n<pre id=\"kilde\">{\"tittel\":\"Skogsturen\",\"lengdeKm\":3}</pre>\n<p id=\"resultat\">Leser data …</p>",
+      "css": "pre { white-space: pre-wrap; }",
+      "js": "const jsonTekst = document.querySelector(\"#kilde\").textContent;\nconst tur = JSON.parse(jsonTekst);\ndocument.querySelector(\"#resultat\").textContent = `${tur.tittel}: ${tur.lengdeKm} km`;"
+    }
+  },
+  {
+    "id": "what-is-accessibility",
+    "title": "Universell utforming",
+    "english": "Accessibility",
+    "sortTitle": "Universell utforming",
+    "category": "accessibility",
+    "overviewFor": "accessibility",
+    "type": "Grunnbegrep",
+    "displayCode": "<label for=\"navn\">Navn</label>",
+    "short": "Universell utforming betyr å lage nettsider som kan brukes av mennesker med ulike forutsetninger, behov og hjelpemidler.",
+    "explanation": "I webutvikling innebærer det blant annet forståelig struktur, lesbar kontrast, tekstalternativer til bilder og kontroller som virker med tastatur. En skjermleser bruker dokumentets semantikk og tilgjengelige navn for å formidle siden.\n\nDet engelske ordet er accessibility, ofte forkortet a11y fordi det er elleve bokstaver mellom a og y. WCAG gir retningslinjer for tilgjengelig webinnhold. Native HTML er et godt utgangspunkt, men løsningen må også testes i bruk.",
+    "when": "Arbeid med tilgjengelighet fra du velger HTML-struktur til du tester den ferdige siden. Det angår innhold, design og kode.",
+    "mistakes": "En automatisk test kan finne noen feil, men kan ikke alene bekrefte at en side er fullt tilgjengelig. Tastatur- og skjermlesertester er også nødvendige.",
+    "syntax": "<label for=\"navn\">Fornavn</label>\n<input id=\"navn\" name=\"navn\">\n<button type=\"button\">Lagre navn</button>",
+    "aliases": [
+      "universell utforming",
+      "tilgjengelighet",
+      "accessibility",
+      "a11y",
+      "hva er universell utforming",
+      "uu",
+      "funksjonsnedsettelse"
+    ],
+    "keywords": [
+      "tastatur",
+      "skjermleser",
+      "kontrast",
+      "semantikk"
+    ],
+    "related": [
+      "a11y-keyboard",
+      "a11y-contrast",
+      "what-is-wcag",
+      "what-is-aria"
+    ],
+    "lesson": "#/html/advanced/html-names",
+    "files": {
+      "html": "<label for=\"navn\">Fornavn</label>\n<input id=\"navn\" name=\"navn\">\n<button type=\"button\">Lagre navn</button>",
+      "css": "",
+      "js": ""
+    }
+  },
+  {
+    "id": "what-is-web-api",
+    "title": "Web API",
+    "english": "Web Application Programming Interface",
+    "sortTitle": "Web API",
+    "category": "dom",
+    "type": "Grunnbegrep",
+    "displayCode": "document.querySelector(\"h1\")",
+    "short": "Et Web API er et programmeringsgrensesnitt som gir kode tilgang til en funksjon i nettleseren eller på nettet. API står for Application Programming Interface.",
+    "explanation": "I dette læremiddelet mener vi vanligvis nettleserens API-er, for eksempel DOM, fetch og localStorage. JavaScript-språket gir blant annet variabler og funksjoner. API-ene gir tilgang til omgivelsene, som dokumentet og lokal lagring.\n\nUttrykket web-API brukes også om nettbaserte tjenester som svarer på HTTP-forespørsler. Se derfor på sammenhengen: snakker vi om en funksjon i nettleseren eller en tjeneste på en server?",
+    "when": "Bruk et passende API når programmet trenger å lese dokumentet, hente data, lagre lokalt eller bruke andre tjenester.",
+    "mistakes": "Et nettleser-API er ikke nødvendigvis tilgjengelig i alle JavaScript-miljøer. Document finnes for eksempel ikke som standard i et vanlig Node.js-program.",
+    "syntax": "const overskrift = document.querySelector(\"h1\");\nconsole.log(overskrift.textContent);",
+    "aliases": [
+      "web api",
+      "api",
+      "hva er api",
+      "hva står api for",
+      "application programming interface",
+      "nettleser api",
+      "grensesnitt"
+    ],
+    "keywords": [
+      "nettleser",
+      "tjeneste",
+      "fetch",
+      "dom"
+    ],
+    "related": [
+      "dom",
+      "what-is-javascript",
+      "dom-fetch",
+      "dom-storage"
+    ],
+    "lesson": "#/javascript/advanced/js-async",
+    "files": {
+      "html": "<h1>Nettleserens API-er</h1>",
+      "css": "",
+      "js": "const overskrift = document.querySelector(\"h1\");\nconsole.log(overskrift.textContent);"
+    }
+  },
+  {
+    "id": "what-is-wcag",
+    "title": "WCAG",
+    "english": "Web Content Accessibility Guidelines",
+    "sortTitle": "WCAG",
+    "category": "accessibility",
+    "type": "Retningslinjer",
+    "displayCode": "WCAG · Web Content Accessibility Guidelines",
+    "short": "WCAG står for Web Content Accessibility Guidelines. Det er internasjonale retningslinjer for tilgjengelig webinnhold.",
+    "explanation": "Retningslinjene organiseres rundt at innhold skal være mulig å oppfatte, mulig å betjene, forståelig og robust. Suksesskriteriene er delt i nivå A, AA og AAA.\n\nEn tilgjengelighetskontroll må vurdere de kriteriene som gjelder for innholdet. Automatiske verktøy er hjelpemidler og dekker bare deler av arbeidet. Den offisielle spesifikasjonen finnes hos W3C: https://www.w3.org/TR/WCAG22/.",
+    "when": "Bruk WCAG som grunnlag for å planlegge, utvikle og kontrollere tilgjengeligheten til en nettside.",
+    "mistakes": "Ikke erklær fullt WCAG-samsvar bare fordi axe eller et annet automatisk verktøy ikke finner feil.",
+    "syntax": "<button type=\"button\">En tydelig, navngitt kontroll</button>",
+    "aliases": [
+      "wcag",
+      "hva er wcag",
+      "hva står wcag for",
+      "web content accessibility guidelines",
+      "aa",
+      "tilgjengelighetskrav"
+    ],
+    "keywords": [
+      "tilgjengelighet",
+      "retningslinjer",
+      "standard"
+    ],
+    "related": [
+      "what-is-accessibility",
+      "a11y-contrast",
+      "a11y-keyboard"
+    ],
+    "lesson": "#/html/advanced/html-names",
+    "files": {
+      "html": "<button type=\"button\">En tydelig, navngitt kontroll</button>",
+      "css": "",
+      "js": ""
+    }
+  },
+  {
+    "id": "what-is-aria",
+    "title": "ARIA",
+    "english": "Accessible Rich Internet Applications",
+    "sortTitle": "ARIA",
+    "category": "accessibility",
+    "type": "Grunnbegrep",
+    "displayCode": "aria-expanded=\"false\"",
+    "short": "ARIA står for Accessible Rich Internet Applications. Det beskriver roller, navn, tilstander og relasjoner for hjelpemidler når native HTML ikke er tilstrekkelig.",
+    "explanation": "ARIA-attributter kan for eksempel fortelle at en knapp åpner et område, eller knytte et felt til en hjelpetekst. WAI-ARIA er spesifikasjonen fra W3C. WAI står for Web Accessibility Initiative.\n\nBegynn med native HTML. En button har allerede rolle og tastaturstøtte. Hvis du setter role=\"button\" på en div, må du fortsatt programmere fokus og tastaturhåndtering selv. ARIA tilfører informasjon, ikke automatisk oppførsel.",
+    "when": "Bruk ARIA til nødvendige tillegg til semantikken, for eksempel aria-expanded på en knapp som styrer et utvidbart område.",
+    "mistakes": "Feil ARIA kan gjøre siden vanskeligere å bruke. Ikke overstyr gode native roller eller skjul fokusbare kontroller med aria-hidden.",
+    "syntax": "<button aria-expanded=\"false\" aria-controls=\"tips\">Vis tips</button>\n<p id=\"tips\" hidden>Bruk native HTML først.</p>",
+    "aliases": [
+      "aria",
+      "wai aria",
+      "hva er aria",
+      "hva står aria for",
+      "accessible rich internet applications",
+      "wai"
+    ],
+    "keywords": [
+      "skjermleser",
+      "semantikk",
+      "rolle",
+      "tilstand"
+    ],
+    "related": [
+      "what-is-accessibility",
+      "a11y-aria-expanded",
+      "a11y-aria-describedby"
+    ],
+    "lesson": "#/html/advanced/html-names",
+    "files": {
+      "html": "<button aria-expanded=\"false\" aria-controls=\"tips\">Vis tips</button>\n<p id=\"tips\" hidden>Bruk native HTML først.</p>",
+      "css": "",
+      "js": "document.querySelector(\"button\").onclick = event => { const tips=document.querySelector(\"#tips\");tips.hidden=!tips.hidden;event.currentTarget.setAttribute(\"aria-expanded\",String(!tips.hidden)); };"
+    }
+  }
+]

@@ -1,0 +1,26 @@
+button,
+input,
+select {
+  font: inherit;
+  padding: 0.6rem;
+}
+button {
+  cursor: pointer;
+}
+:focus-visible {
+  outline: 3px solid #b34524;
+  outline-offset: 3px;
+}
+label {
+  display: block;
+}
+input {
+  max-width: 100%;
+  width: 320px;
+}
+li {
+  padding: 0.7rem 0;
+}
+a {
+  color: #174f42;
+}

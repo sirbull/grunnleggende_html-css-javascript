@@ -1,0 +1,25 @@
+button,
+input,
+select {
+  font: inherit;
+  padding: 0.6rem;
+}
+button {
+  cursor: pointer;
+}
+:focus-visible {
+  outline: 3px solid #b34524;
+  outline-offset: 3px;
+}
+details {
+  border-bottom: 1px solid #78877d;
+  padding: 1rem 0;
+}
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  min-height: 44px;
+}
+details[open] {
+  background: #e9f0e9;
+}

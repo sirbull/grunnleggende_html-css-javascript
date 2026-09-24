@@ -1,0 +1,31 @@
+button,
+input,
+select {
+  font: inherit;
+  padding: 0.6rem;
+}
+button {
+  cursor: pointer;
+}
+:focus-visible {
+  outline: 3px solid #b34524;
+  outline-offset: 3px;
+}
+.kort {
+  padding: 24px;
+  margin-top: 20px;
+  border: 2px solid currentColor;
+  border-radius: 10px;
+}
+.skog {
+  color: #174f42;
+  background: #e9f0e9;
+}
+.hav {
+  color: #173c66;
+  background: #eaf1fa;
+}
+.sol {
+  color: #6b3714;
+  background: #fff1d9;
+}

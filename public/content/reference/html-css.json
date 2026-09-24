@@ -25,7 +25,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<html lang=\"nb\"><head><title>Min side</title></head><body><h1>Min side</h1></body></html>",
+      "html": "<html lang=\"nb\">\n<head>\n  <title>Min side</title>\n</head>\n<body>\n  <h1>Min side</h1>\n</body>\n</html>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -57,7 +57,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<!doctype html><html lang=\"nb\"><head><meta charset=\"UTF-8\"><title>Metadata</title></head><body><h1>Metadata ligger i head</h1></body></html>",
+      "html": "<!doctype html>\n<html lang=\"nb\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Metadata</title>\n</head>\n<body>\n  <h1>Metadata ligger i head</h1>\n</body>\n</html>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -89,7 +89,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<title>Turguide ved fjorden</title><h1>Turguide ved fjorden</h1>",
+      "html": "<title>Turguide ved fjorden</title>\n<h1>Turguide ved fjorden</h1>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -185,7 +185,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<body><h1>Velkommen</h1><p>Dette er sideinnholdet.</p></body>",
+      "html": "<body>\n  <h1>Velkommen</h1>\n  <p>Dette er sideinnholdet.</p>\n</body>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -217,7 +217,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<header><h1>Nabolagsavisa</h1><p>Nyheter fra nærmiljøet</p></header>",
+      "html": "<header>\n  <h1>Nabolagsavisa</h1>\n  <p>Nyheter fra nærmiljøet</p>\n</header>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -249,7 +249,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<nav aria-label=\"Innhold\"><a href=\"#tips\">Tips</a></nav><h2 id=\"tips\">Mine tips</h2>",
+      "html": "<nav aria-label=\"Innhold\"><a href=\"#tips\">Tips</a></nav>\n<h2 id=\"tips\">Mine tips</h2>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -281,7 +281,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<main><h1>Ukens anbefaling</h1><p>Ta en tur ut.</p></main>",
+      "html": "<main>\n  <h1>Ukens anbefaling</h1>\n  <p>Ta en tur ut.</p>\n</main>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -313,7 +313,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<section><h2>Utstyr</h2><p>Ta med vann.</p></section>",
+      "html": "<section>\n  <h2>Utstyr</h2>\n  <p>Ta med vann.</p>\n</section>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -345,7 +345,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<article><h2>Ny kafé åpner</h2><p>Brukerne\b inviterer til lunsj.</p></article>",
+      "html": "<article>\n  <h2>Ny kafé åpner</h2>\n  <p>Brukerne\b inviterer til lunsj.</p>\n</article>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -377,7 +377,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<aside><h2>Visste du?</h2><p>Stien er to kilometer lang.</p></aside>",
+      "html": "<aside>\n  <h2>Visste du?</h2>\n  <p>Stien er to kilometer lang.</p>\n</aside>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -409,7 +409,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<footer><p>Laget av redaksjonen.</p></footer>",
+      "html": "<footer>\n  <p>Laget av redaksjonen.</p>\n</footer>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -473,7 +473,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<h2>Eventyrfilmer</h2><h3>Filmer fra Norge</h3>",
+      "html": "<h2>Eventyrfilmer</h2>\n<h3>Filmer fra Norge</h3>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -505,7 +505,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<h3>Filmer fra Norge</h3><h4>Filmer fra 2025</h4>",
+      "html": "<h3>Filmer fra Norge</h3>\n<h4>Filmer fra 2025</h4>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -537,7 +537,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<h4>Tekniske detaljer</h4><h5>Lyd</h5>",
+      "html": "<h4>Tekniske detaljer</h4>\n<h5>Lyd</h5>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -569,7 +569,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<h5>Lyd</h5><h6>Opptak</h6>",
+      "html": "<h5>Lyd</h5>\n<h6>Opptak</h6>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -633,7 +633,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<a href=\"#tips\">Gå til filmtips</a><h2 id=\"tips\">Filmtips</h2>",
+      "html": "<a href=\"#tips\">Gå til filmtips</a>\n<h2 id=\"tips\">Filmtips</h2>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -697,7 +697,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<figure><p>1 → 2 → 3</p><figcaption>Tre steg i prosessen.</figcaption></figure>",
+      "html": "<figure>\n  <p>1 → 2 → 3</p>\n  <figcaption>Tre steg i prosessen.</figcaption>\n</figure>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -729,7 +729,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<figure><p>HTML → DOM</p><figcaption>Nettleseren bygger en struktur.</figcaption></figure>",
+      "html": "<figure>\n  <p>HTML → DOM</p>\n  <figcaption>Nettleseren bygger en struktur.</figcaption>\n</figure>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -761,7 +761,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<ul><li>Vann</li><li>Gode sko</li></ul>",
+      "html": "<ul>\n  <li>Vann</li>\n  <li>Gode sko</li>\n</ul>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -793,7 +793,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<ol><li>Åpne editoren.</li><li>Lagre filen.</li></ol>",
+      "html": "<ol>\n  <li>Åpne editoren.</li>\n  <li>Lagre filen.</li>\n</ol>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -825,7 +825,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<ul><li>HTML<ul><li>Tagger</li></ul></li><li>CSS</li></ul>",
+      "html": "<ul>\n  <li>\n    HTML\n    <ul>\n      <li>Tagger</li>\n    </ul>\n  </li>\n  <li>CSS</li>\n</ul>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -857,7 +857,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<div class=\"card\"><h2>Et kort</h2><p>Samlet innhold.</p></div>",
+      "html": "<div class=\"card\">\n  <h2>Et kort</h2>\n  <p>Samlet innhold.</p>\n</div>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -1017,7 +1017,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<p>Første tema.</p><hr><p>Et nytt tema.</p>",
+      "html": "<p>Første tema.</p>\n<hr>\n<p>Et nytt tema.</p>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -1081,7 +1081,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<form><label for=\"navn\">Navn</label><input id=\"navn\" name=\"navn\"><button>Send</button></form>",
+      "html": "<form>\n  <label for=\"navn\">Navn</label>\n  <input id=\"navn\" name=\"navn\">\n  <button>Send</button>\n</form>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": "document.querySelector(\"form\").onsubmit = e => { e.preventDefault(); };"
     },
@@ -1145,7 +1145,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<label for=\"antall\">Antall</label><input id=\"antall\" type=\"number\" min=\"1\" value=\"1\">",
+      "html": "<label for=\"antall\">Antall</label>\n<input id=\"antall\" type=\"number\" min=\"1\" value=\"1\">",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -1177,7 +1177,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<label for=\"melding\">Melding</label><textarea id=\"melding\" rows=\"4\">Hei!</textarea>",
+      "html": "<label for=\"melding\">Melding</label>\n<textarea id=\"melding\" rows=\"4\">Hei!</textarea>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -1209,7 +1209,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<label for=\"fag\">Fag</label><select id=\"fag\"><option>HTML</option><option>CSS</option></select>",
+      "html": "<label for=\"fag\">Fag</label>\n<select id=\"fag\">\n  <option>HTML</option>\n  <option>CSS</option>\n</select>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -1241,7 +1241,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<label for=\"nivaa\">Nivå</label><select id=\"nivaa\"><option value=\"basic\">Grunnleggende</option><option value=\"advanced\">Fordypning</option></select>",
+      "html": "<label for=\"nivaa\">Nivå</label>\n<select id=\"nivaa\">\n  <option value=\"basic\">Grunnleggende</option>\n  <option value=\"advanced\">Fordypning</option>\n</select>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -1273,7 +1273,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<table><caption>Priser</caption><tr><th scope=\"col\">Vare</th><th scope=\"col\">Pris</th></tr><tr><td>Vann</td><td>20 kr</td></tr></table>",
+      "html": "<table>\n  <caption>Priser</caption>\n  <tr>\n    <th scope=\"col\">Vare</th>\n    <th scope=\"col\">Pris</th>\n  </tr>\n  <tr>\n    <td>Vann</td>\n    <td>20 kr</td>\n  </tr>\n</table>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -1305,7 +1305,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<table><thead><tr><th scope=\"col\">Fag</th></tr></thead><tbody><tr><td>HTML</td></tr></tbody></table>",
+      "html": "<table>\n  <thead>\n    <tr>\n      <th scope=\"col\">Fag</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>HTML</td>\n    </tr>\n  </tbody>\n</table>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -1337,7 +1337,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<table><tbody><tr><td>HTML</td><td>09.00</td></tr></tbody></table>",
+      "html": "<table>\n  <tbody>\n    <tr>\n      <td>HTML</td>\n      <td>09.00</td>\n    </tr>\n  </tbody>\n</table>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -1369,7 +1369,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<table><tr><th scope=\"col\">Fag</th></tr><tr><td>CSS</td></tr></table>",
+      "html": "<table>\n  <tr>\n    <th scope=\"col\">Fag</th>\n  </tr>\n  <tr>\n    <td>CSS</td>\n  </tr>\n</table>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -1401,7 +1401,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<table><tr><th scope=\"row\">Mandag</th><td>HTML</td></tr></table>",
+      "html": "<table>\n  <tr>\n    <th scope=\"row\">Mandag</th>\n    <td>HTML</td>\n  </tr>\n</table>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -1433,7 +1433,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<table><tr><th scope=\"col\">Pris</th></tr><tr><td>25 kr</td></tr></table>",
+      "html": "<table>\n  <tr>\n    <th scope=\"col\">Pris</th>\n  </tr>\n  <tr>\n    <td>25 kr</td>\n  </tr>\n</table>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -1465,7 +1465,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<video controls width=\"320\" aria-label=\"Eksempelvideo\"><p>Nettleseren støtter ikke video.</p></video><p>Legg til en lokal videofil via src på egen side.</p>",
+      "html": "<video controls width=\"320\" aria-label=\"Eksempelvideo\">\n  <p>Nettleseren støtter ikke video.</p>\n</video>\n<p>Legg til en lokal videofil via src på egen side.</p>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -1497,7 +1497,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<audio controls aria-label=\"Eksempellyd\"></audio><p>Legg til en lokal lydfil. Tekstversjon: Velkommen til verkstedet.</p>",
+      "html": "<audio controls aria-label=\"Eksempellyd\"></audio>\n<p>Legg til en lokal lydfil. Tekstversjon: Velkommen til verkstedet.</p>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -1529,7 +1529,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<video controls aria-label=\"Video\"><source src=\"film.mp4\" type=\"video/mp4\"></video><p>film.mp4 må finnes på din egen side.</p>",
+      "html": "<video controls aria-label=\"Video\">\n  <source src=\"film.mp4\" type=\"video/mp4\">\n</video>\n<p>film.mp4 må finnes på din egen side.</p>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -1561,7 +1561,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<details><summary>Se forklaringen</summary><p>Dette er ekstra informasjon.</p></details>",
+      "html": "<details>\n  <summary>Se forklaringen</summary>\n  <p>Dette er ekstra informasjon.</p>\n</details>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -1593,7 +1593,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<details><summary>Hvorfor bruke semantisk HTML?</summary><p>Det beskriver innholdets rolle.</p></details>",
+      "html": "<details>\n  <summary>Hvorfor bruke semantisk HTML?</summary>\n  <p>Det beskriver innholdets rolle.</p>\n</details>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -1625,7 +1625,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<button id=\"apne\">Åpne dialog</button><dialog aria-labelledby=\"tittel\"><h2 id=\"tittel\">En beskjed</h2><form method=\"dialog\"><button>Lukk</button></form></dialog>",
+      "html": "<button id=\"apne\">Åpne dialog</button>\n<dialog aria-labelledby=\"tittel\">\n  <h2 id=\"tittel\">En beskjed</h2>\n  <form method=\"dialog\"><button>Lukk</button></form>\n</dialog>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": "document.querySelector(\"#apne\").onclick = () => document.querySelector(\"dialog\").showModal();"
     },
@@ -1657,7 +1657,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<fieldset><legend>Velg fag</legend><label><input type=\"radio\" name=\"fag\"> HTML</label><label><input type=\"radio\" name=\"fag\"> CSS</label></fieldset>",
+      "html": "<fieldset>\n  <legend>Velg fag</legend>\n  <label><input type=\"radio\" name=\"fag\"> HTML</label>\n  <label><input type=\"radio\" name=\"fag\"> CSS</label>\n</fieldset>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -1689,7 +1689,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<fieldset><legend>Kontaktmåte</legend><label><input type=\"checkbox\"> E-post</label></fieldset>",
+      "html": "<fieldset>\n  <legend>Kontaktmåte</legend>\n  <label><input type=\"checkbox\"> E-post</label>\n</fieldset>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -1721,7 +1721,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<p id=\"melding\">Venter</p><script>document.querySelector(\"#melding\").textContent = \"JavaScript kjørte\";</script>",
+      "html": "<p id=\"melding\">Venter</p>\n<script>document.querySelector(\"#melding\").textContent = \"JavaScript kjørte\";</script>",
       "css": "table { border-collapse: collapse; } td, th { border: 1px solid #78877d; padding: .5rem; }",
       "js": ""
     },
@@ -1751,7 +1751,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<h2 id=\"tips\">Tips</h2><a href=\"#tips\">Gå til tips</a>",
+      "html": "<h2 id=\"tips\">Tips</h2>\n<a href=\"#tips\">Gå til tips</a>",
       "css": "",
       "js": ""
     },
@@ -1781,7 +1781,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<a href=\"#tips\">Se tips</a><h2 id=\"tips\">Tips</h2>",
+      "html": "<a href=\"#tips\">Se tips</a>\n<h2 id=\"tips\">Tips</h2>",
       "css": "",
       "js": ""
     },
@@ -1901,7 +1901,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<p lang=\"nb\">En norsk setning.</p><p lang=\"en\">An English sentence.</p>",
+      "html": "<p lang=\"nb\">En norsk setning.</p>\n<p lang=\"en\">An English sentence.</p>",
       "css": "",
       "js": ""
     },
@@ -1931,7 +1931,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<label for=\"epost\">E-post</label><input id=\"epost\" type=\"email\"><button type=\"button\">Kontroller</button>",
+      "html": "<label for=\"epost\">E-post</label>\n<input id=\"epost\" type=\"email\">\n<button type=\"button\">Kontroller</button>",
       "css": "",
       "js": ""
     },
@@ -2021,7 +2021,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<label for=\"navn\">Fornavn</label><input id=\"navn\" placeholder=\"For eksempel Ada\">",
+      "html": "<label for=\"navn\">Fornavn</label>\n<input id=\"navn\" placeholder=\"For eksempel Ada\">",
       "css": "",
       "js": ""
     },
@@ -2051,7 +2051,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<form><label for=\"navn\">Navn (obligatorisk)</label><input id=\"navn\" required><button>Prøv</button></form>",
+      "html": "<form>\n  <label for=\"navn\">Navn (obligatorisk)</label>\n  <input id=\"navn\" required>\n  <button>Prøv</button>\n</form>",
       "css": "",
       "js": "document.querySelector(\"form\").onsubmit=e=>e.preventDefault();"
     },
@@ -2081,7 +2081,7 @@
       "html-element"
     ],
     "files": {
-      "html": "<button disabled>Lagrer …</button><p>Knappen blir tilgjengelig når lagringen er ferdig.</p>",
+      "html": "<button disabled>Lagrer …</button>\n<p>Knappen blir tilgjengelig når lagringen er ferdig.</p>",
       "css": "",
       "js": ""
     },
@@ -2201,7 +2201,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card {  color: #174f42; }",
       "js": ""
     },
@@ -2231,7 +2231,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card {  background: #e9f0e9; }",
       "js": ""
     },
@@ -2261,7 +2261,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card {  background-color: #e9f0e9; }",
       "js": ""
     },
@@ -2291,7 +2291,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card {  font-family: system-ui, sans-serif; }",
       "js": ""
     },
@@ -2321,7 +2321,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card {  font-size: 1.2rem; }",
       "js": ""
     },
@@ -2351,7 +2351,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card {  font-weight: 700; }",
       "js": ""
     },
@@ -2381,7 +2381,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card {  line-height: 1.7; }",
       "js": ""
     },
@@ -2411,7 +2411,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card {  text-align: center; }",
       "js": ""
     },
@@ -2441,7 +2441,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card {  width: 80%; }",
       "js": ""
     },
@@ -2471,7 +2471,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card {  height: 140px; }",
       "js": ""
     },
@@ -2501,7 +2501,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card {  max-width: 320px; }",
       "js": ""
     },
@@ -2531,7 +2531,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card {  min-height: 120px; }",
       "js": ""
     },
@@ -2561,7 +2561,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card {  margin: 16px; }",
       "js": ""
     },
@@ -2591,7 +2591,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card {  padding: 20px; }",
       "js": ""
     },
@@ -2621,7 +2621,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card {  border: 2px solid #174f42; }",
       "js": ""
     },
@@ -2651,7 +2651,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card {  border-radius: 12px; }",
       "js": ""
     },
@@ -2681,7 +2681,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card {  box-shadow: 0 3px 8px #0003; }",
       "js": ""
     },
@@ -2711,7 +2711,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card {  display: block; }",
       "js": ""
     },
@@ -2741,7 +2741,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card {  position: relative; }",
       "js": ""
     },
@@ -2771,7 +2771,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card { position: relative; top: 8px; }",
       "js": ""
     },
@@ -2801,7 +2801,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card { position: relative; right: 8px; }",
       "js": ""
     },
@@ -2831,7 +2831,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card { position: relative; bottom: 8px; }",
       "js": ""
     },
@@ -2861,7 +2861,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card { position: relative; left: 8px; }",
       "js": ""
     },
@@ -2891,7 +2891,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card { position: relative; z-index: 2; }",
       "js": ""
     },
@@ -2921,7 +2921,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card {  overflow: auto; }",
       "js": ""
     },
@@ -2951,7 +2951,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card {  opacity: 0.8; }",
       "js": ""
     },
@@ -2981,7 +2981,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card {  transform: translateX(8px); }",
       "js": ""
     },
@@ -3011,7 +3011,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card {  transition: background-color 200ms; }",
       "js": ""
     },
@@ -3041,7 +3041,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".grid { display: flex; flex-direction: column; }",
       "js": ""
     },
@@ -3071,7 +3071,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".grid { display: flex; justify-content: space-between; }",
       "js": ""
     },
@@ -3101,7 +3101,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".grid { display: flex; align-items: center; }",
       "js": ""
     },
@@ -3131,7 +3131,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".grid { display: flex; gap: 16px; }",
       "js": ""
     },
@@ -3161,7 +3161,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".grid { display: flex; flex-wrap: wrap; }",
       "js": ""
     },
@@ -3191,7 +3191,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".grid { display: grid; grid-template-columns: repeat(2, 1fr); }",
       "js": ""
     },
@@ -3221,7 +3221,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".grid { display: grid; grid-template-rows: auto auto; }",
       "js": ""
     },
@@ -3251,7 +3251,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card {  box-sizing: border-box; }",
       "js": ""
     },
@@ -3281,7 +3281,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card {  flex: 1 1 140px; }",
       "js": ""
     },
@@ -3309,7 +3309,7 @@
       "css-descendant"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button><p data-kind=\"tip\">Et tips med data-attributt.</p>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>\n<p data-kind=\"tip\">Et tips med data-attributt.</p>",
       "css": "* { box-sizing: border-box; }",
       "js": ""
     },
@@ -3337,7 +3337,7 @@
       "css-descendant"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button><p data-kind=\"tip\">Et tips med data-attributt.</p>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>\n<p data-kind=\"tip\">Et tips med data-attributt.</p>",
       "css": "h2 + p { color: #b34524; }",
       "js": ""
     },
@@ -3365,7 +3365,7 @@
       "css-descendant"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button><p data-kind=\"tip\">Et tips med data-attributt.</p>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>\n<p data-kind=\"tip\">Et tips med data-attributt.</p>",
       "css": "h2 ~ p { color: #b34524; }",
       "js": ""
     },
@@ -3393,7 +3393,7 @@
       "css-descendant"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button><p data-kind=\"tip\">Et tips med data-attributt.</p>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>\n<p data-kind=\"tip\">Et tips med data-attributt.</p>",
       "css": "[data-kind=\"tip\"] { border: 2px solid #174f42; }",
       "js": ""
     },
@@ -3421,7 +3421,7 @@
       "css-descendant"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button><p data-kind=\"tip\">Et tips med data-attributt.</p>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>\n<p data-kind=\"tip\">Et tips med data-attributt.</p>",
       "css": "button:focus { outline: 3px solid #b34524; }",
       "js": ""
     },
@@ -3449,7 +3449,7 @@
       "css-descendant"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button><p data-kind=\"tip\">Et tips med data-attributt.</p>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>\n<p data-kind=\"tip\">Et tips med data-attributt.</p>",
       "css": "button:focus-visible { outline: 3px solid #b34524; outline-offset: 3px; }",
       "js": ""
     },
@@ -3477,7 +3477,7 @@
       "css-descendant"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button><p data-kind=\"tip\">Et tips med data-attributt.</p>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>\n<p data-kind=\"tip\">Et tips med data-attributt.</p>",
       "css": ".card:first-child { border: 3px solid #174f42; }",
       "js": ""
     },
@@ -3505,7 +3505,7 @@
       "css-descendant"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button><p data-kind=\"tip\">Et tips med data-attributt.</p>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>\n<p data-kind=\"tip\">Et tips med data-attributt.</p>",
       "css": ".card:last-child { border: 3px solid #174f42; }",
       "js": ""
     },
@@ -3533,7 +3533,7 @@
       "css-descendant"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button><p data-kind=\"tip\">Et tips med data-attributt.</p>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>\n<p data-kind=\"tip\">Et tips med data-attributt.</p>",
       "css": ".card:nth-child(2) { border: 3px solid #b34524; }",
       "js": ""
     },
@@ -3561,7 +3561,7 @@
       "css-descendant"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button><p data-kind=\"tip\">Et tips med data-attributt.</p>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>\n<p data-kind=\"tip\">Et tips med data-attributt.</p>",
       "css": ".card::before { content: \"Tips\"; font-weight: bold; }",
       "js": ""
     },
@@ -3589,7 +3589,7 @@
       "css-descendant"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button><p data-kind=\"tip\">Et tips med data-attributt.</p>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>\n<p data-kind=\"tip\">Et tips med data-attributt.</p>",
       "css": ".card::after { content: \" →\"; }",
       "js": ""
     },
@@ -3619,7 +3619,7 @@
       "css-flexbox"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }",
       "js": ""
     },
@@ -3649,7 +3649,7 @@
       "css-flexbox"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".grid { display: flex; flex-wrap: wrap; gap: 12px; }",
       "js": ""
     },
@@ -3679,7 +3679,7 @@
       "css-flexbox"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".grid { display: grid; grid-template-columns: 2fr 1fr; gap: 12px; }",
       "js": ""
     },
@@ -3709,7 +3709,7 @@
       "css-flexbox"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%,120px),1fr)); gap: 12px; }",
       "js": ""
     },
@@ -3739,7 +3739,7 @@
       "css-flexbox"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".grid { display: grid; gap: 12px; } @media (min-width: 600px) { .grid { grid-template-columns: repeat(3, 1fr); } }",
       "js": ""
     },
@@ -3769,7 +3769,7 @@
       "css-flexbox"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": "h1 { font-size: clamp(1.5rem, 1rem + 2vw, 3rem); }",
       "js": ""
     },
@@ -3799,7 +3799,7 @@
       "css-flexbox"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card { color: #174f42; } .card { color: #b34524; }",
       "js": ""
     },
@@ -3829,7 +3829,7 @@
       "css-flexbox"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card { color: #174f42; } .card.featured { color: #b34524; }",
       "js": ""
     },
@@ -3859,7 +3859,7 @@
       "css-flexbox"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".grid { color: #174f42; } .featured { color: #b34524; }",
       "js": ""
     },
@@ -3889,7 +3889,7 @@
       "css-flexbox"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ":root { --accent: #174f42; } .card { border: 2px solid var(--accent); }",
       "js": ""
     },
@@ -3919,7 +3919,7 @@
       "css-flexbox"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".grid { container-type: inline-size; } @container (min-width: 400px) { .card { display: flex; gap: 1rem; } }",
       "js": ""
     },
@@ -3949,7 +3949,7 @@
       "css-flexbox"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card { display: inline-block; width: 140px; vertical-align: top; margin: 4px; }",
       "js": ""
     },
@@ -3979,7 +3979,7 @@
       "css-width"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card { width: 50%; max-width: 100%; }",
       "js": ""
     },
@@ -4009,7 +4009,7 @@
       "css-width"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card { width: 200px; max-width: 100%; }",
       "js": ""
     },
@@ -4039,7 +4039,7 @@
       "css-width"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card { font-size: 2rem; max-width: 100%; }",
       "js": ""
     },
@@ -4069,7 +4069,7 @@
       "css-width"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card { font-size: 2em; max-width: 100%; }",
       "js": ""
     },
@@ -4099,7 +4099,7 @@
       "css-width"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card { width: 50vw; max-width: 100%; }",
       "js": ""
     },
@@ -4129,7 +4129,7 @@
       "css-width"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card { min-height: 30vh; max-width: 100%; }",
       "js": ""
     },
@@ -4159,7 +4159,7 @@
       "css-width"
     ],
     "files": {
-      "html": "<h1>Et lite galleri</h1><section class=\"grid\"><article class=\"card\"><h2>Skogen</h2><p>En rolig tur.</p></article><article class=\"card featured\"><h2>Havet</h2><p>En frisk dag.</p></article><article class=\"card\"><h2>Fjellet</h2><p>En lang utsikt.</p></article></section><button>Prøv fokus</button>",
+      "html": "<h1>Et lite galleri</h1>\n<section class=\"grid\">\n  <article class=\"card\">\n    <h2>Skogen</h2>\n    <p>En rolig tur.</p>\n  </article>\n  <article class=\"card featured\">\n    <h2>Havet</h2>\n    <p>En frisk dag.</p>\n  </article>\n  <article class=\"card\">\n    <h2>Fjellet</h2>\n    <p>En lang utsikt.</p>\n  </article>\n</section>\n<button>Prøv fokus</button>",
       "css": ".card { min-height: 30dvh; max-width: 100%; }",
       "js": ""
     },

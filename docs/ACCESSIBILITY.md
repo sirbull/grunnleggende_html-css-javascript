@@ -11,8 +11,10 @@ Kjøres med `npm run check` mot produksjonsbygget på `http://127.0.0.1:4178/kur
 | Kontroll | Dekning | Status |
 | --- | --- | --- |
 | axe-core (wcag2a, wcag2aa, wcag21aa, wcag22aa) | Representative leksjoner i alle fire seksjoner, ordlisten, detaljside, dialog, fokusmodus og kodeverksted | Ingen brudd |
-| Overskriftshierarki | Alle 51 leksjoner + ordlisten | Ingen hopp i nivå, nøyaktig én `h1` per side |
+| Overskriftshierarki | Alle 63 leksjoner + ordlisten | Ingen hopp i nivå i artikkelteksten, nøyaktig én `h1` per side |
 | Tastaturflyt | Hopp til innhold → artikkel → piltaster → fagorddialog → editor → neste leksjon | Passerer |
+| Piltaster uten forutgaende Tab | `ArrowDown` bytter lesesteg rett etter at siden er lastet | Passerer |
+| Leksjonsdialog | Åpner fra «Alle leksjoner», axe-ren, Escape gir fokus tilbake til knappen, valg av leksjon lukker den | Passerer |
 | Fokusfelle i dialog | Åtte Tab-trykk holder fokus i `dialog`, Escape og klikk på bakgrunnen lukker og gir fokus tilbake til utløseren | Passerer |
 | Reflow 320 px | Ingen horisontal scroll, alle tre editorruter synlige | Passerer |
 | Zoom 200 % | Ingen horisontal scroll | Passerer |
@@ -26,7 +28,7 @@ Kjøres med `npm run check` mot produksjonsbygget på `http://127.0.0.1:4178/kur
 
 Vurdering: dette er selve poenget med leksjonene. Å fjerne landemerkene fra eksempelsidene ville gjort dem feil som pedagogisk materiale. Iframen har en beskrivende `title` (`Resultat: <leksjonstittel>`), så en skjermleserbruker får vite hva rammen inneholder før hen går inn i den. Funnet beholdes bevisst, og testene måler derfor bare WCAG-taggene, ikke `best-practice`.
 
-**Rullbare kodeblokker.** `pre` har `tabindex="0"` og `aria-label="Kodeeksempel"` slik at innhold som må scrolles kan nås med tastatur. Det ble lagt inn etter et tidligere axe-funn.
+**Kodeblokker bryter linjer.** `pre` bruker `pre-wrap` og `overflow-wrap: anywhere`, slik at lange linjer vises i sin helhet i stedet for å skjules bak horisontal scrolling. Fordi blokkene dermed ikke lenger er rullbare, er `tabindex="0"` fjernet: det ga et tabstopp per kodeblokk uten å gi tilgang til noe.
 
 ## Rettet underveis
 
@@ -52,5 +54,6 @@ Skriv funn inn i dette dokumentet når de er gjort, med dato og hvilket hjelpemi
 - Native `dialog` med `showModal()` for modaler, med fokus tilbake til utløseren ved lukking.
 - Piltastnavigasjon gjelder bare inne i artikkelen, så den ikke stjeler tastetrykk fra resten av siden.
 - Tab forlater CodeMirror i stedet for å sette inn tabulator, slik at editoren ikke blir en felle.
-- Fokusmodus er av som standard, og nedtoningen har unntak for hover, markering, `focus-within` og forced colors.
+- Fokusmodus er på som standard og kan slås av med én kontroll i leseverktøylinjen. Valget lagres. Nedtoningen er gradert, slik at stegene rett over og under det aktive er lettere nedtonet enn resten, og den har unntak for hover, markering, `focus-within` og forced colors.
+- Nedtoningen bruker uskarphet og `--muted`, ikke `opacity`. Dempet tekst holder seg dermed innenfor kontrastkravet, slik at standardvisningen ikke først bryter WCAG for så å bli reddet av en innstilling.
 - Statusmeldinger går gjennom et `role="status"`-felt i stedet for å flytte fokus.

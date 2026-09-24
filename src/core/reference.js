@@ -1,5 +1,5 @@
 import { el, announce, setPageTitle } from './dom.js';
-import { searchEntries, compareEntries } from './reference-search.js';
+import { searchEntries, normalize } from './reference-search.js';
 import { markdownFragment } from './markdown.js';
 import { getExample } from './content.js';
 
@@ -47,6 +47,7 @@ export async function renderReference(main, route, { entries, signal, focus }) {
   const search = el('input', { id: 'reference-search', type: 'search', placeholder: 'Prøv «.h2», «class inni class» eller «endre tekst»', autocomplete: 'off' });
   search.value = route.query.get('q') || '';
   const results = el('ul', { class: 'reference-list' });
+  const overview = el('section', { class: 'category-overview', hidden: true, 'aria-label': 'Om emnet' });
   const count = el('p', { role: 'status' });
   const filters = el('div', { class: 'filters', role: 'group', 'aria-label': 'Kategori' });
   const alphabet = el('div', { class: 'alphabet', role: 'group', 'aria-label': 'Alfabetisk indeks' });
@@ -59,6 +60,15 @@ export async function renderReference(main, route, { entries, signal, focus }) {
   }
   function update() {
     const found = searchEntries(entries, search.value, category, letter);
+    const introduction = category !== 'all'
+      ? entries.find(entry => entry.overviewFor === category)
+      : entries.find(entry => entry.overviewFor && [entry.title, ...(entry.aliases || [])].some(alias => normalize(alias) === normalize(search.value)));
+    overview.hidden = !introduction;
+    overview.replaceChildren();
+    if (introduction) {
+      overview.append(el('p', { class: 'eyebrow' }, 'Begynn med helheten'), el('h2', {}, `Hva er ${introduction.title}?`), el('p', {}, introduction.short),
+        el('a', { href: `#/reference/${introduction.id}` }, `Les hele forklaringen om ${introduction.title} →`));
+    }
     count.textContent = `${found.length} ${found.length === 1 ? 'treff' : 'treff'}${search.value ? ` for «${search.value}»` : ` i ${categories[category].toLowerCase()}`}`;
     for (const [key, button] of Object.entries(filterButtons)) button.setAttribute('aria-pressed', String(key === category));
     for (const [key, button] of Object.entries(letterButtons)) button.setAttribute('aria-pressed', String(key === letter));
@@ -70,7 +80,7 @@ export async function renderReference(main, route, { entries, signal, focus }) {
   }
   search.oninput = update;
   page.append(el('p', { class: 'eyebrow' }, 'Ordliste / Cheat sheet'), heading, el('p', { class: 'lesson-intro' }, 'Fra en glemt tagg til et spørsmål med egne ord. Finn forklaringen, se koden og prøv selv.'),
-    el('div', { class: 'reference-controls' }, el('label', { class: 'search-label', for: 'reference-search' }, 'Hva lurer du på?'), search, filters, alphabet), count, results);
+    el('div', { class: 'reference-controls' }, el('label', { class: 'search-label', for: 'reference-search' }, 'Hva lurer du på?'), search, filters, alphabet), overview, count, results);
   main.replaceChildren(page); update(); setPageTitle('Ordliste / Cheat sheet');
   if (focus) {
     const previous = [...results.querySelectorAll('[data-entry]')].find(a => a.dataset.entry === lastEntry);

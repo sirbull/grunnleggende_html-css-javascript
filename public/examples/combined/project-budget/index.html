@@ -1,0 +1,13 @@
+<h1>Hva koster aktiviteten?</h1>
+<form>
+  <p>
+    <label for="pris">Pris per deltaker (kr)</label>
+    <input id="pris" type="number" min="0" step="0.01" value="75" required>
+  </p>
+  <p>
+    <label for="antall">Antall deltakere</label>
+    <input id="antall" type="number" min="1" step="1" value="12" required>
+  </p>
+  <button>Beregn</button>
+</form>
+<p id="resultat" role="status"></p>

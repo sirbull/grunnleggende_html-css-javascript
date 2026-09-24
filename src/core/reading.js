@@ -30,9 +30,13 @@ export function createReading(article, onChange) {
     lockedUntil = Date.now() + 900; activate(index);
     if (scroll) steps[active].scrollIntoView({ block: 'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
   }
-  article.addEventListener('keydown', e => {
+  // Piltastene gjelder hele leksjonssiden, ikke bare et fokusert leseomrade. PageUp/PageDown,
+  // mellomrom, Home og End rores ikke, slik at vanlig tastaturscrolling fortsatt finnes.
+  document.addEventListener('keydown', e => {
     if (e.ctrlKey || e.metaKey || e.altKey || e.shiftKey || !['ArrowDown', 'ArrowUp'].includes(e.key)) return;
-    if (e.target.closest('button,a,input,textarea,select,pre,[contenteditable],dialog,[role=slider]')) return;
+    if (e.defaultPrevented || document.querySelector('dialog[open]')) return;
+    const target = e.target;
+    if (target instanceof Element && target.closest('button,a,input,textarea,select,pre,[contenteditable],[role=slider],.cm-editor,.workshop')) return;
     e.preventDefault(); go(active + (e.key === 'ArrowDown' ? 1 : -1));
   }, options);
   article.addEventListener('focusin', e => {

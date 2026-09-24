@@ -1,0 +1,20 @@
+button,
+input,
+select {
+  font: inherit;
+  padding: 0.6rem;
+}
+button {
+  cursor: pointer;
+}
+:focus-visible {
+  outline: 3px solid #b34524;
+  outline-offset: 3px;
+}
+ul {
+  padding-left: 1.2rem;
+}
+li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #b9c6ba;
+}

@@ -9,8 +9,10 @@ test('complete lesson, glossary, focus, editor and nested deployment', async ({ 
   await expect(page.locator('.reading-step.active')).toHaveAttribute('data-step', 'head');
   const term = page.locator('[data-term=html-element]').first(); await term.focus(); await page.keyboard.press('Enter');
   await expect(page.getByRole('dialog')).toBeVisible(); await page.keyboard.press('Escape'); await expect(term).toBeFocused();
-  await page.getByRole('button', { name: 'Fokusmodus', exact: true }).click();
-  await page.reload(); await expect(page.getByRole('button', { name: 'Fokusmodus', exact: true })).toHaveAttribute('aria-pressed', 'true');
+  const focusToggle = page.getByRole('button', { name: 'Fokusmodus', exact: true });
+  await expect(focusToggle).toHaveAttribute('aria-pressed', 'true');
+  await focusToggle.click();
+  await page.reload(); await expect(page.getByRole('button', { name: 'Fokusmodus', exact: true })).toHaveAttribute('aria-pressed', 'false');
   await page.getByRole('button', { name: /Prøv selv i/ }).click();
   const editor = page.getByRole('textbox', { name: 'HTML-kode', exact: true });
   await editor.fill('<h1>Min nye side</h1><button>Klikk meg</button>');

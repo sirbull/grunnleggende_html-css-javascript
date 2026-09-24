@@ -8,6 +8,7 @@
     "accessibility": "Tilgjengelighet"
   },
   "files": [
+    "content/reference/overview.json",
     "content/reference/core.json",
     "content/reference/html-css.json",
     "content/reference/javascript-accessibility.json"

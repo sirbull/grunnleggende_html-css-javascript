@@ -505,6 +505,42 @@
               "example": "examples/combined/project-quiz",
               "visualization": "preview",
               "minutes": 6
+            },
+            {
+              "id": "project-counter",
+              "title": "En teller med pluss og minus",
+              "description": "Hold rede på en verdi og vis den på siden.",
+              "minutes": 8,
+              "content": "content/combined/basic/project-counter.md",
+              "example": "examples/combined/project-counter",
+              "visualization": "preview"
+            },
+            {
+              "id": "project-color",
+              "title": "En fargevelger for et kort",
+              "description": "Koble et enkelt valg til en CSS-klasse.",
+              "minutes": 8,
+              "content": "content/combined/basic/project-color.md",
+              "example": "examples/combined/project-color",
+              "visualization": "preview"
+            },
+            {
+              "id": "project-tips",
+              "title": "Et tips om gangen",
+              "description": "Velg tekst fra et array og vis hvilket tips du er på.",
+              "minutes": 8,
+              "content": "content/combined/basic/project-tips.md",
+              "example": "examples/combined/project-tips",
+              "visualization": "preview"
+            },
+            {
+              "id": "project-gallery",
+              "title": "En liten bildevelger",
+              "description": "Bytt bilde, alternativ tekst og bildetekst sammen.",
+              "minutes": 8,
+              "content": "content/combined/basic/project-gallery.md",
+              "example": "examples/combined/project-gallery",
+              "visualization": "preview"
             }
           ]
         },
@@ -529,6 +565,42 @@
               "example": "examples/combined/project-form",
               "visualization": "preview",
               "minutes": 9
+            },
+            {
+              "id": "project-budget",
+              "title": "En enkel budsjettkalkulator",
+              "description": "Les tall, beregn totalen og håndter ugyldige verdier.",
+              "minutes": 12,
+              "content": "content/combined/intermediate/project-budget.md",
+              "example": "examples/combined/project-budget",
+              "visualization": "preview"
+            },
+            {
+              "id": "project-menu",
+              "title": "En tilgjengelig mobilmeny",
+              "description": "Synkroniser synlighet, knappetilstand og tastaturfokus.",
+              "minutes": 12,
+              "content": "content/combined/intermediate/project-menu.md",
+              "example": "examples/combined/project-menu",
+              "visualization": "preview"
+            },
+            {
+              "id": "project-faq",
+              "title": "Spørsmål og svar med én åpen om gangen",
+              "description": "Kombiner native details med en liten JavaScript-regel.",
+              "minutes": 12,
+              "content": "content/combined/intermediate/project-faq.md",
+              "example": "examples/combined/project-faq",
+              "visualization": "preview"
+            },
+            {
+              "id": "project-sort",
+              "title": "Sorter et lite bibliotek",
+              "description": "Vis de samme dataene i en ny rekkefølge.",
+              "minutes": 12,
+              "content": "content/combined/intermediate/project-sort.md",
+              "example": "examples/combined/project-sort",
+              "visualization": "preview"
             }
           ]
         },
@@ -553,6 +625,42 @@
               "example": "examples/combined/project-data",
               "visualization": "preview",
               "minutes": 9
+            },
+            {
+              "id": "project-cart",
+              "title": "En handlekurv uten betaling",
+              "description": "Beregn antall, delsummene og totalen fra én datamodell.",
+              "minutes": 18,
+              "content": "content/combined/advanced/project-cart.md",
+              "example": "examples/combined/project-cart",
+              "visualization": "preview"
+            },
+            {
+              "id": "project-pagination",
+              "title": "Søk, filter og sideinndeling",
+              "description": "La flere kontroller bruke samme tilstand.",
+              "minutes": 18,
+              "content": "content/combined/advanced/project-pagination.md",
+              "example": "examples/combined/project-pagination",
+              "visualization": "preview"
+            },
+            {
+              "id": "project-bookmarks",
+              "title": "En lokal leseliste",
+              "description": "Valider URL-er og lagre en samling som JSON.",
+              "minutes": 18,
+              "content": "content/combined/advanced/project-bookmarks.md",
+              "example": "examples/combined/project-bookmarks",
+              "visualization": "preview"
+            },
+            {
+              "id": "project-edit-dialog",
+              "title": "Rediger et kort i en modal dialog",
+              "description": "Håndter åpning, lagring, avbryt og fokus som én flyt.",
+              "minutes": 18,
+              "content": "content/combined/advanced/project-edit-dialog.md",
+              "example": "examples/combined/project-edit-dialog",
+              "visualization": "preview"
             }
           ]
         }

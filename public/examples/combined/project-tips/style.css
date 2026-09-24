@@ -1,0 +1,20 @@
+button,
+input,
+select {
+  font: inherit;
+  padding: 0.6rem;
+}
+button {
+  cursor: pointer;
+}
+:focus-visible {
+  outline: 3px solid #b34524;
+  outline-offset: 3px;
+}
+blockquote {
+  border-left: 4px solid #174f42;
+  padding: 20px;
+  margin: 1rem 0;
+  background: #e9f0e9;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,25 @@
+button,
+input,
+select {
+  font: inherit;
+  padding: 0.6rem;
+}
+button {
+  cursor: pointer;
+}
+:focus-visible {
+  outline: 3px solid #b34524;
+  outline-offset: 3px;
+}
+nav {
+  padding: 1rem;
+  background: #e9f0e9;
+}
+nav a {
+  display: block;
+  padding: 0.6rem;
+  color: #174f42;
+}
+[hidden] {
+  display: none !important;
+}

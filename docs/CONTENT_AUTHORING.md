@@ -125,6 +125,8 @@ Obligatoriske felt: `id`, `title`, `sortTitle`, `category`, `type`, `short`, `sy
 
 Valgfritt: `keywords` og `aliases` (norske søkeord slik en nybegynner ville formulert seg), `english`, `displayCode`, `related` (må peke på ID-er som finnes) og `lesson` (hashrute til leksjonen).
 
+En grunnforklaring kan også ha `overviewFor`, for eksempel `"overviewFor": "html"`. Verdien knytter oppføringen til en kategori i referansemanifestet. Ordlisten viser da `short` i et eget introduksjonsfelt når kategorien velges, eller når søket treffer oppføringens tittel eller et alias nøyaktig. Bruk én slik oppføring per kategori. Forklar både hva navnet står for og hvilken jobb teknologien gjør i `short`. Se `overview.json` for eksempler. Beslektede begreper som Web API og WCAG kan ha vanlige oppføringer uten `overviewFor`.
+
 `sortTitle` styrer alfabetisk sortering, så `.class` kan sorteres under C. Søket rangerer eksakt treff på kodeform først, deretter ID, aliases, norske fraser, definisjon og nøkkelord.
 
 Skriv oppføringer for det brukerne faktisk søker på, inkludert par som ofte blandes sammen: `margin` mot `padding`, `.a .b` mot `.a.b`, `let` mot `const`, `textContent` mot `innerHTML`.

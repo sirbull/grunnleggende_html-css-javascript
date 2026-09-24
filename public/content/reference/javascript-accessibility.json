@@ -28,7 +28,7 @@
       "js-const"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nlet antall = 1;\nantall += 1;\nvis(antall);"
     },
@@ -61,7 +61,7 @@
       "js-const"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst navn = \"Ada\";\nvis(navn.toUpperCase());"
     },
@@ -94,7 +94,7 @@
       "js-const"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst pris = Number(\"35\");\nvis(pris * 2);"
     },
@@ -129,7 +129,7 @@
       "js-const"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst ferdig = 3 > 2;\nvis(ferdig);"
     },
@@ -162,7 +162,7 @@
       "js-const"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst mangler = document.querySelector(\".finnes-ikke\");\nvis(mangler === null);"
     },
@@ -194,7 +194,7 @@
       "js-const"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nlet svar;\nvis(String(svar));"
     },
@@ -227,7 +227,7 @@
       "js-const"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst fag = [\"HTML\", \"CSS\", \"JavaScript\"];\nvis(fag[0] + \", antall: \" + fag.length);"
     },
@@ -260,7 +260,7 @@
       "js-const"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst film = { tittel: \"Skogsturen\", aar: 2025 };\nvis(film.tittel);"
     },
@@ -294,7 +294,7 @@
       "js-const"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst pris = 30;\nvis((pris * 3) <= 100);"
     },
@@ -328,7 +328,7 @@
       "js-const"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst alder = 18;\nif (alder >= 18) { vis(\"Voksenbillett\"); }\nelse { vis(\"Ungdomsbillett\"); }"
     },
@@ -361,7 +361,7 @@
       "js-const"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst fag = \"css\";\nswitch (fag) {\n  case \"html\": vis(\"Struktur\"); break;\n  case \"css\": vis(\"Utseende\"); break;\n  default: vis(\"Et annet fag\");\n}"
     },
@@ -394,7 +394,7 @@
       "js-const"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst tall = [];\nfor (let i = 1; i <= 3; i++) { tall.push(i); }\nvis(tall.join(\", \"));"
     },
@@ -428,7 +428,7 @@
       "js-const"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst fag = [\"HTML\", \"CSS\"];\nfor (const navn of fag) { console.log(navn); }\nvis(fag.join(\" og \"));"
     },
@@ -461,7 +461,7 @@
       "js-const"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nlet antall = 0;\nwhile (antall < 3) { antall++; }\nvis(antall);"
     },
@@ -495,7 +495,7 @@
       "js-const"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst dobbel = tall => tall * 2;\nvis(dobbel(4));"
     },
@@ -528,7 +528,7 @@
       "js-const"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nfunction hilsen(navn) { return `Hei, ${navn}!`; }\nvis(hilsen(\"Ada\"));"
     },
@@ -560,7 +560,7 @@
       "js-const"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nfunction total(pris, antall) { return pris * antall; }\nvis(total(25, 4));"
     },
@@ -593,7 +593,7 @@
       "js-const"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst navn = \"Ada\";\nfunction hils() { const melding = `Hei, ${navn}`; return melding; }\nvis(hils());"
     },
@@ -627,7 +627,7 @@
       "js-const"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst navn = \"Ada\";\nvis(`Hei, ${navn}!`);"
     },
@@ -661,7 +661,7 @@
       "js-const"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconsole.log(\"Regnestykket:\", 3 * 4);\nvis(\"Se konsollen under resultatet.\");"
     },
@@ -691,11 +691,11 @@
       "data"
     ],
     "related": [
-      "js-function",
-      "js-const"
+      "what-is-json",
+      "js-json-stringify"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst film = JSON.parse('{\"tittel\":\"Skogsturen\"}');\nvis(film.tittel);"
     },
@@ -711,7 +711,7 @@
     "syntax": "const film = { tittel: \"Skogsturen\" };\nvis(JSON.stringify(film));",
     "short": "Gjør en JavaScript-verdi til JSON-tekst.",
     "explanation": "Bruk stringify før du lagrer et objekt i localStorage eller sender det som JSON.",
-    "when": "Bruk stringify før du lagrer et objekt i localStorage eller sender det som JSON..",
+    "when": "Bruk stringify før du lagrer et objekt i localStorage eller sender det som JSON.",
     "mistakes": "Funksjoner og undefined bevares ikke som vanlige JSON-verdier. Sirkulære referanser gir feil.",
     "aliases": [
       "JSON stringify objekt til tekst",
@@ -725,11 +725,11 @@
       "tekst"
     ],
     "related": [
-      "js-function",
-      "js-const"
+      "what-is-json",
+      "js-json-parse"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst film = { tittel: \"Skogsturen\" };\nvis(JSON.stringify(film));"
     },
@@ -762,7 +762,7 @@
       "js-const"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nPromise.resolve(\"Data er klare\").then(tekst => vis(tekst));"
     },
@@ -794,7 +794,7 @@
       "js-const"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nasync function hentHilsen() { return \"Hei!\"; }\nvis(await hentHilsen());"
     },
@@ -826,7 +826,7 @@
       "js-const"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst svar = await Promise.resolve(\"Ferdig\");\nvis(svar);"
     },
@@ -860,7 +860,7 @@
       "js-const"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\ntry {\n  JSON.parse(\"ugyldig JSON\");\n} catch (error) {\n  vis(\"Kunne ikke lese dataene.\");\n}"
     },
@@ -892,7 +892,7 @@
       "js-const"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst priser = [10, 20, 30];\nvis(priser.map(pris => pris * 2).join(\", \"));"
     },
@@ -925,7 +925,7 @@
       "js-const"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst priser = [10, 20, 30];\nvis(priser.filter(pris => pris <= 20).join(\", \"));"
     },
@@ -958,7 +958,7 @@
       "js-const"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nexport function dobbel(tall) { return tall * 2; }\n// I en annen fil: import { dobbel } from \"./regning.js\";\nvis(dobbel(4));"
     },
@@ -993,7 +993,7 @@
       "dom-event"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": ".featured { border: 2px solid #174f42; padding: .5rem; } label { display: block; margin-top: 1rem; }",
       "js": "const punkter = document.querySelectorAll(\"li\");\npunkter.forEach(punkt => punkt.classList.add(\"featured\"));\ndocument.querySelector(\"#resultat\").textContent = `${punkter.length} treff`;"
     },
@@ -1026,7 +1026,7 @@
       "dom-event"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": ".featured { border: 2px solid #174f42; padding: .5rem; } label { display: block; margin-top: 1rem; }",
       "js": "const resultat = document.getElementById(\"resultat\");\nresultat.textContent = \"Funnet med id\";"
     },
@@ -1061,7 +1061,7 @@
       "dom-event"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": ".featured { border: 2px solid #174f42; padding: .5rem; } label { display: block; margin-top: 1rem; }",
       "js": "document.querySelector(\"#resultat\").innerHTML = \"<strong>Fast, betrodd eksempeltekst</strong>\";"
     },
@@ -1096,7 +1096,7 @@
       "dom-event"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": ".featured { border: 2px solid #174f42; padding: .5rem; } label { display: block; margin-top: 1rem; }",
       "js": "document.querySelector(\"#resultat\").style.backgroundColor = \"#e9f0e9\";"
     },
@@ -1129,7 +1129,7 @@
       "dom-event"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": ".featured { border: 2px solid #174f42; padding: .5rem; } label { display: block; margin-top: 1rem; }",
       "js": "const punkt = document.createElement(\"li\");\npunkt.textContent = \"JavaScript\";\ndocument.querySelector(\"ul\").append(punkt);"
     },
@@ -1163,7 +1163,7 @@
       "dom-event"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": ".featured { border: 2px solid #174f42; padding: .5rem; } label { display: block; margin-top: 1rem; }",
       "js": "document.querySelector(\"#resultat\").append(\" En ekstra tekst.\");"
     },
@@ -1196,7 +1196,7 @@
       "dom-event"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": ".featured { border: 2px solid #174f42; padding: .5rem; } label { display: block; margin-top: 1rem; }",
       "js": "document.querySelector(\"button\").addEventListener(\"click\", () => { document.querySelector(\"li\")?.remove(); });"
     },
@@ -1229,7 +1229,7 @@
       "dom-event"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": ".featured { border: 2px solid #174f42; padding: .5rem; } label { display: block; margin-top: 1rem; }",
       "js": "document.querySelector(\"button\").addEventListener(\"click\", () => { document.querySelector(\"#resultat\").textContent = \"Aktivert\"; });"
     },
@@ -1263,7 +1263,7 @@
       "dom-event"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": ".featured { border: 2px solid #174f42; padding: .5rem; } label { display: block; margin-top: 1rem; }",
       "js": "document.querySelector(\"input\").addEventListener(\"input\", event => { document.querySelector(\"#resultat\").textContent = event.target.value; });"
     },
@@ -1296,7 +1296,7 @@
       "dom-event"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": ".featured { border: 2px solid #174f42; padding: .5rem; } label { display: block; margin-top: 1rem; }",
       "js": "document.querySelector(\"input\").addEventListener(\"change\", event => { document.querySelector(\"#resultat\").textContent = \"Bekreftet: \" + event.target.value; });"
     },
@@ -1329,7 +1329,7 @@
       "dom-event"
     ],
     "files": {
-      "html": "<h1>Skjemademo</h1><form><label for=\"navn\">Navn</label><input id=\"navn\" name=\"navn\" value=\"Ada\"><button>Send</button></form><p id=\"resultat\" role=\"status\"></p>",
+      "html": "<h1>Skjemademo</h1>\n<form>\n  <label for=\"navn\">Navn</label>\n  <input id=\"navn\" name=\"navn\" value=\"Ada\">\n  <button>Send</button>\n</form>\n<p id=\"resultat\" role=\"status\"></p>",
       "css": ".featured { border: 2px solid #174f42; padding: .5rem; } label { display: block; margin-top: 1rem; }",
       "js": "document.querySelector(\"form\").addEventListener(\"submit\", event => { event.preventDefault(); document.querySelector(\"#resultat\").textContent = \"Behandlet lokalt\"; });"
     },
@@ -1362,7 +1362,7 @@
       "dom-event"
     ],
     "files": {
-      "html": "<h1>Skjemademo</h1><form><label for=\"navn\">Navn</label><input id=\"navn\" name=\"navn\" value=\"Ada\"><button>Send</button></form><p id=\"resultat\" role=\"status\"></p>",
+      "html": "<h1>Skjemademo</h1>\n<form>\n  <label for=\"navn\">Navn</label>\n  <input id=\"navn\" name=\"navn\" value=\"Ada\">\n  <button>Send</button>\n</form>\n<p id=\"resultat\" role=\"status\"></p>",
       "css": ".featured { border: 2px solid #174f42; padding: .5rem; } label { display: block; margin-top: 1rem; }",
       "js": "document.querySelector(\"form\").addEventListener(\"submit\", event => { event.preventDefault(); document.querySelector(\"#resultat\").textContent = \"Ingen navigasjon ved innsending.\"; });"
     },
@@ -1395,7 +1395,7 @@
       "dom-event"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": ".featured { border: 2px solid #174f42; padding: .5rem; } label { display: block; margin-top: 1rem; }",
       "js": "const knapp = document.querySelector(\"button\");\nknapp.dataset.filmId = \"42\";\ndocument.querySelector(\"#resultat\").textContent = knapp.dataset.filmId;"
     },
@@ -1429,7 +1429,7 @@
       "dom-event"
     ],
     "files": {
-      "html": "<h1>Prøv JavaScript</h1><p id=\"resultat\">Resultatet vises her.</p><button id=\"knapp\">Prøv</button><label for=\"felt\">Skriv noe</label><input id=\"felt\"><ul><li>HTML</li><li>CSS</li></ul>",
+      "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": ".featured { border: 2px solid #174f42; padding: .5rem; } label { display: block; margin-top: 1rem; }",
       "js": "document.querySelector(\"button\").addEventListener(\"click\", () => document.querySelector(\"input\").focus());"
     },
@@ -1463,7 +1463,7 @@
       "dom-event"
     ],
     "files": {
-      "html": "<h1>Skjemademo</h1><form><label for=\"navn\">Navn</label><input id=\"navn\" name=\"navn\" value=\"Ada\"><button>Send</button></form><p id=\"resultat\" role=\"status\"></p>",
+      "html": "<h1>Skjemademo</h1>\n<form>\n  <label for=\"navn\">Navn</label>\n  <input id=\"navn\" name=\"navn\" value=\"Ada\">\n  <button>Send</button>\n</form>\n<p id=\"resultat\" role=\"status\"></p>",
       "css": ".featured { border: 2px solid #174f42; padding: .5rem; } label { display: block; margin-top: 1rem; }",
       "js": "document.querySelector(\"form\").addEventListener(\"submit\", event => { event.preventDefault(); const data = new FormData(event.currentTarget); document.querySelector(\"#resultat\").textContent = data.get(\"navn\"); });"
     },
@@ -1530,7 +1530,7 @@
       "html-dialog"
     ],
     "files": {
-      "html": "<label for=\"kode\">Kode</label><input id=\"kode\" aria-describedby=\"hjelp\"><p id=\"hjelp\">Skriv fire siffer.</p>",
+      "html": "<label for=\"kode\">Kode</label><input id=\"kode\" aria-describedby=\"hjelp\">\n<p id=\"hjelp\">Skriv fire siffer.</p>",
       "css": "",
       "js": ""
     },
@@ -1564,7 +1564,7 @@
       "html-dialog"
     ],
     "files": {
-      "html": "<button aria-expanded=\"false\" aria-controls=\"detaljer\">Vis detaljer</button><p id=\"detaljer\" hidden>Her er detaljene.</p>",
+      "html": "<button aria-expanded=\"false\" aria-controls=\"detaljer\">Vis detaljer</button>\n<p id=\"detaljer\" hidden>Her er detaljene.</p>",
       "css": "",
       "js": "document.querySelector(\"button\").onclick = event => { const p = document.querySelector(\"p\"); p.hidden = !p.hidden; event.currentTarget.setAttribute(\"aria-expanded\", String(!p.hidden)); };"
     },
@@ -1599,7 +1599,7 @@
       "html-dialog"
     ],
     "files": {
-      "html": "<button>Lagre</button><p role=\"status\" id=\"melding\"></p>",
+      "html": "<button>Lagre</button>\n<p role=\"status\" id=\"melding\"></p>",
       "css": "",
       "js": "document.querySelector(\"button\").onclick = () => document.querySelector(\"#melding\").textContent = \"Endringen er lagret i dette eksempelet.\";"
     },
@@ -1633,7 +1633,7 @@
       "html-dialog"
     ],
     "files": {
-      "html": "<a href=\"#innhold\">Hopp til innhold</a><main id=\"innhold\" tabindex=\"-1\"><h1>Hovedinnhold</h1><button>En handling</button></main>",
+      "html": "<a href=\"#innhold\">Hopp til innhold</a>\n<main id=\"innhold\" tabindex=\"-1\">\n  <h1>Hovedinnhold</h1>\n  <button>En handling</button>\n</main>",
       "css": "",
       "js": ""
     },
@@ -1734,7 +1734,7 @@
       "html-dialog"
     ],
     "files": {
-      "html": "<main><h1>En tydelig side</h1><section><h2>Tips</h2><p>Bruk elementet som passer innholdet.</p></section></main>",
+      "html": "<main>\n  <h1>En tydelig side</h1>\n  <section>\n    <h2>Tips</h2>\n    <p>Bruk elementet som passer innholdet.</p>\n  </section>\n</main>",
       "css": "",
       "js": ""
     },
@@ -1769,7 +1769,7 @@
       "html-dialog"
     ],
     "files": {
-      "html": "<label for=\"navn\">Navn</label><input id=\"navn\"><button>Lagre</button><a href=\"#tips\">Les tips</a><p id=\"tips\">Et tips.</p>",
+      "html": "<label for=\"navn\">Navn</label>\n<input id=\"navn\">\n<button>Lagre</button>\n<a href=\"#tips\">Les tips</a>\n<p id=\"tips\">Et tips.</p>",
       "css": "",
       "js": ""
     },

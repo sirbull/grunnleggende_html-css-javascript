@@ -29,7 +29,8 @@ test('dialog traps focus, backdrop closes, and focus mode keeps controls readabl
   const term=page.locator('[data-term]').first();await term.click();
   for(let i=0;i<8;i++){await page.keyboard.press('Tab');expect(await page.locator('#glossary-dialog').evaluate(d=>d.contains(document.activeElement))).toBe(true);}
   await page.mouse.click(3,3);await expect(page.getByRole('dialog')).not.toBeVisible();await expect(term).toBeFocused();
-  await page.getByRole('button',{name:'Fokusmodus',exact:true}).click();
+  await expect(page.getByRole('button',{name:'Fokusmodus',exact:true})).toHaveAttribute('aria-pressed','true');
+  expect(await page.locator('.reading-step:not(.active)').first().evaluate(s=>getComputedStyle(s).filter)).toContain('blur');
   await term.focus();expect(await term.evaluate(t=>getComputedStyle(t.closest('.reading-step')).filter)).toBe('none');
   expect((await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa','wcag22aa']).analyze()).violations).toEqual([]);
 });
@@ -64,10 +65,15 @@ test('missing route, missing content and denied storage have usable fallbacks',a
 });
 
 test('level preference, alphabet and browser history stay consistent',async({page})=>{
-  await page.goto('#/css/basic/css-intro');await page.getByRole('combobox',{name:'Velg nivå'}).selectOption('advanced');
+  await page.goto('#/css/basic/css-intro');
+  await page.getByRole('button',{name:'Alle leksjoner',exact:true}).click();
+  await page.getByRole('combobox',{name:'Velg nivå'}).selectOption('advanced');
   await expect(page.getByRole('heading',{level:1})).toHaveText('Cascade, arv og spesifisitet');
+  await expect(page.locator('#lesson-nav-dialog')).not.toBeVisible();
   await page.locator('#main-nav').getByRole('link',{name:'CSS',exact:true}).click();
+  await page.getByRole('button',{name:'Alle leksjoner',exact:true}).click();
   await expect(page.getByRole('combobox',{name:'Velg nivå'})).toHaveValue('advanced');
+  await page.keyboard.press('Escape');
   await page.goto('#/reference');await page.getByRole('button',{name:'Vis oppføringer på M',exact:true}).click();
   await expect(page.locator('.reference-card').first()).toBeVisible();await expect(page.getByRole('searchbox')).toBeVisible();
   await page.locator('.reference-card').first().click();await page.goBack();

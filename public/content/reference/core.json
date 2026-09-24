@@ -128,7 +128,7 @@
       "css-class-selector"
     ],
     "files": {
-      "html": "<section class=\"card-grid\">\n  <article class=\"card\"><h2>Kort 1</h2></article>\n  <article class=\"card featured\"><h2>Kort 2</h2></article>\n  <div><article class=\"card\"><h2>Kort 3</h2></article></div>\n</section>",
+      "html": "<section class=\"card-grid\">\n  <article class=\"card\">\n    <h2>Kort 1</h2>\n  </article>\n  <article class=\"card featured\">\n    <h2>Kort 2</h2>\n  </article>\n  <div>\n    <article class=\"card\">\n      <h2>Kort 3</h2>\n    </article>\n  </div>\n</section>",
       "css": "h2 { color: #174f42; }",
       "js": ""
     },
@@ -172,7 +172,7 @@
       "html-class"
     ],
     "files": {
-      "html": "<h2>En h2 uten klasse</h2><p class=\"h2\">Et avsnitt med klassen h2</p>",
+      "html": "<h2>En h2 uten klasse</h2>\n<p class=\"h2\">Et avsnitt med klassen h2</p>",
       "css": ".h2 { color: #174f42; }",
       "js": ""
     },
@@ -265,7 +265,7 @@
       "css-child"
     ],
     "files": {
-      "html": "<section class=\"card-grid\">\n  <article class=\"card\"><h2>Kort 1</h2></article>\n  <article class=\"card featured\"><h2>Kort 2</h2></article>\n  <div><article class=\"card\"><h2>Kort 3</h2></article></div>\n</section>",
+      "html": "<section class=\"card-grid\">\n  <article class=\"card\">\n    <h2>Kort 1</h2>\n  </article>\n  <article class=\"card featured\">\n    <h2>Kort 2</h2>\n  </article>\n  <div>\n    <article class=\"card\">\n      <h2>Kort 3</h2>\n    </article>\n  </div>\n</section>",
       "css": ".card-grid .card { padding: 1rem; border: 2px solid #174f42; }",
       "js": ""
     },
@@ -305,7 +305,7 @@
       "css-descendant"
     ],
     "files": {
-      "html": "<section class=\"card-grid\">\n  <article class=\"card\"><h2>Kort 1</h2></article>\n  <article class=\"card featured\"><h2>Kort 2</h2></article>\n  <div><article class=\"card\"><h2>Kort 3</h2></article></div>\n</section>",
+      "html": "<section class=\"card-grid\">\n  <article class=\"card\">\n    <h2>Kort 1</h2>\n  </article>\n  <article class=\"card featured\">\n    <h2>Kort 2</h2>\n  </article>\n  <div>\n    <article class=\"card\">\n      <h2>Kort 3</h2>\n    </article>\n  </div>\n</section>",
       "css": ".card-grid > .card { border: 3px solid #174f42; }",
       "js": ""
     },
@@ -350,7 +350,7 @@
       "css-descendant"
     ],
     "files": {
-      "html": "<section class=\"card-grid\">\n  <article class=\"card\"><h2>Kort 1</h2></article>\n  <article class=\"card featured\"><h2>Kort 2</h2></article>\n  <div><article class=\"card\"><h2>Kort 3</h2></article></div>\n</section>",
+      "html": "<section class=\"card-grid\">\n  <article class=\"card\">\n    <h2>Kort 1</h2>\n  </article>\n  <article class=\"card featured\">\n    <h2>Kort 2</h2>\n  </article>\n  <div>\n    <article class=\"card\">\n      <h2>Kort 3</h2>\n    </article>\n  </div>\n</section>",
       "css": ".card-grid .card.featured { border: 3px solid #b34524; }",
       "js": ""
     },
@@ -417,7 +417,7 @@
       "css-flexbox"
     ],
     "files": {
-      "html": "<section class=\"card-grid\">\n  <article class=\"card\"><h2>Kort 1</h2></article>\n  <article class=\"card featured\"><h2>Kort 2</h2></article>\n  <div><article class=\"card\"><h2>Kort 3</h2></article></div>\n</section>",
+      "html": "<section class=\"card-grid\">\n  <article class=\"card\">\n    <h2>Kort 1</h2>\n  </article>\n  <article class=\"card featured\">\n    <h2>Kort 2</h2>\n  </article>\n  <div>\n    <article class=\"card\">\n      <h2>Kort 3</h2>\n    </article>\n  </div>\n</section>",
       "css": ".card { margin: 16px; border: 3px solid; padding: 24px; }",
       "js": ""
     },
@@ -453,7 +453,7 @@
       "css-box-model"
     ],
     "files": {
-      "html": "<section class=\"card-grid\">\n  <article class=\"card\"><h2>Kort 1</h2></article>\n  <article class=\"card featured\"><h2>Kort 2</h2></article>\n  <div><article class=\"card\"><h2>Kort 3</h2></article></div>\n</section>",
+      "html": "<section class=\"card-grid\">\n  <article class=\"card\">\n    <h2>Kort 1</h2>\n  </article>\n  <article class=\"card featured\">\n    <h2>Kort 2</h2>\n  </article>\n  <div>\n    <article class=\"card\">\n      <h2>Kort 3</h2>\n    </article>\n  </div>\n</section>",
       "css": ".card-grid { display: flex; gap: 12px; flex-wrap: wrap; }",
       "js": ""
     },
@@ -640,7 +640,7 @@
     "category": "dom",
     "type": "konsept",
     "syntax": "document.querySelector(\"h1\").textContent = \"Min nye overskrift\";",
-    "short": "DOM er nettleserens struktur av dokumentet som JavaScript kan lese og endre.",
+    "short": "DOM står for Document Object Model. Det er nettleserens representasjon av HTML-dokumentet som et tre av noder som kode kan lese og endre.",
     "explanation": "Document Object Model representerer dokumentet som noder i et tre. Et element kan ha foreldre, barn og søsken. Endring av DOM oppdaterer visningen, men skriver ikke om HTML-filen på disken.",
     "when": "Når JavaScript skal samhandle med siden.",
     "mistakes": "HTML-kilde og levende DOM kan være forskjellige etter at JavaScript har kjørt.",
@@ -654,7 +654,11 @@
       "struktur"
     ],
     "aliases": [
-      "dom document object model dokument tre struktur"
+      "dom document object model dokument tre struktur",
+      "dom",
+      "hva er dom",
+      "hva står dom for",
+      "document object model"
     ],
     "sortTitle": "DOM",
     "displayCode": "document.querySelector(\"h1\").textContent = \"Min nye overskrift\";",
@@ -667,7 +671,8 @@
       "css": ".featured { background: #e9f0e9; border: 2px solid #174f42; padding: 1rem; }",
       "js": "document.querySelector(\"h1\").textContent = \"Min nye overskrift\";"
     },
-    "lesson": "#/javascript/basic/js-dom-text"
+    "lesson": "#/javascript/basic/js-dom-text",
+    "overviewFor": "dom"
   },
   {
     "id": "dom-event",

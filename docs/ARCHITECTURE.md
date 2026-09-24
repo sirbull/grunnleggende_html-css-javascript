@@ -31,7 +31,9 @@ Referansemanifestet peker til JSON-filer med komplette oppføringer. Søk indeks
 - Preview: sandbox allow-scripts og allow-forms, aldri allow-same-origin. allow-forms er nødvendig for native skjemavalidering og submit-hendelser; CSP form-action 'none' sperrer faktiske skjemainnsendinger. CSP sperrer eksterne fetch-, bilde-, stil- og scriptressurser. postMessage sjekker source og økt-ID. Vilkårlig uendelig JavaScript kan fortsatt belaste nettleseren; stopp fjerner rammen hvis hovedsiden fortsatt svarer. Dette er et lokalt øvingsverktøy, ikke en tjeneste for ukjent fiendtlig kode.
 - localStorage/fetch i opaque iframe: virkelige origin-API-er er sperret. Eksempler demonstrerer lokal lagring med eksplisitt merket minnelager; fetch bruker lokal data-URL. Produksjonsbruk forklares i leksjonen.
 - Tale: systemstemmene varierer, norsk prioriteres; feil og manglende API forklares. Setningsbasert pause/gjenopptaking og generasjonsteller.
-- Fokus: native modal, gjenoppretting til åpner, overskrift ved ruteskift; piltaster kun i leseområdet. Tab forlater CodeMirror.
+- Fokus: native modal, gjenoppretting til åpner, overskrift ved ruteskift. Tab forlater CodeMirror.
+- Piltaster: `ArrowUp`/`ArrowDown` bytter lesesteg på hele leksjonssiden, ikke bare i et fokusert leseømråde, fordi kravet om å tabbe seg inn først gjorde funksjonen uoppdagbar. Kontroller, lenker, dialoger, kodeblokker og CodeMirror er unntatt, og PageUp/PageDown, mellomrom, Home og End røres ikke, slik at vanlig tastaturscrolling fortsatt finnes.
+- Kursnavigasjonen ligger i en dialog, ikke en fast venstrekolonne. Det frigjør bredde til leksjonen og fjerner et permanent støyelement fra lesebildet.
 - Blur: av som standard; subtil nedtoning med unntak for hover, markering, focus-within og forced colors.
 - Hosting: egne tester server dist på /kurs/web/ uten SPA fallback; aldri file://.
 - Tilgjengelighet: axe og tastaturtester suppleres med dokumenterte manuelle kontroller. Automatiske tester gir ikke grunnlag for påstand om full WCAG-samsvar. Se `docs/ACCESSIBILITY.md`.

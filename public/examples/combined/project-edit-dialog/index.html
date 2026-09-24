@@ -1,0 +1,22 @@
+<h1>Mitt prosjekt</h1>
+<article>
+  <h2 id="navn">Filmside</h2>
+  <p id="beskrivelse">En samling anbefalinger.</p>
+  <button id="rediger">Rediger prosjekt</button>
+</article>
+<dialog aria-labelledby="dialog-tittel">
+  <h2 id="dialog-tittel">Rediger prosjekt</h2>
+  <form>
+    <p>
+      <label for="nytt-navn">Prosjektnavn</label>
+      <input id="nytt-navn" required autofocus>
+    </p>
+    <p>
+      <label for="ny-tekst">Beskrivelse</label>
+      <textarea id="ny-tekst" rows="3"></textarea>
+    </p>
+    <button type="submit">Lagre</button>
+    <button type="button" id="avbryt">Avbryt</button>
+  </form>
+</dialog>
+<p id="status" role="status"></p>
