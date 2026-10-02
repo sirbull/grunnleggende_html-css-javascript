@@ -133,7 +133,7 @@
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst ferdig = 3 > 2;\nvis(ferdig);"
     },
-    "lesson": "#/javascript/basic/js-types"
+    "lesson": "#/javascript/basic/js-boolean"
   },
   {
     "id": "js-null",
@@ -166,7 +166,7 @@
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst mangler = document.querySelector(\".finnes-ikke\");\nvis(mangler === null);"
     },
-    "lesson": "#/javascript/basic/js-types"
+    "lesson": "#/javascript/intermediate/js-dom-text"
   },
   {
     "id": "js-undefined",
@@ -197,8 +197,7 @@
       "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nlet svar;\nvis(String(svar));"
-    },
-    "lesson": "#/javascript/basic/js-types"
+    }
   },
   {
     "id": "js-arrays",
@@ -231,7 +230,7 @@
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst fag = [\"HTML\", \"CSS\", \"JavaScript\"];\nvis(fag[0] + \", antall: \" + fag.length);"
     },
-    "lesson": "#/javascript/basic/js-types"
+    "lesson": "#/javascript/intermediate/js-arrays"
   },
   {
     "id": "js-objects",
@@ -264,7 +263,7 @@
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst film = { tittel: \"Skogsturen\", aar: 2025 };\nvis(film.tittel);"
     },
-    "lesson": "#/javascript/basic/js-types"
+    "lesson": "#/javascript/intermediate/js-objects"
   },
   {
     "id": "js-operators",
@@ -298,7 +297,7 @@
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst pris = 30;\nvis((pris * 3) <= 100);"
     },
-    "lesson": "#/javascript/basic/js-types"
+    "lesson": "#/javascript/basic/js-operators"
   },
   {
     "id": "js-if",
@@ -332,7 +331,7 @@
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst alder = 18;\nif (alder >= 18) { vis(\"Voksenbillett\"); }\nelse { vis(\"Ungdomsbillett\"); }"
     },
-    "lesson": "#/javascript/basic/js-types"
+    "lesson": "#/javascript/basic/js-if"
   },
   {
     "id": "js-switch",
@@ -364,8 +363,7 @@
       "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst fag = \"css\";\nswitch (fag) {\n  case \"html\": vis(\"Struktur\"); break;\n  case \"css\": vis(\"Utseende\"); break;\n  default: vis(\"Et annet fag\");\n}"
-    },
-    "lesson": "#/javascript/basic/js-types"
+    }
   },
   {
     "id": "js-for",
@@ -398,7 +396,7 @@
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst tall = [];\nfor (let i = 1; i <= 3; i++) { tall.push(i); }\nvis(tall.join(\", \"));"
     },
-    "lesson": "#/javascript/basic/js-types"
+    "lesson": "#/javascript/basic/js-for"
   },
   {
     "id": "js-for-of",
@@ -432,7 +430,7 @@
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst fag = [\"HTML\", \"CSS\"];\nfor (const navn of fag) { console.log(navn); }\nvis(fag.join(\" og \"));"
     },
-    "lesson": "#/javascript/basic/js-types"
+    "lesson": "#/javascript/intermediate/js-array-loops"
   },
   {
     "id": "js-while",
@@ -465,7 +463,7 @@
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nlet antall = 0;\nwhile (antall < 3) { antall++; }\nvis(antall);"
     },
-    "lesson": "#/javascript/basic/js-types"
+    "lesson": "#/javascript/basic/js-loops"
   },
   {
     "id": "js-arrow",
@@ -499,7 +497,7 @@
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst dobbel = tall => tall * 2;\nvis(dobbel(4));"
     },
-    "lesson": "#/javascript/basic/js-types"
+    "lesson": "#/javascript/advanced/js-callbacks"
   },
   {
     "id": "js-parameters",
@@ -532,7 +530,7 @@
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nfunction hilsen(navn) { return `Hei, ${navn}!`; }\nvis(hilsen(\"Ada\"));"
     },
-    "lesson": "#/javascript/basic/js-types"
+    "lesson": "#/javascript/basic/js-parameters"
   },
   {
     "id": "js-return",
@@ -564,7 +562,7 @@
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nfunction total(pris, antall) { return pris * antall; }\nvis(total(25, 4));"
     },
-    "lesson": "#/javascript/basic/js-types"
+    "lesson": "#/javascript/basic/js-return"
   },
   {
     "id": "js-scope",
@@ -597,7 +595,7 @@
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst navn = \"Ada\";\nfunction hils() { const melding = `Hei, ${navn}`; return melding; }\nvis(hils());"
     },
-    "lesson": "#/javascript/basic/js-types"
+    "lesson": "#/javascript/advanced/js-scope"
   },
   {
     "id": "js-templates",
@@ -630,8 +628,7 @@
       "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst navn = \"Ada\";\nvis(`Hei, ${navn}!`);"
-    },
-    "lesson": "#/javascript/basic/js-types"
+    }
   },
   {
     "id": "js-console",
@@ -864,7 +861,7 @@
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\ntry {\n  JSON.parse(\"ugyldig JSON\");\n} catch (error) {\n  vis(\"Kunne ikke lese dataene.\");\n}"
     },
-    "lesson": "#/javascript/advanced/js-async"
+    "lesson": "#/javascript/advanced/js-errors"
   },
   {
     "id": "js-map",
@@ -895,8 +892,7 @@
       "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst priser = [10, 20, 30];\nvis(priser.map(pris => pris * 2).join(\", \"));"
-    },
-    "lesson": "#/javascript/basic/js-types"
+    }
   },
   {
     "id": "js-filter",
@@ -928,8 +924,7 @@
       "html": "<h1>Prøv JavaScript</h1>\n<p id=\"resultat\">Resultatet vises her.</p>\n<button id=\"knapp\">Prøv</button>\n<label for=\"felt\">Skriv noe</label>\n<input id=\"felt\">\n<ul>\n  <li>HTML</li>\n  <li>CSS</li>\n</ul>",
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nconst priser = [10, 20, 30];\nvis(priser.filter(pris => pris <= 20).join(\", \"));"
-    },
-    "lesson": "#/javascript/basic/js-types"
+    }
   },
   {
     "id": "js-import-export",
@@ -962,7 +957,7 @@
       "css": "label { display: block; margin-top: 1rem; }",
       "js": "// Hjelper for å vise resultatet i eksempelet:\nconst vis = verdi => document.querySelector(\"#resultat\").textContent = String(verdi);\n\nexport function dobbel(tall) { return tall * 2; }\n// I en annen fil: import { dobbel } from \"./regning.js\";\nvis(dobbel(4));"
     },
-    "lesson": "#/javascript/basic/js-types"
+    "lesson": "#/javascript/advanced/js-modules"
   },
   {
     "id": "dom-query-all",

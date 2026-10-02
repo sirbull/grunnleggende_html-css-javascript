@@ -1,19 +1,37 @@
-:::step {"id":"concept","caption":"Forstå hvor navn finnes og når funksjoner kjøres.","traceActive":-1}
-## Hva lærer du?
+:::step {"id":"area","caption":"Skill mellom navn utenfor og inni en kodeblokk."}
+## Navn har et område
 
-Scope er området et navn er tilgjengelig i. let og const har blokkscope. Et navn laget inne i en funksjon er vanligvis ikke tilgjengelig utenfor. En indre funksjon kan huske navn fra sitt ytre scope; dette kalles en closure.
+**Scope** betyr området der et variabelnavn er tilgjengelig. Med `let` og `const` avgrenser en kodeblokk sitt eget område. Dette forklarer hvorfor et navn noen ganger ikke blir funnet.
 :::
 
-:::step {"id":"mechanism","caption":"Forstå hvor navn finnes og når funksjoner kjøres.","traceActive":-1}
-## Fra handling til resultat
+:::step {"id":"outer","caption":"Skill mellom navn utenfor og inni en kodeblokk."}
+## Et navn utenfor blokken
 
-En pilfunksjon er en kort funksjonsform: `x => x * 2`. Den har ikke sin egen this. En funksjonsdeklarasjon og en pilfunksjon lagret i const er derfor ikke alltid utskiftbare. Callbacks brukes blant annet av event-lyttere og arraymetoder.
+`navn` lages utenfor if-blokken. Kode inni blokken kan lese det. `if (true)` kjører alltid blokken her; vi bruker det for å undersøke området uten flere valg.
 :::
 
-:::step {"id":"practice","caption":"Hvert kall til lagTeller oppretter et nytt scope. Callbacken beholder tilgang til sin egen antall-variabel.","traceActive":-1}
-## Prøv selv
+:::step {"id":"inner","caption":"Skill mellom navn utenfor og inni en kodeblokk."}
+## Et navn inni blokken
 
-Opprett en ekstra teller med lagTeller(). Logg et kall til hver teller og se at de husker hver sin verdi.
+`beskjed` lages inni blokken. Utskriften inni samme blokk kan lese det og skriver `Hei, Ada`. Etter blokken er bare `navn` tilgjengelig av disse to navnene.
+:::
 
-**Dette skal du se:** Hvert kall til lagTeller oppretter et nytt scope. Callbacken beholder tilgang til sin egen antall-variabel.
+:::step {"id":"practice","caption":"Skill mellom navn utenfor og inni en kodeblokk."}
+## Prøv å lese utenfor
+
+Legg til `console.log(beskjed);` helt nederst. Forutsi og kjør. Først kommer de to vanlige utskriftene, deretter en feil om at `beskjed` ikke finnes. Fjern den nye linjen etterpå.
+:::
+
+:::step {"id":"function","caption":"Skill mellom navn utenfor og inni en kodeblokk."}
+## Funksjoner har også et område
+
+Parametere og variabler laget inne i en funksjon er lokale for den kjøringen. `tall` i funksjonen `doble(tall)` er derfor ikke et navn du kan lese fritt utenfor funksjonen.
+:::
+
+:::step {"id":"check","caption":"Skill mellom navn utenfor og inni en kodeblokk."}
+## Forklar hva som er tilgjengelig
+
+**Stopp og forklar:** Kan kode inne i blokken lese et navn fra området utenfor? Kan kode utenfor lese navnet som lages inni?
+
+**Svar:** Ja til det første, nei til det andre i dette eksempelet.
 :::

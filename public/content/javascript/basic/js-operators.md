@@ -1,19 +1,45 @@
-:::step {"id":"concept","caption":"Regn ut verdier og still presise spørsmål.","traceActive":-1}
-## Hva lærer du?
+:::step {"id":"multiply","caption":"Bruk én regneart om gangen før du setter dem sammen."}
+## Gange to tall
 
-Bruk +, -, * og / for de vanlige regneartene. Parenteser bestemmer hva som regnes først. Sammenligninger som >, < og === gir en boolsk verdi. Tre likhetstegn sammenligner uten automatisk typekonvertering.
+`*` betyr gange i JavaScript. `pris * antall` henter `40` og `3` fra variablene og regner ut `120`. `console.log` skriver svaret. Begge variablene finnes før de brukes.
 :::
 
-:::step {"id":"mechanism","caption":"Regn ut verdier og still presise spørsmål.","traceActive":-1}
-## Fra handling til resultat
+:::step {"id":"expression","caption":"Bruk én regneart om gangen før du setter dem sammen."}
+## Et uttrykk gir en verdi
 
-`&&` betyr at begge betingelser må være sanne. `||` betyr at minst én må være sann. `!` snur en boolsk verdi. Ikke forveksle `=` som tilordner med `===` som sammenligner.
+`pris * antall` er et **uttrykk**: kode som kan regnes ut til en verdi. Uttrykket erstattes med svaret når linjen kjører. Her blir det som å skrive `console.log(120);`.
 :::
 
-:::step {"id":"practice","caption":"Totalen blir 160. Sammenligningen 160 <= 150 blir false. Verdien kan brukes til å velge hva programmet skal gjøre.","traceActive":-1}
-## Prøv selv
+:::step {"id":"practice","caption":"Bruk én regneart om gangen før du setter dem sammen."}
+## Endre antallet
 
-Endre antall til 4. Forutsi verdien i innenforBudsjett før du kjører.
+Forutsi svaret når `antall` er `4`. Endre bare dette tallet og kjør. Konsollen skal vise `160`. Sett tallet tilbake til `3`.
+:::
 
-**Dette skal du se:** Totalen blir 160. Sammenligningen 160 <= 150 blir false. Verdien kan brukes til å velge hva programmet skal gjøre.
+:::step {"id":"other","caption":"Bruk én regneart om gangen før du setter dem sammen."}
+## Prøv regneartene hver for seg
+
+Bytt bare uttrykket i siste linje og kjør mellom hver endring:
+
+| Uttrykk | Betydning | Svar |
+| --- | --- | --- |
+| `pris + antall` | pluss | `43` |
+| `pris - antall` | minus | `37` |
+| `pris / antall` | dele | omtrent `13.33` |
+
+Disse svarene gjelder når `pris` er `40` og `antall` er `3`.
+:::
+
+:::step {"id":"parentheses","caption":"Bruk én regneart om gangen før du setter dem sammen."}
+## Bestem hva som regnes først
+
+Prøv `console.log((2 + 3) * 4);`. Parentesene sier at `2 + 3` skal regnes først. Svaret blir `20`. Uten de innerste parentesene regnes gange før pluss, og `2 + 3 * 4` gir `14`.
+:::
+
+:::step {"id":"check","caption":"Bruk én regneart om gangen før du setter dem sammen."}
+## Forklar beregningen
+
+**Stopp og forklar:** Hva skjer med `pris * antall` før svaret skrives?
+
+**Svar:** Programmet henter verdiene, ganger dem og gir resultatet til `console.log`.
 :::

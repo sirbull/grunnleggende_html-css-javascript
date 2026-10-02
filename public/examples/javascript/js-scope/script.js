@@ -1,8 +1,6 @@
-function lagTeller() {
-  let antall = 0;
-  return () => { antall++; return antall; };
+const navn = "Ada";
+if (true) {
+  const beskjed = "Hei, " + navn;
+  console.log(beskjed);
 }
-const nesteTall = lagTeller();
-document.querySelector("button").addEventListener("click", () => {
-  document.querySelector("#resultat").textContent = nesteTall();
-});
+console.log(navn);

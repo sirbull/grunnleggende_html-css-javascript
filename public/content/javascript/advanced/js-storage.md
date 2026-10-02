@@ -1,40 +1,43 @@
-:::step {"id":"concept","caption":"JSON er tekst som beskriver data. localStorage kan ta vare på teksten mellom besøk.","traceActive":-1}
+:::step {"id":"concept","caption":"Gjør et enkelt objekt om til tekst, lagre det og les det tilbake."}
 ## Hva er JSON?
 
-[[what-is-json|JSON]] står for JavaScript Object Notation. Det er et tekstformat for å lagre og utveksle data, for eksempel mellom en nettside og en tjeneste. Selv om navnet kommer fra JavaScript, kan mange språk lese JSON. En JSON-tekst er ikke det samme som et JavaScript-objekt.
+[[what-is-json|JSON]] står for JavaScript Object Notation. Det er et tekstformat for data som mange programmeringsspråk kan lese. Vi begynner med ett JavaScript-objekt, `innstilling`, med egenskapen `tema`. JSON-teksten og objektet er forskjellige typer verdier.
 :::
 
-:::step {"id":"format","caption":"Dobbelte anførselstegn og gyldige verdier gjør teksten lesbar for JSON.parse().","traceActive":-1}
-## Slik ser JSON ut
+:::step {"id":"format","caption":"Gjør et enkelt objekt om til tekst, lagre det og les det tilbake."}
+## Gjør objektet om til tekst
 
-```json
-{
-  "tema": "mørkt",
-  "skriftstorrelse": 18,
-  "varsler": true,
-  "emner": ["HTML", "CSS"]
-}
+[[js-json-stringify|JSON.stringify()]] tar en JavaScript-verdi og gir JSON-tekst. Første utskrift er:
+
+```text
+{"tema":"morkt"}
 ```
 
-JSON kan inneholde tekst, tall, `true`, `false`, `null`, lister og objekter. Navnene og tekstverdiene skrives med doble anførselstegn. Kommentarer og komma etter siste verdi er ikke gyldig JSON.
+I JSON skrives både egenskapsnavn og tekstverdier med doble anførselstegn. JSON tillater ikke kommentarer eller et komma etter siste egenskap. `JSON.stringify` gjør formateringen for deg.
 :::
 
-:::step {"id":"storage","caption":"Behold små innstillinger mellom besøk.","traceActive":-1}
-## Fra JSON til lokal lagring
+:::step {"id":"storage","caption":"Gjør et enkelt objekt om til tekst, lagre det og les det tilbake."}
+## Lagre teksten under en nøkkel
 
-[[dom-storage|localStorage]] lagrer tekst under en nøkkel. [[js-json-stringify|JSON.stringify()]] gjør et JavaScript-objekt om til JSON-tekst før lagring. [[js-json-parse|JSON.parse()]] leser teksten tilbake som en JavaScript-verdi. Lagringen er knyttet til nettstedets origin, ikke til brukerens konto.
+[[dom-storage|localStorage]] lagrer tekst under navn som kalles **nøkler**. `setItem("innstilling", tekst)` lagrer teksten under nøkkelen `innstilling`. `getItem("innstilling")` henter teksten fra samme nøkkel.
+
+I resultatvinduet er dette et **midlertidig minnelager**. Det tømmes hver gang koden kjøres på nytt. På en egen vanlig nettside kan localStorage beholde teksten mellom besøk i samme nettleser.
 :::
 
-:::step {"id":"mechanism","caption":"Behold små innstillinger mellom besøk.","traceActive":-1}
-## Fra handling til resultat
+:::step {"id":"mechanism","caption":"Gjør et enkelt objekt om til tekst, lagre det og les det tilbake."}
+## Les teksten tilbake som data
 
-Tilgang kan feile eller være sperret. Ugyldig JSON får også `JSON.parse()` til å kaste en feil. Bruk `try/catch` og en standardverdi. I det isolerte resultatvinduet brukes et midlertidig minnelager: verdiene forsvinner når koden kjøres på nytt. Appens egne innstillinger og kode lagres derimot varig i hovedsidens nettleserlager.
+[[js-json-parse|JSON.parse()]] gjør JSON-teksten om til en JavaScript-verdi igjen. Her får `lest` et objekt, og `lest.tema` skriver `morkt`.
+
+Lesingen og lagringen står i try/catch, som du kjenner fra forrige leksjon. Ugyldig JSON kan gi en feil, og en nettleser kan nekte tilgang til lagring. Hvis nøkkelen mangler, gir `getItem` verdien `null`; sjekk dette før du bruker data på en egen side.
 :::
 
-:::step {"id":"practice","caption":"Verdien lagres som JSON-tekst. Ikke lagre passord eller hemmeligheter i localStorage; JavaScript på samme origin kan lese det.","traceActive":-1}
-## Prøv selv
+:::step {"id":"practice","caption":"Gjør et enkelt objekt om til tekst, lagre det og les det tilbake."}
+## Endre én egenskap og følg den
 
-Veksle tema og se den lagrede teksten med console.log(localStorage.getItem("innstilling")). Kjør samme eksempel på en egen side for å teste varig lagring.
+Bytt `"morkt"` med `"lyst"` i objektet øverst. Forutsi begge utskrifter og kjør. JSON-teksten og `lest.tema` skal begge ha den nye verdien.
 
-**Dette skal du se:** Verdien lagres som JSON-tekst. Ikke lagre passord eller hemmeligheter i localStorage; JavaScript på samme origin kan lese det.
+**Stopp og forklar:** Hvorfor bruker vi stringify før lagring og parse etter lesing?
+
+**Svar:** Lageret tar imot tekst. Stringify gir tekst fra data, og parse gir data fra teksten. Ikke lagre passord eller hemmeligheter i localStorage.
 :::

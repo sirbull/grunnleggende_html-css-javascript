@@ -1,7 +1,6 @@
-const filmer = ["Skogsturen", "Ved havet", "Hjemreisen"];
-const liste = document.querySelector("ul");
-for (const tittel of filmer) {
-  const punkt = document.createElement("li");
-  punkt.textContent = tittel;
-  liste.append(punkt);
+let teller = 1;
+while (teller <= 3) {
+  console.log(teller);
+  teller = teller + 1;
 }
+console.log("Ferdig");

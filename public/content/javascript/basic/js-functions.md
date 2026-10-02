@@ -1,19 +1,35 @@
-:::step {"id":"concept","caption":"Skriv en beregning én gang og bruk den flere steder.","trace":["Argumenter: pris 40 og antall 3.","Parameterne får verdiene.","Regn ut 40 × 3.","Returner 120 til den som kalte funksjonen."],"traceActive":0}
-## Hva lærer du?
+:::step {"id":"bundle","caption":"Gi noen instruksjoner et navn og bestem når de kjører.","trace":["Lag funksjonen siHei. Innholdet kjører ikke ennå.","Kall siHei().","Inne i funksjonen: skriv Hei!.","Gå tilbake etter kallet."],"traceActive":0}
+## Et navn på instruksjoner
 
-En [[js-function|funksjon]] samler instruksjoner under et navn. Parametere er lokale navn på verdiene den tar imot. Argumenter er de konkrete verdiene du sender inn når du kaller funksjonen.
+En [[js-function|funksjon]] samler instruksjoner under et navn. Du kan be programmet utføre dem ved å **kalle** funksjonen. Her samler vi én utskrift under navnet `siHei`.
 :::
 
-:::step {"id":"mechanism","caption":"Skriv en beregning én gang og bruk den flere steder.","trace":["Argumenter: pris 40 og antall 3.","Parameterne får verdiene.","Regn ut 40 × 3.","Returner 120 til den som kalte funksjonen."],"traceActive":1}
-## Fra handling til resultat
+:::step {"id":"define","caption":"Gi noen instruksjoner et navn og bestem når de kjører.","trace":["Lag funksjonen siHei. Innholdet kjører ikke ennå.","Kall siHei().","Inne i funksjonen: skriv Hei!.","Gå tilbake etter kallet."],"traceActive":0}
+## Lag funksjonen først
 
-`return` gir tilbake en verdi og avslutter funksjonen. Kode etter return i samme vei blir ikke kjørt. En funksjon kan også utføre en handling uten å returnere noe eksplisitt; resultatet av kallet er da undefined.
+`function siHei() { ... }` er en funksjonsdeklarasjon. `function` sier hva vi lager. `siHei` er navnet. Parentesene er foreløpig tomme. Krøllparentesene avgrenser instruksjonene i funksjonen.
+
+Å lage funksjonen utfører ikke instruksjonene inni den.
 :::
 
-:::step {"id":"practice","caption":"Funksjonen kan beregne ulike kjøp uten at du kopierer hele regnestykket. Parameterne er tilgjengelige inne i funksjonen.","trace":["Argumenter: pris 40 og antall 3.","Parameterne får verdiene.","Regn ut 40 × 3.","Returner 120 til den som kalte funksjonen."],"traceActive":3}
-## Prøv selv
+:::step {"id":"call","caption":"Gi noen instruksjoner et navn og bestem når de kjører.","trace":["Lag funksjonen siHei. Innholdet kjører ikke ennå.","Kall siHei().","Inne i funksjonen: skriv Hei!.","Gå tilbake etter kallet."],"traceActive":1}
+## Be den kjøre
 
-Kall totalpris med 25 og 4. Legg til en parameter for rabatt og trekk den fra før return.
+Siste linje, `siHei();`, kaller funksjonen. Programmet går inn i blokken, skriver `Hei!` og kommer tilbake til linjen etter kallet. Parentesene er det som gjør dette til et kall.
+:::
 
-**Dette skal du se:** Funksjonen kan beregne ulike kjøp uten at du kopierer hele regnestykket. Parameterne er tilgjengelige inne i funksjonen.
+:::step {"id":"practice","caption":"Gi noen instruksjoner et navn og bestem når de kjører.","trace":["Lag funksjonen siHei. Innholdet kjører ikke ennå.","Kall siHei().","Inne i funksjonen: skriv Hei!.","Gå tilbake etter kallet."],"traceActive":2}
+## Kall den to ganger
+
+Legg til en ny `siHei();` nederst. Forutsi og kjør. Du får to hilsener uten å kopiere linjen inne i funksjonen. Endre hilsenen inne i funksjonen én gang: da bruker begge kallene den nye teksten.
+:::
+
+:::step {"id":"check","caption":"Gi noen instruksjoner et navn og bestem når de kjører.","trace":["Lag funksjonen siHei. Innholdet kjører ikke ennå.","Kall siHei().","Inne i funksjonen: skriv Hei!.","Gå tilbake etter kallet."],"traceActive":0}
+## Lage er ikke det samme som å kjøre
+
+Sett `//` foran begge kallene, og kjør. Ingen hilsen skrives, selv om funksjonen fortsatt er definert. Fjern kommentarene igjen.
+
+**Stopp og forklar:** Hvilke linjer beskriver jobben, og hvilken linje bestiller jobben?
+
+**Svar:** Funksjonsblokken beskriver den. `siHei();` bestiller at den utføres.
 :::

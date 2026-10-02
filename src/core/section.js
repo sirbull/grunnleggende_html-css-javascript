@@ -65,7 +65,7 @@ export async function renderSection(main, section, { entries, signal, next, spee
     try {
       const { mountPlayground } = await import('./playground.js');
       if (signal.aborted || workshop !== state) return;
-      const playground = await mountPlayground(host, { id: item.lesson.id, files: item.files, title: item.lesson.title, signal, onClose: () => closeWorkshop(true) });
+      const playground = await mountPlayground(host, { id: item.lesson.id, files: item.files, title: item.lesson.title, signal, primary, onClose: () => closeWorkshop(true) });
       if (workshop !== state) { playground.destroy(); return; }
       state.playground = playground;
       if (!signal.aborted) host.scrollIntoView({ block: 'start' });

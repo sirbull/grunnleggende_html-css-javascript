@@ -1,19 +1,46 @@
-:::step {"id":"concept","caption":"La programmet følge ulike veier.","trace":["Les alder: 18.","Spør: er alder >= 18?","Sant → velg voksenbillett.","Usant → velg ungdomsbillett."],"traceActive":0}
-## Hva lærer du?
+:::step {"id":"choice","caption":"Bruk if til å kjøre eller hoppe over én kodeblokk.","trace":["Les alder: 18.","Spør om alder >= 18.","Hvis sant: skriv Du er voksen.","Fortsett og skriv Ferdig."],"traceActive":0}
+## Programmet kan ta et valg
 
-En if-setning kjører en kodeblokk når betingelsen er sann. En else-blokk kjører når den er usann. Programmet velger én av grenene. Bruk else if når du har flere gjensidig utelukkende alternativer.
+Hittil har instruksjonene kjørt i rekkefølge. En **if-setning** lar programmet utføre noen instruksjoner bare når en betingelse er sann. `if` betyr «hvis».
 :::
 
-:::step {"id":"mechanism","caption":"La programmet følge ulike veier.","trace":["Les alder: 18.","Spør: er alder >= 18?","Sant → velg voksenbillett.","Usant → velg ungdomsbillett."],"traceActive":1}
-## Fra handling til resultat
+:::step {"id":"condition","caption":"Bruk if til å kjøre eller hoppe over én kodeblokk.","trace":["Les alder: 18.","Spør om alder >= 18.","Hvis sant: skriv Du er voksen.","Fortsett og skriv Ferdig."],"traceActive":1}
+## Spørsmålet står i parentes
 
-Betingelsen står i parentes, og handlingene står i krøllparenteser. Test også grenseverdiene. Hvis grensen er 18, bør du prøve 17, 18 og 19. Det avklarer forskjellen på > og >=.
+`if (alder >= 18)` bruker sammenligningen du kjenner. Programmet regner ut spørsmålet. Hvis svaret er `true`, kjører koden mellom `{` og `}`. Disse krøllparentesene avgrenser en **kodeblokk**.
 :::
 
-:::step {"id":"practice","caption":"Med >= havner 18 i første gren. Med > gjør den ikke det. Grensene er del av regelen du programmerer.","trace":["Les alder: 18.","Spør: er alder >= 18?","Sant → velg voksenbillett.","Usant → velg ungdomsbillett."],"traceActive":3}
-## Prøv selv
+:::step {"id":"block","caption":"Bruk if til å kjøre eller hoppe over én kodeblokk.","trace":["Les alder: 18.","Spør om alder >= 18.","Hvis sant: skriv Du er voksen.","Fortsett og skriv Ferdig."],"traceActive":2}
+## Les blokken
 
-Endre alder til 17, 18 og 19. Endre deretter >= til > og se hva som skjer ved 18.
+Linjen `console.log("Du er voksen.");` står inne i blokken. Innrykket gjør det lettere for oss å se det. Siste `console.log` står etter avsluttende `}`, altså utenfor blokken.
+:::
 
-**Dette skal du se:** Med >= havner 18 i første gren. Med > gjør den ikke det. Grensene er del av regelen du programmerer.
+:::step {"id":"true","caption":"Bruk if til å kjøre eller hoppe over én kodeblokk.","trace":["Les alder: 18.","Spør om alder >= 18.","Hvis sant: skriv Du er voksen.","Fortsett og skriv Ferdig."],"traceActive":2}
+## Når betingelsen er sann
+
+Med alderen `18` kjører begge utskriftene:
+
+```text
+Du er voksen.
+Ferdig.
+```
+
+Programmet fortsetter etter if-setningen når blokken er ferdig.
+:::
+
+:::step {"id":"practice","caption":"Bruk if til å kjøre eller hoppe over én kodeblokk.","trace":["Les alder: 18.","Spør om alder >= 18.","Hvis sant: skriv Du er voksen.","Fortsett og skriv Ferdig."],"traceActive":1}
+## Når betingelsen er usann
+
+Endre bare alderen til `17`. Forutsi hvilke beskjeder som kommer, og kjør. Du skal bare se `Ferdig.`. Blokken hoppes over, men resten av programmet fortsetter.
+:::
+
+:::step {"id":"check","caption":"Bruk if til å kjøre eller hoppe over én kodeblokk.","trace":["Les alder: 18.","Spør om alder >= 18.","Hvis sant: skriv Du er voksen.","Fortsett og skriv Ferdig."],"traceActive":3}
+## Sjekk begge veier
+
+Prøv `19` også.
+
+**Stopp og forklar:** Hvorfor skrives `Ferdig.` ved både 17 og 19?
+
+**Svar:** Den instruksjonen står utenfor if-blokken og kjøres etter valget.
 :::

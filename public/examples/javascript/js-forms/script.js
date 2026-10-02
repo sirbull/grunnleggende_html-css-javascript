@@ -1,6 +1,9 @@
-const form = document.querySelector("form");
-form.addEventListener("submit", event => {
+const skjema = document.querySelector("form");
+const felt = document.querySelector("#navn");
+const resultat = document.querySelector("#resultat");
+function hils(event) {
   event.preventDefault();
-  const navn = document.querySelector("input").value.trim();
-  document.querySelector("#resultat").textContent = navn ? `Hei, ${navn}!` : "Skriv et navn først.";
-});
+  const navn = felt.value;
+  resultat.textContent = "Hei, " + navn + "!";
+}
+skjema.addEventListener("submit", hils);

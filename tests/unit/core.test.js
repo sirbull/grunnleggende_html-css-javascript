@@ -23,6 +23,18 @@ test('hash routes and missing content', () => {
   assert.equal(parseRoute('#/%bad').kind, 'missing');
   assert.equal(findLesson({ sections: [] }, parseRoute('#/a/b/c')), null);
 });
+
+test('moved lessons accept only explicitly preserved old levels', () => {
+  const lesson = { id: 'loops', previousTracks: ['intermediate'] };
+  const manifest = { sections: [{ id: 'javascript', tracks: [
+    { id: 'basic', lessons: [lesson] }, { id: 'intermediate', lessons: [] }
+  ] }] };
+  const found = findLesson(manifest, parseRoute('#/javascript/intermediate/loops'));
+  assert.equal(found.lesson, lesson);
+  assert.equal(found.track.id, 'basic');
+  assert.equal(findLesson(manifest, parseRoute('#/javascript/advanced/loops')), null);
+  assert.equal(findLesson(manifest, parseRoute('#/html/intermediate/loops')), null);
+});
 test('search distinguishes punctuation and natural phrases', () => {
   const entries = [
     { id: 'type', title: 'Element', sortTitle: 'Element', category: 'css', displayCode: 'h2', short: 'Overskrift', aliases: ['<h2>'] },

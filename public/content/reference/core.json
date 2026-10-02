@@ -491,7 +491,7 @@
       "css": ".featured { background: #e9f0e9; border: 2px solid #174f42; padding: 1rem; }",
       "js": "const navn = \"Ada\";\ndocument.querySelector(\"#resultat\").textContent = navn;"
     },
-    "lesson": "#/javascript/basic/js-variables"
+    "lesson": "#/javascript/basic/js-const"
   },
   {
     "id": "js-function",
@@ -527,7 +527,7 @@
       "css": ".featured { background: #e9f0e9; border: 2px solid #174f42; padding: 1rem; }",
       "js": "function dobbel(tall) {\n  return tall * 2;\n}\ndocument.querySelector(\"#resultat\").textContent = dobbel(4);"
     },
-    "lesson": "#/javascript/basic/js-dom-text"
+    "lesson": "#/javascript/basic/js-functions"
   },
   {
     "id": "dom-queryselector",
@@ -565,7 +565,7 @@
       "css": ".featured { background: #e9f0e9; border: 2px solid #174f42; padding: 1rem; }",
       "js": "const knapp = document.querySelector(\"button\");\nknapp.textContent = \"Jeg er funnet\";"
     },
-    "lesson": "#/javascript/basic/js-dom-text"
+    "lesson": "#/javascript/intermediate/js-dom-text"
   },
   {
     "id": "dom-listener",
@@ -599,7 +599,7 @@
       "css": ".featured { background: #e9f0e9; border: 2px solid #174f42; padding: 1rem; }",
       "js": "document.querySelector(\"button\").addEventListener(\"click\", () => {\n  document.querySelector(\"#resultat\").textContent = \"Du trykket!\";\n});"
     },
-    "lesson": "#/javascript/basic/js-dom-text"
+    "lesson": "#/javascript/intermediate/js-dom-text"
   },
   {
     "id": "dom-classlist",
@@ -632,7 +632,7 @@
       "css": ".featured { background: #e9f0e9; border: 2px solid #174f42; padding: 1rem; }",
       "js": "document.querySelector(\"button\").addEventListener(\"click\", () => {\n  document.querySelector(\"#resultat\").classList.toggle(\"featured\");\n});"
     },
-    "lesson": "#/javascript/basic/js-dom-text"
+    "lesson": "#/javascript/intermediate/js-classes"
   },
   {
     "id": "dom",
@@ -671,7 +671,7 @@
       "css": ".featured { background: #e9f0e9; border: 2px solid #174f42; padding: 1rem; }",
       "js": "document.querySelector(\"h1\").textContent = \"Min nye overskrift\";"
     },
-    "lesson": "#/javascript/basic/js-dom-text",
+    "lesson": "#/javascript/intermediate/js-dom-text",
     "overviewFor": "dom"
   },
   {
@@ -706,7 +706,7 @@
       "css": ".featured { background: #e9f0e9; border: 2px solid #174f42; padding: 1rem; }",
       "js": "document.querySelector(\"button\").addEventListener(\"click\", event => {\n  document.querySelector(\"#resultat\").textContent = event.type;\n});"
     },
-    "lesson": "#/javascript/basic/js-dom-text"
+    "lesson": "#/javascript/intermediate/js-events"
   },
   {
     "id": "dom-storage",
@@ -811,6 +811,6 @@
       "css": ".featured { background: #e9f0e9; border: 2px solid #174f42; padding: 1rem; }",
       "js": "document.querySelector(\"#resultat\").textContent = \"Hei, Ada!\";"
     },
-    "lesson": "#/javascript/basic/js-dom-text"
+    "lesson": "#/javascript/intermediate/js-dom-text"
   }
 ]

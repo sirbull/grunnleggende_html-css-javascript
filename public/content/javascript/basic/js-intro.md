@@ -1,84 +1,53 @@
-:::step {"id":"why","caption":"Programmet skriver fire linjer i konsollen, én for hver console.log.","trace":["Linje 4: skriv en hilsen.","Linje 5: regn ut 2 + 3 og skriv svaret.","Linje 6: skriv teksten «2 + 3» akkurat slik den står.","Linje 7: skriv «Ferdig!»."],"traceActive":0}
-## HTML, CSS og så JavaScript
+:::step {"id":"program","caption":"Skriv én beskjed og finn den i konsollen.","trace":["Les instruksjonen console.log(\"Hei!\").","Skriv Hei! i konsollen.","Programmet er ferdig."],"traceActive":0}
+## Et program gir instruksjoner
 
-Du kjenner allerede to av språkene på en nettside:
+Å programmere er å skrive instruksjoner som en datamaskin kan følge. [[what-is-javascript|JavaScript]] er et programmeringsspråk. Vi begynner med én instruksjon som skriver en beskjed.
 
-- **HTML** bestemmer *hva* som står på siden.
-- **CSS** bestemmer *hvordan* det ser ut.
-- **[[what-is-javascript|JavaScript]]** bestemmer *hva som skjer*.
-
-HTML og CSS beskriver en side som står stille. JavaScript kan få siden til å gjøre ting: huske, regne, velge og svare når du trykker på noe.
+Du trenger ikke å kunne HTML eller CSS for å gjøre disse øvelsene. De første leksjonene bruker bare JavaScript og tekst i konsollen.
 :::
 
-:::step {"id":"examples","caption":"Programmet skriver fire linjer i konsollen, én for hver console.log.","trace":["Linje 4: skriv en hilsen.","Linje 5: regn ut 2 + 3 og skriv svaret.","Linje 6: skriv teksten «2 + 3» akkurat slik den står.","Linje 7: skriv «Ferdig!»."],"traceActive":0}
-## Hva kan JavaScript brukes til?
+:::step {"id":"read","caption":"Skriv én beskjed og finn den i konsollen.","trace":["Les instruksjonen console.log(\"Hei!\").","Skriv Hei! i konsollen.","Programmet er ferdig."],"traceActive":0}
+## Les den ene linjen
 
-Nesten alle nettsider du bruker, har JavaScript. Noen eksempler:
-
-- En **handlekurv** som regner ut totalprisen når du legger til en vare.
-- Et **skjema** som sier fra at e-postadressen mangler @, før du sender det.
-- En **meny** som åpner seg når du trykker på den.
-- Et **spill** som teller poeng og sier fra når tiden er ute.
-- En **mørk modus** som husker valget ditt til neste besøk.
-
-Eksemplene har noe til felles. Siden må *huske* noe, *regne* eller *bestemme* noe, og så *vise* resultatet. Det er nettopp det du skal lære å gjøre, ett lite steg om gangen.
-:::
-
-:::step {"id":"program","caption":"Nettleseren leser koden ovenfra og ned og gjør én ting per linje.","trace":["Linje 4: skriv en hilsen.","Linje 5: regn ut 2 + 3 og skriv svaret.","Linje 6: skriv teksten «2 + 3» akkurat slik den står.","Linje 7: skriv «Ferdig!»."],"traceActive":0}
-## Et program er en liste med instruksjoner
-
-Å programmere betyr å skrive instruksjoner som datamaskinen følger. Det ligner på en oppskrift: gjør dette, så dette, så dette.
-
-Nettleseren leser koden **ovenfra og ned**, én linje om gangen. Den gjør nøyaktig det som står, og den gjetter ikke hva du mente. En liten skrivefeil kan derfor stoppe hele programmet. Det er helt normalt, og du lærer fort å finne feilene.
-
-Linjene øverst i eksempelet starter med `//`. Det er **kommentarer**: notater til den som leser koden. Datamaskinen hopper over dem.
-:::
-
-:::step {"id":"first-line","caption":"console.log skriver det som står inni parentesene. Åpne fanen Resultat og se konsollen.","trace":["Linje 4: skriv en hilsen.","Linje 5: regn ut 2 + 3 og skriv svaret.","Linje 6: skriv teksten «2 + 3» akkurat slik den står.","Linje 7: skriv «Ferdig!»."],"traceActive":0}
-## Din første instruksjon
+Eksempelet inneholder bare dette:
 
 ```js
-console.log("Hei! Jeg er ditt første program.");
+console.log("Hei!");
 ```
 
-Slik leser du linjen:
+`console.log(...)` ber programmet skrive i **konsollen**, et felt som viser beskjeder fra koden. Teksten som skal skrives, står inni parentesene. Anførselstegnene rundt `Hei!` markerer tekst. Semikolonet `;` avslutter instruksjonen.
 
-- `console` er **[[js-console|konsollen]]**, et lite vindu der programmet kan skrive beskjeder til deg.
-- `.log` betyr «skriv». Punktumet binder de to ordene sammen.
-- Det som står inni **parentesene**, er det som skal skrives.
-- **Anførselstegnene** viser at dette er tekst.
-- **Semikolonet** `;` markerer at instruksjonen er slutt.
-
-Åpne fanen **Resultat**. Under siden ser du konsollen med det programmet har skrevet.
+Bruk denne skrivemåten som en helhet foreløpig. Du trenger bare å endre teksten mellom anførselstegnene.
 :::
 
-:::step {"id":"text-or-math","caption":"Uten anførselstegn regner JavaScript ut 2 + 3. Med anførselstegn skrives teksten akkurat slik den står.","trace":["Linje 4: skriv en hilsen.","Linje 5: regn ut 2 + 3 og skriv svaret.","Linje 6: skriv teksten «2 + 3» akkurat slik den står.","Linje 7: skriv «Ferdig!»."],"traceActive":2}
-## Regne eller skrive tekst?
+:::step {"id":"run","caption":"Skriv én beskjed og finn den i konsollen.","trace":["Les instruksjonen console.log(\"Hei!\").","Skriv Hei! i konsollen.","Programmet er ferdig."],"traceActive":1}
+## Finn beskjeden
 
-Se på disse to linjene:
+Velg fanen **Resultat** ved siden av teksten. Under resultatvinduet ligger **Konsoll**. Der skal du se:
 
-```js
-console.log(2 + 3);
-console.log("2 + 3");
+```text
+Hei!
 ```
 
-Den første skriver `5`. Uten anførselstegn *regner* JavaScript ut svaret.
-
-Den andre skriver `2 + 3`. Med anførselstegn er det bare tekst, og teksten skrives akkurat slik den står.
-
-Anførselstegn betyr altså noe i JavaScript. Du kommer til å se forskjellen mellom tekst og tall mange ganger.
+Det er her vi ser svarene i de første leksjonene. Resultatvinduet over konsollen kan være tomt.
 :::
 
-:::step {"id":"practice","caption":"Hver nye console.log gir en ny linje i konsollen, i samme rekkefølge som i koden.","trace":["Linje 4: skriv en hilsen.","Linje 5: regn ut 2 + 3 og skriv svaret.","Linje 6: skriv teksten «2 + 3» akkurat slik den står.","Linje 7: skriv «Ferdig!»."],"traceActive":3}
-## Prøv selv
+:::step {"id":"practice","caption":"Skriv én beskjed og finn den i konsollen.","trace":["Les instruksjonen console.log(\"Hei!\").","Skriv Hei! i konsollen.","Programmet er ferdig."],"traceActive":1}
+## Endre én ting
 
-Åpne kodeverkstedet og gjør små endringer:
+Trykk **Prøv selv** for å åpne kodeverkstedet. Velg fanen **JavaScript** hvis den ikke allerede er valgt.
 
-1. Bytt ut hilsenen med din egen tekst.
-2. Legg til en ny linje som skriver navnet ditt.
-3. Regn ut `7 * 6`. Stjernen `*` betyr gange.
+1. Bytt bare `Hei!` med `Jeg lærer å programmere.`. Behold anførselstegn, parenteser og semikolon.
+2. Trykk **Kjør kode**.
+3. Finn den nye beskjeden i konsollen under resultatvinduet.
 
-**Sjekk forståelsen:** Hva tror du `console.log("7 * 6")` skriver? Prøv og se om du hadde rett.
+Kodeverkstedet kjører også automatisk etter endringer. Du kan slå av **Auto-oppdatering** hvis du vil skrive ferdig før du kjører.
+:::
 
-I de neste leksjonene lærer du hvordan et program *husker* verdier. Etter det lærer du å ta valg, lage egne funksjoner og til slutt endre selve nettsiden når noen trykker på en knapp.
+:::step {"id":"check","caption":"Skriv én beskjed og finn den i konsollen.","trace":["Les instruksjonen console.log(\"Hei!\").","Skriv Hei! i konsollen.","Programmet er ferdig."],"traceActive":2}
+## Sjekk at du forstår
+
+**Stopp og forklar:** Hvilken del av linjen bestemmer beskjeden du ser?
+
+**Svar:** Teksten mellom anførselstegnene. `console.log` er instruksjonen som skriver beskjeden. Prøv en egen beskjed før du går videre.
 :::

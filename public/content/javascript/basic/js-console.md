@@ -1,31 +1,35 @@
-:::step {"id":"look-inside","caption":"console.log viser hva variablene inneholder mens programmet kjører.","traceActive":-1}
-## Konsollen viser hva som skjer
+:::step {"id":"baseline","caption":"Les én feilmelding og rett én skrivefeil."}
+## Begynn med kode som virker
 
-Du har brukt [[js-console|console.log()]] siden første leksjon. Den er også ditt viktigste verktøy når noe ikke virker som du tror.
-
-Skriv ut verdien du lurer på, rett før linjen der noe går galt. Da ser du hva variabelen *faktisk* inneholder, og ikke bare hva du tror den inneholder.
-
-Verkstedet viser konsollen under resultatet. Nettleseren har også en større konsoll i utviklerverktøyene. Den åpner du med F12.
+Du kjenner [[js-console|console.log()]]. Den lar deg undersøke en verdi. Kjør eksempelet og se at konsollen viser `40` før du lager en feil.
 :::
 
-:::step {"id":"errors","caption":"Feilmeldingen forteller hva som gikk galt og på hvilken linje.","traceActive":-1}
-## To slags feil
+:::step {"id":"mistake","caption":"Les én feilmelding og rett én skrivefeil."}
+## Lag en liten skrivefeil
 
-**Skrivefeil (syntaksfeil):** Koden er ikke gyldig JavaScript, for eksempel fordi et anførselstegn eller en parentes mangler. Da kjører ikke programmet i det hele tatt.
+I kodeverkstedet: bytt `pris` med `prs` **bare på andre linje**. Kjør. Meldingen inneholder `prs is not defined`. Det betyr at programmet ikke finner et navn som heter `prs`.
 
-**Feil mens programmet kjører:** Koden ser riktig ut, men noe mangler når linjen skal utføres. Et vanlig eksempel er et variabelnavn som er stavet feil. `prs` i stedet for `pris` gir meldingen `prs is not defined`, som betyr «prs finnes ikke».
-
-Feilmeldingene er på engelsk. Les den første meldingen, og finn linjenummeret den peker på. Der, eller like over, ligger som regel feilen.
+Les den første feilmeldingen. Den forteller hva programmet stoppet ved. Eventuelt linjenummer kan hjelpe deg å finne stedet.
 :::
 
-:::step {"id":"practice","caption":"Feilen forsvinner når variabelnavnet er stavet riktig igjen.","traceActive":-1}
-## Prøv selv
+:::step {"id":"repair","caption":"Les én feilmelding og rett én skrivefeil."}
+## Rett navnet
 
-Åpne kodeverkstedet:
+Sammenlign navnet på første og andre linje. Rett `prs` til `pris`, og kjør på nytt. Nå kommer `40` tilbake. JavaScript gjetter ikke hvilket navn du mente.
+:::
 
-1. Fjern `//` foran den siste linjen og kjør koden. Les feilmeldingen.
-2. Rett `prs` til `pris`. Nå skal konsollen vise prisen for tre billetter.
-3. Fjern et anførselstegn et sted og se hvilken feil du får da. Sett det tilbake.
+:::step {"id":"syntax","caption":"Les én feilmelding og rett én skrivefeil."}
+## En annen slags feil
 
-**Husk:** Feilmeldinger er ikke et tegn på at du gjør noe galt. Alle som programmerer, får dem hele tiden. De er hjelp til å finne veien videre.
+Fjern den avsluttende parentesen i `console.log(pris);` og kjør. Du får en **syntaksfeil**, som betyr at skrivemåten ikke er gyldig. Da kan ikke dette programmet starte. Sett parentesen tilbake.
+
+Navnefeilen i forrige steg oppstod først da programmet prøvde å bruke navnet. Begge feilene er vanlige når du lærer.
+:::
+
+:::step {"id":"check","caption":"Les én feilmelding og rett én skrivefeil."}
+## Øv på å finne feilen
+
+Skriv `Pris` med stor P på andre linje. Hva tror du skjer?
+
+**Svar:** Navnet finnes ikke, fordi `pris` og `Pris` er ulike navn. Rett det og kontroller at koden virker før du går videre.
 :::

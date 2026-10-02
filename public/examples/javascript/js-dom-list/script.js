@@ -1,12 +1,7 @@
-let nummer = 0;
-const leggTil = document.querySelector("#legg-til");
-leggTil.addEventListener("click", () => {
-  nummer++;
+const navn = ["Ada", "Bo", "Cleo"];
+const liste = document.querySelector("#navneliste");
+for (const person of navn) {
   const punkt = document.createElement("li");
-  const fjern = document.createElement("button");
-  punkt.append(`Idé ${nummer} `);
-  fjern.textContent = `Fjern idé ${nummer}`;
-  fjern.addEventListener("click", () => { punkt.remove(); leggTil.focus(); });
-  punkt.append(fjern);
-  document.querySelector("ul").append(punkt);
-});
+  punkt.textContent = person;
+  liste.append(punkt);
+}

@@ -10,7 +10,9 @@ export function parseRoute(hash) {
 }
 export function findLesson(manifest, route) {
   const section = manifest.sections.find(s => s.id === route.section);
-  const track = section?.tracks.find(t => t.id === route.track);
+  // A lesson may move to another level while bookmarks keep the old route.
+  const track = section?.tracks.find(t => t.id === route.track && t.lessons.some(l => l.id === route.lesson))
+    || section?.tracks.find(t => t.lessons.some(l => l.id === route.lesson && l.previousTracks?.includes(route.track)));
   const lesson = track?.lessons.find(l => l.id === route.lesson);
   return lesson ? { section, track, lesson, index: track.lessons.indexOf(lesson) } : null;
 }

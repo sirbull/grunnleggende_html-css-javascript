@@ -52,6 +52,10 @@ Leksjons-ID-er må være unike på tvers av hele kurset, ikke bare innenfor ett 
 
 `minutes` er valgfri og faller tilbake til 5.
 
+`previousTracks` er en valgfri liste med tidligere nivå-ID-er for en leksjon som er flyttet. Den bevarer gamle bokmerker og leseposisjoner; navigasjonen bruker alltid gjeldende nivå.
+
+For JavaScript følger vi [progresjonsreglene](JAVASCRIPT_PROGRESSION.md): programmeringsbegreper og konsoll først, deretter arbeid med nettsiden.
+
 ## Markdown-filen
 
 Hele teksten må ligge inne i lesesteg. Tekst utenfor et steg er en feil, ikke en stilltiende utelatelse.

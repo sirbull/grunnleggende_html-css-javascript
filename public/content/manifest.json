@@ -304,84 +304,204 @@
           "lessons": [
             {
               "id": "js-intro",
-              "title": "Hva kan JavaScript brukes til?",
-              "description": "Se hva JavaScript gjør på nettsider, og skriv ditt første lille program.",
+              "title": "Din første instruksjon",
+              "description": "Skriv én beskjed og finn den i konsollen.",
+              "minutes": 5,
               "content": "content/javascript/basic/js-intro.md",
               "example": "examples/javascript/js-intro",
-              "visualization": "code-flow",
-              "minutes": 7
+              "visualization": "code-flow"
+            },
+            {
+              "id": "js-sequence",
+              "title": "Én linje om gangen",
+              "description": "Følg tre instruksjoner i den rekkefølgen de står.",
+              "minutes": 5,
+              "content": "content/javascript/basic/js-sequence.md",
+              "example": "examples/javascript/js-sequence",
+              "visualization": "code-flow"
+            },
+            {
+              "id": "js-comments",
+              "title": "Kommentarer i koden",
+              "description": "Skill mellom instruksjoner og notater til den som leser.",
+              "minutes": 5,
+              "content": "content/javascript/basic/js-comments.md",
+              "example": "examples/javascript/js-comments",
+              "visualization": "preview"
             },
             {
               "id": "js-variables",
-              "title": "Hva er en variabel?",
-              "description": "Gi en verdi et navn, slik at programmet kan huske den og endre den.",
+              "title": "Lag og les en variabel",
+              "description": "Gi en verdi et navn og hent verdien med navnet.",
+              "minutes": 6,
               "content": "content/javascript/basic/js-variables.md",
               "example": "examples/javascript/js-variables",
-              "visualization": "code-flow",
-              "minutes": 8
+              "visualization": "code-flow"
             },
             {
-              "id": "js-types",
-              "title": "Tekst, tall og sant/usant",
-              "description": "Bli kjent med de tre vanligste typene verdier: string, number og boolean.",
-              "content": "content/javascript/basic/js-types.md",
-              "example": "examples/javascript/js-types",
-              "visualization": "code-flow",
-              "minutes": 8
-            },
-            {
-              "id": "js-operators",
-              "title": "Operatorer og sammenligning",
-              "description": "Regn ut verdier og still presise spørsmål.",
-              "content": "content/javascript/basic/js-operators.md",
-              "example": "examples/javascript/js-operators",
-              "visualization": "code-flow",
-              "minutes": 6
-            },
-            {
-              "id": "js-if",
-              "title": "Valg med if og else",
-              "description": "La programmet følge ulike veier.",
-              "content": "content/javascript/basic/js-if.md",
-              "example": "examples/javascript/js-if",
-              "visualization": "code-flow",
-              "minutes": 6
-            },
-            {
-              "id": "js-functions",
-              "title": "Funksjoner, parametere og return",
-              "description": "Skriv en beregning én gang og bruk den flere steder.",
-              "content": "content/javascript/basic/js-functions.md",
-              "example": "examples/javascript/js-functions",
-              "visualization": "code-flow",
-              "minutes": 6
+              "id": "js-change",
+              "title": "Gi en variabel en ny verdi",
+              "description": "Se forskjellen på å lage en variabel og å endre den.",
+              "minutes": 5,
+              "content": "content/javascript/basic/js-change.md",
+              "example": "examples/javascript/js-change",
+              "visualization": "code-flow"
             },
             {
               "id": "js-console",
-              "title": "Når koden ikke virker",
-              "description": "Bruk konsollen og feilmeldingene til å finne ut hva som gikk galt.",
+              "title": "Finn og rett en feil",
+              "description": "Les én feilmelding og rett én skrivefeil.",
+              "minutes": 5,
               "content": "content/javascript/basic/js-console.md",
               "example": "examples/javascript/js-console",
-              "visualization": "code-flow",
-              "minutes": 6
+              "visualization": "preview"
             },
             {
-              "id": "js-dom-text",
-              "title": "Finn og endre et element",
-              "description": "Koble en JavaScript-verdi til tekst på siden.",
-              "content": "content/javascript/basic/js-dom-text.md",
-              "example": "examples/javascript/js-dom-text",
-              "visualization": "code-flow",
-              "minutes": 6
+              "id": "js-operators",
+              "title": "Regn med tall",
+              "description": "Bruk én regneart om gangen før du setter dem sammen.",
+              "minutes": 6,
+              "content": "content/javascript/basic/js-operators.md",
+              "example": "examples/javascript/js-operators",
+              "visualization": "preview"
             },
             {
-              "id": "js-events",
-              "title": "Hendelser og knapper",
-              "description": "Skill mellom kode som registreres nå og kode som kjører senere.",
-              "content": "content/javascript/basic/js-events.md",
-              "example": "examples/javascript/js-events",
+              "id": "js-update",
+              "title": "Bruk den gamle verdien",
+              "description": "Regn ut en ny verdi og lagre den i samme variabel.",
+              "minutes": 5,
+              "content": "content/javascript/basic/js-update.md",
+              "example": "examples/javascript/js-update",
+              "visualization": "code-flow"
+            },
+            {
+              "id": "js-const",
+              "title": "En variabel med const",
+              "description": "Velg const når variabelen ikke skal få en ny verdi.",
+              "minutes": 5,
+              "content": "content/javascript/basic/js-const.md",
+              "example": "examples/javascript/js-const",
+              "visualization": "preview"
+            },
+            {
+              "id": "js-types",
+              "title": "Tall og tekst er ulike verdier",
+              "description": "Se hvorfor 2 og \"2\" gir forskjellige svar.",
+              "minutes": 5,
+              "content": "content/javascript/basic/js-types.md",
+              "example": "examples/javascript/js-types",
+              "visualization": "preview"
+            },
+            {
+              "id": "js-strings",
+              "title": "Sett sammen tekst",
+              "description": "Bygg en beskjed av tekst og en verdi du har lagret.",
+              "minutes": 5,
+              "content": "content/javascript/basic/js-strings.md",
+              "example": "examples/javascript/js-strings",
+              "visualization": "preview"
+            },
+            {
+              "id": "js-comparisons",
+              "title": "Sammenlign to verdier",
+              "description": "Still ett spørsmål og les svaret true eller false.",
+              "minutes": 6,
+              "content": "content/javascript/basic/js-comparisons.md",
+              "example": "examples/javascript/js-comparisons",
+              "visualization": "preview"
+            },
+            {
+              "id": "js-boolean",
+              "title": "Husk sant eller usant",
+              "description": "Lagre et ja/nei-svar i en variabel.",
+              "minutes": 5,
+              "content": "content/javascript/basic/js-boolean.md",
+              "example": "examples/javascript/js-boolean",
+              "visualization": "preview"
+            },
+            {
+              "id": "js-if",
+              "title": "Gjør noe hvis svaret er sant",
+              "description": "Bruk if til å kjøre eller hoppe over én kodeblokk.",
+              "minutes": 6,
+              "content": "content/javascript/basic/js-if.md",
+              "example": "examples/javascript/js-if",
+              "visualization": "code-flow"
+            },
+            {
+              "id": "js-else",
+              "title": "Gjør noe ellers",
+              "description": "La programmet velge mellom to kodeblokker.",
+              "minutes": 5,
+              "content": "content/javascript/basic/js-else.md",
+              "example": "examples/javascript/js-else",
+              "visualization": "preview"
+            },
+            {
+              "id": "js-else-if",
+              "title": "Velg mellom flere alternativer",
+              "description": "Legg til ett spørsmål med else if.",
+              "minutes": 5,
+              "content": "content/javascript/basic/js-else-if.md",
+              "example": "examples/javascript/js-else-if",
+              "visualization": "preview"
+            },
+            {
+              "id": "js-logical",
+              "title": "Kombiner to spørsmål",
+              "description": "Undersøk og, eller og ikke hver for seg.",
+              "minutes": 5,
+              "content": "content/javascript/basic/js-logical.md",
+              "example": "examples/javascript/js-logical",
+              "visualization": "preview"
+            },
+            {
+              "id": "js-loops",
+              "title": "Gjenta med while",
+              "description": "Bruk en teller, en betingelse og én gjentatt kodeblokk.",
+              "minutes": 7,
+              "content": "content/javascript/basic/js-loops.md",
+              "example": "examples/javascript/js-loops",
               "visualization": "code-flow",
-              "minutes": 6
+              "previousTracks": [
+                "intermediate"
+              ]
+            },
+            {
+              "id": "js-for",
+              "title": "Samle telleren i en for-løkke",
+              "description": "Bruk de samme tre delene du kjenner fra while.",
+              "minutes": 6,
+              "content": "content/javascript/basic/js-for.md",
+              "example": "examples/javascript/js-for",
+              "visualization": "preview"
+            },
+            {
+              "id": "js-functions",
+              "title": "Lag og kall en funksjon",
+              "description": "Gi noen instruksjoner et navn og bestem når de kjører.",
+              "minutes": 5,
+              "content": "content/javascript/basic/js-functions.md",
+              "example": "examples/javascript/js-functions",
+              "visualization": "code-flow"
+            },
+            {
+              "id": "js-parameters",
+              "title": "Send en verdi til en funksjon",
+              "description": "Bruk én parameter og prøv to ulike kall.",
+              "minutes": 5,
+              "content": "content/javascript/basic/js-parameters.md",
+              "example": "examples/javascript/js-parameters",
+              "visualization": "preview"
+            },
+            {
+              "id": "js-return",
+              "title": "Gi et svar tilbake med return",
+              "description": "La en funksjon beregne en verdi som resten av programmet kan bruke.",
+              "minutes": 7,
+              "content": "content/javascript/basic/js-return.md",
+              "example": "examples/javascript/js-return",
+              "visualization": "code-flow"
             }
           ]
         },
@@ -391,39 +511,90 @@
           "lessons": [
             {
               "id": "js-arrays",
-              "title": "Arrays og objekter",
-              "description": "Samle verdier som hører sammen.",
+              "title": "Samle verdier i en liste",
+              "description": "Les én verdi om gangen fra et array.",
+              "minutes": 6,
               "content": "content/javascript/intermediate/js-arrays.md",
               "example": "examples/javascript/js-arrays",
-              "visualization": "code-flow",
-              "minutes": 9
+              "visualization": "preview"
             },
             {
-              "id": "js-loops",
-              "title": "Løkker som bygger en liste",
-              "description": "Gjør samme handling for flere verdier.",
-              "content": "content/javascript/intermediate/js-loops.md",
-              "example": "examples/javascript/js-loops",
-              "visualization": "code-flow",
-              "minutes": 9
+              "id": "js-array-loops",
+              "title": "Gå gjennom en liste",
+              "description": "Bruk for...of til å lese hver verdi uten å lage HTML.",
+              "minutes": 5,
+              "content": "content/javascript/intermediate/js-array-loops.md",
+              "example": "examples/javascript/js-array-loops",
+              "visualization": "preview"
+            },
+            {
+              "id": "js-objects",
+              "title": "Samle navngitte egenskaper",
+              "description": "Bruk et objekt til verdier som beskriver samme ting.",
+              "minutes": 5,
+              "content": "content/javascript/intermediate/js-objects.md",
+              "example": "examples/javascript/js-objects",
+              "visualization": "preview"
+            },
+            {
+              "id": "js-dom-text",
+              "title": "Finn et element og endre teksten",
+              "description": "Koble JavaScript til ett avsnitt på nettsiden.",
+              "minutes": 6,
+              "content": "content/javascript/intermediate/js-dom-text.md",
+              "example": "examples/javascript/js-dom-text",
+              "visualization": "preview",
+              "previousTracks": [
+                "basic"
+              ]
+            },
+            {
+              "id": "js-classes",
+              "title": "Endre en CSS-klasse",
+              "description": "La CSS bestemme utseendet mens JavaScript velger klassen.",
+              "minutes": 5,
+              "content": "content/javascript/intermediate/js-classes.md",
+              "example": "examples/javascript/js-classes",
+              "visualization": "preview"
+            },
+            {
+              "id": "js-events",
+              "title": "Kjør en funksjon ved et klikk",
+              "description": "Registrer én hendelseslytter med en funksjon du kjenner.",
+              "minutes": 6,
+              "content": "content/javascript/intermediate/js-events.md",
+              "example": "examples/javascript/js-events",
+              "visualization": "preview",
+              "previousTracks": [
+                "basic"
+              ]
             },
             {
               "id": "js-forms",
-              "title": "Inndata og skjemahendelser",
-              "description": "Les en verdi og gi en forståelig tilbakemelding.",
+              "title": "Les tekst fra et skjema",
+              "description": "Ta imot ett felt og vis en hilsen ved innsending.",
+              "minutes": 6,
               "content": "content/javascript/intermediate/js-forms.md",
               "example": "examples/javascript/js-forms",
-              "visualization": "code-flow",
-              "minutes": 9
+              "visualization": "preview"
+            },
+            {
+              "id": "js-form-check",
+              "title": "Sjekk verdien fra et felt",
+              "description": "Bruk en if-setning før du viser hilsenen.",
+              "minutes": 5,
+              "content": "content/javascript/intermediate/js-form-check.md",
+              "example": "examples/javascript/js-form-check",
+              "visualization": "preview"
             },
             {
               "id": "js-dom-list",
-              "title": "Opprett og fjern elementer",
-              "description": "La brukerens handling endre en samling.",
+              "title": "Lag elementer fra en liste",
+              "description": "Koble en kjent løkke til oppretting av HTML-elementer.",
+              "minutes": 6,
               "content": "content/javascript/intermediate/js-dom-list.md",
               "example": "examples/javascript/js-dom-list",
-              "visualization": "code-flow",
-              "minutes": 9
+              "visualization": "preview"
             }
           ]
         },
@@ -433,39 +604,75 @@
           "lessons": [
             {
               "id": "js-scope",
-              "title": "Scope, callbacks og pilfunksjoner",
-              "description": "Forstå hvor navn finnes og når funksjoner kjøres.",
+              "title": "Hvor finnes en variabel?",
+              "description": "Skill mellom navn utenfor og inni en kodeblokk.",
+              "minutes": 6,
               "content": "content/javascript/advanced/js-scope.md",
               "example": "examples/javascript/js-scope",
-              "visualization": "code-flow",
-              "minutes": 9
+              "visualization": "preview"
             },
             {
-              "id": "js-async",
-              "title": "Promise, async og await",
-              "description": "Hent data uten å stanse resten av siden.",
-              "content": "content/javascript/advanced/js-async.md",
-              "example": "examples/javascript/js-async",
-              "visualization": "code-flow",
-              "minutes": 9
+              "id": "js-closures",
+              "title": "En funksjon kan huske et område",
+              "description": "Følg én teller før du lager en til.",
+              "minutes": 6,
+              "content": "content/javascript/advanced/js-closures.md",
+              "example": "examples/javascript/js-closures",
+              "visualization": "preview"
+            },
+            {
+              "id": "js-callbacks",
+              "title": "Funksjoner som argumenter",
+              "description": "Forstå en callback før du bruker en kortere funksjonsform.",
+              "minutes": 6,
+              "content": "content/javascript/advanced/js-callbacks.md",
+              "example": "examples/javascript/js-callbacks",
+              "visualization": "preview"
+            },
+            {
+              "id": "js-errors",
+              "title": "Håndter en feil med try og catch",
+              "description": "La programmet vise en beskjed når en operasjon feiler.",
+              "minutes": 6,
+              "content": "content/javascript/advanced/js-errors.md",
+              "example": "examples/javascript/js-errors",
+              "visualization": "preview"
             },
             {
               "id": "js-storage",
               "title": "JSON og lokal lagring",
-              "description": "Behold små innstillinger mellom besøk.",
+              "description": "Gjør et enkelt objekt om til tekst, lagre det og les det tilbake.",
+              "minutes": 5,
               "content": "content/javascript/advanced/js-storage.md",
               "example": "examples/javascript/js-storage",
-              "visualization": "code-flow",
-              "minutes": 9
+              "visualization": "preview"
+            },
+            {
+              "id": "js-async",
+              "title": "Vent på data med async og await",
+              "description": "Følg ett kall fra forespørsel til data eller feilmelding.",
+              "minutes": 7,
+              "content": "content/javascript/advanced/js-async.md",
+              "example": "examples/javascript/js-async",
+              "visualization": "preview"
             },
             {
               "id": "js-modules",
-              "title": "Moduler og asynkron rekkefølge",
-              "description": "Del ansvar og forstå hva som kjører først.",
+              "title": "Del kode i moduler",
+              "description": "Skill mellom å eksportere en funksjon og å importere den i en annen fil.",
+              "minutes": 6,
               "content": "content/javascript/advanced/js-modules.md",
               "example": "examples/javascript/js-modules",
-              "visualization": "code-flow",
-              "minutes": 9
+              "visualization": "preview"
+            },
+            {
+              "id": "js-event-loop",
+              "title": "Når kjører en Promise-callback?",
+              "description": "Forutsi tre utskrifter fra synkron kode og en Promise.",
+              "minutes": 6,
+              "content": "content/javascript/advanced/js-event-loop.md",
+              "example": "examples/javascript/js-event-loop",
+              "visualization": "preview"
             }
           ]
         }

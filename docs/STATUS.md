@@ -11,11 +11,12 @@ FASE 14 – malifisering fullført. Løsningen er funksjonelt komplett for 1.0.
 - [x] FASE 5: referanseoppføringer, søk, filtre, bokstaver, deep links og fagorddialog.
 - [x] FASE 6–7: opplesning og lazy CodeMirror, isolert HTML/CSS/JS, kjøring, reset og lagring.
 - [x] FASE 8: komplett dokumentstruktur-leksjon testet, inkludert axe og 320px reflow.
-- [x] FASE 9–11: 63 leksjoner over HTML, CSS, JavaScript og Samspill på tre nivåer, med eksempler og visualiseringer. Samspill har 19 cases: 7 grunnleggende, 6 videre og 6 fordypning.
+- [x] FASE 9–11: 85 leksjoner over HTML, CSS, JavaScript og Samspill på tre nivåer, med eksempler og visualiseringer. Samspill har 19 cases: 7 grunnleggende, 6 videre og 6 fordypning.
 - [x] FASE 10B: 219 referanseoppføringer med norske aliases, sortering, relaterte begreper og kjørbare eksempler. Grunnforklaringer viser hva HTML, CSS, JavaScript, JSON, DOM, Web API, universell utforming, WCAG og ARIA betyr og gjør. Emneintroduksjoner vises ved kategorifiltrering og søk på emnenavn. JSON er også forklart i leksjonen om lokal lagring.
 - [x] FASE 12: tre feilende robusthetstester diagnostisert og rettet. Hele kjeden er grønn: 4 unit-tester, innholdsvalidering og 18 Playwright-scenarier mot produksjonsbygget på `/kurs/web/`. De 12 nye Samspill-casene er testet med inndata og handlinger. JSON-oppslaget, det kjørbare eksempelet og leksjonslenken er testet.
 - [x] FASE 13: `docs/DEPLOYMENT.md` med konkrete steg og verifiseringsliste. Undermappebygget er dekket av egne tester.
 - [x] FASE 14: kursnavn og referansekategorier flyttet fra kode til manifest. `docs/CREATE_NEW_COURSE.md` og `docs/CONTENT_AUTHORING.md` skrevet.
+- [x] JavaScript-progresjon, 02.10.2026: utvidet fra 17 til 39 leksjoner. 22 grunnleksjoner med bare konsoll, ni videre-leksjoner og åtte fordypningsleksjoner. Små endringer, konkrete verdispor og spørsmål med svar for egenkontroll. Gamle ruter til flyttede leksjoner bevares, og kodeverkstedet åpner seksjonens kodespråk. Se `docs/JAVASCRIPT_PROGRESSION.md`.
 
 ## In progress
 - [ ] Ingen pågående kodearbeid.

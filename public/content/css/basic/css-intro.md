@@ -13,8 +13,7 @@ HTML og CSS skrives i hver sin fil. Den samme HTML-en kan få et helt nytt utsee
 I eksempelet har HTML-en en overskrift og et avsnitt. CSS-en gjør overskriften grønn og gir avsnittet mer luft mellom linjene.
 :::
 
-:::step {"id":"mechanism","caption":"Regelen h1 { color: #174f42; } gjør alle h1-elementer mørkegrønne.","highlight":"h1"
-}
+:::step {"id":"mechanism","caption":"Regelen h1 { color: #174f42; } gjør alle h1-elementer mørkegrønne.","highlight":"h1"}
 ## Slik er en CSS-regel bygget
 
 CSS består av **regler**. Hver regel sier: «*disse* elementene skal se *slik* ut». Her er den første regelen i eksempelet:
