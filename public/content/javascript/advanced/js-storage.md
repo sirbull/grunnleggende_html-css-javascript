@@ -35,9 +35,23 @@ Lesingen og lagringen står i try/catch, som du kjenner fra forrige leksjon. Ugy
 :::step {"id":"practice","caption":"Gjør et enkelt objekt om til tekst, lagre det og les det tilbake."}
 ## Endre én egenskap og følg den
 
-Bytt `"morkt"` med `"lyst"` i objektet øverst. Forutsi begge utskrifter og kjør. JSON-teksten og `lest.tema` skal begge ha den nye verdien.
+Her er `"morkt"` byttet med `"lyst"` i objektet øverst. Forutsi begge utskrifter før du åpner **Resultat**. JSON-teksten og `lest.tema` har begge den nye verdien: `{"tema":"lyst"}` og `lyst`.
 
 **Stopp og forklar:** Hvorfor bruker vi stringify før lagring og parse etter lesing?
 
 **Svar:** Lageret tar imot tekst. Stringify gir tekst fra data, og parse gir data fra teksten. Ikke lagre passord eller hemmeligheter i localStorage.
+
+```js example
+const innstilling = { tema: "lyst" };
+const tekst = JSON.stringify(innstilling);
+console.log(tekst);
+try {
+  localStorage.setItem("innstilling", tekst);
+  const lagretTekst = localStorage.getItem("innstilling");
+  const lest = JSON.parse(lagretTekst);
+  console.log(lest.tema);
+} catch (error) {
+  console.log("Kunne ikke lagre eller lese: " + error.message);
+}
+```
 :::

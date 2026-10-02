@@ -1,7 +1,9 @@
 :::step {"id":"before","caption":"Ta imot ett felt og vis en hilsen ved innsending."}
 ## Bygg på hendelser
 
-Du kan finne elementer, lage en funksjon og registrere en lytter. Her lytter vi på skjemaets `submit`, som betyr at brukeren prøver å sende det inn. Se HTML-fanen: feltet har en ledetekst og skjemaet har en knapp.
+Du kan finne elementer, lage en funksjon og registrere en lytter. Her lytter vi på skjemaets `submit`, som betyr at brukeren prøver å sende det inn. HTML-fanen ved siden av viser skjemaet: feltet har en ledetekst, og skjemaet har en knapp.
+
+:::example html
 :::
 
 :::step {"id":"event","caption":"Ta imot ett felt og vis en hilsen ved innsending."}

@@ -19,13 +19,27 @@ Resultatet er `Hei, Ada!`. Mellomrommet etter kommaet står inni den første tek
 :::step {"id":"practice","caption":"Bygg en beskjed av tekst og en verdi du har lagret."}
 ## Endre én del
 
-Bytt `Ada` med ditt eget navn. Forutsi hele beskjeden og kjør. Fjern så mellomrommet etter kommaet og kjør igjen. Sett det tilbake når du har sett forskjellen.
+Her er mellomrommet etter kommaet fjernet: `"Hei,"`. Forutsi hele beskjeden før du åpner **Resultat**. Den blir `Hei,Ada!`, uten mellomrom.
+
+Prøv selv: bytt `Ada` med ditt eget navn, og fjern og sett tilbake mellomrommet.
+
+```js example
+const navn = "Ada";
+const hilsen = "Hei," + navn + "!";
+console.log(hilsen);
+```
 :::
 
 :::step {"id":"check","caption":"Bygg en beskjed av tekst og en verdi du har lagret."}
 ## Lag en egen beskjed
 
-Bytt `"Hei, "` med `"Velkommen, "`.
+Her er `"Hei, "` byttet med `"Velkommen, "`.
 
-**Sjekk:** Konsollen skal vise `Velkommen, ` etterfulgt av navnet og `!`. Forklar hvorfor `navn` står uten anførselstegn midt i uttrykket: det skal hente variabelens verdi.
+**Sjekk:** Konsollen viser `Velkommen, Ada!`. Forklar hvorfor `navn` står uten anførselstegn midt i uttrykket: det skal hente variabelens verdi.
+
+```js example
+const navn = "Ada";
+const hilsen = "Velkommen, " + navn + "!";
+console.log(hilsen);
+```
 :::

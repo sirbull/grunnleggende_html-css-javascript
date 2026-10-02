@@ -25,7 +25,17 @@ Når den synkrone koden er ferdig, behandles den ventende Promise-callbacken som
 :::step {"id":"practice","caption":"Forutsi tre utskrifter fra synkron kode og en Promise."}
 ## Legg til én vanlig utskrift
 
-Legg til `console.log("4");` helt nederst. Forutsi og kjør. Resultatet blir `1`, `3`, `4`, `2`, fordi også den nye synkrone linjen fullføres før callbacken.
+Her står `console.log("4");` helt nederst. Forutsi før du åpner **Resultat**. Resultatet blir `1`, `3`, `4`, `2`, fordi også den nye synkrone linjen fullføres før callbacken.
+
+```js example
+console.log("1");
+function skrivTo() {
+  console.log("2");
+}
+Promise.resolve().then(skrivTo);
+console.log("3");
+console.log("4");
+```
 :::
 
 :::step {"id":"check","caption":"Forutsi tre utskrifter fra synkron kode og en Promise."}

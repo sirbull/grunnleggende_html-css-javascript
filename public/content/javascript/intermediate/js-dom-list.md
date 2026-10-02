@@ -2,6 +2,8 @@
 ## En kjent løkke med en ny jobb
 
 Du har brukt for...of til å skrive hvert navn i konsollen. Nå lager hver runde ett listepunkt på nettsiden. HTML-filen inneholder en tom `<ul>` med `id="navneliste"`.
+
+:::example html
 :::
 
 :::step {"id":"create","caption":"Koble en kjent løkke til oppretting av HTML-elementer."}
@@ -25,7 +27,35 @@ Du har brukt for...of til å skrive hvert navn i konsollen. Nå lager hver runde
 :::step {"id":"practice","caption":"Koble en kjent løkke til oppretting av HTML-elementer."}
 ## Legg til en verdi
 
-Legg til `"Dina"` i arrayet og kjør. Du skal få fire listepunkter uten å endre løkken. Sett deretter `//` foran `liste.append(punkt);` og kjør. Listen er nå tom, selv om elementene blir laget i løkken. Sett linjen tilbake.
+Her står `"Dina"` sist i arrayet. Åpne **Resultat**: listen har fire punkter, uten at løkken er endret.
+
+```js example
+const navn = ["Ada", "Bo", "Cleo", "Dina"];
+const liste = document.querySelector("#navneliste");
+for (const person of navn) {
+  const punkt = document.createElement("li");
+  punkt.textContent = person;
+  liste.append(punkt);
+}
+```
+:::
+
+:::step {"id":"no-append","caption":"Koble en kjent løkke til oppretting av HTML-elementer."}
+## Uten append
+
+Her står `//` foran `liste.append(punkt);`. Åpne **Resultat**: listen er tom, selv om elementene blir laget og fylt med tekst i løkken. Et element som ikke er lagt inn i dokumentet, vises ikke.
+
+Prøv selv i kodeverkstedet, og sett linjen tilbake etterpå.
+
+```js example
+const navn = ["Ada", "Bo", "Cleo"];
+const liste = document.querySelector("#navneliste");
+for (const person of navn) {
+  const punkt = document.createElement("li");
+  punkt.textContent = person;
+  // liste.append(punkt);
+}
+```
 :::
 
 :::step {"id":"check","caption":"Koble en kjent løkke til oppretting av HTML-elementer."}

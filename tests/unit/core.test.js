@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { parseSteps, renderMarkdown, markExamples, EXAMPLE_TOKEN } from '../../src/core/content.js';
+import { parseSteps, renderMarkdown, markExamples, stepCode, EXAMPLE_TOKEN } from '../../src/core/content.js';
 import { parseRoute, findLesson } from '../../src/core/router.js';
 import { searchEntries } from '../../src/core/reference-search.js';
 
@@ -16,6 +16,14 @@ test('raw HTML is inert and shared examples preserve code', () => {
   const lines = markExamples('Tekst\n:::example js\n:::example cs').split('\n');
   assert.equal(lines[1].match(EXAMPLE_TOKEN)[1], 'js');
   assert.equal(lines[2], ':::example cs');
+});
+test('a step can show its own version of one example file', () => {
+  const { markdown, files } = stepCode('Feilen:\n\n```js example\nconsole.log(prs);\n```\n\nVanlig:\n```js\nlet x;\n```');
+  assert.deepEqual(files, { js: 'console.log(prs);\n' });
+  assert.match(markdown, /^:::example js$/m);
+  assert.match(markdown, /```js\nlet x;/);
+  assert.doesNotMatch(markdown, /prs/);
+  assert.deepEqual(stepCode('```js\nkode\n```').files, {});
 });
 test('hash routes and missing content', () => {
   assert.deepEqual(parseRoute('#/html/basic/intro'), { kind: 'lesson', section: 'html', track: 'basic', lesson: 'intro' });

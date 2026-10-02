@@ -19,7 +19,15 @@ En funksjon kan ta imot en verdi når den kalles. Her skal funksjonen hilse på 
 :::step {"id":"practice","caption":"Bruk én parameter og prøv to ulike kall."}
 ## Kall med en annen verdi
 
-Legg til `hils("Bo");` nederst. Forutsi begge hilsener og kjør. Andre kall gir parameteren verdien `Bo` for den kjøringen av funksjonen.
+Her står `hils("Bo");` nederst. Forutsi begge hilsener før du åpner **Resultat**. Andre kall gir parameteren verdien `Bo` for den kjøringen av funksjonen.
+
+```js example
+function hils(navn) {
+  console.log("Hei, " + navn + "!");
+}
+hils("Ada");
+hils("Bo");
+```
 :::
 
 :::step {"id":"check","caption":"Bruk én parameter og prøv to ulike kall."}
@@ -28,4 +36,12 @@ Legg til `hils("Bo");` nederst. Forutsi begge hilsener og kjør. Andre kall gir 
 **Stopp og forklar:** Hva er parameteren, og hva er argumentet i `hils("Bo")`?
 
 **Svar:** Parameteren heter `navn` i deklarasjonen. Argumentet er teksten `"Bo"` i kallet. Prøv ditt eget navn før du går videre.
+
+```js example
+function hils(navn) {
+  console.log("Hei, " + navn + "!");
+}
+hils("Ada");
+hils("Bo");
+```
 :::

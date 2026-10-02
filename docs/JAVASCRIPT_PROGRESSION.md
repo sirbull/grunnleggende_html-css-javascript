@@ -20,6 +20,7 @@ Videre-nivået har ni leksjoner: arrays, gjennomgang av arrays, objekter, DOM-te
 - Forklar nye skilletegn og navngitte deler når de introduseres.
 - Følg konkrete verdier gjennom koden før du ber brukeren endre den.
 - Be brukeren forutsi resultatet, gjøre én endring, kjøre og sammenligne.
+- Når et steg handler om en endring eller en feil, vis den endrede koden med en `js example`-blokk, slik at panelet og resultatet viser det teksten beskriver. Se [Skrive innhold](CONTENT_AUTHORING.md#vis-koden-teksten-snakker-om).
 - Avslutt med et spørsmål om hvorfor programmet gir resultatet, og gi et svar som kan brukes til egenkontroll.
 - Bruk både sant og usant i valg, og vis også en løkke som ikke starter. Forklar hvordan en løkke stopper.
 - Legg kombinerte oppgaver etter at de enkelte delene er forklart. Et pent visuelt resultat er ikke et læringsmål i grunnrekken.

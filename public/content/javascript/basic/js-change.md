@@ -23,10 +23,19 @@ Siste linje leser verdien etter endringen. Konsollen viser:
 Den første utskriften endres ikke i ettertid. Den viser verdien slik den var da linjen kjørte.
 :::
 
-:::step {"id":"practice","caption":"Se forskjellen på å lage en variabel og å endre den.","trace":["Lag poeng med verdien 0.","Skriv 0.","Gi poeng verdien 10.","Skriv 10."],"traceActive":3}
+:::step {"id":"practice","caption":"Se forskjellen på å lage en variabel og å endre den.","trace":["Lag poeng med verdien 0.","Skriv 0.","Gi poeng verdien 7.","Skriv 7.","Gi poeng verdien 2.","Skriv 2."],"traceActive":5}
 ## Forutsi en ny utskrift
 
-Bytt `10` med `7`. Hvilke to tall vil stå i konsollen? Kjør og sjekk at det står `0` og `7`. Legg deretter til `poeng = 2;` og `console.log(poeng);` nederst. Da kommer en tredje utskrift: `2`.
+Her er `10` byttet med `7`, og to nye linjer står nederst: `poeng = 2;` og `console.log(poeng);`. Forutsi hvilke tall konsollen viser, og åpne **Resultat**. Det står `0`, `7` og `2`: én utskrift for hver `console.log`, med verdien variabelen hadde akkurat da.
+
+```js example
+let poeng = 0;
+console.log(poeng);
+poeng = 7;
+console.log(poeng);
+poeng = 2;
+console.log(poeng);
+```
 :::
 
 :::step {"id":"check","caption":"Se forskjellen på å lage en variabel og å endre den.","trace":["Lag poeng med verdien 0.","Skriv 0.","Gi poeng verdien 10.","Skriv 10."],"traceActive":2}

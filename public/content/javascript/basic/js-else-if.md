@@ -13,13 +13,24 @@ Først spør programmet om `7 >= 10`. Svaret er `false`. Deretter spør det om `
 :::step {"id":"fallback","caption":"Legg til ett spørsmål med else if."}
 ## Når ingen spørsmål gir true
 
-Hvis begge spørsmål gir `false`, kjører siste `else`. Den skriver `Prøv igjen`. Det er alternativet for verdier som ikke passet til noen av spørsmålene.
+Her er poengene `3`. Både `3 >= 10` og `3 >= 5` gir `false`, så siste `else` kjører og skriver `Prøv igjen`. Det er alternativet for verdier som ikke passet til noen av spørsmålene.
+
+```js example
+const poeng = 3;
+if (poeng >= 10) {
+  console.log("Gull");
+} else if (poeng >= 5) {
+  console.log("Sølv");
+} else {
+  console.log("Prøv igjen");
+}
+```
 :::
 
 :::step {"id":"practice","caption":"Legg til ett spørsmål med else if."}
 ## Test ett tall om gangen
 
-Forutsi og kjør med `4`, `5`, `9` og `10`.
+Her er poengene `10`, og konsollen viser `Gull`. Forutsi beskjeden for de andre verdiene i tabellen, og prøv dem én om gangen i kodeverkstedet.
 
 | Poeng | Beskjed |
 | --- | --- |
@@ -27,12 +38,36 @@ Forutsi og kjør med `4`, `5`, `9` og `10`.
 | 5 | Sølv |
 | 9 | Sølv |
 | 10 | Gull |
+
+```js example
+const poeng = 10;
+if (poeng >= 10) {
+  console.log("Gull");
+} else if (poeng >= 5) {
+  console.log("Sølv");
+} else {
+  console.log("Prøv igjen");
+}
+```
 :::
 
 :::step {"id":"check","caption":"Legg til ett spørsmål med else if."}
 ## Rekkefølgen teller
 
-**Stopp og forklar:** Hvorfor sjekker vi gullgrensen før sølvgrensen?
+Her står sølvspørsmålet **før** gullspørsmålet, og poengene er `10`. Forutsi beskjeden før du åpner **Resultat**.
 
-**Svar:** 10 er også større enn eller lik 5. Hvis sølvspørsmålet stod først, ville 10 valgt sølv, og gullspørsmålet ville ikke blitt undersøkt.
+**Stopp og forklar:** Hvorfor skriver programmet `Sølv` selv om 10 poeng skulle gi gull?
+
+**Svar:** 10 er også større enn eller lik 5. Sølvspørsmålet gir `true` først, og da hoppes resten av valget over. Gullspørsmålet blir aldri undersøkt. Derfor sjekker originaleksempelet gullgrensen før sølvgrensen.
+
+```js example
+const poeng = 10;
+if (poeng >= 5) {
+  console.log("Sølv");
+} else if (poeng >= 10) {
+  console.log("Gull");
+} else {
+  console.log("Prøv igjen");
+}
+```
 :::

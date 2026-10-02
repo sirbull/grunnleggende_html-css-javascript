@@ -5,7 +5,9 @@ export function previewDocument(files, token, highlight = '') {
     const data = ${payload};
     let messages = 0;
     const send = (type, text) => { if (messages++ < 60) parent.postMessage({ channel:'webverkstedet-preview', token:data.token, type, text:String(text).slice(0,2000) }, '*'); };
-    window.addEventListener('error', e => send('error', e.message + (e.lineno ? ' (linje ' + e.lineno + ')' : '')));
+    // En syntaksfeil meldes fra append-kallet som setter inn skriptet nederst. Den delen av meldingen
+    // handler om forhåndsvisningen, ikke om elevens kode, og tas bort.
+    window.addEventListener('error', e => send('error', String(e.message).replace("Failed to execute 'append' on 'Element': ", '') + (e.lineno ? ' (linje ' + e.lineno + ')' : '')));
     window.addEventListener('unhandledrejection', e => send('error', e.reason?.message || e.reason));
     const originalLog = console.log.bind(console);
     console.log = (...args) => { originalLog(...args); send('log', args.map(a => { try { return typeof a === 'string' ? a : JSON.stringify(a); } catch { return String(a); } }).join(' ')); };

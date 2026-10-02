@@ -25,7 +25,23 @@ Neste `teller()` bruker samme `antall`, som nå er 1. Den øker til 2 og returne
 :::step {"id":"practice","caption":"Følg én teller før du lager en til."}
 ## Lag en uavhengig teller
 
-Legg til `const annenTeller = lagTeller();` og `console.log(annenTeller());` nederst. Forutsi og kjør: den nye telleren gir `1`, fordi det nye kallet til `lagTeller` lager sitt eget område med en ny `antall`.
+Her står `const annenTeller = lagTeller();` og `console.log(annenTeller());` nederst. Forutsi før du åpner **Resultat**. Konsollen viser `1`, `2` og så `1` igjen. Den nye telleren starter på nytt, fordi det nye kallet til `lagTeller` lager sitt eget område med en ny `antall`.
+
+```js example
+function lagTeller() {
+  let antall = 0;
+  function tell() {
+    antall = antall + 1;
+    return antall;
+  }
+  return tell;
+}
+const teller = lagTeller();
+console.log(teller());
+console.log(teller());
+const annenTeller = lagTeller();
+console.log(annenTeller());
+```
 :::
 
 :::step {"id":"check","caption":"Følg én teller før du lager en til."}

@@ -37,10 +37,34 @@ Når telleren er `4`, er betingelsen usann. Blokken hoppes over, og programmet s
 Oppdateringen av telleren er nødvendig. Uten den ville betingelsen alltid være sann i dette eksempelet, og løkken kunne låse nettleserfanen. Behold oppdateringen i øvelsene.
 :::
 
-:::step {"id":"practice","caption":"Bruk en teller, en betingelse og én gjentatt kodeblokk.","trace":["Start teller på 1.","Sjekk teller <= 3.","Hvis sant: skriv teller og øk med 1.","Gå tilbake til sjekken.","Hvis usant: fortsett etter løkken."],"traceActive":4}
+:::step {"id":"practice","caption":"Bruk en teller, en betingelse og én gjentatt kodeblokk.","trace":["Start teller på 1.","Sjekk teller <= 2.","Hvis sant: skriv teller og øk med 1.","Gå tilbake til sjekken.","Hvis usant: fortsett etter løkken."],"traceActive":4}
 ## Endre bare grensen
 
-Bytt `<= 3` med `<= 2`. Forutsi og kjør. Du skal se `1`, `2` og `Ferdig`. Sett så startverdien til `3`, men behold grensen `2`. Nå skrives bare `Ferdig`, fordi betingelsen er usann før første runde.
+Her er `<= 3` byttet med `<= 2`. Forutsi utskriften før du åpner **Resultat**. Du ser `1`, `2` og `Ferdig`. Løkken stopper når telleren blir `3`, fordi `3 <= 2` er usant.
+
+```js example
+let teller = 1;
+while (teller <= 2) {
+  console.log(teller);
+  teller = teller + 1;
+}
+console.log("Ferdig");
+```
+:::
+
+:::step {"id":"no-start","caption":"Bruk en teller, en betingelse og én gjentatt kodeblokk.","trace":["Start teller på 3.","Sjekk teller <= 2. Svaret er false.","Hopp over blokken.","Fortsett etter løkken og skriv Ferdig."],"traceActive":1}
+## En løkke som ikke starter
+
+Her starter telleren på `3`, og grensen er fortsatt `2`. Forutsi før du åpner **Resultat**. Nå skrives bare `Ferdig`, fordi betingelsen er usann allerede før første runde. Blokken kjører ikke en eneste gang.
+
+```js example
+let teller = 3;
+while (teller <= 2) {
+  console.log(teller);
+  teller = teller + 1;
+}
+console.log("Ferdig");
+```
 :::
 
 :::step {"id":"check","caption":"Bruk en teller, en betingelse og én gjentatt kodeblokk.","trace":["Start teller på 1.","Sjekk teller <= 3.","Hvis sant: skriv teller og øk med 1.","Gå tilbake til sjekken.","Hvis usant: fortsett etter løkken."],"traceActive":4}

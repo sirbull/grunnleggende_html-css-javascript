@@ -25,13 +25,25 @@ Start med 1. Sjekk at 1 er mindre enn eller lik 3. Skriv 1. Øk til 2. Gå tilba
 :::step {"id":"practice","caption":"Bruk de samme tre delene du kjenner fra while."}
 ## Endre bare slutten
 
-Bytt `<= 3` med `<= 4`. Forutsi og kjør. Utskriften blir `1`, `2`, `3`, `4`. Prøv deretter startverdien `2` med samme grense: da starter utskriften på `2`.
+Her er `<= 3` byttet med `<= 4`. Forutsi før du åpner **Resultat**. Utskriften blir `1`, `2`, `3`, `4`. Prøv selv startverdien `2` med samme grense: da starter utskriften på `2`.
+
+```js example
+for (let teller = 1; teller <= 4; teller = teller + 1) {
+  console.log(teller);
+}
+```
 :::
 
 :::step {"id":"short","caption":"Bruk de samme tre delene du kjenner fra while."}
 ## En kortere oppdatering
 
-Når du forstår `teller = teller + 1`, kan du skrive `teller++` på oppdateringsplassen. Der betyr det «øk telleren med én». Prøv denne ene endringen og kontroller at resultatet er likt. Vi bruker den lange formen til du kjenner igjen begge.
+Når du forstår `teller = teller + 1`, kan du skrive `teller++` på oppdateringsplassen. Der betyr det «øk telleren med én». Her er bare denne delen endret, og resultatet er det samme: `1`, `2`, `3`. Vi bruker den lange formen til du kjenner igjen begge.
+
+```js example
+for (let teller = 1; teller <= 3; teller++) {
+  console.log(teller);
+}
+```
 :::
 
 :::step {"id":"check","caption":"Bruk de samme tre delene du kjenner fra while."}

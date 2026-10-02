@@ -7,31 +7,51 @@
 :::step {"id":"practice-and","caption":"Undersøk og, eller og ikke hver for seg."}
 ## Prøv og først
 
-Endre bare `erApen` til `true` og kjør. Nå får du `true`. Sett `harBillett` til `false` og kjør igjen. Svaret er `false`. Du har testet at begge må være sanne.
+Her er `erApen` endret til `true`. Nå er begge verdiene `true`, og konsollen viser `true`. Prøv selv å sette `harBillett` til `false`: da blir svaret `false` igjen. Du har testet at begge må være sanne.
+
+```js example
+const harBillett = true;
+const erApen = true;
+console.log(harBillett && erApen);
+```
 :::
 
 :::step {"id":"or","caption":"Undersøk og, eller og ikke hver for seg."}
 ## Minst én må være sann
 
-Sett tilbake startverdiene. Bytt `&&` med `||`, som betyr **eller**. For boolske verdier er det nok at minst én er `true`. Med `true` og `false` får du derfor `true`. Prøv også to `false`, som gir `false`.
+Her er startverdiene tilbake, men `&&` er byttet med `||`, som betyr **eller**. For boolske verdier er det nok at minst én er `true`. Med `true` og `false` får du derfor `true`. Prøv selv med to `false`, som gir `false`.
+
+```js example
+const harBillett = true;
+const erApen = false;
+console.log(harBillett || erApen);
+```
 :::
 
 :::step {"id":"not","caption":"Undersøk og, eller og ikke hver for seg."}
 ## Snu ett svar
 
-Bytt siste linje med `console.log(!erApen);`. `!` betyr **ikke** og snur en boolsk verdi. Hvis `erApen` er `false`, blir `!erApen` til `true`. Hvis `erApen` er `true`, blir resultatet `false`.
+Her er siste linje byttet med `console.log(!erApen);`. `!` betyr **ikke** og snur en boolsk verdi. `erApen` er `false`, så `!erApen` blir `true`. Hvis `erApen` er `true`, blir resultatet `false`.
+
+```js example
+const harBillett = true;
+const erApen = false;
+console.log(!erApen);
+```
 :::
 
 :::step {"id":"check","caption":"Undersøk og, eller og ikke hver for seg."}
 ## Bruk svaret i if
 
-Gjenopprett startverdiene og bytt siste linje med:
+Her er siste linje byttet med en if-setning som bruker `harBillett && erApen` som betingelse. Åpne **Resultat**: ingen beskjed skrives så lenge stedet er stengt.
 
-```js
+**Sjekk:** Sett `erApen` til `true` i kodeverkstedet og kjør igjen for å få hilsenen. Forklar hvilket spørsmål `if` får svaret på.
+
+```js example
+const harBillett = true;
+const erApen = false;
 if (harBillett && erApen) {
   console.log("Velkommen!");
 }
 ```
-
-**Sjekk:** Ingen beskjed skrives så lenge stedet er stengt. Sett `erApen` til `true` og kjør igjen for å få hilsenen. Forklar hvilket spørsmål `if` får svaret på.
 :::

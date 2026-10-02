@@ -25,9 +25,26 @@ Send inn et tomt felt, et felt med bare mellomrom og til slutt ` Ada ` med mello
 :::step {"id":"check","caption":"Bruk en if-setning før du viser hilsenen."}
 ## Tekst fra felt er fortsatt tekst
 
-Hvis du lager et tallfelt senere, gir `value` fortsatt tekst. `Number("2")` gjør teksten `"2"` om til tallet `2`. Prøv `console.log(Number("2") + 3);` nederst i koden og se `5`.
+Hvis du lager et tallfelt senere, gir `value` fortsatt tekst. `Number("2")` gjør teksten `"2"` om til tallet `2`. Her står `console.log(Number("2") + 3);` nederst i koden. Åpne **Resultat**: konsollen under skjemaet viser `5`, ikke `23`.
 
 **Stopp og forklar:** Hva gjør `trim`, og hva gjør if-setningen?
 
 **Svar:** `trim` rydder teksten. If-setningen velger beskjed ut fra om den ryddede teksten er tom.
+
+```js example
+const skjema = document.querySelector("form");
+const felt = document.querySelector("#navn");
+const resultat = document.querySelector("#resultat");
+function hils(event) {
+  event.preventDefault();
+  const navn = felt.value.trim();
+  if (navn === "") {
+    resultat.textContent = "Skriv et navn først.";
+  } else {
+    resultat.textContent = "Hei, " + navn + "!";
+  }
+}
+skjema.addEventListener("submit", hils);
+console.log(Number("2") + 3);
+```
 :::

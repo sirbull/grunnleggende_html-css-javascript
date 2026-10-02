@@ -1,5 +1,5 @@
 import { el, announce, setPageTitle, setupDialog } from './dom.js';
-import { getFile, getExample, parseSteps, markExamples, EXAMPLE_TOKEN } from './content.js';
+import { getFile, getExample, parseSteps, markExamples, stepCode, EXAMPLE_TOKEN } from './content.js';
 import { markdownFragment } from './markdown.js';
 import { routePath } from './router.js';
 import { createReading } from './reading.js';
@@ -93,9 +93,11 @@ export async function renderSection(main, section, { entries, signal, next, spee
       title, el('p', { class: 'lesson-intro' }, lesson.description),
       el('p', { class: 'meta-row' }, el('span', {}, `${lesson.minutes || 5} min + egen øving`), el('span', {}, 'Les · se · prøv')));
     const node = el('article', { class: 'lesson', id: `lesson-${track.id}-${lesson.id}`, 'data-lesson': lesson.id, 'aria-labelledby': titleId }, header);
+    let visuals = 0;
     item.steps.forEach((step, i) => {
       const text = el('div', { class: 'step-text' }, el('span', { class: 'step-label' }, `Steg ${pad(i + 1)} / ${pad(item.steps.length)}`));
-      const fragment = markdownFragment(markExamples(step.markdown), entries);
+      const { markdown, files: own } = stepCode(step.markdown);
+      const fragment = markdownFragment(markExamples(markdown), entries);
       demoteHeadings(fragment);
       // Hvert steg har tekst i én kolonne og koden i den andre, med resultatet én fane unna.
       // Et :::example-direktiv i steget bestemmer hvilket språk som vises først.
@@ -105,13 +107,20 @@ export async function renderSection(main, section, { entries, signal, next, spee
         if (match) { languages.push(match[1]); p.remove(); }
       }
       text.append(fragment);
-      const extra = extraLabels[item.lesson.visualization] ? { label: extraLabels[item.lesson.visualization], mount: item.mountVisual } : null;
-      const example = mountExample({ files: item.files, primary: languages[0] || primary, step, mountResult, extra, onWorkshop: opener => openWorkshop(item, opener) });
-      examples.push(example);
-      const visual = el('figure', { class: 'step-visual no-speech', 'aria-label': 'Kode og resultat' },
-        el('p', { class: 'visual-label', 'aria-hidden': 'true' }, 'Kode og resultat'), example.element);
-      // Tekstkolonnen bytter side annethvert steg.
-      node.append(el('section', { class: `reading-step${i % 2 ? ' flip' : ''}${i === item.steps.length - 1 ? ' last-step' : ''}`, id: `step-${lesson.id}-${step.id}`, 'data-step': step.id }, text, visual));
+      // "example": false gir et rent tekststeg, for forklaringer der koden ikke hjelper leseren.
+      let visual = null;
+      if (step.example !== false) {
+        const changed = Object.keys(own).length > 0;
+        const label = changed ? 'Kode og resultat i dette steget' : 'Kode og resultat';
+        const extra = extraLabels[item.lesson.visualization] ? { label: extraLabels[item.lesson.visualization], mount: item.mountVisual } : null;
+        const example = mountExample({ files: { ...item.files, ...own }, original: changed ? item.files : null, primary: languages[0] || primary, step, mountResult, extra, onWorkshop: opener => openWorkshop(item, opener) });
+        examples.push(example);
+        visual = el('figure', { class: 'step-visual no-speech', 'aria-label': label },
+          el('p', { class: 'visual-label', 'aria-hidden': 'true' }, label), example.element);
+      }
+      // Tekstkolonnen bytter side for hvert steg som har kode ved siden av.
+      const flip = visual && visuals++ % 2;
+      node.append(el('section', { class: `reading-step${flip ? ' flip' : ''}${visual ? '' : ' text-only'}${i === item.steps.length - 1 ? ' last-step' : ''}`, id: `step-${lesson.id}-${step.id}`, 'data-step': step.id }, text, visual));
       stepLesson.push(lessonIndex);
     });
     const complete = el('button', { type: 'button', 'aria-pressed': String(completed.has(lesson.id)), onclick: () => {

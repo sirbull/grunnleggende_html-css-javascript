@@ -24,20 +24,32 @@ Her betyr `=` **tilordning**: gi en verdi. Det er ikke et spørsmål om to ting 
 Andre linje er `console.log(navn);`. Uten anførselstegn slår `navn` opp verdien til variabelen. Konsollen viser `Ada`. Variabelen må lages før denne linjen bruker den.
 :::
 
-:::step {"id":"quotes","caption":"Gi en verdi et navn og hent verdien med navnet.","trace":["Lag variabelen navn med verdien Ada.","Hent verdien i navn.","Skriv Ada i konsollen."],"traceActive":1}
+:::step {"id":"quotes","caption":"Gi en verdi et navn og hent verdien med navnet.","trace":["Lag variabelen navn med verdien Ada.","Les teksten \"navn\". Variabelen brukes ikke.","Skriv navn i konsollen."],"traceActive":1}
 ## Navn eller tekst?
 
-Forutsi resultatet hvis du setter anførselstegn rundt `navn` i den andre linjen. Prøv det.
+Her står det anførselstegn rundt `navn` i den andre linjen. Forutsi resultatet før du åpner **Resultat**.
 
-`console.log("navn");` skriver ordet `navn`. Anførselstegn gjør det til tekst. Fjern dem igjen for å lese variabelen.
+`console.log("navn");` skriver ordet `navn`. Anførselstegn gjør det til tekst, så variabelen blir ikke brukt. Uten anførselstegn leses variabelen, slik som i originalen.
+
+```js example
+let navn = "Ada";
+console.log("navn");
+```
 :::
 
-:::step {"id":"practice","caption":"Gi en verdi et navn og hent verdien med navnet.","trace":["Lag variabelen navn med verdien Ada.","Hent verdien i navn.","Skriv Ada i konsollen."],"traceActive":2}
-## Gi variabelen din egen verdi
+:::step {"id":"practice","caption":"Gi en verdi et navn og hent verdien med navnet.","trace":["Lag variabelen fornavn med verdien Ada.","Hent verdien i fornavn.","Skriv Ada i konsollen."],"traceActive":2}
+## Gi variabelen et annet navn
 
-Bytt `Ada` med ditt eget navn på første linje. Kjør. Endre deretter variabelnavnet fra `navn` til `fornavn` **på begge linjene** og kjør igjen. Resultatet skal være det samme.
+Her heter variabelen `fornavn` i stedet for `navn`, **på begge linjene**. Resultatet er det samme: `Ada`. Du velger navnet selv, så lenge du bruker det samme navnet der variabelen lages og der den leses.
+
+Prøv selv: bytt `Ada` med ditt eget navn, og gi variabelen et nytt navn på begge linjene.
 
 Variabelnavn kan ikke ha mellomrom eller starte med et tall. Store og små bokstaver er forskjellige: `navn` og `Navn` er ulike navn.
+
+```js example
+let fornavn = "Ada";
+console.log(fornavn);
+```
 :::
 
 :::step {"id":"check","caption":"Gi en verdi et navn og hent verdien med navnet.","trace":["Lag variabelen navn med verdien Ada.","Hent verdien i navn.","Skriv Ada i konsollen."],"traceActive":0}

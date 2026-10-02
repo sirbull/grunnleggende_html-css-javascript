@@ -14,11 +14,29 @@ function matcher(language, selector = '') {
   if (/^\.[\w-]+$/.test(value)) return new RegExp(`class=["'][^"']*\\b${escape(value.slice(1))}\\b`);
   return null;
 }
-function codeBlock(language, source, selector) {
+// Linjene i after som ikke inngår i lengste felles delsekvens med before, altså nye eller flyttede linjer.
+function changedLines(before, after) {
+  const a = before.map(line => line.trim()), b = after.map(line => line.trim());
+  const table = Array.from({ length: a.length + 1 }, () => new Array(b.length + 1).fill(0));
+  for (let i = a.length - 1; i >= 0; i--) for (let j = b.length - 1; j >= 0; j--)
+    table[i][j] = a[i] === b[j] ? table[i + 1][j + 1] + 1 : Math.max(table[i + 1][j], table[i][j + 1]);
+  const changed = new Set(); let i = 0, j = 0;
+  while (j < b.length) {
+    if (i < a.length && a[i] === b[j]) { i++; j++; }
+    else if (i < a.length && table[i + 1][j] >= table[i][j + 1]) i++;
+    else changed.add(j++);
+  }
+  return changed;
+}
+// Når steget viser sin egen versjon av koden, markeres linjene som skiller seg fra originalen.
+function codeBlock(language, source, selector, original) {
   const pattern = matcher(language, selector);
+  const lines = source.replace(/\n$/, '').split('\n');
+  const changed = original === undefined ? new Set() : changedLines(original.replace(/\n$/, '').split('\n'), lines);
   const code = el('code', { class: `language-${language}` });
-  source.replace(/\n$/, '').split('\n').forEach((line, i, lines) => {
-    code.append(pattern?.test(line) ? el('mark', { class: 'code-mark' }, line) : line, i < lines.length - 1 ? '\n' : '');
+  lines.forEach((line, i) => {
+    const mark = pattern?.test(line) || (changed.has(i) && line.trim());
+    code.append(mark ? el('mark', { class: 'code-mark' }, line) : line, i < lines.length - 1 ? '\n' : '');
   });
   return el('pre', { tabindex: '0', 'aria-label': `${names[language]}-kode` }, code);
 }
@@ -26,7 +44,7 @@ function codeBlock(language, source, selector) {
 // Kode først, resultatet én fane unna. Én fane per språk eksempelet faktisk bruker, så en
 // eventuell ekstra forklaring (DOM-tre, boksmodell, programflyt) som egen fane til slutt.
 // Resultat og forklaring monteres først når de blir vist.
-export function mountExample({ files, primary, step, mountResult, extra, onWorkshop }) {
+export function mountExample({ files, original, primary, step, mountResult, extra, onWorkshop }) {
   const id = `example-${++count}`;
   const languages = ['html', 'css', 'js'].filter(language => (files[language] || '').trim());
   const start = languages.includes(primary) ? primary : languages[0] || 'result';
@@ -34,7 +52,7 @@ export function mountExample({ files, primary, step, mountResult, extra, onWorks
   for (const language of languages) {
     // Kort synlig navn; skjermlesere hører «HTML-kode», som skiller fanen fra kodeverkstedets «HTML».
     tabs[language] = el('button', { type: 'button', role: 'tab', 'aria-label': `${names[language]}-kode` }, names[language]);
-    panes[language] = el('div', { class: 'example-pane' }, codeBlock(language, files[language], step.highlight));
+    panes[language] = el('div', { class: 'example-pane' }, codeBlock(language, files[language], step.highlight, original?.[language]));
   }
   tabs.result = el('button', { type: 'button', role: 'tab' }, 'Resultat');
   panes.result = el('div', { class: 'example-pane example-result' });

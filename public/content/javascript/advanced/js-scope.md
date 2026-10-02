@@ -19,13 +19,31 @@
 :::step {"id":"practice","caption":"Skill mellom navn utenfor og inni en kodeblokk."}
 ## Prøv å lese utenfor
 
-Legg til `console.log(beskjed);` helt nederst. Forutsi og kjør. Først kommer de to vanlige utskriftene, deretter en feil om at `beskjed` ikke finnes. Fjern den nye linjen etterpå.
+Her står `console.log(beskjed);` helt nederst, utenfor blokken. Forutsi før du åpner **Resultat**. Først kommer de to vanlige utskriftene, deretter en feil: `beskjed is not defined`.
+
+```js example
+const navn = "Ada";
+if (true) {
+  const beskjed = "Hei, " + navn;
+  console.log(beskjed);
+}
+console.log(navn);
+console.log(beskjed);
+```
 :::
 
 :::step {"id":"function","caption":"Skill mellom navn utenfor og inni en kodeblokk."}
 ## Funksjoner har også et område
 
-Parametere og variabler laget inne i en funksjon er lokale for den kjøringen. `tall` i funksjonen `doble(tall)` er derfor ikke et navn du kan lese fritt utenfor funksjonen.
+Parametere og variabler laget inne i en funksjon er lokale for den kjøringen. Her prøver siste linje å lese `tall` utenfor funksjonen `doble(tall)`. Åpne **Resultat**: kallet skriver `6`, og så kommer feilen `tall is not defined`.
+
+```js example
+function doble(tall) {
+  return tall * 2;
+}
+console.log(doble(3));
+console.log(tall);
+```
 :::
 
 :::step {"id":"check","caption":"Skill mellom navn utenfor og inni en kodeblokk."}

@@ -19,13 +19,29 @@ Vi har brukt både tekst og tall. Typen forteller hva slags verdi det er. [[js-n
 :::step {"id":"practice","caption":"Se hvorfor 2 og \"2\" gir forskjellige svar."}
 ## Undersøk typen
 
-Legg til `console.log(typeof tall);` nederst og kjør. `typeof` spør hvilken type verdien har, og svaret er `number`. Prøv så `console.log(typeof tekst);`, som gir `string`.
+Her står to nye linjer nederst: `console.log(typeof tall);` og `console.log(typeof tekst);`. `typeof` spør hvilken type verdien har. Åpne **Resultat**: etter `5` og `23` kommer `number` og `string`.
+
+```js example
+const tall = 2;
+const tekst = "2";
+console.log(tall + 3);
+console.log(tekst + "3");
+console.log(typeof tall);
+console.log(typeof tekst);
+```
 :::
 
 :::step {"id":"check","caption":"Se hvorfor 2 og \"2\" gir forskjellige svar."}
 ## Forutsi før du kjører
 
-Bytt siste linje i originaleksempelet med `console.log("2" + 3);`.
+Her er siste linje byttet med `console.log("2" + 3);`. Forutsi svaret før du åpner **Resultat**.
 
-**Svar:** Det blir teksten `23`. Når `+` får en tekst på en av sidene, settes verdiene sammen som tekst. Sett tilbake originalen. Senere skal vi lære å gjøre tekst fra et skjema om til tall.
+**Svar:** Det blir teksten `23`. Når `+` får en tekst på en av sidene, settes verdiene sammen som tekst. Senere skal vi lære å gjøre tekst fra et skjema om til tall.
+
+```js example
+const tall = 2;
+const tekst = "2";
+console.log(tall + 3);
+console.log("2" + 3);
+```
 :::

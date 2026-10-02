@@ -42,3 +42,24 @@ test('old bookmarks reach moved lessons and canonical routes', async ({ page }) 
     await expect(page).toHaveURL(new RegExp(`#/javascript/${current}$`));
   }
 });
+
+test('a step shows the code its text describes, and explanation steps can stand without code', async ({ page }) => {
+  await page.goto('#/javascript/basic/js-console');
+  // Feilen teksten omtaler står i kodepanelet, er markert og gir feilen i resultatet.
+  const mistake = page.locator('#step-js-console-mistake');
+  await expect(mistake.locator('.visual-label')).toHaveText('Kode og resultat i dette steget');
+  await expect(mistake.locator('.code-mark')).toHaveText(['console.log(prs);']);
+  await expect(mistake.locator('.step-text')).not.toContainText('console.log(prs);');
+  await mistake.getByRole('tab', { name: 'Resultat', exact: true }).click();
+  await expect(mistake.locator('.console-error')).toContainText('prs is not defined');
+  // Steget etter viser originalen igjen.
+  const repair = page.locator('#step-js-console-repair');
+  await expect(repair.locator('.visual-label')).toHaveText('Kode og resultat');
+  await expect(repair.locator('.code-mark')).toHaveCount(0);
+  await expect(repair.locator('pre')).toContainText('console.log(pris);');
+
+  await page.goto('#/javascript/basic/js-const');
+  const choose = page.locator('#step-js-const-choose');
+  await expect(choose).toHaveClass(/text-only/);
+  await expect(choose.locator('.step-visual')).toHaveCount(0);
+});

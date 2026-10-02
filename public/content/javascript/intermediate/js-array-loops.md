@@ -19,7 +19,14 @@ Første runde får `person` verdien `Ada` og skriver den. Neste runde får `Bo`.
 :::step {"id":"practice","caption":"Bruk for...of til å lese hver verdi uten å lage HTML."}
 ## Utvid listen
 
-Legg til `"Dina"` sist i listen. Forutsi og kjør. Du får fire utskrifter selv om løkkeblokken er uendret. Bytt så utskriften med `console.log("Hei, " + person);`.
+Her står `"Dina"` sist i listen, og utskriften er byttet med `console.log("Hei, " + person);`. Forutsi før du åpner **Resultat**. Du får fire hilsener, selv om løkken ellers er uendret.
+
+```js example
+const navn = ["Ada", "Bo", "Cleo", "Dina"];
+for (const person of navn) {
+  console.log("Hei, " + person);
+}
+```
 :::
 
 :::step {"id":"check","caption":"Bruk for...of til å lese hver verdi uten å lage HTML."}

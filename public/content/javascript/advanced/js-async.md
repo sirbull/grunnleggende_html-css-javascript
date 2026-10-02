@@ -29,9 +29,34 @@ De nederste linjene registrerer `hentFilm` som klikklytter, slik du har gjort f�
 :::
 
 :::step {"id":"practice","caption":"Følg ett kall fra forespørsel til data eller feilmelding."}
-## Test resultat og feil hver for seg
+## Test resultatet
 
-Trykk knappen og se `Skogsturen`. Bytt så bare adressen inni fetch med `data:application/json,ugyldig`. Kjør koden på nytt og trykk knappen. Nå er innholdet ikke gyldig JSON, så catch viser en feilmelding. Sett adressen tilbake.
+Åpne **Resultat** og trykk knappen. Teksten blir `Skogsturen`. Du kan også bruke Tab til knappen og aktivere den med Enter.
+:::
+
+:::step {"id":"failure","caption":"Følg ett kall fra forespørsel til data eller feilmelding."}
+## Test en feil
+
+Her er bare adressen inni fetch byttet med `data:application/json,ugyldig`. Åpne **Resultat** og trykk knappen. Nå er innholdet ikke gyldig JSON. `response.json()` feiler, og catch-blokken viser `Noe gikk galt:` etterfulgt av feilmeldingen.
+
+```js example
+async function hentFilm() {
+  const resultat = document.querySelector("#resultat");
+  resultat.textContent = "Henter …";
+  try {
+    const response = await fetch("data:application/json,ugyldig");
+    if (!response.ok) {
+      throw new Error("Kunne ikke hente filmen");
+    }
+    const film = await response.json();
+    resultat.textContent = film.tittel;
+  } catch (error) {
+    resultat.textContent = "Noe gikk galt: " + error.message;
+  }
+}
+const knapp = document.querySelector("button");
+knapp.addEventListener("click", hentFilm);
+```
 :::
 
 :::step {"id":"check","caption":"Følg ett kall fra forespørsel til data eller feilmelding."}

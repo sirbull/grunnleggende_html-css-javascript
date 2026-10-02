@@ -111,6 +111,7 @@ body.has-player { padding-bottom: 6rem; }
 /* Tekst og visuell forklaring side om side. Tekstkolonnen bytter side annethvert steg. */
 .reading-step { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 1.25rem clamp(1.5rem,3vw,3rem); align-items: start; }
 .reading-step.flip .step-text { order: 2; }
+.reading-step.text-only { grid-template-columns: minmax(0,1fr); }
 .step-text { min-width: 0; }
 .step-visual { position: sticky; top: 5rem; min-width: 0; margin: 0; }
 .step-visual .visual-label { margin-left: .2rem; }

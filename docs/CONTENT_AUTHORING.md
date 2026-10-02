@@ -90,6 +90,7 @@ Metadata på `:::step`-linjen er JSON og sendes videre til visualiseringen:
 | `highlight` | `preview`, `html-document`, `code-flow` | CSS-selektor som markeres i forhåndsvisningen. Ugyldig selektor ignoreres stille. |
 | `highlight` | `box-model` | Verdien `padding` markerer kanten. |
 | `trace`, `traceActive` | `code-flow` | Liste med forklaringssteg, og hvilket som er aktivt. |
+| `example` | lesesteg | `false` fjerner kodepanelet fra steget. |
 
 Ukjente nøkler er harmløse. En visualisering som ikke forstår dem, bruker sine egne standardtekster.
 
@@ -109,7 +110,34 @@ ID-en må finnes i referanseverket, ellers feiler bygget. Fagord behandles bare 
 :::example html
 ````
 
-Alle steg viser eksempelkoden ved siden av teksten, med resultatet én fane unna. Direktivet bestemmer hvilket språk som vises først i steget det står i; uten direktiv vises seksjonens hovedspråk. Direktivlinjen fjernes fra teksten. `highlight` markerer elementene i resultatet og, for enkle velgere, linjene i HTML-koden. `html`, `css` og `js` er gyldige. Da kan ikke teksten og det kjørbare eksempelet komme i utakt. Legg direktivet i steget som forklarer koden, siden det er der leseren ser resultatet.
+Steg viser eksempelkoden ved siden av teksten, med resultatet én fane unna. Direktivet bestemmer hvilket språk som vises først i steget det står i; uten direktiv vises seksjonens hovedspråk. Direktivlinjen fjernes fra teksten. `highlight` markerer elementene i resultatet og, for enkle velgere, linjene i HTML-koden. `html`, `css` og `js` er gyldige. Da kan ikke teksten og det kjørbare eksempelet komme i utakt. Legg direktivet i steget som forklarer koden, siden det er der leseren ser resultatet.
+
+### Vis koden teksten snakker om
+
+Når teksten ber leseren se på en endret versjon av eksempelet, for eksempel med en feil, en annen verdi eller en flyttet linje, skal kodepanelet vise akkurat den versjonen. Skriv den som en kodeblokk merket `example`:
+
+````markdown
+Her står `prs` i stedet for `pris` på andre linje. Åpne **Resultat**.
+
+```js example
+let pris = 40;
+console.log(prs);
+```
+````
+
+Blokken flyttes ut av teksten og erstatter `script.js` i kodepanelet og resultatet, bare i dette steget. `html example` og `css example` virker på samme måte. Linjene som skiller seg fra originalen, markeres. Kodeverkstedet åpner fortsatt leksjonens originalkode, så skriv «prøv selv» når leseren skal gjøre endringen.
+
+Skriv teksten i presens om det som vises («Her står …», «Åpne **Resultat**»), ikke som en instruks om å endre koden først. Hvis teksten beskriver en feilmelding, skal feilen faktisk komme når stegets kode kjøres.
+
+### Steg uten kodepanel
+
+Et steg som bare forklarer et begrep, gir en oppgave uten fasit eller handler om noe utenfor eksempelet, trenger ikke kode ved siden av. Sett `"example": false` i metadataene, så får teksten hele bredden:
+
+```text
+:::step {"id":"choose","caption":"…","example":false}
+```
+
+Bruk det når koden ved siden av ikke hjelper leseren med akkurat dette steget.
 
 Overskrifter skrives fortsatt med `##` og `###`. På seksjonssiden vises de to nivåer lavere, under seksjon, nivå og leksjonstittel.
 

@@ -18,18 +18,34 @@ En [[js-function|funksjon]] samler instruksjoner under et navn. Du kan be progra
 Siste linje, `siHei();`, kaller funksjonen. Programmet går inn i blokken, skriver `Hei!` og kommer tilbake til linjen etter kallet. Parentesene er det som gjør dette til et kall.
 :::
 
-:::step {"id":"practice","caption":"Gi noen instruksjoner et navn og bestem når de kjører.","trace":["Lag funksjonen siHei. Innholdet kjører ikke ennå.","Kall siHei().","Inne i funksjonen: skriv Hei!.","Gå tilbake etter kallet."],"traceActive":2}
+:::step {"id":"practice","caption":"Gi noen instruksjoner et navn og bestem når de kjører.","trace":["Lag funksjonen siHei. Innholdet kjører ikke ennå.","Kall siHei(): skriv Hei!.","Kall siHei() igjen: skriv Hei!.","Programmet er ferdig."],"traceActive":2}
 ## Kall den to ganger
 
-Legg til en ny `siHei();` nederst. Forutsi og kjør. Du får to hilsener uten å kopiere linjen inne i funksjonen. Endre hilsenen inne i funksjonen én gang: da bruker begge kallene den nye teksten.
+Her står `siHei();` to ganger nederst. Forutsi før du åpner **Resultat**. Du får to hilsener uten å kopiere linjen inne i funksjonen. Prøv selv å endre hilsenen inne i funksjonen: da bruker begge kallene den nye teksten.
+
+```js example
+function siHei() {
+  console.log("Hei!");
+}
+siHei();
+siHei();
+```
 :::
 
-:::step {"id":"check","caption":"Gi noen instruksjoner et navn og bestem når de kjører.","trace":["Lag funksjonen siHei. Innholdet kjører ikke ennå.","Kall siHei().","Inne i funksjonen: skriv Hei!.","Gå tilbake etter kallet."],"traceActive":0}
+:::step {"id":"check","caption":"Gi noen instruksjoner et navn og bestem når de kjører.","trace":["Lag funksjonen siHei. Innholdet kjører ikke ennå.","Kallene er kommentarer og kjøres ikke.","Ingen hilsen skrives."],"traceActive":1}
 ## Lage er ikke det samme som å kjøre
 
-Sett `//` foran begge kallene, og kjør. Ingen hilsen skrives, selv om funksjonen fortsatt er definert. Fjern kommentarene igjen.
+Her står `//` foran begge kallene. Åpne **Resultat**: ingen hilsen skrives, selv om funksjonen fortsatt er definert.
 
 **Stopp og forklar:** Hvilke linjer beskriver jobben, og hvilken linje bestiller jobben?
 
 **Svar:** Funksjonsblokken beskriver den. `siHei();` bestiller at den utføres.
+
+```js example
+function siHei() {
+  console.log("Hei!");
+}
+// siHei();
+// siHei();
+```
 :::

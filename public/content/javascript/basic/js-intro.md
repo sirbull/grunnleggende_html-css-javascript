@@ -32,16 +32,22 @@ Hei!
 Det er her vi ser svarene i de første leksjonene. Resultatvinduet over konsollen kan være tomt.
 :::
 
-:::step {"id":"practice","caption":"Skriv én beskjed og finn den i konsollen.","trace":["Les instruksjonen console.log(\"Hei!\").","Skriv Hei! i konsollen.","Programmet er ferdig."],"traceActive":1}
+:::step {"id":"practice","caption":"Skriv én beskjed og finn den i konsollen.","trace":["Les instruksjonen console.log(\"Jeg lærer å programmere.\").","Skriv Jeg lærer å programmere. i konsollen.","Programmet er ferdig."],"traceActive":1}
 ## Endre én ting
 
-Trykk **Prøv selv** for å åpne kodeverkstedet. Velg fanen **JavaScript** hvis den ikke allerede er valgt.
+Koden ved siden av viser linjen etter endringen. Den endrede linjen er markert. Bare teksten mellom anførselstegnene er byttet ut; anførselstegn, parenteser og semikolon står som før. Åpne **Resultat** og finn den nye beskjeden i konsollen.
 
-1. Bytt bare `Hei!` med `Jeg lærer å programmere.`. Behold anførselstegn, parenteser og semikolon.
+Gjør det samme selv. Trykk **Prøv selv** for å åpne kodeverkstedet, og velg fanen **JavaScript** hvis den ikke allerede er valgt.
+
+1. Bytt bare `Hei!` med `Jeg lærer å programmere.`.
 2. Trykk **Kjør kode**.
-3. Finn den nye beskjeden i konsollen under resultatvinduet.
+3. Finn beskjeden i konsollen under resultatvinduet.
 
 Kodeverkstedet kjører også automatisk etter endringer. Du kan slå av **Auto-oppdatering** hvis du vil skrive ferdig før du kjører.
+
+```js example
+console.log("Jeg lærer å programmere.");
+```
 :::
 
 :::step {"id":"check","caption":"Skriv én beskjed og finn den i konsollen.","trace":["Les instruksjonen console.log(\"Hei!\").","Skriv Hei! i konsollen.","Programmet er ferdig."],"traceActive":2}

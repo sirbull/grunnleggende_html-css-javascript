@@ -24,16 +24,30 @@ Til slutt
 Hver `console.log` gir en egen linje. Programmet skriver ordene i kodens rekkefølge, uansett hva ordene betyr.
 :::
 
-:::step {"id":"practice","caption":"Følg tre instruksjoner i den rekkefølgen de står.","trace":["Skriv Først.","Skriv Så.","Skriv Til slutt."],"traceActive":2}
+:::step {"id":"practice","caption":"Følg tre instruksjoner i den rekkefølgen de står.","trace":["Skriv Til slutt.","Skriv Først.","Skriv Så."],"traceActive":0}
 ## Flytt én instruksjon
 
-Flytt hele linjen med `Til slutt` øverst. Forutsi utskriften, og kjør koden. Nå kommer `Til slutt` først. Flytt linjen tilbake og prøv igjen.
+Her er hele linjen med `Til slutt` flyttet øverst. Den er markert. Forutsi utskriften før du åpner **Resultat**. Nå kommer `Til slutt` først.
+
+Prøv det selv i kodeverkstedet: flytt linjen, kjør, og flytt den tilbake.
+
+```js example
+console.log("Til slutt");
+console.log("Først");
+console.log("Så");
+```
 :::
 
-:::step {"id":"check","caption":"Følg tre instruksjoner i den rekkefølgen de står.","trace":["Skriv Først.","Skriv Så.","Skriv Til slutt."],"traceActive":2}
+:::step {"id":"check","caption":"Følg tre instruksjoner i den rekkefølgen de står.","trace":["Skriv Til slutt.","Skriv Først.","Skriv Så."],"traceActive":0}
 ## Forklar rekkefølgen
 
 **Stopp og forklar:** Hvorfor kommer `Til slutt` først etter flyttingen?
 
 **Svar:** Programmet følger rekkefølgen på instruksjonene. Det tolker ikke betydningen av beskjedene.
+
+```js example
+console.log("Til slutt");
+console.log("Først");
+console.log("Så");
+```
 :::

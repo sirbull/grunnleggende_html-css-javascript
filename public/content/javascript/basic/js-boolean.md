@@ -19,7 +19,15 @@ Siste linje skriver `false`. `erVoksen` inneholder et svar, ikke en regel som au
 :::step {"id":"practice","caption":"Lagre et ja/nei-svar i en variabel."}
 ## Prøv begge svar
 
-Endre alderen til `18` og kjør hele programmet på nytt. Nå får `erVoksen` verdien `true`. Prøv så å erstatte sammenligningen med bare `false`. Det er også en gyldig boolsk verdi.
+Her er alderen endret til `18`. Nå får `erVoksen` verdien `true`, og det er det konsollen viser.
+
+Prøv selv å erstatte sammenligningen med bare `false`, altså `const erVoksen = false;`. Det er også en gyldig boolsk verdi.
+
+```js example
+const alder = 18;
+const erVoksen = alder >= 18;
+console.log(erVoksen);
+```
 :::
 
 :::step {"id":"check","caption":"Lagre et ja/nei-svar i en variabel."}
@@ -27,5 +35,10 @@ Endre alderen til `18` og kjør hele programmet på nytt. Nå får `erVoksen` ve
 
 **Stopp og forklar:** Er `"false"` og `false` samme type?
 
-**Svar:** Nei. `"false"` er tekst fordi den har anførselstegn. `false` er en boolean. Du kan undersøke forskjellen med `typeof`.
+**Svar:** Nei. `"false"` er tekst fordi den har anførselstegn. `false` er en boolean. Koden ved siden av undersøker forskjellen med `typeof`, og konsollen viser `string` og `boolean`.
+
+```js example
+console.log(typeof "false");
+console.log(typeof false);
+```
 :::

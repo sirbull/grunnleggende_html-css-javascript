@@ -35,6 +35,16 @@ export function parseSteps(source) {
 export const EXAMPLE_TOKEN = /^@@example:(html|css|js)@@$/;
 export const markExamples = source => source.replace(/^:::example (html|css|js)$/gm, '@@example:$1@@');
 
+// Et steg kan vise sin egen versjon av eksempelet, for eksempel koden med feilen teksten omtaler.
+// En kodeblokk merket «js example» flyttes fra teksten til kodepanelet og erstatter bare den filen,
+// bare i dette steget. Resultatfanen kjører den samme koden, så teksten og panelet viser det samme.
+const STEP_CODE = /^(`{3,})(html|css|js) example\n([\s\S]*?)\n\1[ \t]*$/gm;
+export function stepCode(source) {
+  const files = {};
+  const markdown = source.replace(STEP_CODE, (_, fence, language, code) => { files[language] = `${code}\n`; return `:::example ${language}`; });
+  return { markdown, files };
+}
+
 export async function getFile(path, signal, json = false) {
   const url = new URL(path, document.baseURI);
   const base = new URL('.', document.baseURI);

@@ -19,7 +19,16 @@ Den første blokken går fra `{` etter `if` til `}` før `else`. Den andre går 
 :::step {"id":"practice","caption":"La programmet velge mellom to kodeblokker."}
 ## Test grensen igjen
 
-Endre alderen til `18`, og kjør. Nå skrives `Voksenbillett`. Prøv deretter `19`, som gir det samme. Endre én verdi om gangen.
+Her er alderen endret til `18`. Nå skrives `Voksenbillett`. Prøv `19` selv i kodeverkstedet; det gir det samme. Endre én verdi om gangen.
+
+```js example
+const alder = 18;
+if (alder >= 18) {
+  console.log("Voksenbillett");
+} else {
+  console.log("Ungdomsbillett");
+}
+```
 :::
 
 :::step {"id":"check","caption":"La programmet velge mellom to kodeblokker."}

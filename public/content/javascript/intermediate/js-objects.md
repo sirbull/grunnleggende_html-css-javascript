@@ -19,7 +19,18 @@ Krøllparentesene avgrenser objektet. `tittel: "Skogsturen"` lager en **egenskap
 :::step {"id":"practice","caption":"Bruk et objekt til verdier som beskriver samme ting."}
 ## Endre én egenskap
 
-Bytt `minutter: 90` med `minutter: 100` og kjør. Bare varigheten endres i utskriften. Legg så til egenskapen `ar: 2026`, med komma mellom egenskapene, og skriv `console.log(film.ar);` nederst.
+Her er `minutter` endret til `100`, og objektet har fått en ny egenskap: `ar: 2026`. Legg merke til kommaet etter `100`, som skiller egenskapene. Siste linje skriver `film.ar`. Åpne **Resultat**: konsollen viser `Skogsturen`, `100` og `2026`.
+
+```js example
+const film = {
+  tittel: "Skogsturen",
+  minutter: 100,
+  ar: 2026
+};
+console.log(film.tittel);
+console.log(film.minutter);
+console.log(film.ar);
+```
 :::
 
 :::step {"id":"check","caption":"Bruk et objekt til verdier som beskriver samme ting."}

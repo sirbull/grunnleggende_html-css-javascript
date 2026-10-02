@@ -19,21 +19,42 @@ I hendelsesleksjonen sendte du `visHilsen` til `addEventListener`. En funksjon k
 :::step {"id":"practice","caption":"Forstå en callback før du bruker en kortere funksjonsform."}
 ## Bytt jobben
 
-Lag en funksjon `siHaDet` som skriver `Ha det!`. Bytt bare argumentet i siste linje til `siHaDet`. Nå kommer den nye beskjeden to ganger.
+Her er det laget en ny funksjon, `siHaDet`, som skriver `Ha det!`. Bare argumentet i siste linje er byttet til `siHaDet`. Åpne **Resultat**: nå kommer den nye beskjeden to ganger.
+
+```js example
+function siHei() {
+  console.log("Hei!");
+}
+function siHaDet() {
+  console.log("Ha det!");
+}
+function gjorToGanger(jobb) {
+  jobb();
+  jobb();
+}
+gjorToGanger(siHaDet);
+```
 :::
 
 :::step {"id":"arrow","caption":"Forstå en callback før du bruker en kortere funksjonsform."}
 ## Kjenn igjen en pilfunksjon
 
-En **pilfunksjon** er en annen måte å skrive en funksjon på. Bytt siste linje med:
+En **pilfunksjon** er en annen måte å skrive en funksjon på. Her er siste linje byttet med et kall som sender en pilfunksjon direkte som argument.
 
-```js
+`() => { ... }` lager en funksjon uten parametere. Den har ikke noe eget navn. Åpne **Resultat**: `En ny jobb` skrives to ganger.
+
+```js example
+function siHei() {
+  console.log("Hei!");
+}
+function gjorToGanger(jobb) {
+  jobb();
+  jobb();
+}
 gjorToGanger(() => {
   console.log("En ny jobb");
 });
 ```
-
-`() => { ... }` lager en funksjon uten parametere. Denne funksjonen sendes direkte som argument, uten eget navn. Utskriften kommer to ganger.
 :::
 
 :::step {"id":"check","caption":"Forstå en callback før du bruker en kortere funksjonsform."}

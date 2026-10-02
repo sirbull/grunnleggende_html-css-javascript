@@ -1,6 +1,6 @@
 import { readFile, access } from 'node:fs/promises';
 import { resolve, relative } from 'node:path';
-import { parseSteps } from '../src/core/content.js';
+import { parseSteps, stepCode } from '../src/core/content.js';
 const root = resolve('public');
 function file(path) { const absolute = resolve(root, path); if (relative(root, absolute).startsWith('..')) throw new Error(`Utenfor public: ${path}`); return absolute; }
 const json = async path => JSON.parse(await readFile(file(path), 'utf8'));
@@ -24,6 +24,7 @@ for (const section of manifest.sections) for (const track of section.tracks) for
   const steps = parseSteps(source);
   for (const step of steps) {
     if (!/^## /m.test(step.markdown)) throw new Error(`${lesson.id}/${step.id}: mangler overskrift`);
+    if (step.example === false && Object.keys(stepCode(step.markdown).files).length) throw new Error(`${lesson.id}/${step.id}: egen eksempelkode i et steg uten kodepanel`);
     for (const match of step.markdown.matchAll(/\[\[([a-z0-9-]+)/g)) if (!ids.has(match[1])) throw new Error(`${lesson.id}: ukjent fagord ${match[1]}`);
   }
   await Promise.all(['index.html','style.css','script.js'].map(name => access(file(`${lesson.example}/${name}`))));
